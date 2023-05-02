@@ -6,6 +6,8 @@ alias:: macOS history
 	- ## 第三方资料
 		- [Why is macOS often referred to as 'Darwin'?](https://apple.stackexchange.com/questions/401832/why-is-macos-often-referred-to-as-darwin)
 		- [Apple 开源系统 Darwin 的历史](https://zhuanlan.zhihu.com/p/436752408)
+		- [wikipedia - XNU](https://en.wikipedia.org/wiki/XNU)
+		- [wikipedia - Darwin](https://en.wikipedia.org/wiki/Darwin)
 		-
 	- ## 简史
 		- 1、NeXTSetp
@@ -14,7 +16,7 @@ alias:: macOS history
 			-
 		- 2、Apple
 			- 苹果电脑的原有操作系统，从一开始就被设计成 **单用户、单任务** ，弊端很大；Apple 多次试图将操作系统 **现代化** ，但都以失败告终。
-			- Apple 收购 NeXT 后，将
+			- Apple 收购 NeXT 后，在 OpenStep for Mach 的基础上，将 Mach 内核从 2.5 升至 3 ，并使用 FreeBSD 内核中的噶爱念和组件对其进行了扩展，形成了新的内核 XNU 。
 		-
 		-
 		- ![image.png](../assets/image_1683054224400_0.png)
