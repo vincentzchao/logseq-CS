@@ -1,8 +1,9 @@
 -
-- tags:: 部署运维
+- tags:: 部署运维, Unix
 -
 - ==子目录==
 	- [[macOS 历史]]
 	- [[Homebrew]]
 	- [[macOS 环境变量]]
 	-
+-
