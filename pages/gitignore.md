@@ -1,7 +1,7 @@
 -
 - # gitignore
 	- ## 优先级(precedence)
-		- 参考：https://git-scm.com/docs/gitignore
+		- 参考: https://git-scm.com/docs/gitignore
 	- ## pattern format
 		- ### 空行
 			- **空行** 不匹配任何文件，它可用于增强可读性。
