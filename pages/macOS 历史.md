@@ -21,7 +21,7 @@ alias:: macOS history
 			- 最重要的是，他们扩展了 OpenStep API，并在其上构建了新的 API
 			- 第一个系统原型被称为 Rhapsody，后来被称为 MacOS X -> OS X -> macOS， 后来又分出了iOS, iPadOS, tvOS 和 watchOS 。
 			-
-		- 3、Darwin
+		- 3、[[Darwin]]
 			- 上面提到 ”NeXT 公司 将 NeXTSetp 系统的 **高层框架** 从 **底层系统** 抽离“ ，其中低层级的部分(包含 XNU 内核)，被整合成 Darwin 。
 			- 由于有 BSD 血统，Darwin 支持 POSIX API ，因此大量为 Unix / Unix-like 编写的程序可以直接在Darwin 上编译运行。
 			- 2003 年 7 月，苹果根据苹果源代码开源许可证 (APSL) 2.0 版发布了 Darwin 。
