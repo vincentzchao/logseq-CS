@@ -8,5 +8,6 @@
 	-
 - # macOS
 	- ## 官方资料
-		- [macOs]
+		- [macOS repo](https://github.com/apple-oss-distributions/distribution-macOS/tree/macos-132)
+		-
 -
