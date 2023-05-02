@@ -10,8 +10,9 @@ alias:: macOS history
 	- ## 简史
 		- 1、NeXTSetp
 			- 被开除的 Steve Jobs 开办了 NeXT 公司，NeXT 公司开发了 NeXTStep 系统；NeXTStep 系统基于 **将 BSD(源代码) 移植到 [[Mach]] 微内核** 。
+			- 后来，NeXTSetp 系统的 **高层框架** 被从 **底层系统** 抽离，NeXT 公司以 `OpenStep for 某某操作系统` 为名(如 OpenStep for Windows NT、OpenStep for Sun Solaris)，提供系统软件服务。
 			-
-		- 2Apple
+		- 2、Apple
 			- 苹果电脑的原有操作系统，从一开始就被设计成 **单用户、单任务** ，弊端很大；Apple 多次试图将操作系统 **现代化** ，但都以失败告终。
 		-
 		-
