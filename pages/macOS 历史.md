@@ -18,8 +18,9 @@ alias:: macOS history
 		- 2、Apple
 			- 苹果电脑的原有操作系统，从一开始就被设计成 **单用户、单任务** ，弊端很大；Apple 多次试图将操作系统 **现代化** ，但都以失败告终。
 			- Apple 收购 NeXT 后，在 OPENSTEP for Mach 的基础上，将 Mach 内核从 2.5 升至 3 ，并使用 FreeBSD 内核中的概念对其进行了扩展，形成了新的内核 XNU ，也形成了 从 4.3 BSD 到 4.4 BSD 和 后来的 FreeBSD 的 BSD 基础；XNU 是一个混合内核 (Hybrid kerne)。
-			-
-			-
+			- 基于 XNU 内核，有了 Darwin 核心操作系统。
+			- 最重要的是，他们扩展了 OpenStep API，并在其上构建了新的 API
+			- 第一个 macOS 原型被称为 Rhapsody，后来
 		- 3、Darwin
 			-
 		-
