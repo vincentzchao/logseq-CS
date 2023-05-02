@@ -24,12 +24,12 @@ alias:: macOS history
 		- 3、Darwin
 			- 上面提到 ”NeXT 公司 将 NeXTSetp 系统的 **高层框架** 从 **底层系统** 抽离“ ，其中低层级的部分(包含 XNU 内核)，被整合成 Darwin 。
 			- 由于有 BSD 血统，Darwin 支持 POSIX API ，因此大量为 Unix / Unix-like 编写的程序可以直接在Darwin 上编译运行。
-			- 2003年7月，苹果根据苹果源代码开源许可证（APSL）2.0版发布了Darwin。
-			- OpenDarwin是苹果公司与互联网系统联盟（Internet Systems Consortium, Inc）于2002年4月成立，但随着苹果对OS X的组件控制加强而于2006年7月25日关闭。
+			- 2003 年 7 月，苹果根据苹果源代码开源许可证 (APSL) 2.0 版发布了 Darwin 。
+			- OpenDarwin 是苹果公司与互联网系统联盟 (Internet Systems Consortium, Inc) 于 2002 年 4 月成立，但随着苹果对 OS X 的组件控制加强而于 2006 年 7 月 25 日关闭。
 			- [PureDarwin](http://www.puredarwin.org/) 是继 OpenDarwin 关闭后的一个Darwin项目。
 			-
 		- 4、macOS 架构图
-			- 地址:
+			- [Mac OS X architecture](https://commons.wikimedia.org/wiki/File:Diagram_of_Mac_OS_X_architecture.svg)
 			- ![image.png](../assets/image_1683054224400_0.png){:height 684, :width 716}
 -
 -
