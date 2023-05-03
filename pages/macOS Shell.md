@@ -3,6 +3,25 @@
 -
 - ==子目录==
 	- [[macOS 环境变量]]
+	- [[Zsh]]
+	- [[warp]]
+	-
 -
 - # macOS Shell
-	-
+	- ## shell 类型
+		- macOS 内置了多种 Shell ，执行命令 `cat /etc/shells` 可以查看系统有哪些 Shell
+		- ```bash
+		  cat /etc/shells
+		  # List of acceptable shells for chpass(1).
+		  # Ftpd will not allow users to connect who are not using
+		  # one of these shells.
+		  
+		  /bin/bash
+		  /bin/csh
+		  /bin/dash
+		  /bin/ksh
+		  /bin/sh
+		  /bin/tcsh
+		  /bin/zsh
+		  ```
+		-
