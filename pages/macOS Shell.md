@@ -8,7 +8,7 @@
 	-
 -
 - # macOS Shell
-	- ## shell 类型
+	- ## Shell 类型
 		- macOS 内置了多种 Shell ，执行命令 `cat /etc/shells` 可以查看系统有哪些 Shell
 		- ```bash
 		  cat /etc/shells
@@ -24,4 +24,4 @@
 		  /bin/tcsh
 		  /bin/zsh
 		  ```
-		-
+	- 默认
