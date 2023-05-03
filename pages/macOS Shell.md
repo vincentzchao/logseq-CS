@@ -8,6 +8,9 @@
 	-
 -
 - # macOS Shell
+	- ## 官方资料
+		- Apple 历史文档
+			- [Shell Scripting Primer](https://developer.apple.com/library/archive/documentation/OpenSource/Conceptual/ShellScripting/Introduction/Introduction.html)
 	- ## Shell 类型
 		- macOS 内置了多种 Shell ，执行命令 `cat /etc/shells` 可以查看系统有哪些 Shell
 		- ```bash
