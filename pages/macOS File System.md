@@ -11,4 +11,7 @@ alias:: APFS, Apple File System
 		- Apple - [Add, delete, or erase APFS Volumes in Disk Utility on Mac](https://support.apple.com/guide/disk-utility/add-erase-or-delete-apfs-volumes-dskua9e6a110/mac)
 		- Apple - [About System Integrity Protection on your Mac](https://support.apple.com/HT204899)
 	- ## 第三方资料
-		- [Mac OS X 的系统目录结构]()
+		- ### 博文
+			- [Mac OS X 的系统目录结构](https://www.cnblogs.com/gujiande/p/9447006.html)
+-
+-
