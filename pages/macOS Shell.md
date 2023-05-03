@@ -1,0 +1,8 @@
+-
+- tags:: #macOS, Shell
+-
+- ==子目录==
+	- [[macOS 环境变量]]
+-
+- # macOS Shell
+	-

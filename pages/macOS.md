@@ -4,7 +4,7 @@
 - ==子目录==
 	- [[macOS 历史]]
 	- [[macOS File System]]
-	- [[macOS 环境变量]]
+	- [[macOS Shell]]
 	- [[Homebrew]]
 	-
 	-
