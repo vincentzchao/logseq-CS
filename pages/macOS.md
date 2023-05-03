@@ -4,8 +4,9 @@
 - ==子目录==
 	- [[macOS 历史]]
 	- [[macOS File System]]
-	- [[Homebrew]]
 	- [[macOS 环境变量]]
+	- [[Homebrew]]
+	-
 	-
 - # macOS
 	- ## 官方资料
