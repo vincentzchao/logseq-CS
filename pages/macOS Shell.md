@@ -27,5 +27,4 @@
 	- ## 默认 Shell
 		- 从 macOS Catalina 版开始， Mac 使用 [[zsh]] 作为默认登录 Shell 和交互式 Shell 。
 		- 执行 `echo $SHELL` 可以看到: `/bin/zsh` 。
-		-
 	-
