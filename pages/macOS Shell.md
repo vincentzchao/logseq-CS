@@ -4,7 +4,7 @@
 - ==子目录==
 	- [[macOS 环境变量]]
 	- [[Zsh]]
-	- [[warp]]
+	- [[Warp]]
 	-
 -
 - # macOS Shell

@@ -1,5 +1,6 @@
 -
--
+- tags:: #Shell
 - ==子目录==
 	- [[Oh My Zsh]]
+-
 -
