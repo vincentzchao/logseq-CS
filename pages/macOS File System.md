@@ -13,5 +13,13 @@ alias:: APFS, Apple File System
 	- ## 第三方资料
 		- ### 博文
 			- [Mac OS X 的系统目录结构](https://www.cnblogs.com/gujiande/p/9447006.html)
--
+	- ## Operation not permitted
+		- 参考:  [mac shell 脚本执行报错 Operation not permitted](https://segmentfault.com/a/1190000039919416)
+		- 执行 `ls -l` 会发现权限后面带了一个 `@` 。
+		- ![image.png](../assets/image_1683302546944_0.png)
+		- 从互联网上下载来的文件，会被 macOS 打上 com.apple.quarantine 标志，从而隔离文件。
+		- 需要执行如下命令去除
+		- ```zsh
+		  sudo xattr -r -d com.apple.quarantine yourdir
+		  ```
 -
