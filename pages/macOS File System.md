@@ -22,4 +22,10 @@ alias:: APFS, Apple File System
 		- ```zsh
 		  sudo xattr -r -d com.apple.quarantine yourdir
 		  ```
+		- 但又出现如下错误: `xattr: [Errno 1] Operation not permitted`
+		- 参考 [求助：Mac升级系统后, 某些文件夹执行脚本operation not permitted如何解决？](https://www.zhihu.com/question/518545517) 可知：
+			- 需关闭 macOS 的 SIP ( System Integrity Protection ）
+		-
+		-
+		-
 -
