@@ -1,5 +1,5 @@
 -
-- tags:: #Shell
+- tags:: #[[Unix Shell]]
 - ==子目录==
 	- [[Oh My Zsh]]
 -
