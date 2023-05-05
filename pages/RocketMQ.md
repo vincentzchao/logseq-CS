@@ -1,6 +1,6 @@
 alias:: Apache RocketMQ
 
-- tags:: #[[Message queue]]
+- tags:: [[消息中间件]]
 - ---
 - ==子目录==
 	-
