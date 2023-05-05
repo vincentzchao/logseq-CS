@@ -19,10 +19,11 @@ alias:: Linux 历史
 			- fedora ( **测试版本** ，更新很快，不够稳定；功能稳定后会添加到 **企业版本** )
 			- CentOS (基于已经发布的 **企业版本** ，除去商标信息、有版权的代码等内容， **免费** )
 		- debian 系列 （社区类 Linux 典范，最遵循 GNU 规范的 Linux 系统；debian 有是三个分支： stable、testing 和 unstable）
-			- ubuntu ( 基于 unstable 分支，做一些改进优化；有最新的软件包，bug较多；对 debian 的桌面进行了优化，桌面很漂亮； **免费** )
+			- Raspbian ( 树莓派官方的 OS )
+			- ubuntu ( 基于 unstable 分支，做一些改进优化；有最新的软件包，bug 较多；对 debian 的桌面进行了优化，桌面很漂亮； **免费** )
 				- mint (基于 ubuntu，外观像早期Windows)
 			- deepin (国产)
-		- SUSE ( **企业版本** ，简写为 SEL ，号称世界最华丽的操作系统，桌面使用漂亮的KDE)
+		- SUSE ( **企业版本** ，简写为 SEL ，号称世界最华丽的操作系统，桌面使用漂亮的 KDE )
 			- open SUSE (社区版，免费)
 		- gentoo Linux
 		- arch Linux
