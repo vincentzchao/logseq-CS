@@ -18,7 +18,7 @@ alias:: APFS, Apple File System
 		- 执行 `ls -l` 会发现权限后面带了一个 `@` 。
 		- ![image.png](../assets/image_1683302546944_0.png)
 		- 从互联网上下载来的文件，会被 macOS 打上 com.apple.quarantine 标志，从而隔离文件。
-		- 需要执行如下命令去除
+		- 需要执行如下命令去除。
 		- ```zsh
 		  sudo xattr -r -d com.apple.quarantine yourdir
 		  ```
