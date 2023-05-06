@@ -7,4 +7,5 @@ alias:: 树莓派
 - ---
 - ## 官方资料
 	- [Document](https://www.raspberrypi.com/documentation/)
--
+	- [Forum](https://forums.raspberrypi.com/)
+	-
