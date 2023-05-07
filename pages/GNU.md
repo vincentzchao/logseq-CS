@@ -1,5 +1,7 @@
 alias:: GNU's Not Unix
 
-- tags:: Linux
+- tags:: Free Software
 - ---
--
+- ==子目录==
+	- [[GNU/Linux]]
+	- GNU
