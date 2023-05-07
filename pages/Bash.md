@@ -1,4 +1,4 @@
-alias:: [[Bourne Again Shell]]
+alias:: [[Bourne Again Shell]], #[[Bourne-Again SHell]]
 
 - tags:: [[Unix Shell]]
 - ---
