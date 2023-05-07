@@ -7,5 +7,5 @@ alias:: GNU's Not Unix
 	- [[GNU Software]]
 - ---
 - ## 官方资料
-	- [官网](https://www.gnu.org/#More-GNU)
+	- [官网](https://www.gnu.org/)
 	-
