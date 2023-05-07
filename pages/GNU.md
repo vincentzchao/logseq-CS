@@ -4,4 +4,8 @@ alias:: GNU's Not Unix
 - ---
 - ==子目录==
 	- [[GNU/Linux]]
-	- GNU
+	- [[GNU Software]]
+- ---
+- ## 官方资料
+	- [官网](https://www.gnu.org/#More-GNU)
+	-
