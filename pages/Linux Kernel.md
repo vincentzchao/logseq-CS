@@ -4,4 +4,6 @@ alias:: Linux 内核
 - ---
 -
 - ## 官方资料
+	- [The Linux Kernel Archives](https://www.kernel.org/)
+	- [The Linux Kernel documentation](https://docs.kernel.org/)
 	-
