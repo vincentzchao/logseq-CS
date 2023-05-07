@@ -6,4 +6,6 @@ alias:: [[Bourne Again Shell]], #[[Bourne-Again SHell]]
 	- [[Bash 命令]]
 	-
 - ---
--
+- ## 官方资料
+	- [GNU Bash](https://www.gnu.org/software/bash/)
+	-
