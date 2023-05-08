@@ -13,5 +13,5 @@ tags:: #Unix
 	  getconf LONG_BIT
 	  32
 	  ```
--
+	-
 -
