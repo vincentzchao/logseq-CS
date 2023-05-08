@@ -4,9 +4,9 @@ alias:: GNU Package, GNU Packages
 - ---
 - ==子目录==
 	- Archiving
-		- [[tar]]
+		- [[Tar]]
 	- Software development
-		- [](https://www.gnu.org/software/coreutils/manual/)
+		- [[GNU Coreutils]]
 - ---
 - ## 官方资料
 	- [GNU Software Home Page](https://www.gnu.org/software/)
