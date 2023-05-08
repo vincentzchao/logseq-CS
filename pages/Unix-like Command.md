@@ -6,4 +6,6 @@ tags:: #Unix
 		- [[man command]]
 	- 查看系统信息
 		- [[uname command]]
+		- [[getconf Command]]
+		-
 	-
