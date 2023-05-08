@@ -1,4 +1,4 @@
-tags:: #[[GNU Coreutils]]
+tags:: #[[GNU Coreutils]], #GNU
 
 - ---
 -

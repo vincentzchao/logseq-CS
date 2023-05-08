@@ -7,6 +7,8 @@ alias:: GNU Package, GNU Packages
 		- [[Tar]]
 	- Software development
 		- [[GNU Coreutils]]
+	- Software libraries
+		- [[GNU C Library]]
 - ---
 - ## 官方资料
 	- [GNU Software Home Page](https://www.gnu.org/software/)

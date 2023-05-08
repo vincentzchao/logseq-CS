@@ -1,3 +1,5 @@
+alias:: #[[GNU Tar]]
+
 tags:: #[[GNU Software]]
 
 - ---
