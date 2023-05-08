@@ -4,4 +4,7 @@ alias:: #[[glibc]]
 - ---
 -
 - ## 官方资料
-	- [glibc home](https://www.gnu.org/software/libc/)
+	- [GNU C Library Home](https://www.gnu.org/software/libc/)
+	- [GNU C Library Doc](https://www.gnu.org/software/libc/manual/)
+	-
+-
