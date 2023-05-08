@@ -3,7 +3,7 @@ alias:: [[Coreutils]]
 - tags:: #[[GNU Software]]
 - ---
 - ==子目录==
-	- [[uname]]
+	- [[uname command]]
 	-
 - ---
 - ## 官方资料
