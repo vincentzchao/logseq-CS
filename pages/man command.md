@@ -4,4 +4,5 @@ alias:: man-db
 - ---
 -
 - ## 官方资料
+	- [man-db home](https://man-db.gitlab.io/man-db/)
 	-
