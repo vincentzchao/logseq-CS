@@ -5,6 +5,7 @@ alias:: #[[Apache Maven]]
 - ==子目录==
 	- [[Maven POM]]
 	- [[Maven Settings]]
+	- [[Maven Archetype]]
 	-
 	-
 - ---
