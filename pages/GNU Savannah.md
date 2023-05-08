@@ -1,6 +1,7 @@
-tags:: #[[GNU Software]]
+tags:: #[[GNU Software]], Savannah
 
 - ---
-- > 托管
+- > 一个托管 GNU Software 的平台
+-
 - ## 官方资料
 	- [Official Website](https://savannah.gnu.org/)
