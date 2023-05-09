@@ -5,7 +5,8 @@ tags:: 部署运维
 	- [[Linux History]]
 	- [[Linux Kernel]]
 - ---
-- # Linux
+- ## 权威资料
+	- [The Linux Document Project](https://tldp.org/)
 	-
 	-
 -
