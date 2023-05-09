@@ -16,3 +16,4 @@ alias:: POM,
 		- `<dependencyManagement>` 除了可以引入具体依赖的管理，还可以通过 `<scope>import</scope>` 引入 pom 类型的依赖中的 `<dependencyManagement>`
 -
 -
+-
