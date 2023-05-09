@@ -14,6 +14,11 @@ alias:: POM,
 	- 当前项目的 `<dependencyManagement>` 的优先级 高于 父项目的 `<dependencyManagement>` 。
 	- ### Importing Dependencies
 		- `<dependencyManagement>` 除了可以引入具体依赖的管理，还可以通过 `<scope>import</scope>` 引入 pom 类型的依赖中的 `<dependencyManagement>`
+- ## `<version>RELEASE</version>`
+	- 参考: https://maven.apache.org/pom.html#version-order-specification
+	- > The usage of '`final`', '`ga`', and '`release`' qualifiers is discouraged. Use no qualifier instead.
+	- 表示使用当前依赖的最新的发行版本
+	- Maven 已不推荐使用。
 -
 -
 -
