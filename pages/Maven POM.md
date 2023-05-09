@@ -15,7 +15,10 @@ alias:: POM,
 	- ### Importing Dependencies
 		- `<dependencyManagement>` 除了可以引入具体依赖的管理，还可以通过 `<scope>import</scope>` 引入 pom 类型的依赖中的 `<dependencyManagement>`
 - ## `<version>RELEASE</version>`
-	- 参考: https://maven.apache.org/pom.html#version-order-specification
+	- 参考:
+		- Maven doc - [version-order-specification](https://maven.apache.org/pom.html#version-order-specification)
+		- stackoverflow - [How do I tell Maven to use the latest version of a dependency?](https://stackoverflow.com/questions/30571/how-do-i-tell-maven-to-use-the-latest-version-of-a-dependency#comment8744781_30571)
+		- stackoverflow - [Maven RELEASE and LATEST version "numbers"](https://stackoverflow.com/questions/45567787/maven-release-and-latest-version-numbers)
 	- > The usage of '`final`', '`ga`', and '`release`' qualifiers is discouraged. Use no qualifier instead.
 	- 表示使用当前依赖的最新的发行版本
 	- Maven 已不推荐使用。
