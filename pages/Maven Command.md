@@ -6,6 +6,5 @@
 		  ```
 	- ### 部分模块不部署
 		- ``` sh
-		  
-		  
+		  mvn clean deploy -pl "!module1,!module2"
 		  ```
