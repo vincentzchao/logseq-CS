@@ -6,6 +6,8 @@ alias:: #[[Apache Maven]]
 	- [[Maven POM]]
 	- [[Maven Settings]]
 	- [[Maven Archetype]]
+	- [[Maven Command]]
+	-
 	-
 	-
 - ---
