@@ -1,4 +1,4 @@
-tags:: #[[GNU Coreutils]], #GNU
+tags:: #[[GNU Coreutils]], #GNU, #[[Unix-like Command]]
 
 - ---
 -

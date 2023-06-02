@@ -6,6 +6,8 @@ tags:: #Unix
 		- [[man command]]
 	- 查看系统信息
 		- [[uname command]]
-		- [[getconf Command]]
+		- [[getconf command]]
+	- 查看进程信息
+		- [[ps command]]
 		-
 	-
