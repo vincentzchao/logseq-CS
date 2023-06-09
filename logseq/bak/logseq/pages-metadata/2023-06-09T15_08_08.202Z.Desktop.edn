@@ -1,12 +1,6 @@
 [{:block/name "a",
   :block/created-at 1679322179151,
   :block/updated-at 1679322179151}
- {:block/name "aalibaba druid",
-  :block/created-at 1686323184373,
-  :block/updated-at 1686323184373}
- {:block/name "aes",
-  :block/created-at 1686323184390,
-  :block/updated-at 1686323184390}
  {:block/name "alias",
   :block/created-at 1679322043198,
   :block/updated-at 1679322043198}
@@ -49,9 +43,6 @@
  {:block/name "apr 9th, 2023",
   :block/created-at 1681049392029,
   :block/updated-at 1681049392029}
- {:block/name "asymmetric encryption",
-  :block/created-at 1686323184681,
-  :block/updated-at 1686323184681}
  {:block/name "authentication",
   :block/created-at 1680187852771,
   :block/updated-at 1680369249057}
@@ -61,9 +52,6 @@
  {:block/name "b",
   :block/created-at 1679322179151,
   :block/updated-at 1679322179151}
- {:block/name "base64",
-  :block/created-at 1686323184413,
-  :block/updated-at 1686323184413}
  {:block/name "bash",
   :block/created-at 1684155774539,
   :block/updated-at 1684155774539}
@@ -130,18 +118,6 @@
  {:block/name "darwin",
   :block/created-at 1684155774655,
   :block/updated-at 1684155774655}
- {:block/name "data base",
-  :block/created-at 1686323184819,
-  :block/updated-at 1686323184819}
- {:block/name "database",
-  :block/created-at 1686323184659,
-  :block/updated-at 1686323184659}
- {:block/name "database connection pool",
-  :block/created-at 1686323184452,
-  :block/updated-at 1686323184452}
- {:block/name "database connection pooling",
-  :block/created-at 1686323184374,
-  :block/updated-at 1686323184374}
  {:block/name "deployment",
   :block/created-at 1684155776131,
   :block/updated-at 1684155776131}
@@ -151,12 +127,6 @@
  {:block/name "development tools",
   :block/created-at 1684155776562,
   :block/updated-at 1684155776562}
- {:block/name "docker",
-  :block/created-at 1686323184463,
-  :block/updated-at 1686323184463}
- {:block/name "docker command",
-  :block/created-at 1686323184462,
-  :block/updated-at 1686323184462}
  {:block/name "doing",
   :block/created-at 1679322179151,
   :block/updated-at 1679322179151}
@@ -175,9 +145,6 @@
  {:block/name "favorites",
   :block/created-at 1679322179151,
   :block/updated-at 1679322179151}
- {:block/name "feign",
-  :block/created-at 1686323184620,
-  :block/updated-at 1686323184620}
  {:block/name "formatting",
   :block/created-at 1684155775935,
   :block/updated-at 1684155775935}
@@ -283,9 +250,6 @@
  {:block/name "jaas",
   :block/created-at 1680187852775,
   :block/updated-at 1680187852775}
- {:block/name "jars",
-  :block/created-at 1686323184542,
-  :block/updated-at 1686323184542}
  {:block/name "jaspyt-spring-boot-starter",
   :block/created-at 1684155775615,
   :block/updated-at 1684155775615}
@@ -295,9 +259,6 @@
  {:block/name "java",
   :block/created-at 1679322042916,
   :block/updated-at 1679322042916}
- {:block/name "java api for restful web services",
-  :block/created-at 1686323184526,
-  :block/updated-at 1686323184526}
  {:block/name "java authentication and authorization service",
   :block/created-at 1680187852777,
   :block/updated-at 1680187852777}
@@ -328,36 +289,18 @@
  {:block/name "java simplified encryption",
   :block/created-at 1684155774944,
   :block/updated-at 1684155774944}
- {:block/name "java specification request",
-  :block/created-at 1686323184542,
-  :block/updated-at 1686323184542}
- {:block/name "java specification requests",
-  :block/created-at 1686323184542,
-  :block/updated-at 1686323184542}
  {:block/name "javascript",
   :block/created-at 1684155776050,
   :block/updated-at 1684155776050}
  {:block/name "java基础",
   :block/created-at 1679322043110,
   :block/updated-at 1679322043110}
- {:block/name "jax-rs",
-  :block/created-at 1686323184524,
-  :block/updated-at 1686323184524}
  {:block/name "jca",
   :block/created-at 1679930099752,
   :block/updated-at 1679930099752}
  {:block/name "jmeter",
   :block/created-at 1679322043387,
   :block/updated-at 1679322043387}
- {:block/name "jsr",
-  :block/created-at 1686323184541,
-  :block/updated-at 1686323184541}
- {:block/name "jsr 311",
-  :block/created-at 1686323184526,
-  :block/updated-at 1686323184526}
- {:block/name "jun 9th, 2023",
-  :block/created-at 1686323184866,
-  :block/updated-at 1686323184866}
  {:block/name "junit",
   :block/created-at 1684155774957,
   :block/updated-at 1684155774957}
@@ -463,9 +406,6 @@
  {:block/name "maven archetypes",
   :block/created-at 1684155775262,
   :block/updated-at 1684155775262}
- {:block/name "maven command",
-  :block/created-at 1686323184577,
-  :block/updated-at 1686323184577}
  {:block/name "maven pom",
   :block/created-at 1684155775276,
   :block/updated-at 1684155775276}
@@ -478,9 +418,6 @@
  {:block/name "may 1st, 2023",
   :block/created-at 1684155774407,
   :block/updated-at 1684155774407}
- {:block/name "may 27th, 2023",
-  :block/created-at 1686323184336,
-  :block/updated-at 1686323184336}
  {:block/name "message digest",
   :block/created-at 1679804359646,
   :block/updated-at 1679804359646}
@@ -517,9 +454,6 @@
  {:block/name "oh my zsh",
   :block/created-at 1684155776036,
   :block/updated-at 1684155776036}
- {:block/name "openfeign",
-  :block/created-at 1686323184619,
-  :block/updated-at 1686323184619}
  {:block/name "operating system",
   :block/created-at 1684155775410,
   :block/updated-at 1684155775410}
@@ -553,36 +487,24 @@
  {:block/name "program language",
   :block/created-at 1680187852919,
   :block/updated-at 1680187852919}
- {:block/name "ps command",
-  :block/created-at 1686323184631,
-  :block/updated-at 1686323184631}
  {:block/name "python",
   :block/created-at 1679322042916,
   :block/updated-at 1679322042916}
  {:block/name "raspberry pi",
   :block/created-at 1684155775500,
   :block/updated-at 1684155775500}
- {:block/name "rdbms",
-  :block/created-at 1686323184586,
-  :block/updated-at 1686323184586}
  {:block/name "redis",
   :block/created-at 1679322042921,
   :block/updated-at 1679322042921}
  {:block/name "redis命令",
   :block/created-at 1679322043155,
   :block/updated-at 1679322043155}
- {:block/name "relational database management system",
-  :block/created-at 1686323184662,
-  :block/updated-at 1686323184662}
  {:block/name "rfc",
   :block/created-at 1684155775510,
   :block/updated-at 1684155775510}
  {:block/name "rocketmq",
   :block/created-at 1679322043196,
   :block/updated-at 1679322043196}
- {:block/name "rsa",
-  :block/created-at 1686323184680,
-  :block/updated-at 1686323184680}
  {:block/name "rust",
   :block/created-at 1679322042917,
   :block/updated-at 1679322042917}
@@ -637,21 +559,6 @@
  {:block/name "slf4j",
   :block/created-at 1680189233351,
   :block/updated-at 1680189378520}
- {:block/name "spacification",
-  :block/created-at 1686323184538,
-  :block/updated-at 1686323184538}
- {:block/name "spec",
-  :block/created-at 1686323184721,
-  :block/updated-at 1686323184721}
- {:block/name "specification",
-  :block/created-at 1686323184720,
-  :block/updated-at 1686323184720}
- {:block/name "specifications",
-  :block/created-at 1686323184722,
-  :block/updated-at 1686323184722}
- {:block/name "specs",
-  :block/created-at 1686323184722,
-  :block/updated-at 1686323184722}
  {:block/name "spring",
   :block/created-at 1679804359627,
   :block/updated-at 1679804359627}
@@ -709,9 +616,6 @@
  {:block/name "swift",
   :block/created-at 1681049392001,
   :block/updated-at 1681049392001}
- {:block/name "symmetric encryption",
-  :block/created-at 1686323184807,
-  :block/updated-at 1686323184807}
  {:block/name "tags",
   :block/created-at 1679322043010,
   :block/updated-at 1679322043010}
