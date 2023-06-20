@@ -1,0 +1,2 @@
+-
+- 使用 ENGINE = Distributed() 参数定义的表，无法执行 insert ，需要到他引用的那个表中插入。
