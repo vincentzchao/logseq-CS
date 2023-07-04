@@ -1,6 +1,6 @@
-tags:: 部署运维
+tags:: [[部署运维]]
+---
 
-- ---
 - ==子目录==
 	- [[Unix History]]
 	- [[Unix Shell]]
