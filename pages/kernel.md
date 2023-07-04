@@ -1,7 +1,7 @@
-alias:: 内核, 操作系统内核
+alias:: [[内核]],[[操作系统内核]] 
+tags:: [[OS]]
+---
 
-- tags:: OS
-- ---
 - ==子目录==
 	- [[Unix Kernel]]
 	- [[Linux Kernel]]

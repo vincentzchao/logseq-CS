@@ -1,7 +1,7 @@
-alias:: Linux 内核
+alias:: [[Linux 内核]]
+tags:: [[Linux]], [[kernel]]、
+---
 
-- tags:: #Linux, #kernel
-- ---
 -
 - ## 官方资料
 	- [The Linux Kernel Archives](https://www.kernel.org/)
