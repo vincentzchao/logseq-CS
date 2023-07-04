@@ -1,4 +1,4 @@
-alias:: man-db
+alias:: [[man-db]]
 tags:: [[NonGNU Savannah]], [[Free Software]]
 ---
 

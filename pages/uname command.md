@@ -1,8 +1,6 @@
-tags:: #[[GNU Coreutils]], #GNU, #[[Unix-like Command]]
+tags:: [[GNU Coreutils]], [[GNU]], [[Unix-like Command]]
+---
 
-- ---
--
-- ---
 - ## 查看系统信息
 	- 执行 `uanme -a`，可得到如下类似内容：
 	- ``` bash
