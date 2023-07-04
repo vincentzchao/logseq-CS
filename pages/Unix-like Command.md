@@ -1,6 +1,6 @@
 tags:: #Unix
+---
 
-- ---
 - ==子目录==
 	- 查看命令文档
 		- [[man command]]
@@ -11,3 +11,4 @@ tags:: #Unix
 		- [[ps command]]
 		-
 	-
+-
