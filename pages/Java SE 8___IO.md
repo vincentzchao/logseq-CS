@@ -9,6 +9,6 @@ tags:: [[Java]]
 - ---
 -
 - ## IO 体系
-	- `io` : 在 `java.io`包中。
-	- `nio`: 在 `java.nio`包中
+	- `io` : 在 [java.io](https://docs.oracle.com/javase/8/docs/api/java/io/package-summary.html) 包中。
+	- `nio`: 在 [java.nio](https://docs.oracle.com/javase/8/docs/api/java/nio/package-summary.html) 包中
 	-
