@@ -11,4 +11,7 @@ tags:: [[Java]], [[Java SE]]
 		- [Java SE 8 Documentation](https://docs.oracle.com/javase/8/docs/)
 			- [Java SE 8 Security](https://docs.oracle.com/javase/8/docs/technotes/guides/security/index.html)
 		- [Java SE 8 API Specification](https://docs.oracle.com/javase/8/docs/api/index.html)
--
+- ## Java SE 8 体系结构
+	- ![image.png](../assets/image_1688570243812_0.png)
+	- JDK (Java SE Development Kit)
+	-
