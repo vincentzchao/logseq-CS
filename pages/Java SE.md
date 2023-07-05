@@ -1,4 +1,5 @@
-alias:: Java Platform Standard Edition
+alias:: [[Java Platform Standard Edition]]
+tags:: [[Java]]
+---
 
-- tags:: Java
 -
