@@ -2,10 +2,6 @@ alias:: [[Java Platform Enterprise Edition]]
 tags:: [[Java]]
 ---
 
-- ==子目录==
-	- [[Java SE 基础]]
-	- [[Java SE 8]]
-- ---
 -
 - ## 官方资料
 	- #### [Java Platform, Enterprise Edition (Java EE)](https://www.oracle.com/java/technologies/java-ee-glance.html)
