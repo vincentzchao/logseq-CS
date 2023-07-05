@@ -19,5 +19,8 @@ tags:: [[Java]], [[Java SE]]
 		- `JVM` (Java Virtual Machine)
 		- `JDK` 是 `JRE` 的超集 (superset), `JRE` 包含 `JVM` 。
 		- JDK = JRE + Tools (包含 compilers, debuggers 等工具)
+		- JRE = JVM + Libraries + 其它组件
+		- 注意: JRE 中的包含 `Java SE specification` 中没有的规定的组件。
+		-
 	-
 -
