@@ -1,8 +1,9 @@
--
-- tags:: 部署运维, Unix, Apple Technology
-- ---
+tags:: [[部署运维]], [[Unix]], [[Apple Technology]]
+---
+
 - ==子目录==
 	- [[macOS 历史]]
+	- [[macOS 快捷键]]
 	- [[macOS File System]]
 	- [[macOS Shell]]
 	- [[Homebrew]]
