@@ -1,4 +1,4 @@
-tags:: [[Java SE 8]]
+tags:: [[Java]] 
 ---
 
 -

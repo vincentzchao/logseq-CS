@@ -1,10 +1,8 @@
-tags:: [[Java]], [[Java SE]]
+alias:: [[Java Platform Standard Edition]] 
+tags:: [[Java]] 
 ---
 
-- ==子目录==
-	- [[Java SE 8/IO]]
-	- [[Java SE 8/Security]]
-- ---
+-
 - ## 官方资料
 	- #### [Java Platform, Standard Edition (Java SE)](https://docs.oracle.com/en/java/javase/index.html)
 		- [Java SE 8](https://docs.oracle.com/javase/8/)

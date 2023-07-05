@@ -2,18 +2,14 @@ tags:: [[Program Language]]
 ---
 
 - ==子目录==
-	- [[Java SE 基础]]
-	- [[Java SE 8]]
+	- [[Java SE]]
+		- [[Java SE 8]]
 	- [[Java EE]]
 - ---
 -
 - ## 官方资料
 	- ### Technologies
 		- #### [Java Platform, Standard Edition (Java SE)](https://docs.oracle.com/en/java/javase/index.html)
-			- [Java SE 8](https://docs.oracle.com/javase/8/)
-				- [Java SE 8 Documentation](https://docs.oracle.com/javase/8/docs/)
-					- [Java SE 8 Security](https://docs.oracle.com/javase/8/docs/technotes/guides/security/index.html)
-				- [Java SE 8 API Specification](https://docs.oracle.com/javase/8/docs/api/index.html)
 		- #### [Java Platform, Enterprise Edition (Java EE)](https://www.oracle.com/java/technologies/java-ee-glance.html)
 			- [Java EE 7 and Earlier](https://docs.oracle.com/javaee/7/index.html)
 				- [Java EE 7 and Earlier Documentation](https://javaee.github.io/glassfish/documentation4)
