@@ -13,9 +13,11 @@ tags:: [[Java]], [[Java SE]]
 		- [Java SE 8 API Specification](https://docs.oracle.com/javase/8/docs/api/index.html)
 - ## Java SE 8 体系结构
 	- ![image.png](../assets/image_1688570243812_0.png)
-	- ### JDK 与 JRE
+	- ### JDK、JRE与JVM的关系
 		- `JDK` (Java SE Development Kit)
 		- `JRE` (Java SE Runtime Environment)
-		- `JDK` 是 `JRE` 的超集 (superset)。
+		- `JVM` (Java Virtual Machine)
+		- `JDK` 是 `JRE` 的超集 (superset), `JRE` 包含 `JVM` 。
 		- JDK = JRE + Tools (包含 compilers, debuggers 等工具)
 	-
+-
