@@ -8,4 +8,7 @@ tags:: [[Java]]
 	- [JavaGuide - IO](https://javaguide.cn/java/io/io-basis.html)
 - ---
 -
-- ##
+- ## IO 体系
+	- `io` : 在 `java.io`包中。
+	- `nio`: 在 `java.nio`包中
+	-
