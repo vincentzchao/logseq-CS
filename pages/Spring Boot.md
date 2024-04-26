@@ -23,10 +23,8 @@ tags:: [[Java]], [[Framework]], [[Spring]]
 		  logseq.order-list-type:: number
 			- ~~[Documentation Overview](https://docs.spring.io/spring-boot/docs/2.3.4.RELEASE/reference/html/documentation-overview.html#boot-documentation)~~
 			  logseq.order-list-type:: number
-			- [Getting Started](https://docs.spring.io/spring-boot/docs/2.3.4.RELEASE/reference/html/getting-started.html#getting-started)
+			- ~~[Getting Started](https://docs.spring.io/spring-boot/docs/2.3.4.RELEASE/reference/html/getting-started.html#getting-started)~~
 			  logseq.order-list-type:: number
-				- 学到了
-				  logseq.order-list-type:: number
 			- [Using Spring Boot](https://docs.spring.io/spring-boot/docs/2.3.4.RELEASE/reference/html/using-spring-boot.html#using-boot)
 			  logseq.order-list-type:: number
 			- appendices

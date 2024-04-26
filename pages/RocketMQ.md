@@ -1,11 +1,8 @@
-alias:: Apache RocketMQ
+alias:: [[Apache RocketMQ]]
+tags:: [[Message Queue]]
+---
 
-- tags:: [[消息中间件]]
-- ---
 - ==子目录==
 	-
 - ---
-- # RocketMQ
-	-
--
 -
