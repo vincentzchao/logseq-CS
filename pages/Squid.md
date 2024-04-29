@@ -10,7 +10,6 @@ tags:: [[Network Proxy]]
 		- ![image.png](../assets/image_1712030497812_0.png)
 		- Squid Terminal 用于执行命令 (最好 **以管理员身份运行** )。
 		- Squid Server Tray 用于启动代理服务器。
-	- ### 配置
 - ## 配置
 	- ### 隐藏客户端 IP
 		- 参考: [Squid 配置高匿代理](https://xnathan.com/2017/03/01/squid-anony-proxy/)
