@@ -1,7 +1,4 @@
-## API
-	- Browser API
-	- 3rd Party API
-- ## Interpreted VS compiled
+## Interpreted VS compiled
 	- JavaScript 采用 **just-in-time compiling (即时编译)** 技术，在代码被使用时，会被编译成 binary 格式执行，以提高性能。
 	- 但是，由于编译是在 **run time** 发生的 (而不是事先执行) ，所以 JavaScript 仍然被认为是 `Interpreted Language` 。
 - ## Apply JavaScript
@@ -83,11 +80,10 @@
 		  ```
 	- ### JavaScript 加载策略
 		- 上面的 `Internal JS` 将代码包裹在 `document.addEventListener("DOMContentLoaded", () => {})` 之中, 保证 JS 在 `DOMContentLoaded` event 被触发时 (即 HTML 加载和解析之后) 执行。
-		- 上面的 `External JS`使用 `defer` 保证在页面加载完成后再执行 JavaScript 代码, 这种情况下 JS 和 HTML DOM 是同时加载的。
+		- 上面的 `External JS` 使用 `defer` 保证在页面加载完成后再执行 JavaScript 代码, 这种情况下 JS 和 HTML DOM 是同时加载的。
 		- `defer` 只能作用在 `External JS` , `Internal JS` 在 `<script>` 标签上使用这个无效。
 		- 一个 old-fashioned 方法是将 `<script>` 放到所有 HTML 元素的后面, `</body>` 的前面:
 			- 这种方法的问题是，会导致浏览器在 加载完所有 HTML DOM 之后, 才加载和解析 JS, 导致网站变慢.
-		-
 - ---
 - ## 参考
 	- [MDN - What is JavaScript?](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript)
