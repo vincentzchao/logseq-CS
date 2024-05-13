@@ -27,8 +27,8 @@ tags:: [[CSS]]
 	- ### 语法
 		- ```css
 		  h1 {
-		  color: red;
-		  font-size: 5em;
+		    color: red;
+		    font-size: 5em;
 		  }
 		  ```
 		- 以 `selector` 开头。
@@ -76,7 +76,7 @@ tags:: [[CSS]]
 		      background-color: yellow;
 		      border: 1px solid black;
 		    }
-		  - p {
+		    p {
 		      color: red;
 		    }
 		  </style>

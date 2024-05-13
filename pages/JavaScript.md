@@ -7,6 +7,8 @@ alias:: [[JS]]
 - ## 学习路线
 	- 基础概念: [[JavaScript/Concept]]
 	  logseq.order-list-type:: number
+	- 基本语法: [[JavaScript/Syntax]]
+	  logseq.order-list-type:: number
 	- [[浏览器是如何渲染一个页面的]]
 	  logseq.order-list-type:: number
 	- logseq.order-list-type:: number
