@@ -14,5 +14,12 @@
 		  const name = "Mahalia";
 		  const greeting = `Hello ${name}`;
 		  ```
+- ## loop
+	- ### for...of
+		- ``` js
+		  const resetParas = document.querySelectorAll(".resultParas p");
+		  for (const resetPara of resetParas) {
+		    resetPara.textContent = "";
+		  }
+		  ```
 	-
--
