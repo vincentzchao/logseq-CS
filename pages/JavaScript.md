@@ -13,7 +13,8 @@ alias:: [[JS]]
 	  logseq.order-list-type:: number
 	- logseq.order-list-type:: number
 - ## 当前进度
-	- 下一步学习 [What went wrong? Troubleshooting JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_went_wrong)
+	- 下一步学习 [Storing the information you need — Variables](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables)
+	-
 	-
 	-
 -
