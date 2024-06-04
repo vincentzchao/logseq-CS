@@ -29,3 +29,4 @@ tags:: [[Browser Extension]], [[Chrome]]
 		- 目前学习完了[Get Started Guide](https://developer.chrome.com/docs/extensions/mv3/getstarted/)
 		- 建议接下来学习: [Debug extensions](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/#debug_bg)
 	-
+-
