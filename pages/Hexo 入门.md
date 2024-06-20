@@ -1,6 +1,9 @@
 tags:: [[Hexo]]
 ---
 
+- ## 为什么使用 Hexo
+	- Hexo 可以将 Markdown 文件解析成静态网页;
+	- 并且可以使用插件, 方便地将产生的静态网页一键部署到常用平台 (如 Github 、Vercel、私有服务器(使用 SFTP) 等) .
 - ## 安装与初始化
 	- 安装 Git 与 Node.js .
 	  logseq.order-list-type:: number
@@ -57,7 +60,7 @@ tags:: [[Hexo]]
 		- 每篇 `Article` 都对应着一种 `Layout` , 使用 `hexo new [layout] <title>` 命令创建 `Article` 时需要指定 `Layout` .
 		- 每种 `Layout` 都对应着一个位于 `scaffolds/` 目录下的同名模板文件 , 使用 `hexo new [layout] <title>` 命令创建 `Article` 时 , 会基于模板文件进行创建 .
 		- 使用 `hexo new [layout] <title>` 命令创建的 `Article` , 会保存在 `source/` 目录下的指定子目录中 .
-- ## 编写文章
+- ## 创建文章
 	- 参考: [Hexo Docs - Command - new ](https://hexo.io/docs/commands#new)
 	- ### Layout 的种类
 		- 默认 `Layout` : `draft`、 `post` 、 `page`
