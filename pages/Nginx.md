@@ -1,4 +1,4 @@
-tags:: [[Server]]
+tags:: [[Web Server]]
 ---
 
 - ## 学习路线
