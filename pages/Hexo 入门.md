@@ -131,7 +131,7 @@ tags:: [[Hexo]]
 			  ```
 	- ### 主题配置文件
 		- 两种方式：
-			- 在根目录创建 `_config.{主题名}.yml` 文件并进行配置 ( ==推荐采用这种方式，优雅== ).
+			- 在根目录创建 `_config.{主题名}.yml` 文件，复制所有默认配置到此文件中，进行自定义配置 ( ==推荐采用这种方式，优雅== ).
 			  logseq.order-list-type:: number
 			- 在 `_config.yml` 文件中配置，配置前缀为 `theme_config` .
 			  logseq.order-list-type:: number
@@ -141,19 +141,75 @@ tags:: [[Hexo]]
 				  ```
 			- (不建议直接使用主题项目根目录下的 `_config.yml` 文件，这个在升级主题时会被新的文件覆盖)
 		- 参考: [NexT Docs - Configuration](https://theme-next.js.org/docs/getting-started/configuration.html)
-	- ### NexT 主题配置建议
-		- 参考: [NexT Docs - Theme Settings](https://theme-next.js.org/docs/theme-settings/)
-		- 搜索 `非默认值` 可知都改了哪些配置：
-		-
-- ## 导航栏
+- ## NexT 主题使用
+	- 参考: [NexT Docs - Theme Settings](https://theme-next.js.org/docs/theme-settings/)
+	- ### 字数统计
+		- 执行如下命令。
+		  logseq.order-list-type:: number
+			- ``` sh
+			  npm install hexo-word-counter
+			  hexo clean
+			  ```
+		- 在 Hexo 的 `_config.yml` 文件中加入如下配置。
+		  logseq.order-list-type:: number
+			- ``` yml
+			  # 非默认值 
+			  # 参考: https://github.com/next-theme/hexo-word-counter
+			  symbols_count_time:
+			    # 文章的字数
+			    symbols: true
+			    # 文章的阅读时长
+			    time: true
+			    # footer 显示总字数
+			    total_symbols: false
+			    # footer 显示总阅读时长
+			    total_time: false
+			    exclude_codeblock: false
+			    awl: 4
+			    wpm: 275
+			    suffix: "mins."
+			  ```
+		- 在 `_config.next.yml` 中作如下配置。
+		  logseq.order-list-type:: number
+			- ``` yml
+			  post_meta:
+			    # 非默认值
+			    # 去掉 文章 meta 属性的文字描述，只保留图标和属性的值
+			    item_text: false
+			  
+			  symbols_count_time:
+			    # 非默认值
+			    # 让字数统计的 mata 属性，和其他属性保持在同一行
+			    separated_meta: false
+			    item_text_total: false
+			  ```
+	- ### 文章更新时间
+		- 参考: [NexT Docs - Post Meta Display](https://theme-next.js.org/docs/theme-settings/posts#Post-Meta-Display)
+	- ### 将 Archives 设置为主页
+		- 参考: [NexT Docs - Use Archive Page as Home Page](https://theme-next.js.org/docs/theme-settings/custom-pages#Use-Archive-Page-as-Home-Page)
+	- ### 新增 Tags、Categories、404 页面
+		- 参考: [NexT Docs - Custom Pages](https://theme-next.js.org/docs/theme-settings/custom-pages)
 	-
-- ## 特色语法
-	-
-- ## 配置
+	- ### read more
+		- 参考: [NexT Docs - Preamble Text](https://theme-next.js.org/docs/theme-settings/posts#Preamble-Text)
+		- 使用 `<!-- more -->` 可以让首页的文章只显示部分内容，并新增一个 `Read more` 链接。
+		- ![image.png](../assets/image_1719202381737_0.png){:height 286, :width 503}
+-
 - ## RSS
-	-
+- ## SEO
+- ## 搜索功能
+- ## 阅读进度
 - ## 备案号
+- ## 插入图片
 	-
+-
+- ## 备份配置文件
+	- 整个 Hexo 项目的搭建，两个文件极其重要，最好有备份：
+		- `_config.yml` Hexo 配置文件。
+		  logseq.order-list-type:: number
+		- `_config.{主题名称}.yml` 主题配置文件。
+		  logseq.order-list-type:: number
+	- (两个配置文件中，搜索 `非默认值` 可知都改了哪些配置。)
 - ---
 - ## 参考
 	- [Hexo Docs](https://hexo.io/docs/)

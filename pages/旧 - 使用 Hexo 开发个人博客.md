@@ -144,8 +144,8 @@ tags:: [[Hexo]]
 	  permalink: :year/:month/:day/:title/
 	  permalink_defaults:
 	  pretty_urls:
-	  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
-	  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+	    trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+	    trailing_html: true # Set to false to remove trailing '.html' from permalinks
 	  
 	  # Directory
 	  source_dir: source
@@ -162,38 +162,38 @@ tags:: [[Hexo]]
 	  default_layout: post
 	  titlecase: false # Transform title into titlecase
 	  external_link:
-	  enable: true # Open external links in new tab
-	  field: site # Apply to the whole site
-	  exclude: ''
+	    enable: true # Open external links in new tab
+	    field: site # Apply to the whole site
+	    exclude: ''
 	  filename_case: 0
 	  render_drafts: false
 	  post_asset_folder: true
 	  marked:
-	  prependRoot: true
-	  postAsset: true
+	    prependRoot: true
+	    postAsset: true
 	  relative_link: false
 	  future: true
 	  highlight:
-	  enable: true
-	  line_number: true
-	  auto_detect: false
-	  tab_replace: ''
-	  wrap: true
-	  hljs: false
+	    enable: true
+	    line_number: true
+	    auto_detect: false
+	    tab_replace: ''
+	    wrap: true
+	    hljs: false
 	  prismjs:
-	  enable: true
-	  preprocess: true
-	  line_number: true
-	  tab_replace: ''
+	    enable: true
+	    preprocess: true
+	    line_number: true
+	    tab_replace: ''
 	  
 	  # Home page setting
 	  # path: Root path for your blogs index page. (default = '')
 	  # per_page: Posts displayed per page. (0 = disable pagination)
 	  # order_by: Posts order. (Order by date descending by default)
 	  index_generator:
-	  path: ''
-	  per_page: 10
-	  order_by: -date
+	    path: ''
+	    per_page: 10
+	    order_by: -date
 	  
 	  # Category & Tag
 	  default_category: uncategorized
@@ -234,49 +234,49 @@ tags:: [[Hexo]]
 	  ## Docs: https://hexo.io/docs/one-command-deployment
 	  
 	  #deploy:
-	  #type: git
-	  #repo: https://github.com/nigream/nigream.github.io
-	  #branch: gh-pages-localImages
+	    #type: git
+	    #repo: https://github.com/nigream/nigream.github.io
+	    #branch: gh-pages-localImages
 	  
 	  deploy:
 	  - type: git
-	  repo: https://gitee.com/nigream/nigream
-	  branch: gitee-pages
-	  message: Site updated:({{ now('YYYY-MM-DD HH:mm:ss') }})
+	    repo: https://gitee.com/nigream/nigream
+	    branch: gitee-pages
+	    message: Site updated:({{ now('YYYY-MM-DD HH:mm:ss') }})
 	  - type: git
-	  repo: https://github.com/nigream/nigream.github.io
-	  branch: gh-pages
-	  message: Site updated:({{ now('YYYY-MM-DD HH:mm:ss') }})
+	    repo: https://github.com/nigream/nigream.github.io
+	    branch: gh-pages
+	    message: Site updated:({{ now('YYYY-MM-DD HH:mm:ss') }})
 	  
-	  
+	    
 	  feed:
-	  type: atom
-	  path: atom.xml
-	  limit: 20
-	  hub:
-	  content:
-	  content_limit: 140
-	  content_limit_delim: ' '
-	  order_by: -date
-	  icon: icon.png
-	  autodiscovery: true
-	  template:
+	    type: atom
+	    path: atom.xml
+	    limit: 20
+	    hub:
+	    content:
+	    content_limit: 140
+	    content_limit_delim: ' '
+	    order_by: -date
+	    icon: icon.png
+	    autodiscovery: true
+	    template:
 	  
 	  symbols_count_time:
-	  # 文章字数
-	  symbols: false
-	  # 阅读时长
-	  time: false
-	  # 总文章字数
-	  total_symbols: false
-	  # 阅读总时长
-	  total_time: false
-	  # 是否排除代码统计
-	  exclude_codeblock: false
-	  # 平均字长 即将多少个字符统计为1个字数
-	  awl: 100
-	  # 每分钟的字数 阅读速度
-	  wpm: 275
-	  # 统计单位 这里是分钟
-	  suffix: "mins."
+	    # 文章字数
+	    symbols: false
+	    # 阅读时长
+	    time: false
+	    # 总文章字数
+	    total_symbols: false
+	    # 阅读总时长
+	    total_time: false
+	    # 是否排除代码统计
+	    exclude_codeblock: false
+	    # 平均字长 即将多少个字符统计为1个字数
+	    awl: 100
+	    # 每分钟的字数 阅读速度
+	    wpm: 275
+	    # 统计单位 这里是分钟
+	    suffix: "mins."
 	  ```
