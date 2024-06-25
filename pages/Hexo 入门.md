@@ -106,13 +106,10 @@ tags:: [[Hexo]]
 	  logseq.order-list-type:: number
 	- 提交编辑后的内容到代码仓库 .
 	  logseq.order-list-type:: number
-	- ### 部署: 服务器 + Caddy
-		- 服务器上 `git pull` 拉取最新的博客内容 ，执行 `hexo generate` 生成静态网站 .
-		  logseq.order-list-type:: number
-		- 服务器采用 Caddy 托管 `public/` 目录下的内容 .
-		  logseq.order-list-type:: number
-	- ### 一键部署到常用平台
-		- 参考: [Hexo Docs - one command deployment](https://hexo.io/docs/one-command-deployment)
+	- 执行 `hexo clean && hexo deploy` 将生成的静态网站推送到远程仓库的 `public` 分支 .
+	  logseq.order-list-type:: number
+	- 服务器拉取远程仓库最新的内容，然后切换到 `public` 分支，对这个分支下的内容进行部署 .
+	  logseq.order-list-type:: number
 - ## 主题
 	- 下面以 [hexo-theme-next](https://github.com/next-theme/hexo-theme-next) 为例介绍主题的使用：
 	- ![image.png](../assets/image_1719073590248_0.png){:height 219, :width 689}
