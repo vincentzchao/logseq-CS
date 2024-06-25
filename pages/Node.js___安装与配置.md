@@ -7,7 +7,6 @@
 		  logseq.order-list-type:: number
 	- ### 使用 nvm 安装
 		- [使用 nvm 安装 Node.js](https://nodejs.org/en/download/package-manager)
-		-
 - ## 修改全局模块下载路径
 	- 安装后目录结构如下：
 		- ![image-20220627010407315.png](../assets/image-20220627010407315_1718524589574_0.png){:height 249, :width 622}
@@ -61,7 +60,7 @@
 	- 执行 `corepack enable` 即可开启 `corepack`  ，执行 `yarn -v` 查看版本。
 - ## 配置 npm 镜像
 	- ### 方法一
-		- 执行 `npm config set registry https://registry.npm.taobao.org/` 。
+		- 执行 `npm config set registry https://registry.npmmirror.com` 。
 		  logseq.order-list-type:: number
 		- 执行 `npm config get registry` 进行查看。
 		  logseq.order-list-type:: number

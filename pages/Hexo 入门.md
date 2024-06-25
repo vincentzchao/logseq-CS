@@ -83,7 +83,7 @@ tags:: [[Hexo]]
 		- ( `post` 是默认 **Layout** , 所以可以省略; `_config.yml` 文件中可以修改这个默认值 . )
 	- ### draft 文章
 		- 执行 `hexo new draft <title>` 命令 , 将会基于 `scaffolds/draft.md` 模板 , 生成 `source/_drafts/{指定的 title}.md` 文件 .
-		- draft 文章 默认情况在不会被展示，除非有以下几种情况：
+		- draft 文章 在默认情况下不会被展示，除非有以下几种情况：
 			- 执行 `hexo publish <title>` ，此命令会将 draft 文章从 `source/_drafts/` 挪到 ``source/_posts/` .
 			  logseq.order-list-type:: number
 			- 执行 `hexo server --draft` (启动服务时展示 draft) 或者 `hexo generate --draft` (生成静态网站时展示 draft) .
@@ -91,7 +91,7 @@ tags:: [[Hexo]]
 			- 修改 `_config.yml` 文件中的 `render_drafts` 配置 .
 			  logseq.order-list-type:: number
 	- ### page 文章
-		- 执行 `hexo new draft <title>` 命令 , 将会基于 `scaffolds/page.md` 模板 , 将会生成 `source/_posts/{指定的 title}.md` 文件 .
+		- 执行 `hexo new page <title>` 命令 , 将会基于 `scaffolds/page.md` 模板 , 将会生成 `source/{指定的 title}/index.md` 文件 .
 	- ### 自定义文章
 		- 执行 `hexo new {自定义Layout} <title>` 命令 , 将会基于 `scaffolds/{自定义Layout}.md` 模板 , 生成 `source/_posts/{指定的 title}.md` 文件 .
 		- (这里 `自定义文章` 只是使用了自定义的模板，其本质和 `post 文章` 一致，所以也生成在 `source/_posts/` 目录下)
@@ -189,20 +189,20 @@ tags:: [[Hexo]]
 		- 参考: [NexT Docs - Use Archive Page as Home Page](https://theme-next.js.org/docs/theme-settings/custom-pages#Use-Archive-Page-as-Home-Page)
 	- ### 新增 Tags、Categories、404 页面
 		- 参考: [NexT Docs - Custom Pages](https://theme-next.js.org/docs/theme-settings/custom-pages)
-	-
+	- ### 阅读进度功能
+		- 参考: [NexT Docs - Reading Progress](https://theme-next.js.org/docs/theme-settings/miscellaneous#Reading-Progress)
+	- ### 本地搜索功能
+		- 参考: [NexT Docs -Local Search](https://theme-next.js.org/docs/third-party-services/search-services#Local-Search)
+		- 需要执行 `npm install hexo-generator-searchdb` 安装插件。
+	- ### RSS
+		- 参考: [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
+		- 需要执行 `npm install hexo-generator-feed` 安装插件。
 	- ### read more
 		- 参考: [NexT Docs - Preamble Text](https://theme-next.js.org/docs/theme-settings/posts#Preamble-Text)
 		- 使用 `<!-- more -->` 可以让首页的文章只显示部分内容，并新增一个 `Read more` 链接。
 		- ![image.png](../assets/image_1719202381737_0.png){:height 286, :width 503}
--
-- ## RSS
-- ## SEO
-- ## 搜索功能
-- ## 阅读进度
-- ## 备案号
 - ## 插入图片
-	-
--
+	- 参见: [[Hexo 文章如何插入图片]]
 - ## 备份配置文件
 	- 整个 Hexo 项目的搭建，两个文件极其重要，最好有备份：
 		- `_config.yml` Hexo 配置文件。
@@ -213,4 +213,12 @@ tags:: [[Hexo]]
 - ---
 - ## 参考
 	- [Hexo Docs](https://hexo.io/docs/)
+	  logseq.order-list-type:: number
+-
+- ## TODOs
+	- SEO
+	  logseq.order-list-type:: number
+	- 插入图片
+	  logseq.order-list-type:: number
+	- 备案号
 	  logseq.order-list-type:: number
