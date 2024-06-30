@@ -111,7 +111,9 @@ tags:: [[Linux]], [[RPM]], [[YUM]]
 		  mysql -uroot -p
 		  # 修改 root 的密码
 		  mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'xxxx';
-		  
-		  
+		  #### 执行以下几行代码，以创建可以在任何主机上连接 mysql 的 root 用户，并赋予所有其所有权限。
+		  CREATE USER 'root'@'%' IDENTIFIED BY 'xxxx';
+		  GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' WITH GRANT OPTION;
+		  FLUSH PRIVILEGES;
 		  ```
 		-
