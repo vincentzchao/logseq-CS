@@ -85,9 +85,33 @@ tags:: [[Linux]], [[RPM]], [[YUM]]
 	  systemctl enable redis
 	  # 连接 redis 进行测试
 	  redis-cli
-	  
-	  
-	  ################# 安装 MySQL #################
-	  ################# https://dev.mysql.com/doc/refman/8.4/en/linux-installation-yum-repo.html
-	  
 	  ```
+	- ### 安装 MySQL
+		- ``` sh
+		  ################# 安装 MySQL #################
+		  ################# https://dev.mysql.com/doc/refman/8.4/en/linux-installation-yum-repo.html
+		  # 1. 到这里安装下载对应系统的包：https://dev.mysql.com/downloads/repo/yum/
+		  # 2. 安装下载的包(安装成功后会在系统增加 MySQL的 Yum 仓库)
+		  yum localinstall 下载的RPM文件路径
+		  # 查看 repo 是否已启用
+		  yum repolist enabled | grep mysql.*-community
+		  # 查看所有已配置的 repo (已启用的是最新版本的 MySQL 的库)
+		  yum repolist all | grep mysql
+		  ####### 以上步骤只需执行一次即可
+		  ####### 下面直接安装最新版本的 MySQL
+		  # 安装 MySQL 服务端 (同时也会安装客户端 mysql-community-client)
+		  yum install mysql-community-server
+		  # 启动 MySQL 服务 (mysqld 默认开机自启)
+		  systemctl start mysqld
+		  # 查看 MySQL 服务状态
+		  systemctl status mysqld
+		  # 查看 root 的 临时密码
+		  sudo grep 'temporary password' /var/log/mysqld.log
+		  # 使用上述密码登录 MySQL
+		  mysql -uroot -p
+		  # 修改 root 的密码
+		  mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'xxxx';
+		  
+		  
+		  ```
+		-
