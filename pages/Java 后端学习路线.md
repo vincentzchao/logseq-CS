@@ -11,7 +11,7 @@ tags:: [[Contents]], [[Roadmap]]
 		  logseq.order-list-type:: number
 		- 函数式编程
 		  logseq.order-list-type:: number
-		- JVM
+		- [[JVM]]
 		  logseq.order-list-type:: number
 		- logseq.order-list-type:: number
 		-

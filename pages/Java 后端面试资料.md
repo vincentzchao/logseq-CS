@@ -1,0 +1,10 @@
+tags:: [[Java]]
+---
+
+- ## 系统知识点
+	- [JavaGuide](https://javaguide.cn)
+	- [Java 全栈知识体系](https://pdai.tech/)
+	- [小林coding - 图解系列](https://xiaolincoding.com/)
+- ## 学习路线
+	- [[Java 后端学习路线]]
+	-
