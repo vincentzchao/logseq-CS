@@ -20,7 +20,7 @@ tags:: [[HTML]]
 			- 通常包含 **细则** **版权声明** **联系方式** 等 **通用信息** ，这些信息通常并不关键，或对网站本身来说是次要的。
 			- 为了 **SEO** 的目的， **footer** 有时也会包含一些 **常用内容** 的快速访问链接。
 			- ![sample-website.png](../assets/sample-website_1701269294262_0.png)
-			- [图片来源(MDN)](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure/sample-website.png)
+			- [图片来源(MDN)](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
 	- ### 争议
 		- 有人认为 **navigation bar** 应该是 **header** 的一部分，而不是一个单独的组件。
 		- 而有些人认为，为了 **accessibility** 最好将两者区分开（这样 **screen reader** 就可以区分开两者）。

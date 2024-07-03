@@ -2,8 +2,11 @@ tags:: [[Program Language]], [[Front-End]]
 alias:: [[JS]]
 ---
 
-- ==子目录==
-	-
+- ## 学习资源
+	- [javascript.info](https://zh.javascript.info/)
+	  logseq.order-list-type:: number
+	- [MDN - JavaScript Guide](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
+	  logseq.order-list-type:: number
 - ## 学习路线
 	- 基础概念: [[JavaScript/Concept]]
 	  logseq.order-list-type:: number
