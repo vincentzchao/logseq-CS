@@ -56,7 +56,7 @@
 			  ```
 		- #### Objects
 			- ``` js
-			  // 声明象
+			  // 声明对象
 			  let dog = { name: "Spot", breed: "Dalmatian" };
 			  
 			  // 使用对象的属性
@@ -73,12 +73,87 @@
 		- ``` js
 		  const age = 10;
 		  ```
-- ## loop
+	- ### typeof
+		- 使用 typeof 可以查看 **变量或常量** 的类型。
+		- ``` js
+		  const age = 10;
+		  // 输出 number
+		  console.log(typeof age);
+		  
+		  let name = "Jack" ;
+		  // 输出 string
+		  console.log(typeof name);
+		  ```
+- ## Loop
 	- ### for...of
 		- ``` js
 		  const resetParas = document.querySelectorAll(".resultParas p");
 		  for (const resetPara of resetParas) {
 		    resetPara.textContent = "";
 		  }
+		  ```
+- ## Function
+	- ### 基本语法
+		- ``` js
+		  // 声明函数
+		  function hello(name) {
+		    console.log("Hello World! " + name);
+		  }
+		  
+		  // 调用函数
+		  hello("Vincent");
+		  ```
+	- ### Arrow Function
+		- ``` js
+		  // 声明函数
+		  const hello = (name) => {
+		    return "Hello World! " + name);
+		  }
+		  
+		  // 当只有一个参数时的简略写法
+		  const hello = name => "Hello World! " + name;
+		  
+		  // 调用函数
+		  hello("Vincent");
+		  ```
+	- ### Method in Object
+		- ``` js
+		  // 定义对象
+		  const people = {
+		    age: 20,
+		    name: "Vincent",
+		    // 声明对象的方法
+		    hello() {
+		      return "Hello, " + this.name;
+		    }
+		  };
+		  
+		  // 执行方法
+		  people.hello();
+		  ```
+- ## Destructuring 解构
+	- ### Object 的解构
+		- ``` js
+		  // 定义对象
+		  const people = {
+		    age: 20,
+		    name: "Vincent",
+		    // 声明对象的方法
+		    hello() {
+		      return "Hello, " + this.name;
+		    }
+		  };
+		  
+		  // 将对象的属性赋值给同名变量
+		  const {age, name, hello} = people;
+		  
+		  // 将对象的属性赋值给不同名的变量
+		  const {age: newAge, name: newName, hello: newHello} = people;
+		  ```
+	- ### Array 的解构
+		- ``` js
+		  const langs = ["en", "zh", "jp"]; 
+		  // 将数组元素赋给变量
+		  const [l0, l1, l2] = langs;
 		  ```
 		-
