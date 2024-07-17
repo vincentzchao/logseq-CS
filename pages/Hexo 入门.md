@@ -191,13 +191,17 @@ tags:: [[Hexo]]
 	- ### 本地搜索功能
 		- 参考: [NexT Docs -Local Search](https://theme-next.js.org/docs/third-party-services/search-services#Local-Search)
 		- 需要执行 `npm install hexo-generator-searchdb` 安装插件。
-	- ### RSS
-		- 参考: [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
-		- 需要执行 `npm install hexo-generator-feed` 安装插件。
+	- ### 取消页面动画
+		- 在 `_config.next.yml` 中将 `motion.enable` 设置为 `false` 。
 	- ### read more
 		- 参考: [NexT Docs - Preamble Text](https://theme-next.js.org/docs/theme-settings/posts#Preamble-Text)
 		- 使用 `<!-- more -->` 可以让首页的文章只显示部分内容，并新增一个 `Read more` 链接。
 		- ![image.png](../assets/image_1719202381737_0.png){:height 286, :width 503}
+	- ### 去除 Keep on posting
+		- 参考: [NexT Docs - Hide "Keep on posting" in Archive Page](https://theme-next.js.org/docs/advanced-settings/custom-files#Hide-Keep-on-posting-in-Archive-Page)
+- ## RSS
+	- 参考: [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed)
+	- 需要执行 `npm install hexo-generator-feed` 安装插件。
 - ## 插入图片
 	- 参见: [[Hexo 文章如何插入图片]]
 - ## 备份配置文件
