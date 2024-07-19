@@ -221,5 +221,3 @@ tags:: [[Hexo]]
 	  logseq.order-list-type:: number
 	- 插入图片
 	  logseq.order-list-type:: number
-	- 备案号
-	  logseq.order-list-type:: number
