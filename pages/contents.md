@@ -1,2 +1,2 @@
 -
-- {{renderer :tocgen2, [[hexo 文章如何插入图片]], calc(100vh - 135px)}}
+- {{renderer :tocgen2, [[hexo 入门]], calc(100vh - 135px)}}

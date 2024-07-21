@@ -96,7 +96,7 @@ tags:: [[Hexo]]
 		- 执行 `hexo new {自定义Layout} <title>` 命令 , 将会基于 `scaffolds/{自定义Layout}.md` 模板 , 生成 `source/_posts/{指定的 title}.md` 文件 .
 		- (这里 `自定义文章` 只是使用了自定义的模板，其本质和 `post 文章` 一致，所以也生成在 `source/_posts/` 目录下)
 - ## 写文章最佳实践
-	- 本地电脑执行 `git pull` 拉取最新的博客内容 .
+	- 本地电脑执行 `git pull` 拉取最新的博客内容 , 执行 `npm install` .
 	  logseq.order-list-type:: number
 	- 执行 `hexo server` , 将项目运行起来 (接下来的编辑博客时, 刷新页面即可以实时看到效果) .
 	  logseq.order-list-type:: number
@@ -106,9 +106,9 @@ tags:: [[Hexo]]
 	  logseq.order-list-type:: number
 	- 提交编辑后的内容到代码仓库 .
 	  logseq.order-list-type:: number
-	- 执行 `hexo clean && hexo deploy` 将生成的静态网站推送到远程仓库的 `public` 分支 .
+	- 执行 `hexo clean && hexo deploy` 将生成的静态网站推送到发布用的远程仓库 .
 	  logseq.order-list-type:: number
-	- 服务器拉取远程仓库最新的内容，然后切换到 `public` 分支，对这个分支下的内容进行部署 .
+	- 服务器拉取发布用的远程仓库的最新内容，对这个内容进行部署 .
 	  logseq.order-list-type:: number
 - ## 主题
 	- 下面以 [hexo-theme-next](https://github.com/next-theme/hexo-theme-next) 为例介绍主题的使用：
@@ -218,6 +218,4 @@ tags:: [[Hexo]]
 -
 - ## TODOs
 	- SEO
-	  logseq.order-list-type:: number
-	- 插入图片
 	  logseq.order-list-type:: number
