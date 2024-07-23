@@ -2,7 +2,6 @@ tags:: [[Swift]], [[Package Manager]], [[Build Tool]]
 alias:: [[Swift Package Manager]]
 ---
 
--
 - ## 一句话解释
 	- Swift 代码的包管理工具。
 - ## 包管理四大实体
@@ -19,7 +18,7 @@ alias:: [[Swift Package Manager]]
 	- ### Package
 		- 一个 package 由 `Swift source files` 和 `a manifest file` 组成。
 		- `manifest file` 文件名为 `Package.swift`, 定义了 `package name` 和 `package contents` 。
-		- 一个 package 有一个或多个 `target`, 每一个 `target`都指定 一个 `product` 以及 一个或多个 `dependency` 。
+		- 一个 package 有一个或多个 `target`, 每一个 `target` 都指定 一个 `product` 以及 一个或多个 `dependency` 。
 	- ### Product
 		- 每个 `target` 都可以 build 成一个 `library` 或 `executable` 作为它的 `product` 。
 		- 一个 `library` 包含了一个可以被其他 `Swift code` import 的 `module` .

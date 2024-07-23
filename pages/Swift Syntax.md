@@ -1,7 +1,6 @@
 tags:: [[Swift]]
 ---
 
--
 - ## print (打印)
 	- ``` swift
 	  print("Hello, world!")
