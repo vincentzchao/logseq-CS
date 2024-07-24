@@ -7,8 +7,27 @@ tags:: [[Swift]]
 	  
 	  print("Hello, world, ", "Jack")
 	  ```
-- ## Simple Values (简单值)
-	- ### 常量与变量
+- ## 注释
+	- ``` swift
+	  // Single-line comments 单行注释
+	  // This is a comment.
+	  
+	  // Multiline comments 多行注释
+	  /* This is also a comment
+	  but is written over multiple lines. */
+	  
+	  // Nested multiline comments 嵌套多行注释
+	  /* This is the start of the first multiline comment.
+	      /* This is the second, nested multiline comment. */
+	  This is the end of the first multiline comment. */
+	  ```
+- ## 分号
+	- 除非你想在一行中编写多个语句，否则，分号不是必须的。
+		- ``` swift
+		  let cat = "🐱"; print(cat)
+		  ```
+- ## 常量与变量
+	- ### 语法
 		- `let` 定义 **常量 (constant)** ,  必须且只能赋一次值 (如果没用到，则可不赋值) 。
 		- `var` 定义 **变量 (variable)** .
 		- ``` swift
@@ -17,31 +36,55 @@ tags:: [[Swift]]
 		  
 		  let myConstant = 42
 		  ```
-	- ### 常量与变量的类型
-		- 无需 **显式 (explicitly)** 指定 **常量或变量** 的类型, **编译器** 可以通过赋值来推断其类型 .
+	- ### 命名
+		- 常量与变量的名称几乎可以是任何字符，包括 Unicode 字符：
 			- ``` swift
-			  // 被推断为 String
-			  var myVariable = "hello"
+			  let π = 3.14159
+			  let 你好 = "你好世界"
+			  let 🐶🐮 = "dogcow"
 			  ```
-		- **常量或变量** 如果在声明时未被赋值，则必须 显式 声明其类型。
-			- ``` swift
-			  // 如下代码会报错
-			  let a;
-			  // 如下代码会报错
-			  var b;
-			  
-			  // 显式声明 常量 的类型。
-			  let explicitDouble: Double = 70
-			  ```
-		- 一个变量被赋的多个值的类型, 必须一致 。
-		- 一个类型从来不会被 **隐式地 (implicitly)** 转换成另一种类型，必须 显式地 转换 .
-			- ``` swift
-			  let label = "The width is "
-			  let width = 94
-			  let widthLabel = label + String(width)
-			  ```
-	- ### 将 value 转成 String
-		- 使用 `\(变量名)` 将值转成字符串。
+		- 命名有如下几条规则：
+			- 不能使用禁用字符，参见: [Naming Constants and Variables](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/#Naming-Constants-and-Variables)
+			  logseq.order-list-type:: number
+			- 数字不能在开头。
+			  logseq.order-list-type:: number
+			- 如果非要使用保留字，则需要使用 ` 字符围住变量名。
+			  logseq.order-list-type:: number
+				- ``` swift
+				  let `let`: String = "hhh";
+				  ```
+		- ==建议使用小驼峰==
+- ## 类型注解 (Type Annotation)
+	- 类型注解的使用：
+		- ``` swift
+		  // 声明单个变量的类型
+		  var explicitDouble: Double
+		  
+		  // 声明多个变量的类型
+		  var red, green, blue: Double
+		  ```
+	- 如果未 **显式 (explicitly)** 指定 **常量或变量** 的类型, **编译器** 可以通过赋值来推断其类型 .
+		- ``` swift
+		  // 被推断为 String
+		  var myVariable = "hello"
+		  ```
+	- **常量或变量** 如果在声明时未被赋值，则必须 显式 声明其类型。
+		- ``` swift
+		  // 如下代码会报错
+		  let a;
+		  // 如下代码会报错
+		  var b;
+		  ```
+	- 一个变量被赋的多个值的类型, 必须一致 。
+	- 一个类型从来不会被 **隐式地 (implicitly)** 转换成另一种类型，必须 显式地 转换 .
+		- ``` swift
+		  let label = "The width is "
+		  let width = 94
+		  let widthLabel = label + String(width)
+		  ```
+- ## String 类型
+	- ### 字符串插值 (String Interpolation)
+		- 使用 `\(变量名)` 在字符串中插入变量当前的值。
 		- ``` swift
 		  let apples = 3
 		  let oranges = 5
@@ -72,37 +115,37 @@ tags:: [[Swift]]
 		      I still have \(apples + oranges) pieces of fruit.
 		  ```
 		- 实际的字符串的值，将会忽略与 结尾 `"""`保持一致 **缩进** 的行的前面的缩进；其他行，都会参照结尾 `"""` 保留相应的缩进。
-	- ### array (数组)
-		- 数组大小会根据元素的增加 (使用 `append()` 方法) 而增大 .
-		- ``` swift
-		  var shoppingList = ["catfish", "water", "tulips", "blue paint"]
-		  shoppingList[1] = "bottle of water"
-		  
-		  shoppingList.append("apples")
-		  print(shoppingList)
-		  
-		  shoppingList[4] = "bananas"
-		  
-		  print(shoppingList)
-		  ```、
-		- 空数组: `shoppingList = []` .
-		- 数组类型是这样声明的
+		- ### array (数组)
+			- 数组大小会根据元素的增加 (使用 `append()` 方法) 而增大 .
 			- ``` swift
-			  let emptyArray: [String] = []
-			  ```
-	- ### dictionary (字典)
-		- ``` swift
-		  var occupations = [
-		      "Malcolm": "Captain",
-		      "Kaylee": "Mechanic",
-		  ]
-		  occupations["Jayne"] = "Public Relations"
-		  ```
-		- 空字典: `occupations = [:]` .
-		- 字典类型是这样声明的
+			  var shoppingList = ["catfish", "water", "tulips", "blue paint"]
+			  shoppingList[1] = "bottle of water"
+			  
+			  shoppingList.append("apples")
+			  print(shoppingList)
+			  
+			  shoppingList[4] = "bananas"
+			  
+			  print(shoppingList)
+			  ```、
+			- 空数组: `shoppingList = []` .
+			- 数组类型是这样声明的
+				- ``` swift
+				  let emptyArray: [String] = []
+				  ```
+		- ### dictionary (字典)
 			- ``` swift
-			  let emptyDictionary: [String: Float] = [:]
+			  var occupations = [
+			      "Malcolm": "Captain",
+			      "Kaylee": "Mechanic",
+			  ]
+			  occupations["Jayne"] = "Public Relations"
 			  ```
+			- 空字典: `occupations = [:]` .
+			- 字典类型是这样声明的
+				- ``` swift
+				  let emptyDictionary: [String: Float] = [:]
+				  ```
 - ## Control Flow (控制流)
 	- ### 条件与循环的种类
 		- Conditional (条件): if, switch
