@@ -2,8 +2,6 @@ tags:: [[Program Language]]
 ---
 
 - ==子目录==
-	- [[Swift Concept]]
-	- [[Swift Syntax]]
 	- [[SwiftPM]]
 	- [[Swift Command]]
 		- [[Swift REPL]]
@@ -11,13 +9,9 @@ tags:: [[Program Language]]
 - ---
 - ## 学习路线
 	- ### Swift 入门学习路线
-		- 下载 Swift (macOS 直接安装 Xcode): [Install Swift](https://www.swift.org/install/)
+		- 基础概念: [[Swift Concept]]
 		  logseq.order-list-type:: number
-		- Swift 包管理相关概念: ((651d1806-f5c5-4134-8598-908f479b656d))
-		  logseq.order-list-type:: number
-		- 如何运行 Swift 代码: ((651d39e1-512d-4825-acf3-5c403015217f))
-		  logseq.order-list-type:: number
-		- 快速上手 Hello World: [A Swift Tour](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/guidedtour) (中文版: [Swift 初见](https://gitbook.swiftgg.team/swift/huan-ying-shi-yong-swift/03_a_swift_tour))
+		- Swift 语法: [[Swift Syntax]]
 		  logseq.order-list-type:: number
 		- 四类程序开发实例:
 		  logseq.order-list-type:: number
@@ -33,7 +27,10 @@ tags:: [[Program Language]]
 		  logseq.order-list-type:: number
 		- logseq.order-list-type:: number
 - ## 当前进度
-	-
+	- [The Swift Programming Language - 最新版本](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/)
+		- A Swift Tour 不看，讲的内容不全面，大概就是让初学者了解下这个语言的调性。
+		- 直接看下面的 Language Guide
+			-
 - ## 问题
 	- 什么是 unwrap？
 	-
