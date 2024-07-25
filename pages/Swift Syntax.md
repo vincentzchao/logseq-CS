@@ -67,6 +67,12 @@ tags:: [[Swift]]
 		- ``` swift
 		  // 被推断为 String
 		  var myVariable = "hello"
+		  
+		  // 被推断为 Int
+		  var myNum = 42
+		  
+		  // 被推断为 Double
+		  let pi = 3.14159
 		  ```
 	- **常量或变量** 如果在声明时未被赋值，则必须 显式 声明其类型。
 		- ``` swift
@@ -82,24 +88,58 @@ tags:: [[Swift]]
 		  let width = 94
 		  let widthLabel = label + String(width)
 		  ```
-- ## Integer
-	- UInt8  Int8
-	- UInt16  Int16
-	- UInt32  Int32
-	- UInt64  Int64
-	- 也可以直接使用 `UInt` 和 `Int` 来声明变量，具体类型视平台位数而定：32-bit 平台则默认类型是 32 位 ，32-bit 平台则默认类型是 64 位 。
-	- ==官方建议: ==
-		- 除非有限定整数大小的要求，否则，建议直接使用 `UInt` 和 `Int`  
-		  logseq.order-list-type:: number
-		- 除非有整数大小的限制，否则，即便要存储非负整数，也应使用 `Int` 而不是 `UInt`
-		  logseq.order-list-type:: number
-		- 上述两点的目的是避免做类型转换。
-- ## Floating-Point Numbers
-	- Double: 64 位浮点数
-	- Float: 32 位浮点数
-	- ==官方建议：==
-		- 首选 Double 。
--
+- ## Type Aliases
+	- 使用类型别名。
+	- ``` swift
+	  // 定义类型别名
+	  typealias AudioSample = UInt16
+	  ```
+- ## Number
+	- ### Integer
+		- UInt8  Int8
+		- UInt16  Int16
+		- UInt32  Int32
+		- UInt64  Int64
+		- 也可以直接使用 `UInt` 和 `Int` 来声明变量，具体类型视平台位数而定：32-bit 平台则默认类型是 32 位 ，32-bit 平台则默认类型是 64 位 。
+		- ==官方建议: ==
+			- 除非有限定整数大小的要求，否则，建议直接使用 `UInt` 和 `Int`  
+			  logseq.order-list-type:: number
+			- 除非有整数大小的限制，否则，即便要存储非负整数，也应使用 `Int` 而不是 `UInt`
+			  logseq.order-list-type:: number
+			- 上述两点的目的是避免做类型转换。
+	- ### Floating-Point Numbers
+		- Double: 64 位浮点数
+		- Float: 32 位浮点数
+		- ==官方建议：==
+			- 首选 Double 。
+	- ### Numeric Literals
+		- 十进制: 没有前缀
+		- 二进制: 带 `0b` 前缀
+		- 八进制:  带 `0o` 前缀
+		- 十六进制: 带 `0x` 前缀
+		- `1.25e2` means 1.25 x 10²
+		- `0xFp2` means 15 x 2²
+		- `1_000_000.000_000_1` means `1000000.0000001`
+	- ### Number Conversion
+		- 相同类型才能进行运算，必须显式转换类型。
+		- ``` swift
+		  // 整型与整型
+		  let twoThousand: UInt16 = 2_000
+		  let one: UInt8 = 1
+		  let twoThousandAndOne = twoThousand + UInt16(one)
+		  
+		  // 整型与浮点数
+		  let three = 3
+		  let pointOneFourOneFiveNine = 0.14159
+		  let pi = Double(three) + pointOneFourOneFiveNine
+		  ```
+- ## Bool
+	- ``` swift
+	  let orangesAreOrange = true
+	  let turnipsAreDelicious = false
+	  
+	  let val: Bool = false
+	  ```
 - ## String
 	- ### 字符串插值 (String Interpolation)
 		- 使用 `\(变量名)` 在字符串中插入变量当前的值。
@@ -133,37 +173,73 @@ tags:: [[Swift]]
 		      I still have \(apples + oranges) pieces of fruit.
 		  ```
 		- 实际的字符串的值，将会忽略与 结尾 `"""`保持一致 **缩进** 的行的前面的缩进；其他行，都会参照结尾 `"""` 保留相应的缩进。
-		- ### array (数组)
-			- 数组大小会根据元素的增加 (使用 `append()` 方法) 而增大 .
+- ## Tuple
+	- ### 语法
+		- 元组可以存储多个数据，数据类型可以不一致。
+		- ``` swift
+		  let http404Error = (404, "Not Found")
+		  ```
+	- ### Decompose
+		- 将元组中的内容分别赋值给不同的变量。
 			- ``` swift
-			  var shoppingList = ["catfish", "water", "tulips", "blue paint"]
-			  shoppingList[1] = "bottle of water"
-			  
-			  shoppingList.append("apples")
-			  print(shoppingList)
-			  
-			  shoppingList[4] = "bananas"
-			  
-			  print(shoppingList)
-			  ```、
-			- 空数组: `shoppingList = []` .
-			- 数组类型是这样声明的
-				- ``` swift
-				  let emptyArray: [String] = []
-				  ```
-		- ### dictionary (字典)
-			- ``` swift
-			  var occupations = [
-			      "Malcolm": "Captain",
-			      "Kaylee": "Mechanic",
-			  ]
-			  occupations["Jayne"] = "Public Relations"
+			  let (statusCode, statusMessage) = http404Error
+			  print("The status code is \(statusCode)")
+			  // Prints "The status code is 404"
+			  print("The status message is \(statusMessage)")
+			  // Prints "The status message is Not Found"
 			  ```
-			- 空字典: `occupations = [:]` .
-			- 字典类型是这样声明的
-				- ``` swift
-				  let emptyDictionary: [String: Float] = [:]
-				  ```
+		- 只取一部分值，忽略剩下的值。
+			- ``` swift
+			  let (justTheStatusCode, _) = http404Error
+			  print("The status code is \(justTheStatusCode)")
+			  // Prints "The status code is 404"
+			  ```
+	- ### 使用索引访问元组中的元素
+		- ``` swift
+		  print("The status code is \(http404Error.0)")
+		  // Prints "The status code is 404"
+		  print("The status message is \(http404Error.1)")
+		  // Prints "The status message is Not Found"
+		  ```
+	- ### 使用名称访问元组中的元素
+		- ``` swift
+		  let http200Status = (statusCode: 200, description: "OK")
+		  print("The status code is \(http200Status.statusCode)")
+		  // Prints "The status code is 200"
+		  print("The status message is \(http200Status.description)")
+		  // Prints "The status message is OK"
+		  ```
+- ## array (数组)
+	- 数组大小会根据元素的增加 (使用 `append()` 方法) 而增大 .
+	- ``` swift
+	  var shoppingList = ["catfish", "water", "tulips", "blue paint"]
+	  shoppingList[1] = "bottle of water"
+	  
+	  shoppingList.append("apples")
+	  print(shoppingList)
+	  
+	  shoppingList[4] = "bananas"
+	  
+	  print(shoppingList)
+	  ```、
+	- 空数组: `shoppingList = []` .
+	- 数组类型是这样声明的
+		- ``` swift
+		  let emptyArray: [String] = []
+		  ```
+- ## dictionary (字典)
+	- ``` swift
+	  var occupations = [
+	      "Malcolm": "Captain",
+	      "Kaylee": "Mechanic",
+	  ]
+	  occupations["Jayne"] = "Public Relations"
+	  ```
+	- 空字典: `occupations = [:]` .
+	- 字典类型是这样声明的
+		- ``` swift
+		  let emptyDictionary: [String: Float] = [:]
+		  ```
 - ## Control Flow (控制流)
 	- ### 条件与循环的种类
 		- Conditional (条件): if, switch
