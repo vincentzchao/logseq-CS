@@ -30,7 +30,7 @@ tags:: [[Program Language]]
 	- [The Swift Programming Language - 最新版本](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/)
 		- A Swift Tour 不看，讲的内容不全面，大概就是让初学者了解下这个语言的调性。
 		- 直接看下面的 Language Guide
-			- 看完  [The Basics 的 Semicolons](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/#Semicolons)
+			- 看完  [The Basics 的 Floating-Point Numbers](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics)
 - ## 问题
 	- 什么是 unwrap？
 	-
