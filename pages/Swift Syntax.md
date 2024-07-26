@@ -209,7 +209,7 @@ tags:: [[Swift]]
 		  print("The status message is \(http200Status.description)")
 		  // Prints "The status message is OK"
 		  ```
-- ## array (数组)
+- ## Array (数组)
 	- 数组大小会根据元素的增加 (使用 `append()` 方法) 而增大 .
 	- ``` swift
 	  var shoppingList = ["catfish", "water", "tulips", "blue paint"]
@@ -227,7 +227,7 @@ tags:: [[Swift]]
 		- ``` swift
 		  let emptyArray: [String] = []
 		  ```
-- ## dictionary (字典)
+- ## Dictionary (字典)
 	- ``` swift
 	  var occupations = [
 	      "Malcolm": "Captain",
@@ -240,6 +240,98 @@ tags:: [[Swift]]
 		- ``` swift
 		  let emptyDictionary: [String: Float] = [:]
 		  ```
+- ## Optional
+	- ### nil
+		- swift 中，值的缺失，用 `nil` 表示。
+	- ### 什么是 Optional
+		- 如果一个变量可能为 `nil` , 则它是一个 `Optional` .
+		- 语法 (type 后 使用 `?` )：
+		  id:: 651e7829-cd38-4e6a-b191-a8e65e07e695
+			- ``` swift
+			  var optionalString: String? = nil
+			  print(optionalString == nil)
+			  // Prints "true"
+			  
+			  // 如果 Optioanl 未赋值，则有默认值 nil
+			  var surveyAnswer: String?
+			  ```
+		- 常量或变量在被声明时，如果未明确指定它是  `Optional` ，则它不能被赋值为 `nil` .
+		- 我们无法像使用普通变量一样使用 Optional , 需要进行 `unwrap(解包)`  操作。
+			- ``` swift
+			  var aaa: String? = "xxx"
+			  // aaa 无法直接打印, 
+			  // 直接打印会打印出 `Optional("xxx")` 这样的字符串和一些警告, 
+			  print(aaa)
+			  
+			  // 但是如果值是 nil ，可以直接打印出 nil
+			  var bbb: String? = nil
+			  print(bbb) // nil
+			  
+			  // 无法进行运算，会报错
+			  var newAaa = aaa + "yyy"
+			  
+			  // 但是可以重新赋值
+			  aaa = "yyy"
+			  ```
+	- ### 使用 Optional Binding 解包
+		- ``` swift
+		  let possibleNumber = "123"
+		  let myNumber = Int(possibleNumber)
+		  // Here, myNumber is an optional integer
+		  if let myNumber = myNumber {
+		      // Here, myNumber is a non-optional integer
+		      print("My number is \(myNumber)")
+		  } else {
+		      // Here, myNumber is a optional integer (nil)
+		      if (myNumber == nil) {
+		          print("My number is \(myNumber)")
+		      }
+		      print("My number is \(myNumber)")
+		  }
+		  // Here, myNumber is an optional integer
+		  // Prints "My number is 123"
+		  
+		  ```
+		- 如果 if 语句块的 myNumber 被赋的值不是 nil ，则执行第一个分支，并且此时 myNumber 是 `Int` 类型，而不是 `Int?` .
+		- 如果 if 语句块的 myNumber 被赋的值是 nil , 则执行第二个分支，此时 myNumber 是 `Int?` 类型 .
+		- if 语句块的变量作用域只在 if 语句块中，所以可以和外部变量同名，外部 myNumber 一直是 `Int?` 类型 .
+		- ``` swift
+		  let possibleNumber = "123"
+		  let myNumber = Int(possibleNumber)
+		  // Here, myNumber is an optional integer
+		  if let myNumber {
+		      // Here, myNumber is a non-optional integer
+		      print("My number is \(myNumber)")
+		  }
+		  // Prints "My number is 123"
+		  ```
+		- if 语句块的 变量使用和 Optional 相同的名称，将可以直接省略赋值语句。
+		- ``` swift
+		  if let firstNumber = Int("4"), let secondNumber = Int("42"), firstNumber < secondNumber && secondNumber < 100 {
+		      print("\(firstNumber) < \(secondNumber) < 100")
+		  }
+		  // Prints "4 < 42 < 100"
+		  
+		  if let firstNumber = Int("4") {
+		      if let secondNumber = Int("42") {
+		          if firstNumber < secondNumber && secondNumber < 100 {
+		              print("\(firstNumber) < \(secondNumber) < 100")
+		          }
+		      }
+		  }
+		  // Prints "4 < 42 < 100"
+		  
+		  // 以上两个语句块等价
+		  ```
+		- 可以一行写多个 Optional Binding 。
+	- ### 使用 `??` 操作符 (Nil-Coalescing Operator) 解包
+		- 如果前面的值为 `nil` , 则表达式的结果为后面的值 .
+		- ``` swift
+		  let nickname: String? = nil
+		  let fullName: String = "John Appleseed"
+		  let informalGreeting = "Hi \(nickname ?? fullName)"
+		  ```
+	-
 - ## Control Flow (控制流)
 	- ### 条件与循环的种类
 		- Conditional (条件): if, switch
@@ -271,84 +363,6 @@ tags:: [[Swift]]
 		  print("Score:", teamScore, scoreDecoration)
 		  // Prints "Score: 11 🎉"
 		  ```
-- ## Optional Value (可选值)
-	- ### nil
-		- swift 中，值的缺失，用 `nil` 表示。
-	- ### 声明 optional value
-		- 如果一个值可能为 `nil`, 则他是一个 `optional value` .
-		- 常量或变量在被声明时，如果未明确指定它是  `optional value` ，则它不能被赋值为 `nil` .
-		- 声明 `optional value`  时，需要在 `type` 后面使用 `?` , 如下所示：
-		  id:: 651e7829-cd38-4e6a-b191-a8e65e07e695
-			- ``` swift
-			  var optionalString: String? = nil
-			  print(optionalString == nil)
-			  // Prints "true"
-			  ```
-	- ### 什么是 unwrap (解包)
-		- optional value 和 上面的 simple value 不同, 使用时, 需要进行 `unwrap` 操作。
-		- 参见如下例子:
-			- ``` swift
-			  var aaa: String? = "xxx"
-			  print(aaa)
-			  ```
-			- 执行结果:
-			- ``` swift
-			  Unwrap.swift:2:7: warning: expression implicitly coerced from 'String?' to 'Any'
-			  print(aaa)
-			        ^~~
-			  Unwrap.swift:2:7: note: provide a default value to avoid this warning
-			  print(aaa)
-			        ^~~
-			            ?? <#default value#>
-			  Unwrap.swift:2:7: note: force-unwrap the value to avoid this warning
-			  print(aaa)
-			        ^~~
-			           !
-			  Unwrap.swift:2:7: note: explicitly cast to 'Any' with 'as Any' to silence this warning
-			  print(aaa)
-			        ^~~
-			            as Any
-			  Optional("xxx")
-			  ```
-			- optional value 无法直接使用, 直接打印回打印出 `Optional("xxx")` 这样的字符串和一些警告, 需要先进行 unwrap 解包操作.
-		- `unwrap` 就是将 `optional value` 转成 `simple value` 进行使用 .
-	- ### unwrap 的几种方式
-		- 参考: [Swift 程式語言 — 解開可選類型 (Unwrapping Optionals)](https://medium.com/jeremy-xue-s-blog/swift-%E7%A8%8B%E5%BC%8F%E8%AA%9E%E8%A8%80-%E8%A7%A3%E9%96%8B%E5%8F%AF%E9%81%B8%E9%A1%9E%E5%9E%8B-unwrapping-optionals-6198f307a92d)
-		- #### `??` 操作符
-			- 如果前面的值为 `nil` , 则表达式的结果为后面的值 .
-			- ``` swift
-			  let nickname: String? = nil
-			  let fullName: String = "John Appleseed"
-			  let informalGreeting = "Hi \(nickname ?? fullName)"
-			  ```
-		- #### 条件语句中的 unwrap
-			- 可以在条件语句中将 `optional value` 赋值给另一个新的常量或变量，从而达到解包的目的.
-			  id:: 65202a72-fced-43a8-b1fc-0851245906de
-			- 当 `optional value`为 `nil`时, 语句块不会被执行, 否则会被执行.
-			- 这个新的常量或变量的作用域只存在于这个语句块中.
-			- 可以使用与这个 `optional value` 名称相同的名称, 这样可以省略后面的赋值语句.
-			- ``` swift
-			  var optionalName: String? = nil
-			  var greeting = "Hello!"
-			  if let name = optionalName {
-			      greeting = "Hello, \(name)"
-			  }
-			  print(greeting)
-			  // Prints "Hello!"
-			  
-			  if let optionalName = optionalName {
-			      greeting = "Hello, \(optionalName)"
-			  }
-			  print(greeting)
-			  // Prints "Hello!"
-			  
-			  if let optionalName {
-			      greeting = "Hello, \(optionalName)"
-			  }
-			  print(greeting)
-			  // Prints "Hello!"
-			  ```
-			-
 - ---
 - ## 参考
 	- [A Swift Tour](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/guidedtour/) (中文版: [Swift 初见](https://gitbook.swiftgg.team/swift/huan-ying-shi-yong-swift/03_a_swift_tour))
