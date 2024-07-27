@@ -331,7 +331,16 @@ tags:: [[Swift]]
 		  let fullName: String = "John Appleseed"
 		  let informalGreeting = "Hi \(nickname ?? fullName)"
 		  ```
-	-
+	- ### 强制解包 (Force unwrapping)
+		- 使用 `!` 符号 (exclamation mark)
+		- ``` swift
+		  let possibleNumber = "123"
+		  let convertedNumber = Int(possibleNumber)
+		  
+		  // 此时 number 是 Int 类型
+		  let number = convertedNumber!
+		  ```
+		- 如果 convertedNumber 值为 nil ，会报错。
 - ## Control Flow (控制流)
 	- ### 条件与循环的种类
 		- Conditional (条件): if, switch

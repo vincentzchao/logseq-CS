@@ -35,6 +35,7 @@ tags:: [[Glossary]]
 	  | `/`          | 除       | Division       |
 	  | `=`          | 赋值     | Assignment     |
 	  | `===` / `==` | 相等     | Equality       |
-	  | `!`          | 非       | Not / Negation |
+	  | `!`          | 非       | Not / Negation / Exclamation Mark |
 	  | `!==` / `!=` | 不等     | Does-not-equal |
+-
 -
