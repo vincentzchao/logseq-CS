@@ -11,7 +11,7 @@ tags:: [[Program Language]]
 	- ### Swift 入门学习路线
 		- 基础概念: [[Swift Concept]]
 		  logseq.order-list-type:: number
-		- Swift 语法: [[Swift Syntax]]
+		- Swift 语法: [[Swift Syntax/Basics]]
 		  logseq.order-list-type:: number
 		- Swift 包管理: [[SwiftPM]]
 		  logseq.order-list-type:: number
