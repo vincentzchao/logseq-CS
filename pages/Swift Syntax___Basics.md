@@ -170,6 +170,37 @@
 		      I still have \(apples + oranges) pieces of fruit.
 		  ```
 		- 实际的字符串的值，将会忽略与 结尾 `"""`保持一致 **缩进** 的行的前面的缩进；其他行，都会参照结尾 `"""` 保留相应的缩进。
+- ## Operators
+	- ### 术语
+		- *Unary* : 一元运算符
+		- *Binary* : 二元运算符
+		- *Ternary* : 三元运算符
+		- *Operand* : 操作数 (参与运算的数)
+	- ### 基本运算符
+		- Assignment Operator 赋值运算符
+			- `=`
+		- Arithmetic Operators 数学运算符
+			- Addition `+`
+			- Subtraction `-`
+			- Multiplication `*`
+			- Division `/`
+			- 数学运算符默认不允许溢出，溢出会报错；
+			- 但是如果在数学运算符前面加 `&` (如 `&+` ) 则允许溢出，即不会报错。
+		- Remainder Operator 余数运算符
+			- `(a % b) == (a % -b) == -(-a % b)`
+		- Compound Assignment Operators 复合赋值运算符
+			- `+=`
+			- `-=`
+			- `*=`
+			- `/=`
+		- Comparison Operators 比较运算符
+			- `==` Equal to
+			- `!=` Not equal to
+			- `>` Greater than
+			- `<` Less than
+			- `>=` Greater than or equal to
+			- `<=` Less than or equal to
+		-
 - ## Tuple
 	- ### 语法
 		- 元组可以存储多个数据，数据类型可以不一致。
@@ -206,6 +237,15 @@
 		  print("The status message is \(http200Status.description)")
 		  // Prints "The status message is OK"
 		  ```
+	- ### 元组之间的比较
+		- ``` swift
+		  (1, "zebra") < (2, "apple")   // true because 1 is less than 2; "zebra" and "apple" aren't compared
+		  (3, "apple") < (3, "bird")    // true because 3 is equal to 3, and "apple" is less than "bird"
+		  (4, "dog") == (4, "dog")      // true because 4 is equal to 4, and "dog" is equal to "dog"
+		  
+		  ("blue", false) < ("purple", true)  // Error because < can't compare Boolean values
+		  ```
+		- 从左到右，依个比较各个元素的大小 (大于等于 7 个元素，则无法这样比较)。
 - ## Array (数组)
 	- 数组大小会根据元素的增加 (使用 `append()` 方法) 而增大 .
 	- ``` swift
