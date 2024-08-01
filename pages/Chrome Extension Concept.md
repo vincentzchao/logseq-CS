@@ -1,7 +1,6 @@
 tags:: [[Chrome Extension]]
 ---
 
--
 - ## Extension files
 	- ### 文件结构
 		- 图片来源: `https://wd.imgix.net/image/BhuKGJaIeLNPW9ehns59NfwqKxF2/Txq5CxeXjQz7i4wmP8zO.png?auto=format&w=439`

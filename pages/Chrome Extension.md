@@ -14,7 +14,8 @@ tags:: [[Browser Extension]], [[Chrome]]
 - ## 官网资料
 	- [Extension Doc Home](https://developer.chrome.com/docs/extensions/)
 		- Tutorials
-			- [Get Started Guide](https://developer.chrome.com/docs/extensions/mv3/getstarted/)
+			- [Get Started Guide](https://developer.chrome.com/docs/extensions/get-started)
+				- [Hello World](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world)
 		- Reference
 			- [Chrome APIs](https://developer.chrome.com/docs/extensions/reference/)
 - ## 第三方资料
@@ -26,7 +27,7 @@ tags:: [[Browser Extension]], [[Chrome]]
 	- logseq.order-list-type:: number
 - ## 学习进度
 	- 2023-11-12
-		- 目前学习完了[Get Started Guide](https://developer.chrome.com/docs/extensions/mv3/getstarted/)
-		- 建议接下来学习: [Debug extensions](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/#debug_bg)
-	-
+		- 目前学习完了[Get Started Guide](https://developer.chrome.com/docs/extensions/getstarted/)
+		- 建议接下来学习: [Debug extensions](https://developer.chrome.com/docs/extensions/get-started/tutorial/debug)
+	- 2024
 -
