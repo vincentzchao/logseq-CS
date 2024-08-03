@@ -202,7 +202,57 @@
 			- `<=` Less than or equal to
 		- Ternary Conditional Operator 三元条件运算符
 			- `?  :`
-		-
+	- ### Range Operators
+		- Closed Range Operator
+			- ``` swift
+			  // 闭区间 [1, 5]
+			  for index in 1...5 {
+			      print("\(index) times 5 is \(index * 5)")
+			  }
+			  
+			  // Range<Int> 类型
+			  let range = 1...5
+			  ```
+		- Half-Open Range Operator
+			- ``` swift
+			  // 左闭右开区间 [1, 5)
+			  for index in 1..<5 {
+			      print("\(index) times 5 is \(index * 5)")
+			  }
+			  
+			  // Range<Int> 类型
+			  let range = 1..<5
+			  ```
+			- 如果左右两个数相等，则区间是空的。
+		- One-Sided Ranges
+			- ``` swift
+			  let names = ["Anna", "Alex", "Brian", "Jack"]
+			  // 闭区间 [2, max]
+			  for name in names[2...] {
+			      print(name)
+			  }
+			  
+			  // 闭区间 [min, 2]
+			  for name in names[...2] {
+			      print(name)
+			  }
+			  
+			  // 左闭右开区间 [min, 2)
+			  for name in names[..<2] {
+			      print(name)
+			  }
+			  
+			  // PartialRangeFrom<Int> 类型
+			  let range1 = 2...
+			  
+			  // PartialRangeThrough<Int> 类型
+			  let range2 = ...2
+			  
+			  // PartialRangeUpTo<Int> 类型
+			  let range3 = ..<2
+			  ```
+			- 无法遍历左边省略值的 One-Sided Ranges，因为不知道从哪里开始。
+			- 但可以遍历右边省略值的 One-Sided Ranges，只要设置好结束循环的条件即可。
 - ## Tuple
 	- ### 语法
 		- 元组可以存储多个数据，数据类型可以不一致。
@@ -363,13 +413,6 @@
 		  // 以上两个语句块等价
 		  ```
 		- 可以一行写多个 Optional Binding 。
-	- ### 使用 `??` 操作符 (Nil-Coalescing Operator) 解包
-		- 如果前面的值为 `nil` , 则表达式的结果为后面的值 .
-		- ``` swift
-		  let nickname: String? = nil
-		  let fullName: String = "John Appleseed"
-		  let informalGreeting = "Hi \(nickname ?? fullName)"
-		  ```
 	- ### 强制解包 (Force unwrapping)
 		- 使用 `!` 符号 (exclamation mark)
 		- ``` swift
@@ -397,6 +440,14 @@
 			- 如果是未声明类型的变量 (如 `let optionalString = assumedString` )，则这个变量也会成为 optional 。
 		- 除以上分别外， `implicitly unwrapped optional` 与 `ordinary optional` 无异。
 			- 所以，特别注意，与 `ordinary optional` 一样， `implicitly unwrapped optional` 可以被赋值为 nil 。
+	- ### 使用 `??` 操作符 (Nil-Coalescing Operator, 空合运算符) 解包
+		- 如果前面的值为 `nil` , 则表达式的结果为后面的值 .
+		- ``` swift
+		  let nickname: String? = nil
+		  let fullName: String = "John Appleseed"
+		  let informalGreeting = "Hi \(nickname ?? fullName)"
+		  ```
+		- `a ?? b` 等价于 `a != nil ? a! : b` (如果 a 不是 nil ，b 不会进行运算)
 - ## Control Flow (控制流)
 	- ### 条件与循环的种类
 		- Conditional (条件): if, switch
