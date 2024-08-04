@@ -1,10 +1,10 @@
-## print (打印)
+## Print
 	- ``` swift
 	  print("Hello, world!")
 	  
 	  print("Hello, world, ", "Jack")
 	  ```
-- ## 注释
+- ## Comments
 	- ``` swift
 	  // Single-line comments 单行注释
 	  // This is a comment.
@@ -18,12 +18,12 @@
 	      /* This is the second, nested multiline comment. */
 	  This is the end of the first multiline comment. */
 	  ```
-- ## 分号
+- ## Semicolon
 	- 除非你想在一行中编写多个语句，否则，分号不是必须的。
 		- ``` swift
 		  let cat = "🐱"; print(cat)
 		  ```
-- ## 常量与变量
+- ## Constants and Variables
 	- ### 语法
 		- `let` 定义 **常量 (constant)** ,  必须且只能赋一次值 (如果没用到，则可不赋值) 。
 		- `var` 定义 **变量 (variable)** .
@@ -51,7 +51,7 @@
 				  let `let`: String = "hhh";
 				  ```
 		- ==建议使用小驼峰==
-- ## 类型注解 (Type Annotation)
+- ## Type Annotation
 	- 类型注解的使用：
 		- ``` swift
 		  // 声明单个变量的类型
@@ -137,39 +137,6 @@
 	  
 	  let val: Bool = false
 	  ```
-- ## String
-	- ### 字符串插值 (String Interpolation)
-		- 使用 `\(变量名)` 在字符串中插入变量当前的值。
-		- ``` swift
-		  let apples = 3
-		  let oranges = 5
-		  let appleSummary = "I have \(apples) apples."
-		  let fruitSummary = "I have \(apples + oranges) pieces of fruit."
-		  ```
-	- ### 三个双引号
-		- 使用 **三个双引号** 可以定义多行字符串 .
-		- ``` swift
-		  let apples = 3
-		  let oranges = 5
-		  let quotation = """
-		         Even though there's whitespace to the left,
-		      the actual lines aren't indented.
-		              Except for this line.
-		          Double quotes (") can appear without being escaped.
-		  
-		          I still have \(apples + oranges) pieces of fruit.
-		      """
-		  print(quotation)
-		  
-		  // 最终字符串
-		     Even though there's whitespace to the left,
-		  the actual lines aren't indented.
-		          Except for this line.
-		      Double quotes (") can appear without being escaped.
-		  
-		      I still have \(apples + oranges) pieces of fruit.
-		  ```
-		- 实际的字符串的值，将会忽略与 结尾 `"""`保持一致 **缩进** 的行的前面的缩进；其他行，都会参照结尾 `"""` 保留相应的缩进。
 - ## Operators
 	- ### 术语
 		- *Unary* : 一元运算符
@@ -253,6 +220,10 @@
 			  ```
 			- 无法遍历左边省略值的 One-Sided Ranges，因为不知道从哪里开始。
 			- 但可以遍历右边省略值的 One-Sided Ranges，只要设置好结束循环的条件即可。
+	- ### Logical Operators
+		- Logical NOT (!a)
+		- Logical AND (a && b)
+		- Logical OR (a || b)
 - ## Tuple
 	- ### 语法
 		- 元组可以存储多个数据，数据类型可以不一致。
@@ -298,7 +269,7 @@
 		  ("blue", false) < ("purple", true)  // Error because < can't compare Boolean values
 		  ```
 		- 从左到右，依个比较各个元素的大小 (大于等于 7 个元素，则无法这样比较)。
-- ## Array (数组)
+- ## Array
 	- 数组大小会根据元素的增加 (使用 `append()` 方法) 而增大 .
 	- ``` swift
 	  var shoppingList = ["catfish", "water", "tulips", "blue paint"]
@@ -316,7 +287,7 @@
 		- ``` swift
 		  let emptyArray: [String] = []
 		  ```
-- ## Dictionary (字典)
+- ## Dictionary
 	- ``` swift
 	  var occupations = [
 	      "Malcolm": "Captain",
@@ -448,7 +419,7 @@
 		  let informalGreeting = "Hi \(nickname ?? fullName)"
 		  ```
 		- `a ?? b` 等价于 `a != nil ? a! : b` (如果 a 不是 nil ，b 不会进行运算)
-- ## Control Flow (控制流)
+- ## Control Flow
 	- ### 条件与循环的种类
 		- Conditional (条件): if, switch
 		- Loop (循环): for-in, while, repeat-while
@@ -479,7 +450,7 @@
 		  print("Score:", teamScore, scoreDecoration)
 		  // Prints "Score: 11 🎉"
 		  ```
-- ## Assertions 与 Preconditions
+- ## Assertions and Preconditions
 	- Assertions 仅在 Debug Builds 执行。
 	- Preconditions 在 Debug Builds 和 Production Builds 都会执行。
 	- Assertions 语法:
@@ -517,5 +488,9 @@
 		- 与 assert 类似。
 - ---
 - ## 参考
-	- [A Swift Tour](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/guidedtour/) (中文版: [Swift 初见](https://gitbook.swiftgg.team/swift/huan-ying-shi-yong-swift/03_a_swift_tour))
-	-
+	- [A Swift Tour](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/guidedtour/)
+	  logseq.order-list-type:: number
+	- [The Basics](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics)
+	  logseq.order-list-type:: number
+	- [Basic Operators](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/basicoperators)
+	  logseq.order-list-type:: number
