@@ -8,5 +8,9 @@ alias:: [[算法]]
 	  logseq.order-list-type:: number
 	- [[Algorithm/数据结构分类]]
 	  logseq.order-list-type:: number
-	- logseq.order-list-type:: number
--
+	- [[Binary Tree]]
+	  logseq.order-list-type:: number
+- ## 学习进度
+	- [Hello 算法](https://www.hello-algo.com/)
+		- 建议从 [7.4   二叉搜索树](https://www.hello-algo.com/chapter_tree/binary_search_tree/) 开始看
+		-
