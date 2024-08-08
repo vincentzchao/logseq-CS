@@ -19,12 +19,18 @@ tags:: [[Algorithm]], [[Tree]]
 		- ![image.png](../assets/image_1722860997171_0.png){:height 247, :width 330}
 	- ### AVL 树
 		- 由 G. M. Adelson-Velsky 和 E. M. Landis 首次提出，故得此名。
-		- 就是在 Binary Search Tree 的基础上，增删节点时，移动相关节点，使树保持为 Balanced Binary Tree .
-		- 所以 AVL 树是一种 Balanced Binary Search Tree (平衡二叉搜索树) .
+		- AVL 树是一种 Balanced Binary Search Tree (平衡二叉搜索树) ，既是 Binary Search Tree, 又是 Balanced Binary Tree.
 	- ### 红黑树
-		-
+		- 参考: [红黑树 - 定义, 插入, 构建](https://www.bilibili.com/video/BV1Xm421x7Lg/?vd_source=f1fbb083ddef12dcff3388779faac201)
+		- 红黑树的定义：
+			- `左根右` : 必须是二叉搜索树
+			- `根叶黑` : 根节点 和 叶子节点必须是黑色 (这里的叶子节点指的是补全的 Null 节点)
+			- `不红红` : 红色节点的直接子节点不能是红色的
+			- `黑路同` : 根节点到所有 Null 节点的路径上的黑色节点数相同。
+		- ![image.png](../assets/image_1723105436182_0.png){:height 348, :width 523}
 - ---
 - ## 参考
 	- [Hello 算法 - 二叉树](https://www.hello-algo.com/chapter_tree/binary_tree/)
 	  logseq.order-list-type:: number
 	- logseq.order-list-type:: number
+-
