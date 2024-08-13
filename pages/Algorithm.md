@@ -12,5 +12,6 @@ alias:: [[算法]]
 	  logseq.order-list-type:: number
 - ## 学习进度
 	- [Hello 算法](https://www.hello-algo.com/)
-		- 建议从 [7.4   二叉搜索树](https://www.hello-algo.com/chapter_tree/binary_search_tree/) 开始看
+		- 看完了 **第 8 章 堆** ，略过 **第 9 章 图**，接下来看 **第 10 章 搜索**
+		-
 		-
