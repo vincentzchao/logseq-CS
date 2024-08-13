@@ -5,7 +5,7 @@ alias:: [[JS]]
 - ## 学习资源
 	- [javascript.info](https://zh.javascript.info/)
 	  logseq.order-list-type:: number
-	- [MDN - JavaScript Guide](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
+	- [MDN - JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript) -> [MDN - JavaScript Guide](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
 	  logseq.order-list-type:: number
 - ## 学习路线
 	- 基础概念: [[JavaScript/Concept]]
