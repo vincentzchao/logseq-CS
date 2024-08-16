@@ -2,6 +2,26 @@
 	- ``` swift
 	  let someString = "Some string literal value"
 	  ```
+- ## Special Characters
+	- Escaped special characters
+	  logseq.order-list-type:: number
+		- `\0` (null character)
+		- `\\` (backslash)
+		- `\t` (horizontal tab)
+		- `\n` (line feed)
+		- `\r` (carriage return)
+		- `\"` (double quotation mark)
+		- `\'` (single quotation mark)
+	- Unicode scalar value
+	  logseq.order-list-type:: number
+		- `\u{n}` (n 为 1-8 位的 16 进制数)
+	- ``` swift
+	  let wiseWords = "\"Imagination is more important than knowledge\" - Einstein"
+	  // "Imagination is more important than knowledge" - Einstein
+	  let dollarSign = "\u{24}"        // $,  Unicode scalar U+0024
+	  let blackHeart = "\u{2665}"      // ♥,  Unicode scalar U+2665
+	  let sparklingHeart = "\u{1F496}" // 💖, Unicode scalar U+1F496
+	  ```
 - ## Multiline String Literals
 	- 使用 **三个双引号** 可以定义多行字符串 .
 	- ``` swift
@@ -36,6 +56,13 @@
 	  """
 	  ```
 	- 每一行末尾的 `\` 不是字符串的一部分，只是用来表明最终字符串不换行 (声明时换行只是让代码更可读)。
+	- 多行字符串中可以直接使用 `"` , 但如果要在多行字符串中使用 `"""` , 则需要至少转义其中的一个引号。
+	- ``` swift
+	  let threeDoubleQuotationMarks = """
+	  Escaping the first quotation mark \"""
+	  Escaping all three quotation marks \"\"\"
+	  """
+	  ```
 - ## 字符串插值 (String Interpolation)
 	- 使用 `\(变量名)` 在字符串中插入变量当前的值。
 	- ``` swift
