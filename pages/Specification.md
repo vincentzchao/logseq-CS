@@ -1,5 +1,4 @@
-alias:: Spec, Specs, Specifications
+alias:: [[Spec]], [[Standard]]
+---
 
--
-- ---
 -

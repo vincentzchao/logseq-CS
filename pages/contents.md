@@ -1,2 +1,2 @@
 -
-- {{renderer :tocgen2, [[swift syntax/strings and characters]], calc(100vh - 135px)}}
+- {{renderer :tocgen2, [[javascript/concept]], calc(100vh - 135px)}}

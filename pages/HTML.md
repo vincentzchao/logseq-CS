@@ -2,9 +2,18 @@ tags:: [[Front-End]]
 alias:: [[HyperText Markup Language]]
 ---
 
-- ==子目录==
-	-
-- ---
+- ## HTML Spec
+	- HTML的标准，如今是由 `whatwg (Web Hypertext Application Technology Working Group : 网页超文本技术工作小组)` 和 `w3c (World Wide Web Consortium : 万维网联盟)` 共同维护。
+	- [whatwg官方标准文档](https://spec.whatwg.org/)
+	  logseq.order-list-type:: number
+		- [HTML Spec](https://html.spec.whatwg.org/multipage/ )
+		  logseq.order-list-type:: number
+		- [DOM Spec](https://dom.spec.whatwg.org/)
+		  logseq.order-list-type:: number
+	- [w3c官方跳转至whatwg官方标准的页面](https://www.w3.org/html/)
+	  logseq.order-list-type:: number
+	- [whatwg官方开发者版本HTML标准文档（删除了一些只有浏览器厂商需要知道的事）](https://html.spec.whatwg.org/dev/)
+	  logseq.order-list-type:: number
 - ## 学习路线
 	- 按照 [MDN - Structuring the web with HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML) 中的顺序学习。
 	  logseq.order-list-type:: number
