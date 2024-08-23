@@ -22,7 +22,7 @@
 		- 所以新版本的 JS 弃用 `var` ，而 改用 `let` 作为声明变量的关键。
 		- 若上述代码使用 `let` , 将会抛出异常。
 	- ### 变量命名规范
-		- 只使用如下字符:
+		- JS 支持 **Unicode** 字符集作为变量名，但建议只使用如下字符:
 		  logseq.order-list-type:: number
 			- Latin characters: `0-9` 、 `a-z` 、 `A-Z`
 			  logseq.order-list-type:: number
@@ -32,9 +32,8 @@
 		  logseq.order-list-type:: number
 		- 使用 `lower camel case`
 		  logseq.order-list-type:: number
-		- 变量名要做到顾名思义
+		- case-sensitive 。
 		  logseq.order-list-type:: number
-		- ==注意: JS 变量名称大小写敏感。==
 	- ### 变量类型
 		- #### 五种类型
 			- Numbers
