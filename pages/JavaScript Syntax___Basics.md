@@ -187,20 +187,53 @@
 		  ```
 - ## String Literals
 	- ### Single Quotes or Double Quotes
-		- 可以使用 `""` 和 `''`  声明一个普通字符串。
+		- 可以使用 `""` 或 `''`  声明一个普通字符串。
+	- ### String Literals and String Object
+		- String 字面量 和 String 对象是不一样的。
+		- 不过 String 字面量可以直接调用 String 对象的方法和属性 (比如 `length` )，JS 会生成一个临时的 String 对象去调用 String 对象的方法或属性，然后舍弃这个对象。
 	- ### Template Literals
 		- 可以使用 ` 声明 *template literals (模板字符串)* , 可以嵌入 **变量和表达式**
 			- ``` js
 			  const name = "Mahalia";
 			  const greeting = `Hello ${name}`;
 			  ```
+		- 支持多行
+			- ``` js
+			  `In JavaScript, template strings can run
+			   over multiple lines, but double and single
+			   quoted strings cannot.`
+			  ```
+	- ### Special Characters In Strings
+		- | Character | Meaning |
+		  | ---- | ---- | ---- |
+		  | `\0` | Null Byte |
+		  | `\b` | Backspace |
+		  | `\f` | Form Feed |
+		  | `\n` | New Line |
+		  | `\r` | Carriage Return |
+		  | `\t` | Tab |
+		  | `\v` | Vertical tab |
+		  | `\'` | Apostrophe or single quote |
+		  | `\"` | Double quote |
+		  | `\\` | Backslash character |
+		  | `\XXX` | Latin-1 字符集; `XXX` 取值为 `000` 到 `377` 的八进制 |
+		  | `\xXX` | Latin-1 字符集; `xXX` 取值为 `x00` 到 `xFF` 的十六进制 |
+		  | `\uXXXX` | Unicode 字符集; `uXXXX` 取值为 `u0000` 到 `uFFFF` 的十六进制，无法囊括所有 Unicode 字符 (在 UTF-16 中，可以用两个拼接为代理对 (如 `\uD87E\uDC04` )，表示高于 `uFFFF` 的字符) |
+		  | `\u{XXXXX}` | Unicode code point escapes; 可以表示所有 Unicode 字符 |
+		- 使用 `\` 还可以避免换行：
+			- ``` js
+			  const str =
+			    "this string \
+			  is broken \
+			  across multiple \
+			  lines.";
+			  console.log(str); // this string is broken across multiple lines.
+			  ```
 	- ### Converting strings to numbers
 		- 使用 `parseInt()` 和 `parseFloat()` .
 		  logseq.order-list-type:: number
-			- ``` js
-			  // 第二个参数是 radix ，表示是几进制
+			- // 第二个参数是 radix ，表示是几进制
 			  parseInt("101", 2); // 5
-			  ```
 		- 使用 `+` 操作符
 		  logseq.order-list-type:: number
 			- ``` js
@@ -288,6 +321,37 @@
 		  console.log(unusualPropertyNames[""]); // An empty string
 		  console.log(unusualPropertyNames["!"]); // Bang!
 		  ```
+	- ### Enhanced Object literals
+		- 增强对象字面量特性：
+			- 支持设置 `__proto__` .
+			  logseq.order-list-type:: number
+			- 支持 `foo: foo` 简写为 `foo` .
+			  logseq.order-list-type:: number
+			- 支持 `super.method()` 父方法的调用 .
+			  logseq.order-list-type:: number
+			- 支持使用表达式来声明属性名称 .
+			  logseq.order-list-type:: number
+		- ``` js
+		  const obj = {
+		    // __proto__
+		    __proto__: theProtoObj,
+		    // Shorthand for 'handler: handler'
+		    handler,
+		    // Methods
+		    toString() {
+		      // Super calls
+		      return "d " + super.toString();
+		    },
+		    // Computed (dynamic) property names
+		    ["prop_" + (() => 42)()]: 42,
+		  };
+		  ```
+	- ### RegExp Literals
+		- 正则表达式字面量: `/正则表示内容/`
+		- ``` js
+		  const re = /ab+c/;
+		  ```
+	-
 - ## Loop
 	- ### for...of
 		- ``` js
