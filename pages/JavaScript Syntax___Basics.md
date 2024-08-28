@@ -351,7 +351,62 @@
 		- ``` js
 		  const re = /ab+c/;
 		  ```
-	-
+- ## Conditional Statements
+	- ### if...else
+		- ``` js
+		  if (condition1) {
+		    statement1;
+		  } else if (condition2) {
+		    statement2;
+		  } else if (conditionN) {
+		    statementN;
+		  } else {
+		    statementLast;
+		  }
+		  ```
+		- 最佳实践是代码块要用 `{}` 包裹
+			- > In general, it's good practice to always use block statements—*especially* when nesting `if` statements
+			  —— 引自 [MDN - JavaScript Guide - Control flow and error handling](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+	- ### Falsy values
+		- 如下的值会被认为是 `false` :
+			- `false`
+			- `undefined`
+			- `null`
+			- `0`
+			- `NaN`
+			- 空字符串 `""`
+		- 除此之外的其他值都被认为是 `true` , 包括对象 (Boolean 对象也不例外)。
+			- ``` js
+			  const b = new Boolean(false);
+			  if (b) {
+			    // this condition evaluates to true
+			  }
+			  if (b == true) {
+			    // this condition evaluates to false
+			  }
+			  ```
+	- ### Switch
+		- ``` js
+		  const fruitType = "Bananas";
+		  switch (fruitType) {
+		    case "Oranges":
+		      console.log("Oranges are $0.59 a pound.");
+		      break;
+		    case "Apples":
+		      console.log("Apples are $0.32 a pound.");
+		      break;
+		    case "Bananas":
+		      console.log("Bananas are $0.48 a pound.");
+		    case "Cherries":
+		      console.log("Cherries are $3.00 a pound.");
+		      break;
+		    default:
+		      console.log(`Sorry, we are out of ${fruitType}.`);
+		  }
+		  // Bananas are $0.48 a pound.
+		  // Cherries are $3.00 a pound.
+		  ```
+		- 如果匹配到的 case 语句块中没有 `break` 语句，则会继续执行后面的 case 语句块 (不管这个 case 语句块的值是否匹配)，直到遇到 `break` 语句。
 - ## Loop
 	- ### for...of
 		- ``` js
