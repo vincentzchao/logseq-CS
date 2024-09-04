@@ -407,6 +407,44 @@
 		  // Cherries are $3.00 a pound.
 		  ```
 		- 如果匹配到的 case 语句块中没有 `break` 语句，则会继续执行后面的 case 语句块 (不管这个 case 语句块的值是否匹配)，直到遇到 `break` 语句。
+- ## Exception
+	- ### throw
+		- 除了可以 throw 专门的异常类 (`ECMAScript exceptions` 和 `DOMException` ) ，我们还可以 throw 任何类型的数据。
+		- ``` js
+		  throw "Error2"; // String type
+		  throw 42; // Number type
+		  throw true; // Boolean type
+		  // Object type
+		  throw {
+		    toString() {
+		      return "I'm an object!";
+		    },
+		  };
+		  ```
+	- ### try... catch
+		- 示例：
+		- ``` js
+		  function getMonthName(mo) {
+		    mo--; // Adjust month number for array index (so that 0 = Jan, 11 = Dec)
+		    const months = [
+		      "Jan", "Feb", "Mar", "Apr", "May", "Jun",
+		      "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+		    ];
+		    if (months[mo]) {
+		      return months[mo];
+		    } else {
+		      throw new Error("InvalidMonthNo"); // throw keyword is used here
+		    }
+		  }
+		  
+		  try {
+		    // statements to try
+		    monthName = getMonthName(myMonth); // function could throw exception
+		  } catch (e) {
+		    monthName = "unknown";
+		    logMyErrors(e); // pass exception object to error handler (i.e. your own function)
+		  }
+		  ```
 - ## Loop
 	- ### for...of
 		- ``` js
