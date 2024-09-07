@@ -407,7 +407,7 @@
 		  // Cherries are $3.00 a pound.
 		  ```
 		- 如果匹配到的 case 语句块中没有 `break` 语句，则会继续执行后面的 case 语句块 (不管这个 case 语句块的值是否匹配)，直到遇到 `break` 语句。
-- ## Exception
+- ## Exceptions
 	- ### throw statement
 		- 除了可以 throw 专门的异常类 (`ECMAScript exceptions` 和 `DOMException` ) ，我们还可以 throw 任何类型的数据。
 		- ``` js
@@ -503,7 +503,40 @@
 			  // caught inner "bogus"
 			  // false
 			  ```
-- ## Loop
+	- ### Error Objects' Properties
+		- `name` 属性是异常类的名称。
+		- `message` 属性是异常信息。
+		- ``` js
+		  function doSomethingErrorProne() {
+		    if (ourCodeMakesAMistake()) {
+		      throw new Error("The message");
+		    } else {
+		      doSomethingToGetAJavaScriptError();
+		    }
+		  }
+		  
+		  try {
+		    doSomethingErrorProne();
+		  } catch (e) {
+		    // Now, we actually use `console.error()`
+		    console.error(e.name); // 'Error'
+		    console.error(e.message); // 'The message', or a JavaScript error message
+		  }
+		  ```
+- ## Loops and Iteration
+	- ###  for
+		- 语法:
+			- ```js
+			  for (initialization; condition; afterthought)
+			    statement
+			  ```
+		- 示例:
+			- ``` js
+			  for (let step = 0; step < 5; step++) {
+			    // Runs 5 times, with values of step 0 through 4.
+			    console.log("Walking east one step");
+			  }
+			  ```
 	- ### for...of
 		- ``` js
 		  const resetParas = document.querySelectorAll(".resultParas p");
@@ -511,6 +544,49 @@
 		    resetPara.textContent = "";
 		  }
 		  ```
+	- ### while
+		- 语法：
+			- ``` js
+			  while (condition)
+			    statement
+			  ```
+		- 示例:
+			- ``` js
+			  let n = 0;
+			  let x = 0;
+			  while (n < 3) {
+			    n++;
+			    x += n;
+			  }
+			  ```
+	- ### do...while
+		- 语法：
+			- ``` js
+			  do
+			    statement
+			  while (condition);
+			  ```
+			- 不管 `condition` 结果为什么, `statement` 都会先执行一次。
+		- 示例：
+			- ``` js
+			  let i = 0;
+			  do {
+			    i += 1;
+			    console.log(i);
+			  } while (i < 5);
+			  ```
+	- ### labeled statement
+		- 语法：
+			- ``` js
+			  label:
+			    statement
+			  ```
+			- `label` 不是关键字, `label` 可以是任何合法的 identifier .
+			- 这样声明了 `label` 之后，可以在程序的任何地方使用这个 `label` .
+		- 具体参见 `break` 和 `continue` .
+	- ### break
+		-
+	-
 - ## Function
 	- ### 基本语法
 		- ``` js
@@ -580,4 +656,7 @@
 - ## 参考
 	- [MDN JavaScript Guide - Grammar and types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types)
 	  logseq.order-list-type:: number
-	- logseq.order-list-type:: number
+	- [MDN JavaScript Guide - Control flow and error handling](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+	  logseq.order-list-type:: number
+	- [MDN JavaScript Guide - Loops and iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
+	  logseq.order-list-type:: number
