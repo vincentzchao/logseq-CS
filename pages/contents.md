@@ -1,2 +1,2 @@
 -
-- {{renderer :tocgen2, [[使用 rpm 的 linux 开发环境搭建]], calc(100vh - 135px)}}
+- {{renderer :tocgen2, [[javascript syntax/basics]], calc(100vh - 135px)}}

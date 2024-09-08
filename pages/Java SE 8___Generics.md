@@ -9,7 +9,7 @@ tags:: [[Java]]
 		- [泛型&通配符常见面试题总结](https://www.yuque.com/snailclimb/mf2z3k/ipqccd)
 		  logseq.order-list-type:: number
 	- ### 伪泛型
-		- Java 中的泛型是 **伪泛型** , 因为在 Java 的变异期间, 泛型信息会被擦除.
+		- Java 中的泛型是 **伪泛型** , 因为在 Java 的编译期间, 泛型信息会被擦除.
 			- `T` 擦除为 `Object` .
 			- `T extends xxx` 擦除为 `xxx` .
 - ## ? 通配符 和 T 的区别

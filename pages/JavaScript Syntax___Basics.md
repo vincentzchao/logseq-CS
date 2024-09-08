@@ -298,10 +298,10 @@
 		  console.log(dog["name"]);
 		  ```
 		- 如果属性名称是合法的标识符：
-			- 则可以使用 `object.property` 或 `object.["property"]` 或 `object.['property']` 三种方式访问属性。
+			- 则可以使用 `object.property` 或 `object["property"]` 或 `object['property']` 三种方式访问属性。
 	- ### Numeric property name
 		- 如果使用数字 (包括小数) 作为属性名称：
-			- 则可以使用 `object.[property]` 或 `object.["property"]` 或 `object.['property']` 三种方式访问属性。
+			- 则可以使用 `object[property]` 或 `object["property"]` 或 `object['property']` 三种方式访问属性。
 		- ``` js
 		  const car = { 1.3: "Jeep", 7: "Mazda" };
 		  
@@ -311,7 +311,7 @@
 	- ### Invalid Identifier Property
 		- 如果使用 除数字以外 的非法标识符作为属性名称，则：
 			- 在声明时，必须加上引号 (单引号和双引号都行) 。
-			- 在访问时，则只能使用 `object.["property"]` 或 `object.['property']` 两种方式。
+			- 在访问时，则只能使用 `object["property"]` 或 `object['property']` 两种方式。
 		- ``` js
 		  const unusualPropertyNames = {
 		    '': 'An empty string',
@@ -346,11 +346,11 @@
 		    ["prop_" + (() => 42)()]: 42,
 		  };
 		  ```
-	- ### RegExp Literals
-		- 正则表达式字面量: `/正则表示内容/`
-		- ``` js
-		  const re = /ab+c/;
-		  ```
+- ## RegExp Literals
+	- 正则表达式字面量: `/正则表示内容/`
+	- ``` js
+	  const re = /ab+c/;
+	  ```
 - ## Conditional Statements
 	- ### if...else
 		- ``` js
@@ -524,6 +524,7 @@
 		  }
 		  ```
 - ## Loops and Iteration
+  collapsed:: true
 	- ###  for
 		- 语法:
 			- ```js
@@ -537,13 +538,54 @@
 			    console.log("Walking east one step");
 			  }
 			  ```
+	- ### for...in
+		- 语法:
+			- ``` js
+			  for (variable in object)
+			    statement
+			  ```
+			- 遍历对象的属性, `variable`  是 `string` 类型的属性名称。
+			- 如果 `object` 是数组对象, `variable` 将是 `string` 类型的元素索引。
+		- 示例：
+			- ``` js
+			  // 普通对象
+			  const obj = { name: "jack", age: 10};
+			  for (i in obj) {
+			      console.log(typeof i); // string
+			      console.log(i, "==>", obj[i]);
+			  }
+			  
+			  // 数组对象
+			  const arr = ["jack", "vincent", "lucy"];
+			  for(i in arr) {
+			      console.log(typeof i); // string
+			      console.log(i, "==>", arr[i]);
+			  }
+			  ```
 	- ### for...of
-		- ``` js
-		  const resetParas = document.querySelectorAll(".resultParas p");
-		  for (const resetPara of resetParas) {
-		    resetPara.textContent = "";
-		  }
-		  ```
+		- 语法：
+			- ``` js
+			  for (variable of iterable)
+			    statement
+			  ```
+			- 遍历 `iterable objects` (如 Array, Map, Set 等)
+			- 与 for...in 不同的是 for...of , 前者遍历属性名称，后者遍历属性值。
+		- 示例：
+			- ``` js
+			  const arr = [3, 5, 7];
+			  // 数组对象也可以添加 custom properties or methods
+			  arr.foo = "hello";
+			  
+			  for (const i in arr) {
+			    console.log(i);
+			  }
+			  // "0" "1" "2" "foo"
+			  
+			  for (const i of arr) {
+			    console.log(i);
+			  }
+			  // Logs: 3 5 7
+			  ```
 	- ### while
 		- 语法：
 			- ``` js
@@ -585,7 +627,87 @@
 			- 这样声明了 `label` 之后，可以在程序的任何地方使用这个 `label` .
 		- 具体参见 `break` 和 `continue` .
 	- ### break
-		-
+		- 语法：
+			- ``` js
+			  // 跳出 break 语句所在的最内层的循环
+			  break;
+			  
+			  // 跳出 label 所指定的循环
+			  break label;
+			  ```
+		- 示例一：
+			- ``` js
+			  for (let i = 0; i < a.length; i++) {
+			    if (a[i] === theValue) {
+			      break;
+			    }
+			  }
+			  ```
+		- 示例二：
+			- ``` js
+			  let x = 0;
+			  let z = 0;
+			  labelCancelLoops: while (true) {
+			    console.log("Outer loops:", x);
+			    x += 1;
+			    z = 1;
+			    while (true) {
+			      console.log("Inner loops:", z);
+			      z += 1;
+			      if (z === 10 && x === 10) {
+			        // 跳出 labelCancelLoops 所指定的那个 while 循环
+			        break labelCancelLoops;
+			      } else if (z === 10) {
+			        break;
+			      }
+			    }
+			  }
+			  ```
+	- ### continue
+		- 语法：
+			- ``` js
+			  // 结束 continue 语句所在的最内层的循环的当前迭代，进入到下一轮迭代
+			  // while 循环就是直接到 condition 语句
+			  // for 循环就是直接到 afterthought 语句
+			  continue;
+			  
+			  // 结束 label 所指定的循环的当前迭代，进入到下一轮迭代
+			  continue label;
+			  ```
+		- 示例一：
+			- ``` js
+			  let i = 0;
+			  let n = 0;
+			  while (i < 5) {
+			    i++;
+			    if (i === 3) {
+			      continue;
+			    }
+			    n += i;
+			    console.log(n);
+			  }
+			  // Logs:
+			  // 1 3 7 12
+			  ```
+		- 示例二：
+			- ``` js
+			  let i = 0;
+			  let j = 10;
+			  checkiandj: while (i < 4) {
+			    console.log(i);
+			    i += 1;
+			    checkj: while (j > 4) {
+			      console.log(j);
+			      j -= 1;
+			      if (j % 2 === 0) {
+			        continue checkj;
+			      }
+			      console.log(j, "is odd.");
+			    }
+			    console.log("i =", i);
+			    console.log("j =", j);
+			  }
+			  ```
 	-
 - ## Function
 	- ### 基本语法
