@@ -24,6 +24,6 @@ alias:: [[JS]]
 		- 下一步学习 [Basic math in JavaScript — numbers and operators](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math)
 	- [MDN - JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript) -> [MDN - JavaScript Guide](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
 		- 学习完 [MDN - JavaScript Guide - Introduction](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Introduction) ，但未学习其中提到的 [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) ==2024-08-22==
-		- 学习完 [MDN JavaScript Guide - Loops and iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration)
+		- 接下来学习 [MDN - JavaScript Guide - Functions - Calling functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#calling_functions)
 		-
 -
