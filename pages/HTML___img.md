@@ -65,7 +65,27 @@ tags:: [[HTML]]
 			- 最好不要用图片来展示文本.
 				- 比如你可能因为 header 需要一些特殊效果，就用图片来代替, 最好不要这么做，尽量使用 CSS.
 			- 如果你不得不这么做，还是应该在 `alt` 中提供描述.
-	-
+- ## width and height
+	- ``` html
+	  <img
+	    src="images/dinosaur.jpg"
+	    alt="The head and torso of a dinosaur skeleton;
+	            it has a large head with long sharp teeth"
+	    width="400"
+	    height="341" />
+	  ```
+	- `width` 和 `height` 不用写单位，默认单位是 pixel .
+	- 使用 `width` 和 `height` 属性是最佳实践，因为：
+		- 因为，通常 HTML 文件会比图片小，所以通常页面显示出其他内容的时候，图片还没下载完成。
+		- 而如果不使用 `width` 和 `height` 属性，页面是不会给图片预留空间的；
+		- 但如果图片下载并渲染出来，就会使其周围的元素移动，这挺影响用户注意力的。
+		- ![image.png](../assets/image_1726061212271_0.png){:height 435, :width 572}
+		- 但如果使用 `width` 和 `height` 属性，就会预留空间。
+		- ![image.png](../assets/image_1726061497608_0.png){:height 435, :width 572}
+	- 同时，尽量使用图片的实际大小，否则可能导致图片变模糊、有颗粒感。
+		- 所以，最好使用图片编辑工具实现处理好图片的大小，再使用。
+		- 如果非要用代码改变图片的大小，请使用 CSS .
+- ## title
 - ## CSS background images
 	-
 - ## Replaced elements
