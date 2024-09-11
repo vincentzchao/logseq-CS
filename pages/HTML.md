@@ -24,7 +24,7 @@ alias:: [[HyperText Markup Language]]
 				  logseq.order-list-type:: number
 		- logseq.order-list-type:: number
 - ## 学习进度
-	- 接下来看 [Images in HTML#Width and height](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML#width_and_height)
+	- 接下来看 [Images in HTML#Public domain/CC0](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML)
 - ## 学习资源
 	- [MDN - HTML Reference](https://developer.mozilla.org/en-US/docs/Web/HTML)
 	  logseq.order-list-type:: number

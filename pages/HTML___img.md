@@ -86,6 +86,47 @@ tags:: [[HTML]]
 		- 所以，最好使用图片编辑工具实现处理好图片的大小，再使用。
 		- 如果非要用代码改变图片的大小，请使用 CSS .
 - ## title
+	- ``` html
+	  <img
+	    src="images/dinosaur.jpg"
+	    alt="The head and torso of a dinosaur skeleton;
+	            it has a large head with long sharp teeth"
+	    width="400"
+	    height="341"
+	    title="A T-Rex on display in the Manchester University Museum" />
+	  ```
+	- `title` 的内容，在鼠标悬浮时显示，可以用作图片的标题 ( `alt` 用于描述图片内容)
+	- 不建议使用这个属性，因为它有一些 accessibility 问题，因为：
+		- screen reader 对这个属性的支持不可预测.
+		  logseq.order-list-type:: number
+		- 浏览器只在鼠标悬浮时，显示此属性内容 (那么键盘用户或者手机用户就看不了了)。
+		  logseq.order-list-type:: number
+	- 所以，如果是重要内容，最好写到正文中。
+- ## License
+	- ### License Types
+		- 有如下几种 license 类型：
+			- All rights reserved
+			  logseq.order-list-type:: number
+			- Permissive
+			  logseq.order-list-type:: number
+			- Public domain/CC0
+			  logseq.order-list-type:: number
+	- ### All rights reserved
+		- 即 版权的持有者 拥有使用他们作品的专有权。
+		- 如果要使用这种作品，需要满足以下条件之一：
+			- 获得明确的书面许可。
+			  logseq.order-list-type:: number
+			- 支付费用。
+			  logseq.order-list-type:: number
+				- 可能是一次性付费，可以无限制地使用；
+				- 也可能是按使用次数、时间、区域、行业、媒体类型付费。
+			- 法律允许的合理使用 ( [fair use](https://fairuse.stanford.edu/overview/fair-use/what-is-fair-use/) or [fair dealing](https://copyrightservice.co.uk/copyright/p27_work_of_others) )
+			  logseq.order-list-type:: number
+		- 如果网上看到有作品没有声明版权，并不一定是没有版权，最安全的做法是，认为它 All rights reserved .
+	- ### Permissive
+		- 即 类似 [MIT](https://mit-license.org/), [BSD](https://opensource.org/license/BSD-3-clause), or a suitable [Creative Commons (CC) license](https://chooser-beta.creativecommons.org/) 等的 license.
+		- 我们无需支付费用，只要满足 license 要求的条件即可.
+		-
 - ## CSS background images
 	-
 - ## Replaced elements
