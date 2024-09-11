@@ -19,7 +19,7 @@ tags:: [[HTML]]
 		- 便于 css 和 js 的使用.
 		  logseq.order-list-type:: number
 - ## 为什么要使用语义化的标签
-	- 同样在页面呈现一个 **标题** ，我们可以有一下两种做法：
+	- 同样在页面呈现一个 **标题** ，我们可以有以下两种做法：
 	- 1. 使用 `<h1>` 标签。
 		- ```html
 		  <h1>This is a top level heading</h1>
@@ -35,7 +35,7 @@ tags:: [[HTML]]
 		- 用于指定网页使用的主要语言 .
 		- **作用：**
 			- 可用于正确地显示文字 .
-			- 可以用于 **网页阅读器** 为 **视障用户** 读出正确的读音 (比如法语和英语中都有six，但读音不同) .
+			- 可以用于 **网页阅读器** 为 **视障用户** 读出正确的读音 (比如法语和英语中都有 six ，但读音不同) .
 		- 可选值：zh-CN、en-US 等:
 		- ```html
 		  <html lang="zh-CN">
@@ -68,39 +68,39 @@ tags:: [[HTML]]
 		- `<dd>` : description details 描述详情，会有 **缩进** 的效果。
 		- ```html
 		  <dl>
-		  <dt>soliloquy</dt>
-		  <dd>
-		    In drama, where a character speaks to themselves, representing their inner
-		    thoughts or feelings and in the process relaying them to the audience (but
-		    not to other characters.)
-		  </dd>
-		  <dt>monologue</dt>
-		  <dd>
-		    In drama, where a character speaks their thoughts out loud to share them
-		    with the audience and any other characters present.
-		  </dd>
-		  <dt>aside</dt>
-		  <dd>
-		    In drama, where a character shares a comment only with the audience for
-		    humorous or dramatic effect. This is usually a feeling, thought, or piece of
-		    additional background information.
-		  </dd>
+		    <dt>soliloquy</dt>
+		    <dd>
+		      In drama, where a character speaks to themselves, representing their inner
+		      thoughts or feelings and in the process relaying them to the audience (but
+		      not to other characters.)
+		    </dd>
+		    <dt>monologue</dt>
+		    <dd>
+		      In drama, where a character speaks their thoughts out loud to share them
+		      with the audience and any other characters present.
+		    </dd>
+		    <dt>aside</dt>
+		    <dd>
+		      In drama, where a character shares a comment only with the audience for
+		      humorous or dramatic effect. This is usually a feeling, thought, or piece of
+		      additional background information.
+		    </dd>
 		  </dl>
 		  ```
 		- **一个 `<dt>` 对应多 `<dd>`**
 		- ```html
 		  <dl>
-		  <dt>aside</dt>
-		  <dd>
-		    In drama, where a character shares a comment only with the audience for
-		    humorous or dramatic effect. This is usually a feeling, thought, or piece of
-		    additional background information.
-		  </dd>
-		  <dd>
-		    In writing, a section of content that is related to the current topic, but
-		    doesn't fit directly into the main flow of content so is presented nearby
-		    (often in a box off to the side.)
-		  </dd>
+		    <dt>aside</dt>
+		    <dd>
+		      In drama, where a character shares a comment only with the audience for
+		      humorous or dramatic effect. This is usually a feeling, thought, or piece of
+		      additional background information.
+		    </dd>
+		    <dd>
+		      In writing, a section of content that is related to the current topic, but
+		      doesn't fit directly into the main flow of content so is presented nearby
+		      (often in a box off to the side.)
+		    </dd>
 		  </dl>
 		  ```
 	- ### `<blockquote>` 块引用
@@ -109,11 +109,11 @@ tags:: [[HTML]]
 		- ```html
 		  <p>Here is a blockquote:</p>
 		  <blockquote cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote">
-		  <p>
-		    The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or
-		    <em>HTML Block Quotation Element</em>) indicates that the enclosed text is
-		    an extended quotation.
-		  </p>
+		    <p>
+		      The <strong>HTML <code>&lt;blockquote&gt;</code> Element</strong> (or
+		      <em>HTML Block Quotation Element</em>) indicates that the enclosed text is
+		      an extended quotation.
+		    </p>
 		  </blockquote>
 		  ```
 	- ### `<q>` 行内引用

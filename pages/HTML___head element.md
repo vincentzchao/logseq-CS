@@ -28,7 +28,7 @@ tags:: [[HTML]]
 			  ```
 		- #### description 类型
 			- 指定网站描述。
-			- 有利于SEO([Search Engine Optimization](https://developer.mozilla.org/en-US/docs/Glossary/SEO))
+			- 有利于SEO( [Search Engine Optimization](https://developer.mozilla.org/en-US/docs/Glossary/SEO) )
 			- ```html
 			  <meta
 			  name="description"
@@ -95,7 +95,7 @@ tags:: [[HTML]]
 	  <script src="my-js-file.js" defer></script>
 	  ```
 	- `defer` : 用于表示在解析完整个 html 页面后，再运行js。
-	- `<script>` 并非一个 `void element` ，它其中是可以额外加js代码的。
+	- `<script>` 并非一个 `void element` ，它其中是可以额外加 js 代码的。
 - ---
 - ## 参考
 	- [MDN - What's in the head? Metadata in HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/The_head_metadata_in_HTML)

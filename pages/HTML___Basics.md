@@ -6,7 +6,7 @@ tags:: [[HTML]]
 - ## Elements
 	- ### Structure
 		- ![grumpy-cat-small.png](../assets/grumpy-cat-small_1701182480611_0.png)
-		- [图片来源](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-small.png)
+		- [图片来源](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
 	- ### Block-level elements
 		- 参考: [Block-level content](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements)
 		- 如： `<p></p>` 、 `<div></div>`
@@ -25,7 +25,7 @@ tags:: [[HTML]]
 - ## Attributes
 	- ### 结构
 		- ![grumpy-cat-attribute-small.png](../assets/grumpy-cat-attribute-small_1701182874107_0.png)
-		- [图片来源](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started/grumpy-cat-attribute-small.png)
+		- [图片来源](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started)
 	- ### 单引号还是双引号
 		- 属性值一定要用 `""` 或者 `''` 包裹起来，否则如果属性值中包含空格，可能会出问题。
 		- `""` 或者 `''` 是等价的.

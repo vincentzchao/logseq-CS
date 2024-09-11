@@ -1,2 +1,2 @@
 -
-- {{renderer :tocgen2, [[javascript syntax/functions]], calc(100vh - 135px)}}
+- {{renderer :tocgen2, [[html/img]], calc(100vh - 135px)}}

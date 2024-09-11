@@ -177,7 +177,7 @@ tags:: [[HTML]]
 		- #### `<footer>`
 			- 表示页面的 **结束内容** 。
 	- ### 非语义化标签
-		- 如果确实找不到合适的语义化的词，只是想对内容加一些CSS或JS，应该考虑 **非语义化标签**
+		- 如果确实找不到合适的语义化标签，只是想对内容加一些 CSS 或 JS ，应该考虑 **非语义化标签**
 		- #### `<span>`
 			- 行内 **非语义标签** 。
 			- ```html
@@ -198,18 +198,18 @@ tags:: [[HTML]]
 			- 这里我们加上 `<hn>` 标签，以帮助 **screen reader** 用户找到它。
 			- ```html
 			  <div class="shopping-cart">
-			  <h2>Shopping cart</h2>
-			  <ul>
-			    <li>
-			      <p>
-			        <a href=""><strong>Silver earrings</strong></a>:
-			        $99.95.
-			      </p>
-			      <img src="../products/3333-0985/thumb.png" alt="Silver earrings" />
-			    </li>
-			    <li>…</li>
-			  </ul>
-			  <p>Total cost: $237.89</p>
+			    <h2>Shopping cart</h2>
+			    <ul>
+			      <li>
+			        <p>
+			          <a href=""><strong>Silver earrings</strong></a>:
+			          $99.95.
+			        </p>
+			        <img src="../products/3333-0985/thumb.png" alt="Silver earrings" />
+			      </li>
+			      <li>…</li>
+			    </ul>
+			    <p>Total cost: $237.89</p>
 			  </div>
 			  ```
 	- ### 换行符与水平线
