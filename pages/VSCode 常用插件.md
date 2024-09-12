@@ -1,4 +1,4 @@
-tags:: [[VSCode 插件]]
+tags:: [[VSCode Extension]]
 ---
 
 - ## open in browser
@@ -10,3 +10,4 @@ tags:: [[VSCode 插件]]
 	- ### XML Tools
 		- [VSCode 插件市场 - XML Tools](https://marketplace.visualstudio.com/items?itemName=DotJoshJohnson.xml)
 		-
+-

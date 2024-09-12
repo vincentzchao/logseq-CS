@@ -5,7 +5,7 @@ tags:: [[IDE]]
 - ==子目录==
 	- [[VSCode Formatting]]
 	- [[VSCode Settings]]
-	- [[VSCode 插件]]
+	- [[VSCode Extension]]
 	- [[VSCode 常见问题]]
 - ---
 - ## 官方资料

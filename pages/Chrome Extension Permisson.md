@@ -1,7 +1,6 @@
 tags:: [[Chrome Extension]]
 ---
 
--
 - ## activeTab permission
 	- 当用户 `invoke` 这个这个扩展 (比如点击 icon) , 用户便有 **权限** 暂时访问当前的 `tab` .
 	- ~~当用户在当前这个 `tab` , 这个 **权限** 一直持续, 直到用户离开或者关闭当前 `tab` .~~

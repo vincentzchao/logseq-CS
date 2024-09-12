@@ -2,7 +2,7 @@ tags:: [[Chrome Extension]]
 ---
 
 - ## Extension files
-	- ### 文件结构
+	- ### Files Structure
 		- 图片来源: `https://wd.imgix.net/image/BhuKGJaIeLNPW9ehns59NfwqKxF2/Txq5CxeXjQz7i4wmP8zO.png?auto=format&w=439`
 		- ![image.png](../assets/image_1699013507049_0.png){:height 644, :width 434}
 	- ### 常用文件
@@ -31,17 +31,53 @@ tags:: [[Chrome Extension]]
 			  logseq.order-list-type:: number
 			- [其它 HTML pages](https://developer.chrome.com/docs/extensions/mv3/architecture-overview/#html-files)
 			  logseq.order-list-type:: number
-- ## manifest
-	- 只有三个字段是必须的:
-		- `"manifest_version"`
-		- `"name"`
-		- `"version"`
-	-
+- ## Minimal Start
+	- 创建一个新文件夹，保存插件的所有文件。
+	  logseq.order-list-type:: number
+	- 根目录创建 `manifest.json` 文件，编辑如下内容:
+	  logseq.order-list-type:: number
+		- 只有三个字段是必须的:
+			- `"manifest_version"` : 只填 3，这是最新版本.
+			- `"name"` : 插件名称.
+			- `"version"` : 插件版本.
+		- ``` json
+		  {
+		      "manifest_version": 3,
+		      "name": "extension's name",
+		      "version": "0.0.1"
+		  }
+		  ```
+	- 在浏览器中加载此插件进行调试.
+	  logseq.order-list-type:: number
+		- 加载插件文件夹即可.
+		- ![image.png](../assets/image_1726163903312_0.png){:height 272, :width 375}
+	- pin 这个插件，以方便调试。
+	  logseq.order-list-type:: number
+- ## Reload Extension
+	- 修改代码后，可能需要按如下方式 reload 插件.
+		- ![image.png](../assets/image_1726164501083_0.png){:height 272, :width 378}
+	- 有些修改需要 reload , 有些不需要.
+		- | Extension component | Requires extension reload |
+		  | ---- | ---- | ---- |
+		  | The manifest | Yes |
+		  | Service worker | Yes |
+		  | Content scripts | Yes (plus the host page) |
+		  | The popup | No |
+		  | Options page | No |
+		  | Other extension HTML pages | No |
+- ## Debug Extension
+	- ### Inspect Pages
+		- 右击插件的 page , 点击 inspect .
+			- ![image.png](../assets/image_1726165121916_0.png){:height 121, :width 274}
+			- (图中是 popup page)
+	- ### Error logs
+		- ![image.png](../assets/image_1726165379545_0.png){:height 315, :width 364}
+		- 插件管理页面可以看到插件的错误日志.
 	-
 - ---
 - ## 参考
-	- [Get Started Guide](https://developer.chrome.com/docs/extensions/mv3/getstarted/)
+	- ~~[Architecture overview](https://developer.chrome.com/docs/extensions/mv3/architecture-overview/)~~ 官网文档经过调整后此页面找不到了
 	  logseq.order-list-type:: number
-	- [Architecture overview](https://developer.chrome.com/docs/extensions/mv3/architecture-overview/)
+	- [Hello World](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world)
 	  logseq.order-list-type:: number
 	- logseq.order-list-type:: number
