@@ -1,34 +1,26 @@
 tags:: [[HTML]]
 ---
 
-- ## 概述
-	- ### 语法
-		- 这是一个 `void element/empty element` (没有子元素，没有结束标签)
-		- ```html
-		  <img src="dinosaur.jpg" alt="Dinosaur" />
-		  <img src="images/dinosaur.jpg" alt="Dinosaur" />
-		  ```
-	- ### 关于 SEO
+- ## syntax
+	- 这是一个 `void element/empty element` (没有子元素，没有结束标签)
+	- ```html
+	  <img src="dinosaur.jpg" alt="Dinosaur" />
+	  <img src="images/dinosaur.jpg" alt="Dinosaur" />
+	  ```
+- ## src attribute
+	- ### SEO
 		- 为了SEO，文件名称要有 **可读性** 。比如 `dinosaur.jpg` 好于 `img835.jpg` 。
-	- ### 关于 hotlinking
+	- ### hotlinking
 		- 未经授权不要使用别人网站的图片地址 (这被称为 **hotlinking** )。
 			- 这样做会导致别人需要承担图片访问的流量，而且你也不能保证图片不会被删除或被替换。
-	- ### 关于版权
-		- 你使用的图片最好满足以下条件之一：
-			- 你 **拥有** 这张图片。
-			  logseq.order-list-type:: number
-			- 你有来自图片拥有者明确的、书面的 **许可** 。
-			  logseq.order-list-type:: number
-			- 你有充分的证据证明这张图片是在 **公共领域** 的 (即可随意使用) 。
-			  logseq.order-list-type:: number
-	- ### 关于绝对路径
+	- ### path
 		- 像如下这种 **绝对路径** 最好不要出现，因为：
 			- 如果使用简单的部署，你需要将你的 **图片** 和 你的 **网站** 部署到同一台服务器。
 			- 如果使用高级的部署，你需要使用 [CDN (Content Delivery Network)](https://developer.mozilla.org/en-US/docs/Glossary/CDN) 去分发你的 **图片** 。
 		- ```html
 		  <img src="https://www.example.com/images/dinosaur.jpg" alt="Dinosaur" />
 		  ```
-- ## alt
+- ## alt attribute
 	- ### alt 使用
 		- `alt` 属性用于 **图片无法展示** 或 **由于网速过慢导致渲染时间比较长** 时的文本展示。
 		- ```html
@@ -65,7 +57,7 @@ tags:: [[HTML]]
 			- 最好不要用图片来展示文本.
 				- 比如你可能因为 header 需要一些特殊效果，就用图片来代替, 最好不要这么做，尽量使用 CSS.
 			- 如果你不得不这么做，还是应该在 `alt` 中提供描述.
-- ## width and height
+- ## width and height attribute
 	- ``` html
 	  <img
 	    src="images/dinosaur.jpg"
@@ -85,7 +77,7 @@ tags:: [[HTML]]
 	- 同时，尽量使用图片的实际大小，否则可能导致图片变模糊、有颗粒感。
 		- 所以，最好使用图片编辑工具实现处理好图片的大小，再使用。
 		- 如果非要用代码改变图片的大小，请使用 CSS .
-- ## title
+- ## title attribute
 	- ``` html
 	  <img
 	    src="images/dinosaur.jpg"
@@ -124,9 +116,23 @@ tags:: [[HTML]]
 			  logseq.order-list-type:: number
 		- 如果网上看到有作品没有声明版权，并不一定是没有版权，最安全的做法是，认为它 All rights reserved .
 	- ### Permissive
-		- 即 类似 [MIT](https://mit-license.org/), [BSD](https://opensource.org/license/BSD-3-clause), or a suitable [Creative Commons (CC) license](https://chooser-beta.creativecommons.org/) 等的 license.
+		- 即 自由许可, 如 [MIT](https://mit-license.org/), [BSD](https://opensource.org/license/BSD-3-clause), or a suitable [Creative Commons (CC) license](https://chooser-beta.creativecommons.org/) 等 license.
 		- 我们无需支付费用，只要满足 license 要求的条件即可.
-		-
+	- ### Public domain/CC0
+		- 公众领域的作品，我们可以在未经许可的情况下使用，无需满足任何条件。
+			- 作品进入公众领域，原因可能是 版权到期 或者 版权持有人放弃权利等。
+			- 将作品至于公众领域的一个方法是，将作品许可为 [CC0](https://creativecommons.org/share-your-work/public-domain/cc0/) .
+		- 使用公众领域的作品时，记得保存能证明其属于公众领域的证据。
+			- 比如 截图 .
+			- 可以考虑在你的网站列出你使用的所有作品及其 license 要求.
+	- ### Search for permissively-licensed images
+		- 搜索自由许可图片时，可以加上类似如下的关键字：
+			- "public domain images"
+			- "public domain image library"
+			- "open licensed images"
+		- 使用 Google 搜索图片时，有选项可以限定 license
+		- 一些 Image repository sites :
+			- [[网站收藏/图片]]
 - ## CSS background images
 	-
 - ## Replaced elements
