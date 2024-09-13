@@ -2,8 +2,11 @@ tags:: [[Browser Extension]], [[Chrome]]
 ---
 
 - ## 学习路线
-	- 基本概念学习: [[Chrome Extension Concept]]
+	- 基本概念学习: [[Chrome Extension/Basics]]
 	  logseq.order-list-type:: number
+	- [[Chrome Extension/How To]]
+	  logseq.order-list-type:: number
+	- logseq.order-list-type:: number
 	-
 	- [[Chrome Extension Permisson]]
 	- 常见问题
@@ -17,6 +20,7 @@ tags:: [[Browser Extension]], [[Chrome]]
 		- 建议接下来学习: [Debug extensions](https://developer.chrome.com/docs/extensions/get-started/tutorial/debug)
 	- 2024
 		- 学完 [Hello World](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world)
+			- 接下来继续学习 [chrome.action API # tooltip](https://developer.chrome.com/docs/extensions/reference/api/action#tooltip_title)
 - ## 官网资料
 	- [Extension Doc Home](https://developer.chrome.com/docs/extensions/)
 		- ![image.png](../assets/image_1726135559333_0.png){:height 310, :width 326}

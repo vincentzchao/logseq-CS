@@ -1,2 +1,2 @@
 -
-- {{renderer :tocgen2, [[chrome extension concept]], calc(100vh - 135px)}}
+- {{renderer :tocgen2, [[chrome extension/how to]], calc(100vh - 135px)}}

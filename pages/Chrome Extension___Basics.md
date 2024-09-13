@@ -1,7 +1,4 @@
-tags:: [[Chrome Extension]]
----
-
-- ## Extension files
+## Extension files
 	- ### Files Structure
 		- 图片来源: `https://wd.imgix.net/image/BhuKGJaIeLNPW9ehns59NfwqKxF2/Txq5CxeXjQz7i4wmP8zO.png?auto=format&w=439`
 		- ![image.png](../assets/image_1699013507049_0.png){:height 644, :width 434}
@@ -73,7 +70,6 @@ tags:: [[Chrome Extension]]
 	- ### Error logs
 		- ![image.png](../assets/image_1726165379545_0.png){:height 315, :width 364}
 		- 插件管理页面可以看到插件的错误日志.
-	-
 - ---
 - ## 参考
 	- ~~[Architecture overview](https://developer.chrome.com/docs/extensions/mv3/architecture-overview/)~~ 官网文档经过调整后此页面找不到了
