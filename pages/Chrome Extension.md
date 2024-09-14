@@ -4,8 +4,11 @@ tags:: [[Browser Extension]], [[Chrome]]
 - ## 学习路线
 	- 基本概念学习: [[Chrome Extension/Basics]]
 	  logseq.order-list-type:: number
-	- [[Chrome Extension/Icon]]
+	- [[Chrome Extension/Toolbar Icon]]
 	  logseq.order-list-type:: number
+	- [[Chrome Extension/Publish]]
+	  logseq.order-list-type:: number
+	- logseq.order-list-type:: number
 	- logseq.order-list-type:: number
 	-
 	- [[Chrome Extension Permisson]]
@@ -21,6 +24,7 @@ tags:: [[Browser Extension]], [[Chrome]]
 	- 2024
 		- 学完 [Hello World](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world)
 			- 接下来继续学习 [chrome.action API # use cases](https://developer.chrome.com/docs/extensions/reference/api/action#use_cases)
+		- 接下来学习 [Run scripts on every page#Step 3: Declare the content script](https://developer.chrome.com/docs/extensions/get-started/tutorial/scripts-on-every-tab#step-3)
 - ## 官网资料
 	- [Extension Doc Home](https://developer.chrome.com/docs/extensions/)
 		- ![image.png](../assets/image_1726135559333_0.png){:height 310, :width 326}
@@ -32,6 +36,9 @@ tags:: [[Browser Extension]], [[Chrome]]
 			- [API reference](https://developer.chrome.com/docs/extensions/reference/api)
 			- [Manifest reference](https://developer.chrome.com/docs/extensions/reference/manifest)
 			- [Permissions reference](https://developer.chrome.com/docs/extensions/reference/permissions-list)
+		- Publish
+			- 要发布插件前, 可以看 Chrome Web Store 下的内容.
+			- ![image.png](../assets/image_1726295506269_0.png){:height 309, :width 529} []()
 - ## 第三方资料
 	- ### 官方文档翻译
 		- [Chrome 扩展V3 中文文档](https://doc.yilijishu.info/chrome/)

@@ -70,6 +70,8 @@
 	- ### Error logs
 		- ![image.png](../assets/image_1726165379545_0.png){:height 315, :width 364}
 		- 插件管理页面可以看到插件的错误日志.
+- ## Manifest Comment
+	- 注意, 在开发阶段 `manifest.json` 文件中可以使用 `//` 注释, 但是发布时，所有注释都必须去掉.
 - ---
 - ## 参考
 	- ~~[Architecture overview](https://developer.chrome.com/docs/extensions/mv3/architecture-overview/)~~ 官网文档经过调整后此页面找不到了
