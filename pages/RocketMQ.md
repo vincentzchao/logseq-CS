@@ -1,4 +1,3 @@
-alias:: [[Apache RocketMQ]]
 tags:: [[Message Queue]]
 ---
 

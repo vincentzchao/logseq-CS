@@ -6,6 +6,10 @@ tags:: [[Browser Extension]], [[Chrome]]
 	  logseq.order-list-type:: number
 	- [[Chrome Extension/Toolbar Icon]]
 	  logseq.order-list-type:: number
+	- [[Chrome Extension/Content Scripts]]
+	  logseq.order-list-type:: number
+	- [[Chrome Extension/Service Worker]]
+	  logseq.order-list-type:: number
 	- [[Chrome Extension/Publish]]
 	  logseq.order-list-type:: number
 	- logseq.order-list-type:: number
@@ -24,7 +28,7 @@ tags:: [[Browser Extension]], [[Chrome]]
 	- 2024
 		- 学完 [Hello World](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world)
 			- 接下来继续学习 [chrome.action API # use cases](https://developer.chrome.com/docs/extensions/reference/api/action#use_cases)
-		- 接下来学习 [Run scripts on every page#Step 3: Declare the content script](https://developer.chrome.com/docs/extensions/get-started/tutorial/scripts-on-every-tab#step-3)
+		- 接下来学习 [Inject scripts into the active tab#Step 3: Enable the extension action](https://developer.chrome.com/docs/extensions/get-started/tutorial/scripts-activetab#step-3)
 - ## 官网资料
 	- [Extension Doc Home](https://developer.chrome.com/docs/extensions/)
 		- ![image.png](../assets/image_1726135559333_0.png){:height 310, :width 326}

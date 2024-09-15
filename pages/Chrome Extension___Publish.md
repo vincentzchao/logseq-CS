@@ -20,7 +20,7 @@
 		    }
 		  }
 		  ```
-		- (其实也可以配置其他尺寸, 插件会用一个大小最接近的去 scale)
+		- (其实也可以配置其他尺寸, 浏览器会用一个大小最接近的去 scale)
 		- 这里的 `icons` 与 `action` 下的 `default_icon` 不一样.
 			- `default_icon` 用于 toolbar 上的图标, 而 `icons` 有如下用途.
 			- | Icon size | Icon use |

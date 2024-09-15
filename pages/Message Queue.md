@@ -8,11 +8,11 @@ tags:: [[Middleware]]
 	- 削峰
 - ## 主流消息队列产品
 	- ### 官网
-		- Apache ActiveMQ : https://activemq.apache.org/
+		- ActiveMQ : https://activemq.apache.org/
 		- RabbitMQ : https://www.rabbitmq.com/
-		- Apache Kafka : https://kafka.apache.org/
-		- [[Apache RocketMQ]] : https://rocketmq.apache.org/
-		- Apache Pulsar : https://pulsar.apache.org/
+		- Kafka : https://kafka.apache.org/
+		- [[RocketMQ]] : https://rocketmq.apache.org/
+		- Pulsar : https://pulsar.apache.org/
 	- ### 对比
 		- ![image-20220629020901852.png](../assets/image-20220629020901852_1678760536893_0.png)
 - ##  消息队列核心模型
