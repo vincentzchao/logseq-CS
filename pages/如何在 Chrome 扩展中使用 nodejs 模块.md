@@ -1,7 +1,6 @@
 tags:: [[Chrome Extension]], [[Browserify]]
 ---
 
--
 - ## 问题描述
 	- 想要开发一款可以接收邮件内容的 chrome 扩展，所以需要用到 nodejs 的 [mail-listener2](https://github.com/chirag04/mail-listener2) 库。
 	- 但是在浏览器中，没有 nodejs 环境，所以需要有个办法，将我需要的 nodejs 库转成浏览器能够执行的 js 文件。
