@@ -26,11 +26,12 @@ tags:: [[Browser Extension]], [[Chrome]]
 		- 目前学习完了[Get Started Guide](https://developer.chrome.com/docs/extensions/getstarted/) ==建议重学==
 		- 建议接下来学习: [Debug extensions](https://developer.chrome.com/docs/extensions/get-started/tutorial/debug)
 	- 2024
-		- 学完 [Hello World](https://developer.chrome.com/docs/extensions/get-started/tutorial/hello-world)
-			- 接下来继续学习 [chrome.action API # use cases](https://developer.chrome.com/docs/extensions/reference/api/action#use_cases)
-		- 接下来学习 [Inject scripts into the active tab#Step 5](https://developer.chrome.com/docs/extensions/get-started/tutorial/scripts-activetab#step-5)
+		- [chrome.action API # use cases](https://developer.chrome.com/docs/extensions/reference/api/action#use_cases) 没学习完
+		- 接下来学习 [Handle events with service workers](https://developer.chrome.com/docs/extensions/get-started/tutorial/service-worker-events)
 - ## 疑问
-	- 什么时 [host permission](https://developer.chrome.com/docs/extensions/develop/concepts/match-patterns) ？
+	- 貌似现在安装插件不显示 permission warning ? [Permission warning guidelines](https://developer.chrome.com/docs/extensions/develop/concepts/permission-warnings)
+	  logseq.order-list-type:: number
+	- [chrome.scripting](https://developer.chrome.com/docs/extensions/reference/api/scripting)
 	  logseq.order-list-type:: number
 	- 什么是 [`"optional_permissions"`](https://developer.chrome.com/docs/extensions/reference/api/permissions) ？
 	  logseq.order-list-type:: number
@@ -51,3 +52,4 @@ tags:: [[Browser Extension]], [[Chrome]]
 - ## 第三方资料
 	- ### 官方文档翻译
 		- [Chrome 扩展V3 中文文档](https://doc.yilijishu.info/chrome/)
+-

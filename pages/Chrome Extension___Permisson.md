@@ -51,6 +51,14 @@
 		- 作用与 `host_permissions` 一致.
 			- 只不过 `host_permissions` 是在 install time 弹出 warning , 需要用户确认;
 			- 而 `optional_host_permissions` 是在 runtime 弹出 warning , 需要用户确认.
+- ## File URLs and incognito mode permission
+	- 右击插件 icon .
+	  logseq.order-list-type:: number
+	- 选择 **Manage Extension** .
+	  logseq.order-list-type:: number
+	- 开启如下选项
+	  logseq.order-list-type:: number
+		- ![image.png](../assets/image_1726589436644_0.png)
 - ## activeTab permission
 	- ==参考:==
 		- [Inject scripts into the active tab#Step 3: Enable the extension action](https://developer.chrome.com/docs/extensions/get-started/tutorial/scripts-activetab#step-3)
