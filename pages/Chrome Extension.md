@@ -32,6 +32,8 @@ tags:: [[Browser Extension]], [[Chrome]]
 - ## 疑问
 	- 什么时 [host permission](https://developer.chrome.com/docs/extensions/develop/concepts/match-patterns) ？
 	  logseq.order-list-type:: number
+	- 什么是 [`"optional_permissions"`](https://developer.chrome.com/docs/extensions/reference/api/permissions) ？
+	  logseq.order-list-type:: number
 - ## 官网资料
 	- [Extension Doc Home](https://developer.chrome.com/docs/extensions/)
 		- ![image.png](../assets/image_1726135559333_0.png){:height 310, :width 326}
