@@ -162,8 +162,19 @@
 		- 通过使用`chrome.webRequest` API , 拦截当前 tab 到 当前 tab 的 `main frame origin` 的请求, 插件临时获取 `main frame origin` 的 host permissions .
 		  logseq.order-list-type:: number
 - ## scripting permission
-	-
--
+	- ### Introduction
+		- 注入 JavaScript 或 CSS 文件，到指定页面。
+		- 与 content scripts 的作用类似，只不过 `chrome.scripting` 可以在运行时执行.
+	- ### Manifest
+		- 除了在 `manifest.json` 声明 `scripting` 权限，还需要额外声明 `activeTab` 权限, 或者 `host_permissions` key .
+		- ``` json
+		  {
+		    "name": "Scripting Extension",
+		    "manifest_version": 3,
+		    "permissions": ["scripting", "activeTab"],
+		    ...
+		  }
+		  ```
 -
 - ---
 - ## 参考

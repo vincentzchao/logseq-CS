@@ -1,4 +1,4 @@
-## content_scripts key
+## Manifest - content_scripts
 	- 参考:
 		- [Manifest - content scripts](https://developer.chrome.com/docs/extensions/reference/manifest/content-scripts)
 		  logseq.order-list-type:: number

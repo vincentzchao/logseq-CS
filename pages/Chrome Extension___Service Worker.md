@@ -17,3 +17,4 @@
 	- [About extension service workers](https://developer.chrome.com/docs/extensions/develop/concepts/service-workers#manifest)
 	  logseq.order-list-type:: number
 	- logseq.order-list-type:: number
+-

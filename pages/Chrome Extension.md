@@ -29,8 +29,6 @@ tags:: [[Browser Extension]], [[Chrome]]
 		- [chrome.action API # use cases](https://developer.chrome.com/docs/extensions/reference/api/action#use_cases) 没学习完
 		- 接下来学习 [Handle events with service workers](https://developer.chrome.com/docs/extensions/get-started/tutorial/service-worker-events)
 - ## 疑问
-	- [chrome.scripting](https://developer.chrome.com/docs/extensions/reference/api/scripting)
-	  logseq.order-list-type:: number
 	- 什么是 [`"optional_permissions"`](https://developer.chrome.com/docs/extensions/reference/api/permissions) ？
 	  logseq.order-list-type:: number
 - ## 官网资料
