@@ -2,7 +2,7 @@ tags:: [[Browser Extension]], [[Chrome]]
 ---
 
 - ## 学习路线
-	- 基本概念学习: [[Chrome Extension/Basics]]
+	- [[Chrome Extension/Basics]]
 	  logseq.order-list-type:: number
 	- [[Chrome Extension/Toolbar Icon]]
 	  logseq.order-list-type:: number
@@ -14,7 +14,9 @@ tags:: [[Browser Extension]], [[Chrome]]
 	  logseq.order-list-type:: number
 	- [[Chrome Extension/Permisson]]
 	  logseq.order-list-type:: number
-	- logseq.order-list-type:: number
+	-
+	- 框架：
+		- [CRXjs Vite plugin](https://crxjs.dev/vite-plugin)
 	-
 	- 常见问题
 		- [[如何在 Chrome 扩展中使用 nodejs 模块]]
@@ -27,7 +29,8 @@ tags:: [[Browser Extension]], [[Chrome]]
 		- 建议接下来学习: [Debug extensions](https://developer.chrome.com/docs/extensions/get-started/tutorial/debug)
 	- 2024
 		- [chrome.action API # use cases](https://developer.chrome.com/docs/extensions/reference/api/action#use_cases) 没学习完
-		- 接下来学习 [Handle events with service workers](https://developer.chrome.com/docs/extensions/get-started/tutorial/service-worker-events)
+		- 接下来学习 [Handle events with service workers#Optional: Debugging the service worker](https://developer.chrome.com/docs/extensions/get-started/tutorial/service-worker-events#step-3)
+			- 接下来学习 [Events in service workers](https://developer.chrome.com/docs/extensions/develop/concepts/service-workers/events)
 - ## 疑问
 	- 什么是 [`"optional_permissions"`](https://developer.chrome.com/docs/extensions/reference/api/permissions) ？
 	  logseq.order-list-type:: number
