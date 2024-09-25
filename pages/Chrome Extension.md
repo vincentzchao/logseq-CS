@@ -47,7 +47,7 @@ tags:: [[Browser Extension]], [[Chrome]]
 			- [Permissions reference](https://developer.chrome.com/docs/extensions/reference/permissions-list)
 		- Publish
 			- 要发布插件前, 可以看 Chrome Web Store 下的内容.
-			- ![image.png](../assets/image_1726295506269_0.png){:height 309, :width 529} []()
+			- ![image.png](../assets/image_1726295506269_0.png){:height 309, :width 529}
 - ## 第三方资料
 	- ### 官方文档翻译
 		- [Chrome 扩展V3 中文文档](https://doc.yilijishu.info/chrome/)
