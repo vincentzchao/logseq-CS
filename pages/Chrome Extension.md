@@ -17,7 +17,7 @@ tags:: [[Browser Extension]], [[Chrome]]
 	-
 	- 框架：
 		- [CRXjs Vite plugin](https://crxjs.dev/vite-plugin)
-	-
+		-
 	- 常见问题
 		- [[如何在 Chrome 扩展中使用 nodejs 模块]]
 		- [[如何跨域访问 localstorage]]

@@ -37,9 +37,30 @@
 			- Extension service worker 无法使用远程文件, 如果要更新, 则必须替换插件 package 中的文件.
 			- Web service worker 可以使用远程文件, 更新时只需更新远程文件即可 (但必须同源) .
 - ## Events in Service Worker
-	- Extension service worker 会对两种 events 做出响应:
-		- [standard service worker events](https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope#events) (Web service worker events)
-		- extension namespaces events  (Extension service worker events)
+	- ### Event Types
+		- Extension service worker 会对两种 events 做出响应:
+			- [standard service worker events](https://developer.mozilla.org/docs/Web/API/ServiceWorkerGlobalScope#events) (Web service worker events)
+			- extension namespaces events  (Extension service worker events)
+	- ### Declare extension events
+		- Event handlers 应该被声明在脚本的 global scope , 也就是代码写在脚本的 top level (而不是被嵌套在哪里) .
+			- 这保证了 Event handlers 在初始脚本执行时, 就同时被注册.
+			- 从而保证了 Chrome 在启动时, 立即将事件分发给 Service  Worker.
+		- ``` js
+		  // 注册 action 点击事件的 handler，handleActionClick 是用户定义的函数
+		  // event handler 应该在 top level
+		  chrome.action.onClicked.addListener(handleActionClick);
+		  chrome.storage.local.get(["badgeText"], ({ badgeText }) => {
+		    chrome.action.setBadgeText({ text: badgeText });
+		  });
+		  
+		  // 下面是错误的做法
+		  
+		  chrome.storage.local.get(["badgeText"], ({ badgeText }) => {
+		    chrome.action.setBadgeText({ text: badgeText });
+		    // 不要将 event handler 嵌套在函数中
+		    chrome.action.onClicked.addListener(handleActionClick);
+		  });
+		  ```
 - ## Lifecycle
 	- ### Installation
 		- `Installation` 发生在如下几种情况:
@@ -94,5 +115,7 @@
 	- [About extension service workers](https://developer.chrome.com/docs/extensions/develop/concepts/service-workers#manifest)
 	  logseq.order-list-type:: number
 	- [Extension service worker basics](https://developer.chrome.com/docs/extensions/develop/concepts/service-workers/basics)
+	  logseq.order-list-type:: number
+	- [Events in service workers](https://developer.chrome.com/docs/extensions/develop/concepts/service-workers/events)
 	  logseq.order-list-type:: number
 -
