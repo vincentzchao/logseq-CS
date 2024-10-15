@@ -200,7 +200,7 @@ tags:: [[HTML]]
 		- [[Canvas]]
 		- [[SVG]]
 		- [[WebGL]]
-		- [[HTML/Audio and Video]]
+		- [[HTML/Video and Audio]]
 		- [[WebRTC]]
 		-
 - ---

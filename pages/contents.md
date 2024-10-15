@@ -1,2 +1,2 @@
 -
-- {{renderer :tocgen2, [[html/img]], calc(100vh - 135px)}}
+- {{renderer :tocgen2, [[html/video and audio]], calc(100vh - 135px)}}
