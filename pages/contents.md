@@ -1,2 +1,2 @@
 -
-- {{renderer :tocgen2, [[安装 xcode]], calc(100vh - 135px)}}
+- {{renderer :tocgen2, [[swift syntax/basics]], calc(100vh - 135px)}}

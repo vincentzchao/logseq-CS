@@ -2,7 +2,7 @@ tags:: [[Xcode]]
 ---
 
 - ## Xcode 版本与 macOS 版本
-	- Xcode 依赖特定版本的 macOS , 所以安装高版本的 Xcode 的时, 可能会要求我们升级 macOS .
+	- 注意: Xcode 依赖特定版本的 macOS , 所以安装高版本的 Xcode 的时, 可能会要求我们升级 macOS .
 - ## 从 App Store 下载 (不推荐)
 	- [Xcode 主页](https://developer.apple.com/xcode/) > 点击右上角 Download > 点击 Xcode
 		- ![image.png](../assets/image_1729234977998_0.png)
@@ -40,7 +40,13 @@ tags:: [[Xcode]]
 	- 打开 Xcodes 后, 我们可以看到左侧有各种版本的 Xcode 供我们安装 (我在 App Store 安装的 Xcode 它也能识别).
 	  logseq.order-list-type:: number
 		- ![image.png](../assets/image_1729237857974_0.png)
--
+	- 进入 Settings 界面 > 点击 General > 登录开发者账号
+	  logseq.order-list-type:: number
+		- 安装时会要求登录开发者账号
+	- 进入 Settings 界面 > 点击 Advanced > 点击 Install helper
+	  logseq.order-list-type:: number
+		- 安装 helper 以保证 Xcodes 可以正常运行。
+		- ![image.png](../assets/image_1729279278795_0.png){:height 744, :width 593}
 - ---
 - ## 参考
 	- [ChaoCode - [準備好你的 Xcode：使用 Xcodes 安裝 ＆ 手機測試環境設定]](https://www.youtube.com/watch?v=e6wF5UTcxkU&t=836s)
