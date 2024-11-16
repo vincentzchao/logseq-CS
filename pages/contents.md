@@ -1,2 +1,2 @@
 -
-- {{renderer :tocgen2, [[swift syntax/basics]], calc(100vh - 135px)}}
+- {{renderer :tocgen2, [[十大排序算法]], calc(100vh - 135px)}}

@@ -10,7 +10,7 @@ tags:: [[Middleware]]
 	- ### 官网
 		- ActiveMQ : https://activemq.apache.org/
 		- RabbitMQ : https://www.rabbitmq.com/
-		- Kafka : https://kafka.apache.org/
+		- [[Kafka]] : https://kafka.apache.org/
 		- [[RocketMQ]] : https://rocketmq.apache.org/
 		- Pulsar : https://pulsar.apache.org/
 	- ### 对比
