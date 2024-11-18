@@ -1,7 +1,8 @@
 tags:: [[Logseq]]
 ---
 
-- 参考: [Logseq Twitter](https://x.com/logseq/status/1514504572651585538?s=20) 中提到的仓库 [logseq-publish](https://github.com/pengx17/logseq-publish?tab=readme-ov-file)
+- 参考: ~~[Logseq Twitter](https://x.com/logseq/status/1514504572651585538?s=20) 中提到的仓库 [logseq-publish](https://github.com/pengx17/logseq-publish?tab=readme-ov-file)~~
+	- Logseq 官方工具: [publish-spa](https://github.com/logseq/publish-spa)
 -
 - 记得打开 graph 的 **发布所有页面**
 - ![image.png](../assets/image_1708275103934_0.png)

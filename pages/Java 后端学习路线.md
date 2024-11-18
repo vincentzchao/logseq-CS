@@ -1,7 +1,7 @@
 tags:: [[Contents]], [[Roadmap]]
 ---
 
-- ## 语言基础
+- ## Java 语言
 	- [[Java SE]]
 		- 集合
 		  logseq.order-list-type:: number
@@ -40,7 +40,7 @@ tags:: [[Contents]], [[Roadmap]]
 		- [[JUnit]]
 		- [[PowerMock]]
 		- [[Mockito]]
-- ## 分布式
+- ## 微服务
 	- [[Spring Cloud Alibaba]]
 		- [[Nacos]]
 	- [[Spring Cloud]]
