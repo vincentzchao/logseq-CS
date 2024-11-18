@@ -86,9 +86,136 @@ tags:: [[Spring Framework]], [[Spring - 面试重点]]
 	  logseq.order-list-type:: number
 	- `doCreateBean()` 方法开始真正创建 bean 。
 	  logseq.order-list-type:: number
+		- 涉及如下几个主要方法：
+			- 实例化：instanceWrapper = createBeanInstance(beanName, mbd, args);
+			  logseq.order-list-type:: number
+			- 加入三级缓存：addSingletonFactory(beanName, () -> getEarlyBeanReference(beanName, mbd, bean));
+			  logseq.order-list-type:: number
+			- 属性赋值：populateBean(beanName, mbd, instanceWrapper);
+			  logseq.order-list-type:: number
+			- 初始化：exposedObject = initializeBean(beanName, exposedObject, mbd);
+			  logseq.order-list-type:: number
+- ## 创建单例 Bean 的大致流程
+	- 创建单例 Bean ，大概有如下流程：
+	- preInstantiateSingletons()，遍历所有 BeanName，调用 getBean(beanName) 实例化所有单例 Bean
+	- getBean(beanName)
+	  logseq.order-list-type:: number
+	- doGetBean(String name, @Nullable Class<T> requiredType, @Nullable Object[] args, boolean typeCheckOnly)
+	  logseq.order-list-type:: number
+		- getSingleton(String beanName, boolean allowEarlyReference)：从缓存中看是否有 Bean，允许获取早期暴露对象
+		  logseq.order-list-type:: number
+			- 根据 beanName 从一级缓存中取 Bean 的实例：
+			  logseq.order-list-type:: number
+				- 取到就返回。
+				  logseq.order-list-type:: number
+				- 没取到就进行下一步。
+				  logseq.order-list-type:: number
+			- 根据 beanName 从二级缓存中取 Bean 的实例：
+			  logseq.order-list-type:: number
+				- 取到就返回。
+				  logseq.order-list-type:: number
+				- 没取到就进行下一步。
+				  logseq.order-list-type:: number
+			- 根据 beanName 从三级缓存中取 Bean 的 ObjectFactory ：
+			  logseq.order-list-type:: number
+				- 取到的话：
+				  logseq.order-list-type:: number
+					- 调用 ObjectFactory 的 getObject()，得到 Bean 的 **前期暴露对象** ；
+					  logseq.order-list-type:: number
+						- 其实调用的就是 `getEarlyBeanReference(beanName, mbd, bean)` 方法
+							- 内部调用 `SmartInstantiationAwareBeanPostProcessor(接口)` 的 `getEarlyBeanReference(exposedObject, beanName)` 方法
+							- 如果有 AOP 的话，则会调用 `AbstractAutoProxyCreator` 的 `getEarlyBeanReference(exposedObject, beanName)` 方法：
+								- 创建代理对象并返回。
+								  logseq.order-list-type:: number
+								- 缓存已创建代理的对象。
+								  logseq.order-list-type:: number
+					- 将这个实例放到二级缓存中。
+					  logseq.order-list-type:: number
+					- 将三级缓存中的 ObjectFactory 移除。
+					  logseq.order-list-type:: number
+				- 没取到就返回 null。
+				  logseq.order-list-type:: number
+		- getSingleton(String beanName, ObjectFactory<?> singletonFactory)：获取单例 Bean
+		  logseq.order-list-type:: number
+			- createBean(beanName, mbd, args)：创建 Bean。
+			  logseq.order-list-type:: number
+				- doCreateBean(beanName, mbdToUse, args)：实际创建 Bean。
+				  logseq.order-list-type:: number
+					- 实例化：createBeanInstance(beanName, mbd, args);
+					  logseq.order-list-type:: number
+					- 加入三级缓存：addSingletonFactory(beanName, () -> getEarlyBeanReference(beanName, mbd, bean));
+					  logseq.order-list-type:: number
+					- 属性赋值（@Autowired @Resource @Value）：populateBean(beanName, mbd, instanceWrapper);
+					  logseq.order-list-type:: number
+						- ==产生循环依赖时，此处会去创建依赖的 Bean ，从 getBean(beanName) 重新开始走 ==
+						- mbd.getPropertyValues()：获取 `属性-值`
+						  logseq.order-list-type:: number
+						- 调用 `InstantiationAwareBeanPostProcessor(接口)` 的 postProcessPropertyValues()：获取最终可用的 `属性-值`
+						  logseq.order-list-type:: number
+							- `AutowiredAnnotationBeanPostProcessor` 用于 `@Autowired` 的实现
+						- applyPropertyValues(beanName, mbd, bw, pvs)：给 Bean 的属性赋值。
+						  logseq.order-list-type:: number
+					- 初始化：exposedObject = initializeBean(beanName, exposedObject, mbd);
+					  logseq.order-list-type:: number
+						- invokeAwareMethods(beanName, bean)：执行 `XxxAware` 相关方法
+						  logseq.order-list-type:: number
+							- BeanNameAware
+							  logseq.order-list-type:: number
+							- BeanClassLoaderAware
+							  logseq.order-list-type:: number
+							- BeanFactoryAware
+							  logseq.order-list-type:: number
+						- applyBeanPostProcessorsBeforeInitialization(wrappedBean, beanName)：执行 `BeanPostProcessor` 的 `postProcessBeforeInitialization` 方法。
+						  logseq.order-list-type:: number
+							- ApplicationContextAwareProcessor 实现如下几个 Aware 功能：
+							  logseq.order-list-type:: number
+								- EnvironmentAware
+								  logseq.order-list-type:: number
+								- EmbeddedValueResolverAware
+								  logseq.order-list-type:: number
+								- ResourceLoaderAware
+								  logseq.order-list-type:: number
+								- ResourceLoaderAware
+								  logseq.order-list-type:: number
+								- MessageSourceAware
+								  logseq.order-list-type:: number
+								- ApplicationContextAware
+								  logseq.order-list-type:: number
+							- CommonAnnotationBeanPostProcessor 实现  `@PostConstruct`  功能。
+							  logseq.order-list-type:: number
+						- invokeInitMethods(beanName, wrappedBean, mbd)：执行 `Init-Method` 。
+						  logseq.order-list-type:: number
+							- 调用 `InitializingBean` 的 `afterPropertiesSet()` 方法
+							  logseq.order-list-type:: number
+							- 调用 Bean 定义中的 `init-method` 。
+							  logseq.order-list-type:: number
+						- applyBeanPostProcessorsAfterInitialization(wrappedBean, beanName)：执行 `BeanPostProcessor` 的 `postProcessAfterInitialization` 方法。
+						  logseq.order-list-type:: number
+							- 有 AOP 时，会调用 `AbstractAutoProxyCreator` (实现了 `BeanPostProcessor` ) 的 `postProcessAfterInitialization` 方法：
+								- 如果对象已创建代理，则直接返回对象本身，因为当前对象已是代理对象
+								  logseq.order-list-type:: number
+								- 如果对象未创建代理，则会创建代理对象并返回。
+								  logseq.order-list-type:: number
+			- addSingleton(beanName, singletonObject)：将创建好的 Bean 加入一级缓存。
+			  logseq.order-list-type:: number
+			-
+	- logseq.order-list-type:: number
 - ## BeanPostProcessor
+	- `ApplicationContextAwareProcessor` 用于实现如下几个 `Aware` 接口的功能 (postProcessBeforeInitialization)：
+		- EnvironmentAware
+		  logseq.order-list-type:: number
+		- EmbeddedValueResolverAware
+		  logseq.order-list-type:: number
+		- ResourceLoaderAware
+		  logseq.order-list-type:: number
+		- ResourceLoaderAware
+		  logseq.order-list-type:: number
+		- MessageSourceAware
+		  logseq.order-list-type:: number
+		- ApplicationContextAware
+		  logseq.order-list-type:: number
 	- `AutowiredAnnotationBeanPostProcessor` ，用于实现  `@Autowired` 注解。
-	-
+	- `CommonAnnotationBeanPostProcessor` 父类 `InitDestroyAnnotationBeanPostProcessor` ，用于实现 `@PostConstruct` 和 `@PreDestroy` 。
 - ## 三级缓存
 	- ### 三级缓存就是三个 Map
 		- ``` java
@@ -205,6 +332,9 @@ tags:: [[Spring Framework]], [[Spring - 面试重点]]
 				  logseq.order-list-type:: number
 			- `BeanB` 成功注入属性 `BeanA`，`BeanB` 创建成功。
 			  logseq.order-list-type:: number
+			- 初始化 `BeanB` 。
+			  logseq.order-list-type:: number
+				- 此处会
 			- `BeanB` 加入到一级缓存中，三级缓存中删除 `BeanB` 。
 			  logseq.order-list-type:: number
 				- ``` java
@@ -223,7 +353,29 @@ tags:: [[Spring Framework]], [[Spring - 面试重点]]
 		- `BeanA` 加入到一级缓存中，二级缓存中删除 `BeanA` 。
 		  logseq.order-list-type:: number
 	- ### 只用一、三级缓存行不行
-		-
+		- 如果没有循环依赖，那只要有个容器，存储所有 Bean 就可以了，Spring 只要解析得到所有 Bean 的创建顺序，依次创建就不会出现问题。
+		  logseq.order-list-type:: number
+		- 如果只是解决 循环依赖 问题，甚至只使用一级缓存就能解决。
+		  logseq.order-list-type:: number
+			- 只要将早期暴露的 `BeanA` 对象放到一级缓存中就可以，后面 `BeanB` 从一级缓存中取就好。
+			- 但是，这样在多线程情况下，导致有线程取到没有创建完成的 `BeanA` 。
+		- 为了解决上面的问题，可以使用一、三级缓存。
+		  logseq.order-list-type:: number
+			- 如果三级缓存中存放的是 Bean 的 `ObjectFactory`
+			  logseq.order-list-type:: number
+				- 将 `BeanA` 的 `ObjectFactory` 放到三级缓存中，后面 `BeanB` 从三级缓存中获取 `ObjectFactory`  ，并调用 `getObject` 方法获取 `BeanA` 的实例。
+				- 在 `BeanA` 不需要创建 AOP 代理对象的情况下，每次  `getObject`  获取的都是同一个 `BeanA` 的实例，确实没有问题。
+				- 但是，在 `BeanA` 需要创建 AOP 代理对象的情况下：
+					- 如果存在多个 Bean 依赖 `BeanA` 的话，可能会出现创建多个 `BeanA` 的代理对象的情况（这就不是单例了），因为每次都会调用 `getObject` 方法创建代理对象。
+					- ==此处有没有可能维护一个列表保存已经创建过的代理对象==
+			- 如果三级缓存中不存 Bean 的 `ObjectFactory`，改为存 Bean 的 实例 (有 AOP 就是代理对象)
+			  logseq.order-list-type:: number
+				- ==这样好像也可以避免创建多个代理对象？==
+		- 但是，如果考虑到 AOP + 循环依赖 的话，就有问题
+		  logseq.order-list-type:: number
+			- AOP 和 `AspectJAwareAdvisorAutoProxyCreator` 有关。
+				- 继承关系:
+					- `AspectJAwareAdvisorAutoProxyCreator` -> `AbstractAdvisorAutoProxyCreator` -> `AbstractAutoProxyCreator` -> `SmartInstantiationAwareBeanPostProcessor(接口)` -> `InstantiationAwareBeanPostProcessor(接口)` -> `BeanPostProcessor(接口)`
 	- ### 三级缓存不能解决的循环依赖
 		- 多实例 Bean 的循环依赖。
 		  logseq.order-list-type:: number
@@ -243,5 +395,9 @@ tags:: [[Spring Framework]], [[Spring - 面试重点]]
 	- [spring硬核知识点-spring循环依赖-三级缓存](https://www.bilibili.com/video/BV1Fa411j7kc/?vd_source=f1fbb083ddef12dcff3388779faac201)
 	  logseq.order-list-type:: number
 	- [华为二面：Spring是如何解决循环依赖的？为什么一定要三级缓存？二级缓存能不能解决循环依赖？](https://www.bilibili.com/video/BV19H4y1778T/?vd_source=f1fbb083ddef12dcff3388779faac201)
+	  logseq.order-list-type:: number
+	- [第二次讲Spring循环依赖，时长16分钟，我保证每一秒都是精华](https://www.bilibili.com/video/BV1ET4y1N7Sp/?vd_source=f1fbb083ddef12dcff3388779faac201)
+	  logseq.order-list-type:: number
+	- [[java漫谈系列99]spring扩展点之BeanPostProcessor](https://www.bilibili.com/video/BV1Mt42177MK/?vd_source=f1fbb083ddef12dcff3388779faac201)
 	  logseq.order-list-type:: number
 	- logseq.order-list-type:: number
