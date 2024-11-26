@@ -198,8 +198,6 @@ tags:: [[Spring Framework]], [[Spring - 面试重点]]
 								  logseq.order-list-type:: number
 			- addSingleton(beanName, singletonObject)：将创建好的 Bean 加入一级缓存。
 			  logseq.order-list-type:: number
-			-
-	- logseq.order-list-type:: number
 - ## BeanPostProcessor
 	- `ApplicationContextAwareProcessor` 用于实现如下几个 `Aware` 接口的功能 (postProcessBeforeInitialization)：
 		- EnvironmentAware
@@ -216,6 +214,11 @@ tags:: [[Spring Framework]], [[Spring - 面试重点]]
 		  logseq.order-list-type:: number
 	- `AutowiredAnnotationBeanPostProcessor` ，用于实现  `@Autowired` 注解。
 	- `CommonAnnotationBeanPostProcessor` 父类 `InitDestroyAnnotationBeanPostProcessor` ，用于实现 `@PostConstruct` 和 `@PreDestroy` 。
+- ## AOP Bean 的创建
+	- 没有 循环依赖 时，在 initializeBean 阶段创建代理对象。
+	  logseq.order-list-type:: number
+	- 有 循环依赖 时，在从缓存中获取对象时，通过第三级缓存中 ObjectFactory 的 getObject() 方法创建代理对象。
+	  logseq.order-list-type:: number
 - ## 三级缓存
 	- ### 三级缓存就是三个 Map
 		- ``` java
@@ -334,7 +337,6 @@ tags:: [[Spring Framework]], [[Spring - 面试重点]]
 			  logseq.order-list-type:: number
 			- 初始化 `BeanB` 。
 			  logseq.order-list-type:: number
-				- 此处会
 			- `BeanB` 加入到一级缓存中，三级缓存中删除 `BeanB` 。
 			  logseq.order-list-type:: number
 				- ``` java
