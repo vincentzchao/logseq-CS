@@ -20,6 +20,21 @@ tags:: [[面试重点]], [[Java]], [[JVM]]
 	- 对象未正常释放，且垃圾回收器没有回收。
 - ## 进程卡死
 	- > 发现某个 Java 程序在打印某一条日志之后，不再继续打印，似乎程序卡死，如何排查？
+	- 可能的原因：
+		- 线程死锁。
+		  logseq.order-list-type:: number
+		- 耗时操作。
+		  logseq.order-list-type:: number
+		- 死循环。
+		  logseq.order-list-type:: number
+		- 频繁 Full GC。
+		  logseq.order-list-type:: number
+- ## Full GC 频繁
+	- 执行 `jstat -gcutil 进程号 统计间隔毫秒` 命令，查看 GC 的情况
+		- FGC 即 Full GC 的次数；FGCT 即 Full GC 的时间。
+		- 可以关注 S0、S1、E、O 的占用是不是特别高，特别是 O （老年代使用空间占比）。
+		- ![image.png](../assets/image_1732647545428_0.png){:height 202, :width 705}
+	-
 - ## CPU 占用暴涨/极高
 	- > 发现系统 CPU 占用暴涨/极高
 	- 执行 `top` 命令：查看占用 CPU 比较高的进程。
