@@ -1,6 +1,4 @@
-tags:: Bash
+tags:: [[Bash]]
+---
 
-- ---
--
--
 -
