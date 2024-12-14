@@ -1,10 +1,10 @@
-alias:: Linux 历史
-tags:: Linux, History
+alias:: [[Linux 历史]]
+tags:: [[Linux]], [[History]]
+---
 
-- ---
 - ## Linux与Unix
 	- ![image-20220702230919065.png](../assets/image-20220702230919065_1683299149114_0.png){:height 449, :width 716}
-	- Unix 由开源转向闭源，荷兰教授 Andrew Tanenbaum 仿照 Unix 开发了 Minix 用于教学，并开源。
+	- Unix 由开源转向闭源，芬兰教授 Andrew Tanenbaum 仿照 Unix 开发了 Minix 用于教学，并开源。
 	- Linus 基于 Minix 开发了 Linux 。
 - ## GNU/Linux
 	- ![image-20220702175641552.png](../assets/image-20220702175641552_1683299185329_0.png)
