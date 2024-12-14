@@ -1,5 +1,5 @@
 alias:: [[Unix-like Shell]]
-tags:: [[Unix]]
+tags:: [[Unix]], [[Shell]]
 ---
 
 - ==子目录==
@@ -15,4 +15,3 @@ tags:: [[Unix]]
 	- 执行 `echo $SHELL` 可以查看系统的默认 Shell
 	  id:: 64526ff4-2b9f-4780-bf2b-ddff46fa5b92
 	-
--

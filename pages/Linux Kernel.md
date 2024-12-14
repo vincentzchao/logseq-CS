@@ -1,5 +1,5 @@
 alias:: [[Linux 内核]]
-tags:: [[Linux]], [[kernel]]
+tags:: [[Linux]], [[Kernel]]
 ---
 
 - ## 官方资料

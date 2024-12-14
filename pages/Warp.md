@@ -1,4 +1,4 @@
-tags:: [[Shell]]
+tags:: [[Terminal Emulator]] 
 ---
 
 - 参考: [Using Warp with [zsh|bash|fish]](https://docs.warp.dev/getting-started/using-warp-with-shells)

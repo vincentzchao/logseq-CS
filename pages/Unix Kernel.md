@@ -1,6 +1,6 @@
 alias:: Unix 内核
 
-- tags:: [[Unix]], [[kernel]]
+- tags:: [[Unix]], [[Kernel]]
 - ---
 - ==子目录==
 	- [[Darwin]]

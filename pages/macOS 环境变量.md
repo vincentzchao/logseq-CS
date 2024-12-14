@@ -6,3 +6,4 @@ tags:: [[macOS]], [[环境变量]], [[macOS Shell]]
 - /etc 目录下系统环境变量
 - $HOME 目录下用户环境变量
 -
+-

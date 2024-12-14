@@ -1,4 +1,4 @@
-tags:: [[kernel]]
+tags:: [[Kernel]]
 ---
 
 - ## 官方资料
