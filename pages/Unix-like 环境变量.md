@@ -30,7 +30,20 @@ tags:: [[环境变量]]
 		  logseq.order-list-type:: number
 		- 用户环境变量：只对特定用户有效的环境变量。
 		  logseq.order-list-type:: number
-- ## 重载环境变脸配置文件
+- ## 注意
+	- Startup Files 文件中的所谓环境变量配置，并非静态的文本配置，而是执行 `export` , `env` 等命令。
+	  logseq.order-list-type:: number
+		- 所以，后面执行命令设置的环境变量，肯定会覆盖前面设置的名称相同的环境变量。
+		  logseq.order-list-type:: number
+		- 所以，程序并非从文件中读取环境变量，而是在程序启动前，先执行 Startup Files 中的命令，将环境变量放到内存中，供之后读取；因此，每个进程都有环境变量副本，程序中修改环境变量，并不影响其他进程。
+		  logseq.order-list-type:: number
+	- 任何子进程，都会继承其父进程设置的环境变量，且子进程的修改不会影响其父进程的环境变量值。
+	  logseq.order-list-type:: number
+		- Shell 也一样，任何模式的子 Shell ，都会继承其父 Shell 设置的环境变量，且子 Shell 的修改不会影响其父 Shell 的环境变量值。
+- ## Startup Files 加载顺序
+	- 图片来自：[Shell 在 MacOS 及 Linux 中的文件读取顺序](https://hanleylee.com/articles/reading-order-of-script-in-mac-and-linux/)
+	- ![image.png](../assets/image_1734278098934_0.png)
+- ## 重载环境变量配置文件
 	- `source 文件路径`
 		- 作用是，在当前 Shell 中将文件中的命令执行一遍。
 	- `source 文件路径` 等价于 `. 文件路径`
@@ -41,17 +54,17 @@ tags:: [[环境变量]]
 	- ### 作用
 		- Shell 会在 `PATH` 变量配置的路径中，寻找可执行文件。
 	- ### 增加路径
-		- ``` sh
+		- ``` bash
 		  # 在配置文件中添加如下格式的内容
 		  export PATH="你要添加的路径:$PATH"
 		  ```
 	- ### 查看命令的路径
-		- ``` sh
+		- ``` bash
 		  which 你的命令 
 		  whereis 你的命令
 		  ```
 - ## 参考
-	- [macOS/Linux 环境变量设置](https://zhuanlan.zhihu.com/p/25976099)
-	  logseq.order-list-type:: number
 	- [关于终端、Shell、Bash以及环境变量那点事](https://www.ethanzhang.xyz/2024/04/25/%E5%85%B3%E4%BA%8E%E7%BB%88%E7%AB%AFShellBash%E4%BB%A5%E5%8F%8A%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%82%A3%E7%82%B9%E4%BA%8B/)
+	  logseq.order-list-type:: number
+	- [Shell 在 MacOS 及 Linux 中的文件读取顺序](https://hanleylee.com/articles/reading-order-of-script-in-mac-and-linux/)
 	  logseq.order-list-type:: number
