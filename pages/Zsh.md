@@ -1,4 +1,4 @@
-tags:: [[Unix Shell]]
+tags:: [[Unix-like Shell]]
 ---
 
 - ==子目录==

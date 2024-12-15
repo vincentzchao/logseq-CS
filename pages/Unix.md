@@ -3,7 +3,7 @@ tags:: [[部署运维]]
 
 - ==子目录==
 	- [[Unix History]]
-	- [[Unix Shell]]
+	- [[Unix-like Shell]]
 	- [[BSD]]
 	- Index
 		- [[Unix-like Command]]

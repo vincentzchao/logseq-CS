@@ -1,2 +1,2 @@
 -
-- {{renderer :tocgen2, [[unix-like 系统环境变量]], calc(100vh - 135px)}}
+- {{renderer :tocgen2, [[linux 环境变量]], calc(100vh - 135px)}}
