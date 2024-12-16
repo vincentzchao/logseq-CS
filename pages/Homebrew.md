@@ -2,10 +2,11 @@ alias:: [[brew]]
 tags:: [[macOS]], [[Package Manager]]
 ---
 
+- ## 学习路径
+	- [[Homebrew 安装与卸载]]
+	- [[Homebrew Concept]]
+	- [[Homebrew 常用命令]]
+	- [[Homebrew Tap]]
 - ## 官方资料
-	- [官网](https://brew.sh/)
-- ## 安装 Homebrew
-	- 国内安装方式：https://gitee.com/cunkai/HomebrewCN
-- ## 安装软件问题
--
+	- [Homebrew 官网](https://brew.sh/)
 -
