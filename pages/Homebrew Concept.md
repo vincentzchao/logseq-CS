@@ -71,7 +71,7 @@ tags:: [[Homebrew]]
 			- 这可以避免新安装的程序，与系统原有同名程序发生冲突。
 	- ### opt prefix
 		- 链接到 Keg 的活跃版本的 Symlink , 如上所述, 软件更新时默认会自动创建这个 Symlink 。
+			- 软件更新时，只需将 Symlink 链接到的新版本即可，Symlink 本身所在路径不变；
+			- 便于一些程序读取软件的目录，否则软件更新时，这些程序读取的目录也要更改。
 		- 地址: `Homebrew 安装目录/opt/Formula 的名称`
 			- 如: `/opt/homebrew/opt/foo`
-- ## brew 如何管理开机自启
-	-
