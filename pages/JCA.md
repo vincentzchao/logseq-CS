@@ -4,7 +4,7 @@ tags:: [[Java Security]], [[Cryptography]]
 
 - ## 官方资料
 	- [Java Cryptography Architecture (JCA) Reference Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html)
--
+	-
 - ## JCA两大组件
 	- Framework
 		- 定义 与 支持 **加密服务(cryptographic services)** (具体实现由 Providers 提供 )

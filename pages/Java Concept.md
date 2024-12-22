@@ -49,7 +49,7 @@ tags:: [[Java]]
 	- ### 什么是 JSR
 		- ((66175a7e-d37c-47a9-832b-2169fb161298))
 	- ### 什么是 JCP Procedure
-		- **JCP Procedure 是制定 Java 技术规范的标准化流程**, 参见 [JCP 流程文档](https://jcp.org/en/procedures/jcp2_11) 。
+		- **JCP Procedure 是制定 Java 技术规范的标准化流程** , 参见 [JCP 流程文档](https://jcp.org/en/procedures/jcp2_11) 。
 		- JCP 流程本身也是由 JSR 来确定。
 - ## OpenJDK
 	- [[JDK]]

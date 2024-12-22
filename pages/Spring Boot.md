@@ -36,7 +36,10 @@ tags:: [[Java]], [[Framework]], [[Spring]]
 			- 学完了第 4 课。
 			  logseq.order-list-type:: number
 		-
-	-
+- ## 问题点
+	- ### 组合注解原理
+		- [Spring Boot 2 实践记录之 组合注解原理](https://www.cnblogs.com/matchless/p/10388184.html)
+			- 和 **AnnotationUtils** 有关
 - ---
 - ## 官方资料
 	- [Spring Boot Docs](https://docs.spring.io/spring-boot/docs/)

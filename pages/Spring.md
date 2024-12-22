@@ -1,11 +1,10 @@
 tags:: [[Java]], [[Framework]]
 ---
 
-- ## 问题点
-	- ### 组合注解原理
-		- [Spring Boot 2 实践记录之 组合注解原理](https://www.cnblogs.com/matchless/p/10388184.html)
-			- 和 **AnnotationUtils** 有关
-- ---
+- ## Spring 的含义
+	- > The term "Spring" means different things in different contexts. It can be used to refer to the Spring Framework project itself, which is where it all started. Over time, other Spring projects have been built on top of the Spring Framework. Most often, when people say "Spring", they mean the entire family of projects.
+	  -- 引自 [Spring Framework Docs - What We Mean by "Spring"](https://docs.spring.io/spring-framework/docs/5.2.9.RELEASE/spring-framework-reference/overview.html#overview-spring)
+	- Spring 既表示 `Spring Framework` 本身，又表示基于 `Spring Framework` 发展起来的 `Spring Family` 。
 - ## 官方资料
 	- ### 官网
 	  id:: 642313f0-70b9-4bdf-90c0-d3273c505951

@@ -8,10 +8,10 @@
 	- ### 学习 maven-plugin 和 actuator-api
 		- [Spring Boot Docs](https://docs.spring.io/spring-boot/docs/) > [Spring Boot Docs - 2.3.4.RELEASE ](https://docs.spring.io/spring-boot/docs/2.3.4.RELEASE/)
 		- ![image.png](../assets/image_1713450151525_0.png)
-		- ### 了解 Spring Boot 各版本发布信息
-			- [the project release notes section](https://github.com/spring-projects/spring-boot/wiki#release-notes)
-		- ### 各版本支持情况
-			- [Spring Boot Support](https://spring.io/projects/spring-boot#support)
+	- ### 了解 Spring Boot 各版本发布信息
+		- [the project release notes section](https://github.com/spring-projects/spring-boot/wiki#release-notes)
+	- ### 各版本支持情况
+		- [Spring Boot Support](https://spring.io/projects/spring-boot#support)
 - ## Spring Boot 的定位
 	- > Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run".
 	  -- 引自 [Spring Boot Overview](https://spring.io/projects/spring-boot#overview)
