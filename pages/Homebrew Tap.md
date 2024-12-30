@@ -6,10 +6,10 @@ tags:: [[Homebrew]]
 	- 用于管理 Homebrew 安装的服务。
 		- 也具有设置开机自启的功能。
 	- ``` zsh
-	  # 安装 homebrew/services
 	  # 清理旧的安装和缓存
 	  brew cleanup
 	  brew untap homebrew/services
+	  # 安装 homebrew/services
 	  brew tap homebrew/services
 	  
 	  # 列出当前所有服务的状态

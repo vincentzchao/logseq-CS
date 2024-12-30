@@ -54,4 +54,11 @@ tags:: [[System Design]]
 			- ==前端代码暴露？如何保证加密的安全？==
 		- 防止 重放攻击 (某个合法请求被中间人截获，中间人将此请求再次发送给服务器)
 		  logseq.order-list-type:: number
-			-
+- ## 数据一致性
+	- 保证并发安全
+	  logseq.order-list-type:: number
+	- 使用事务保证数据的一致性
+	  logseq.order-list-type:: number
+- ## i18n
+	- 国际化
+-

@@ -18,7 +18,8 @@ tags:: [[Git]]
 	  git ls-files
 	  ```
 - ## 本地分支相关
-	- # 从当前分支新建分支
+	- ``` sh
+	  # 从当前分支新建分支
 	  git checkout -b xxx
 	  
 	  # 删除分支（带警告）
@@ -28,6 +29,7 @@ tags:: [[Git]]
 	  
 	  # 分支重命名
 	  git branch -m old-name new-name
+	  ```
 - ## 远程分支相关
 	- ```sh
 	  # 设置远程分支
