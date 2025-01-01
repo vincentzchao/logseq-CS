@@ -51,13 +51,12 @@ tags:: [[Zsh]], [[环境变量]]
 		  | `/etc/zlogout` | J |  | |
 	- ### `/etc/zprofile`
 		- **macOS 中** ：
-			- 一般来说，`/etc/profile` 会执行 `/usr/libexec/path_helper` 文件。
+			- 一般来说，`/etc/zprofile` 会执行 `/usr/libexec/path_helper` 文件。
 				- `/usr/libexec/path_helper` 会读取 `/etc/paths` 文件和 `/etc/paths.d/` 目录下所有文件，文件中的每一行作为一个路径，加入到 `PATH` 环境变量中。
 					- 我们可以直接执行 `/usr/libexec/path_helper -s` 查看结果。
 				- `/usr/libexec/path_helper` 会将  `PATH`  变量中的路径进行重新排序，如果我们配置的路径需要保证顺序的话，就会出现问题。
 					- 这种情况，我们最好把   `PATH`  变量配置在 `/etc/zprofile` 之后加载的文件中；
 					- 建议 `/etc/zshrc` 或 `~/.zshrc` 。
-			- ==如果 `${BASH-no}` 环境变量值不为 `no` ，此处也会 读取并执行 `/etc/bashrc` 文件中的命令。==
 - ## macOS 最佳实践
 	- ### 针对所有用户
 		- 在 `/etc/zshenv` 文件中添加 `非 PATH` 环境变量。
