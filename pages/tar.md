@@ -1,5 +1,5 @@
 alias:: [[GNU Tar]]
-tags:: [[GNU Software]]
+tags:: [[GNU Software]], [[Archiving Tool]]
 ---
 
 - ## 官方资料

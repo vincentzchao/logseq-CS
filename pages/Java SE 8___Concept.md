@@ -9,7 +9,7 @@
 		- JDK = JRE + Tools (包含 compilers, debuggers 等工具)
 		- JRE = JVM + Libraries + 其它组件
 		- 注意: JRE 中包含 `Java SE specification` 中没有规定的组件。
-		- 如果只需要运行编译好的 Java 程序，则只需要 JRE
+		- 如果只需要运行编译好的 Java 程序，则只需要 `JRE` 。
 	- ### JDK 产品及其安装
 		- [[JDK]]
 -
