@@ -43,8 +43,52 @@ tags:: [[JAR]]
 		- `x.SF` 和 `x.DSA` 用于验证 JAR 是否被篡改.
 	- ### services/
 		- 存储所有 `service provider` 的配置文件.
-	-
--
+- ## Manifest File - MANIFEST.MF
+	- ## Manifest 默认内容
+		- 打包不指定 Manifest 内容时, 默认生成的内容
+		- ``` yml
+		  Manifest-Version: 1.0
+		  Created-By: 1.8.0_341 (Oracle Corporation)
+		  
+		  ```
+	- ### Manifest File 要求
+		- 末尾必须有个 `\n` 或 `\r` 。
+		  logseq.order-list-type:: number
+		- 必须是 UTF-8 编码。
+		  logseq.order-list-type:: number
+	- ### Main-Class 属性
+		- 指定启动的入口类。
+		- ``` yml
+		  Main-Class: com.Hello
+		  
+		  ```
+	- ### Class-Path 属性
+		- 用于指定当前 JAR 文件之外的 `classes or resources`
+		- 可以用 `空格` , `制表符` , `换行符` , `回车符` 或 `换页符` 来分隔多个路径, 路径都是相对当前 JAR 文件的相对路径。
+			- 其中, 不以 `/` 结尾的路径, 都被视为 JAR 路径 (以 `/` 结尾即为目录).
+		- 这个属性不可以指定自己 JAR 内的 JAR 文件或目录，也即 JAVA 自身不支持读取嵌套在 JAR 包内的 JAR 包。
+		- ``` yml
+		  Class-Path: MyUtils.jar MyLibs/Lib.jar MyResources/ 
+		  
+		  ```
+	- ### Version 相关属性
+		- ``` yml
+		  # 当前包所遵循的规范的名称
+		  Name: java/util/
+		  # 当前包所遵循的规范的标题
+		  Specification-Title: Java Utility Classes
+		  # 当前包所遵循的规范的版本
+		  Specification-Version: 1.2
+		  # 当前包所遵循的规范的供应商
+		  Specification-Vendor: Example Tech, Inc.
+		  # 当前实现的标题
+		  Implementation-Title: java.util
+		  # 当前实现的版本
+		  Implementation-Version: build57
+		  # 当前实现的供应商
+		  Implementation-Vendor: Example Tech, Inc.
+		  ```
+		-
 - ## 参考
 	- [JAR File Overview](https://docs.oracle.com/javase/8/docs/technotes/guides/jar/jarGuide.html)
 	  logseq.order-list-type:: number

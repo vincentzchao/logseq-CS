@@ -1,3 +1,3 @@
 -
 -
-- {{renderer :tocgen2, [[jar command]], calc(100vh - 135px)}}
+- {{renderer :tocgen2, [[jar concept]], calc(100vh - 135px)}}

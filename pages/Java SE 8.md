@@ -16,6 +16,10 @@ tags:: [[Java]], [[Java SE]]
 		- ![image.png](../assets/image_1735959557922_0.png){:height 372, :width 719}
 			- [Java SE 8 Security](https://docs.oracle.com/javase/8/docs/technotes/guides/security/index.html)
 		- [Java SE 8 API Specification](https://docs.oracle.com/javase/8/docs/api/index.html)
-		-
+- ## 第三方资料
+	- [JAVA8 官网笔记教程](https://zq99299.github.io/java-tutorial/)
+	  logseq.order-list-type:: number
+	- [Java™ 教程-Java Tutorials 中文版](https://pingfangx.github.io/java-tutorials/)
+	  logseq.order-list-type:: number
 - ---
 -
