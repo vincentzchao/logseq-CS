@@ -1,4 +1,4 @@
-tags:: [[Java]]
+tags:: [[Java SE]]
 alias:: [[Java Archive]]
 ---
 
