@@ -10,12 +10,14 @@ tags:: [[Java]], [[Java SE]]
 - ## 学习路线
 	- Java SE 8 基本概念: [[Java SE 8/Concept]]
 	  logseq.order-list-type:: number
-- ## 问题点
-	- package 到底是个啥？
+	- [[Java SE 8/Package And Import]]
 	  logseq.order-list-type:: number
+- ## 问题点
 	- java 是如何编译项目的？Javac 参数
 	  logseq.order-list-type:: number
-	- Java 程序是如何读取 Jar 文件的？Java 命令？java -cp ？
+	- Java 程序是如何读取 Jar 文件的？
+	  logseq.order-list-type:: number
+	- Java 命令？java -cp ？
 	  logseq.order-list-type:: number
 	- classpath 是啥？
 	  logseq.order-list-type:: number
