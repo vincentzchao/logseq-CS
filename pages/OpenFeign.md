@@ -9,3 +9,4 @@ tags:: [[Feign]]
 		- ```java
 		  @RequestMapping(path = "/refreshAll", method = { RequestMethod.GET, RequestMethod.POST })
 		  ```
+-

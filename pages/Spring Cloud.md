@@ -1,6 +1,9 @@
 tags:: [[Spring]], [[Java]]
 ---
 
+- ## 学习路线
+	- 版本选择：[[Spring Cloud Alibaba 与 Spring Cloud 版本选择]]
+	  logseq.order-list-type:: number
 - ## 官方资料
 	- [Cloud 介绍](https://spring.io/cloud)
 	- [Spring Cloud 首页](https://spring.io/projects/spring-cloud)
