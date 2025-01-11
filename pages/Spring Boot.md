@@ -33,7 +33,7 @@ tags:: [[Java]], [[Framework]], [[Spring]]
 				  logseq.order-list-type:: number
 		- [【尚硅谷】SpringBoot2零基础入门教程（spring boot2干货满满）](https://www.bilibili.com/video/BV19K4y1L7MT/?p=5&vd_source=f1fbb083ddef12dcff3388779faac201)
 		  logseq.order-list-type:: number
-			- 学完了第 4 课。
+			- 学完了第 5 课。
 			  logseq.order-list-type:: number
 		-
 - ## 问题点

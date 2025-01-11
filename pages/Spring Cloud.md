@@ -1,7 +1,13 @@
 tags:: [[Spring]], [[Java]]
 ---
 
+- ==以 2021.0.5 版本为主==
+- ## 问题点
+	- `spring-cloud-starter-parent` 相比 `spring-cloud-dependencies` 多了什么？
+	  logseq.order-list-type:: number
 - ## 学习路线
+	- [[Spring Cloud Concept]]
+	  logseq.order-list-type:: number
 	- 版本选择：[[Spring Cloud Alibaba 与 Spring Cloud 版本选择]]
 	  logseq.order-list-type:: number
 - ## 官方资料

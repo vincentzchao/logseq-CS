@@ -5,9 +5,6 @@ tags:: [[Spring Cloud]], [[Spring Cloud Alibaba]]
 	- `spring-boot-starter-parent` 与  `spring-boot-dependencies` 的区别？
 	  logseq.order-list-type:: number
 		- 需要到官方库看看说明
-	- `spring-cloud-starter-parent` 与 `spring-cloud-dependencies` 的区别？
-	  logseq.order-list-type:: number
-		- 需要到官方库看看说明
 - ## Spring Boot 版本
 	- 参见: [Spring Cloud Alibaba - 版本说明](https://github.com/alibaba/spring-cloud-alibaba/wiki/%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E)
 	- 目前 Spring Boot 版本可以分为如下几类：
