@@ -34,4 +34,16 @@ tags:: [[MySQL]], [[Transaction]]
 				- 如果 `退款状态` 为 `退款成功` 或 `退款失败`，设置 `is_processing = 0`。
 			- **优点**: 实现了逻辑上的条件唯一约束。
 			- **缺点**: 需要多维护一个字段，数据设计稍复杂。
-		-
+	- ### 多个事务同时查询一条最新数据，并以此数据为基础插入新数据
+		- #### 场景
+			- 我有一个权益订阅表，关键字段有: `过期时间` .
+			  logseq.order-list-type:: number
+			- 现在我想购买新的权益，我们需要在权益订阅表中，插入一条新的订阅数据，并且最新订阅的过期时间，是以最新一条订阅数据的过期时间为基础，向后推一个月。
+			  logseq.order-list-type:: number
+			- 现在可能出现这样的问题：
+			  logseq.order-list-type:: number
+				- 事务 A 和 事务 B 都查询到最新的订阅过期时间为 T1。
+				  logseq.order-list-type:: number
+				- 事务 A 和 事务 B 插入的数据的过期时间，都为 T1 + 一个月。
+				  logseq.order-list-type:: number
+-

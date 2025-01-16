@@ -42,6 +42,13 @@ tags:: [[RDBMS]]
 		  from INFORMATION_SCHEMA.PROCESSLIST 
 		  where substring(Host, 1, LOCATE(":", Host) -1) = "192.168.1.200"
 		  ```
+	- ### 时间函数
+		- ``` sql
+		  # 相加
+		  SELECT DATE_ADD(now(), INTERVAL 3 DAY);
+		  # 相减
+		  SELECT DATE_SUB(now(), INTERVAL 2 MONTH);
+		  ```
 - ## 常见问题
 	- [mac忘记mysql密码怎么办](https://blog.csdn.net/weixin_43922901/article/details/109570089)
 	-
