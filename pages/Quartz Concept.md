@@ -103,7 +103,6 @@ tags:: [[Quartz]]
 		  
 		  // QuartzTest.java
 		  public class QuartzTest {
-		  
 		  	public static void main(String[] args) {
 		  
 		  		try {
@@ -139,7 +138,7 @@ tags:: [[Quartz]]
 		  	}
 		  }
 		  ```
-		- 上述代码会 每40s 执行一次 `Hello World` 的日志打印。
+		- 上述代码会每 40s 执行一次 `Hello World` 的日志打印。
 - ## 如何创建定时任务
 	- ### 几个重要概念
 		- `Scheduler`: 调度器，用于执行任务。
@@ -157,14 +156,19 @@ tags:: [[Quartz]]
 		  logseq.order-list-type:: number
 			- `TriggerBuilder` : 用于定义和创建 `Trigger` 实例。
 			  logseq.order-list-type:: number
+		- ==上面几个概念，对应如下几个接口：==
+			- `org.quartz.Scheduler`
+			- `org.quartz.Job`
+			- `org.quartz.JobDetail`
+			- `org.quartz.Trigger`
 	- ### 创建步骤
 		- 通过 `SchedulerFactory` 创建一个 `Scheduler` 实例。
 		  logseq.order-list-type:: number
-		- 通过实现 `Job` 接口，重写 `execute()` 方法，自定义一个 `Job` 类
+		- 通过实现 `Job` 接口，重写 `execute(...)` 方法，自定义一个 `Job` 类
 		  logseq.order-list-type:: number
 		- 通过 `JobBuilder` ，传入自定义 `Job` 类的 class ，设置 `JobDetail` 的属性，从而创建一个 `JobDetail` 实例。
 		  logseq.order-list-type:: number
-		- 通过 `TriggerBuilder` ，设置一些属性 (包括 定时相关参数)，创建 `Trigger` 实例。
+		- 通过 `TriggerBuilder` ，设置 `Trigger` 的属性 (包括定时相关参数)，创建 `Trigger` 实例。
 		  logseq.order-list-type:: number
 		- 将 `JobDetail` 实例 和 `Trigger` 实例传给 `Scheduler` 实例。
 		  logseq.order-list-type:: number
@@ -174,60 +178,12 @@ tags:: [[Quartz]]
 		- 启动 `Scheduler` 实例。
 		  logseq.order-list-type:: number
 			- ``` java
+			  // 该方法也可以在 scheduler.scheduleJob(job, trigger); 之前执行
 			  scheduler.start();
 			  ```
 			- 执行 `scheduler.shutdown();` 可以进行关闭。
-- ## SchedulerFactory 与 Scheduler
-	- ### SchedulerFactory
-		- 使用 `SchedulerFactory` 可以创建一个 `Scheduler` 实例。
-		- `org.quartz.SchedulerFactory` 是一个接口，它有多种实现。
-	- ### Scheduler
-		- `Scheduler` 启动之后，有三种状态：
-			- Started
-			  logseq.order-list-type:: number
-			- Stand-by Mode
-			  logseq.order-list-type:: number
-			- Shutdown
-			  logseq.order-list-type:: number
-		- 一旦一个 `Scheduler` 实例被 Shutdown , 它就不能重新 Start , 需要重新创建一个 `Scheduler` 实例。
-- ## Job 与 Trigger
-	- ### Job
-		- #### 定义 Job
-			- 实现 `Job` 类，重写 `execute()` 方法就可以定义一个定时任务。
-				- `execute()` 方法的参数 `JobExecutionContext` : 包含 `Job` 实例的上下文信息。
-		- #### 执行 Job
-			- 实际被添加到 `Scheduler` 中的是 `JobDetail` 实例，创建 `JobDetail` 实例时只传入了 `Job` 的 class 。
-			- `Scheduler` 每次执行 Job 时，都会创建一个 `Job` 实例，执行它的 `executer()` 方法。
-			- `Scheduler` 每次执行完 Job 后，创建的这个新实例都会被丢弃，等待垃圾回收。
-				- 因此自定义的 Job 类应该是无状态的，只定义执行的逻辑。
-			- `Scheduler` 执行时，使用 `JobFactory` 来创建 Job 实例。
-				- `JobFactory` 的默认实现 `SimpleJobFactory` ，就是直接调用 `jobClass.newInstance();` 创建 `Job` 的实例，所以要求 `Job` 必须有一个无参的构造方法。
-	- ### Trigger
-		- 两种常用 Trigger：
-			- `SimpleTrigger`
-				- 特定时间执行一次
-				- 特定时间执行 N 次，每次之间有 T 时间延迟。
-			- `CronTrigger`
-				- 根据 Cron 表达式来执行。
-				- 如 “每周五中午” 或 “每月 10 日的 10:15”
-	- ### JobKey 与 TriggerKey
-		- Job 和 Trigger 都分别可以设置 `key` 和 `group` 。
-		- `key` 和 `group` 的组合，是一个 Job 或 Trigger 的唯一标识。
-- ## 从哪里开始
-	- 基本概念
-		- `org.quartz.Scheduler`
-		- `org.quartz.Job`
-		- `org.quartz.JobDetail`
-		- `org.quartz.Trigger`
-	- 底层原理
-		- `org.quartz.core.QuartzSchedulerThread`
-		- `org.quartz.spi.JobStore`
-		- `org.quartz.spi.ThreadPool`
-		- `org.quartz.core.JobRunShell`
-- ## 配置文件
-	- `quartz.properties`
-	-
 -
+- ---
 - ## 参考
 	- [Quick Start Guide](https://www.quartz-scheduler.org/documentation/quartz-2.3.0/quick-start.html)
 	  logseq.order-list-type:: number
@@ -236,5 +192,7 @@ tags:: [[Quartz]]
 		- [Lesson 1: Using Quartz](https://www.quartz-scheduler.org/documentation/quartz-2.3.0/tutorials/tutorial-lesson-01.html)
 		  logseq.order-list-type:: number
 		- [Lesson 2: The Quartz API, and Introduction to Jobs And Triggers](https://www.quartz-scheduler.org/documentation/quartz-2.3.0/tutorials/tutorial-lesson-02.html)
+		  logseq.order-list-type:: number
+		- [Lesson 3: More About Jobs & JobDetails](https://www.quartz-scheduler.org/documentation/quartz-2.3.0/tutorials/tutorial-lesson-03.html)
 		  logseq.order-list-type:: number
 -
