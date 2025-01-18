@@ -32,6 +32,9 @@ tags:: [[Contents]], [[Roadmap]]
 		- [[OAuth]]
 		- [[Sa-Token]]
 		- [[JWT]]
+	- ### 定时任务
+		- [[XXL-JOB]]
+		- [[Quartz]]
 	- ### 网络编程
 		- [[Netty]]
 	- ### 日志
@@ -45,6 +48,7 @@ tags:: [[Contents]], [[Roadmap]]
 		- [[Nacos]]
 	- [[Spring Cloud]]
 		- [[Spring Cloud Gateway]]
+		- [[Spring Cloud OpenFeign]]
 - ## 组件
 	- ### HTTP 服务器
 		- [[Tomcat]]

@@ -1,2 +1,2 @@
 -
-- {{renderer :tocgen2, [[spring cloud concept]], calc(100vh - 135px)}}
+- {{renderer :tocgen2, [[quartz concept]], calc(100vh - 135px)}}
