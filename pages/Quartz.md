@@ -51,7 +51,7 @@ tags:: [[Scheduling Library]]
 		  logseq.order-list-type:: number
 		- Tutorials
 		  logseq.order-list-type:: number
-			- 看到  Lesson 3 的 JobDataMap
+			- 接下来看  Lesson 3 的 Other Attributes Of Jobs
 		- Examples
 		  logseq.order-list-type:: number
 		- Cookbook (一些 How-to)
