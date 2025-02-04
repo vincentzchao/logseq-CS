@@ -45,7 +45,7 @@ tags:: [[Quartz]]
 	- ### 设置参数
 		- JobDetail 可以设置 *键值对类型* 的参数，用于 Job 运行时获取。
 		- 这些参数被称为 `JobDataMap` 。
-		- 设置 String 和 基本数据类型的包装类型 的参数
+		- 设置 String 和 基本数据类型的包装类型 的参数：
 			- ``` java
 			  // 一条条参数配置
 			  JobDetail job = JobBuilder.newJob(BarJob.class)

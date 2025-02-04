@@ -1,20 +1,6 @@
 tags:: [[Quartz]]
 ---
 
-- ## 官方文档咋用
-	- [Quartz 2.3.0 Documentation](https://www.quartz-scheduler.org/documentation/quartz-2.3.0/)
-	- ![image.png](../assets/image_1737165473345_0.png){:height 240, :width 696}
-	- 学习顺序：
-		- Quick Start Guide
-		  logseq.order-list-type:: number
-		- Tutorials
-		  logseq.order-list-type:: number
-		- Examples
-		  logseq.order-list-type:: number
-		- Cookbook (一些 How-to)
-		  logseq.order-list-type:: number
-		- Configuration 和 JavaDoc 需要时查阅。
-		  logseq.order-list-type:: number
 - ## Quartz 是什么
 	- `Quartz` 原意为 `石英` 。
 	- `Quartz` 是一个定时任务框架。
