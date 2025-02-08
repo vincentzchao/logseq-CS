@@ -524,7 +524,6 @@
 		  }
 		  ```
 - ## Loops and Iteration
-  collapsed:: true
 	- ###  for
 		- 语法:
 			- ```js
