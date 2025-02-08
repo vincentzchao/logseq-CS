@@ -8,7 +8,7 @@ alias:: [[JS]]
 	  logseq.order-list-type:: number
 	- [[JavaScript 使用与加载]]
 	  logseq.order-list-type:: number
-	- 基本语法: [[JavaScript Syntax]]
+	- [[JavaScript Syntax]]
 	  logseq.order-list-type:: number
 	- [[浏览器是如何渲染一个页面的]]
 	  logseq.order-list-type:: number

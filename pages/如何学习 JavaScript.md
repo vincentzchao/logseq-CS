@@ -10,8 +10,12 @@ tags:: [[JavaScript]]
 		  id:: 6684ad75-03e1-4d9a-b242-04592a97b915
 		- [Exploring JavaScript (ES2024 Edition)](https://exploringjs.com/js/book/index.html)
 		  logseq.order-list-type:: number
-- ## 如何使用 MDN 教程
-	-
+- ## 如何使用 MDN
+	- ### 教程
+		- [MDN - JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+			- ![image.png](../assets/image_1739042395859_0.png){:height 941, :width 271}
+	- ### 查阅
+		- [MDN - Web APIs](https://developer.mozilla.org/en-US/docs/Web/API)
 - ## 当前进度
 	- ### MDN 教程
 		- ~~[MDN - JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript) -> Complete beginners~~
