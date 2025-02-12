@@ -23,7 +23,7 @@ tags:: [[JavaScript]]
 		- #### 通用 Web APIs
 			- `Document Object Model (DOM)` : 操作页面元素。 
 			  logseq.order-list-type:: number
-				- DOM 规范: [whatwg - DOM Spec](https://dom.spec.whatwg.org/)
+				- [[DOM Spec]]
 			- `Browser Object Model (BOM)` : 操作浏览器。 
 			  logseq.order-list-type:: number
 				- `window`、`location`、`history`、`navigator` 等对象，

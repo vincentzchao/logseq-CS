@@ -97,7 +97,7 @@ tags:: [[Contents]], [[Roadmap]]
 	- [[Design Pattern]]
 	- [[UML]]
 - ## 代码规范
-	- 阿里规范
+	- [阿里巴巴Java开发规范（嵩山版）.pdf](https://xiaoxue-images.oss-cn-shenzhen.aliyuncs.com/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4Java%E5%BC%80%E5%8F%91%E8%A7%84%E8%8C%83%EF%BC%88%E5%B5%A9%E5%B1%B1%E7%89%88%EF%BC%89.pdf)
 	- Google 规范
 	- SonarLint
 	- IDE 代码风格配置

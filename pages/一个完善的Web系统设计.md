@@ -61,4 +61,13 @@ tags:: [[System Design]]
 	  logseq.order-list-type:: number
 - ## i18n
 	- 国际化
--
+- ## 工程相关
+	- ### Git 规范
+		- 分支规范。
+		  logseq.order-list-type:: number
+		- commit 规范。
+		  logseq.order-list-type:: number
+	- ### CICD
+	- ### 单元测试
+		-
+		-
