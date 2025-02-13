@@ -19,6 +19,7 @@ tags:: [[W3C]], [[WHATWG]]
 		- W3C 官方博文提到的备忘录: [Memorandum of Understanding Between W3C and WHATWG (W3C 与 WHATWG 之间的谅解备忘录)](https://www.w3.org/2019/04/WHATWG-W3C-MOU.html)
 		  logseq.order-list-type:: number
 	- ==最重要的事情：HTML 和 DOM 标准统一交由 WHATWG 维护，且都是动态更新的标准。==
+		- 参考: [single version of the DOM and HTML](https://www.w3.org/html/)
 		- [DOM Living Standard](https://dom.spec.whatwg.org/)
 		- [HTML Living Standard](https://html.spec.whatwg.org/multipage/)
 	- W3C 维护的原规范可以不用看了
