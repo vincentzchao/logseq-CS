@@ -21,10 +21,10 @@ tags:: [[JavaScript]]
 		- 运行在 浏览器 环境中。
 		- 相当于 `Core JavaScript` + `通用 Web APIs` + `浏览器特定 API`
 		- #### 通用 Web APIs
-			- `Document Object Model (DOM)` : 操作页面元素。 
+			- `Document Object Model (DOM)`  APIs : 操作页面元素。
 			  logseq.order-list-type:: number
 				- [[DOM Spec]]
-			- `Browser Object Model (BOM)` : 操作浏览器。 
+			- `Browser Object Model (BOM)` APIs : 操作浏览器。
 			  logseq.order-list-type:: number
 				- `window`、`location`、`history`、`navigator` 等对象，
 				  logseq.order-list-type:: number
