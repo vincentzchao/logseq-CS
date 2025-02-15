@@ -1,4 +1,7 @@
-## NodeList 不是 Array 类型
+## 获取 NodeList 对象
+	- 通常由 `Node.childNodes` 属性 或 `document.querySelectorAll()` 方法获得。
+- ## NodeList 不是 Array 类型
+	- `NodeList` 并不是一个 `Array` ，只是类似于 `Array` 。
 	- ``` js
 	  // ======> NodeList 不是 Array 类型
 	  const list = document.querySelectorAll("p");

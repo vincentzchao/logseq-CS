@@ -32,8 +32,30 @@ tags:: [[HTML]]
 		- 在一种引号中使用另一种引号是合法的，但是在一个引号中使用同一种引号，则需要使用转义字符。
 		- 如：这样是错的： `<a href='https://www.example.com' title='Isn't this fun?'>A link to my example.</a>` 而这样是对的： `<a href='https://www.example.com' title='Isn&apos;t this fun?'>A link to my example.</a>`
 	- ### Boolean attributes
-		- 只有一个值的属性（或者不填值）
-		- 如：`<input type="text" disabled="disabled">` 等价于 `<input type="text" disabled>`
+		- 参见: [MDN - Boolean attribute](https://developer.mozilla.org/en-US/docs/Glossary/Boolean/HTML)
+		- 表示 true 或 false 值的属性。
+			- 表示 true 的情况：
+			  logseq.order-list-type:: number
+				- 只有属性名，没有等号和属性值: `checked`
+				  logseq.order-list-type:: number
+				- 属性名和等号都有，但是属性值为空字符串: `checked=""`
+				  logseq.order-list-type:: number
+				- 属性名和等号都有，属性值等于属性名，大小写不敏感: `checked="checked"`
+				  logseq.order-list-type:: number
+				- ==注意：虽然现代浏览器把除了空字符串外的所有值，都认为是 true ，但我们不应该依赖这个行为。==
+			- 表示  false 的情况：
+			  logseq.order-list-type:: number
+				- 不填这个属性。
+		- ``` html
+		  <!-- The following checkboxes will be checked on initial rendering -->
+		  <input type="checkbox" checked />
+		  <input type="checkbox" checked="" />
+		  <input type="checkbox" checked="checked" />
+		  <input type="checkbox" checked="Checked" />
+		  
+		  <!-- The following checkbox will not be checked on initial rendering -->
+		  <input type="checkbox" />
+		  ```
 - ## HTML document
 	- ### 结构
 		- ```html
