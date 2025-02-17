@@ -79,6 +79,7 @@ tags:: [[DOM]]
 	- DOM 树是一种树形结构，用来表示文档的结构，其每个节点都表示文档中的一个内容。
 	- 示例：
 		- ``` html
+		  <!doctype html>
 		  <html lang="en">
 		    <head>
 		      <title>My Document</title>
@@ -89,9 +90,11 @@ tags:: [[DOM]]
 		    </body>
 		  </html>
 		  ```
-		- 如上文档，可以用下图表示：
-			- ![image.png](../assets/image_1739635965862_0.png)
+	- 如上文档，可以用下图表示：
+		- ![image.png](../assets/image_1739635965862_0.png)
 	- 当网页浏览器解析 HTML 文档时，它会构建一个 DOM 树，然后使用它来显示文档。
+	- 上图为了简化，去掉了 `#text` 节点，真实 DOM 树如下：
+		- ![image.png](../assets/image_1739814846759_0.png){:height 296, :width 562}
 - ## 参考
 	- logseq.order-list-type:: number
 -
