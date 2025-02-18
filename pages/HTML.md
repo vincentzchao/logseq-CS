@@ -7,6 +7,8 @@ alias:: [[HyperText Markup Language]]
 	- 按照 [MDN - Structuring the web with HTML](https://developer.mozilla.org/en-US/docs/Learn/HTML) 中的顺序学习。
 	- [[HTML/Basics]]
 	  logseq.order-list-type:: number
+	- [[Block-level content and Inline-level content]]
+	  logseq.order-list-type:: number
 	- [[HTML/Debugger]]
 	  logseq.order-list-type:: number
 	- [[HTML/head element]]
