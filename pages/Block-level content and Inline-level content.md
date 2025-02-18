@@ -13,26 +13,28 @@ tags:: [[HTML]], [[CSS]]
 - ## Block-level content
 	- 参与 `block layout` (块布局) 的内容，就被称为 `block-level content` 。
 	- 在  `block layout` 中：
-		- 盒子从上到下垂直排列。
+		- `block-level content` 在页面上形成 `block` ，从上到下垂直排列。
 		  logseq.order-list-type:: number
-		- 每个盒子的左边缘，接触它的父容器的左边缘。
+		- `block-level content` 的左边缘，接触它的父容器的左边缘。
 		  logseq.order-list-type:: number
-		- 块级内容始终从新的一行开始。
+		- `block-level content` 会在它之前的任何内容后面另起一行显示，而它之后的任何内容也会另起一行显示。
 		  logseq.order-list-type:: number
-			- 如，在 `horizontal writing modes` 中 (如英文) ，它占据其父容器的整个水平空间，以及与其内容等高的垂直空间。
-				- 修改 ` writing-mode ` 可以修改这一行为。
-	- **块级内容** 在页面上形成可见的块。
-	- **块级内容** 会在它之前的任何内容之后另起一行显示，而它之后的任何内容也会另起一行显示。
-	- **块级内容** 通常是结构化的元素，如 headings, paragraphs, lists, navigation menus, or footers 。
-	- **块级内容** 可以被嵌套在块级内容中，而不可以被嵌套在行级内容中。
-- ## Inline elements
-	- **行内元素** 被包含在 **块级元素** 中，并且它通常仅包含网页的一小部分（即不包含整个段落或大量内容）。
-	- **行内元素** 之前的内容如果也是 **行内元素** ，则它不会另起一行显示。
-	-
+			- 在 `horizontal writing modes` 中 (如英文) ，它占据其父容器的整个水平空间，以及与其内容等高的垂直空间。
+				- 修改 `writing-mode` 可以修改这一行为。
+	- 另外：
+		- `block-level content` 通常是结构化的元素，如 headings, paragraphs, lists, navigation menus, or footers 。
+		- 可以将 `block-level content` 嵌套在 `block-level content` 中，而最好不要将  `block-level content` 嵌套在 `Inline-level content` 中。
+- ## Inline-level content
+	- 参与 `inline layout` (行内布局) 的内容，就被称为 `inline-level content` 。
+	- 在 `inline layout` 中：
+		- `inline-level content` 之前的内容如果也是 `inline-level content` ，则它不会另起一行显示。
+		  logseq.order-list-type:: number
+	- 另外：
+		- `inline-level content` 通常仅包含网页的一小部分（即不包含整个段落或大量内容）。
+		-
 - ## 参考
 	- [MDN - Block-level content](https://developer.mozilla.org/en-US/docs/Glossary/Block-level_content)
 	  logseq.order-list-type:: number
 	- [MDN - Inline-level content](https://developer.mozilla.org/en-US/docs/Glossary/Inline-level_content)
 	  logseq.order-list-type:: number
 	-
-	- logseq.order-list-type:: number
