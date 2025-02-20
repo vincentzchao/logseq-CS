@@ -15,12 +15,12 @@ tags:: [[HTML]], [[CSS]]
 	- 在  `block layout` 中：
 		- `block-level content` 在页面上形成 `block` ，从上到下垂直排列。
 		  logseq.order-list-type:: number
-		- `block-level content` 的左边缘，接触它的父容器的左边缘。
+		- `block-level content` 的左边缘，挨着它父容器的左边缘。
 		  logseq.order-list-type:: number
 		- `block-level content` 会在它之前的任何内容后面另起一行显示，而它之后的任何内容也会另起一行显示。
 		  logseq.order-list-type:: number
 			- 在 `horizontal writing modes` 中 (如英文) ，它占据其父容器的整个水平空间，以及与其内容等高的垂直空间。
-				- 修改 `writing-mode` 可以修改这一行为。
+				- 修改 `writing-mode` 属性可以修改这一行为。
 	- 另外：
 		- `block-level content` 通常是结构化的元素，如 headings, paragraphs, lists, navigation menus, or footers 。
 		- 可以将 `block-level content` 嵌套在 `block-level content` 中，而最好不要将  `block-level content` 嵌套在 `Inline-level content` 中。
@@ -31,7 +31,7 @@ tags:: [[HTML]], [[CSS]]
 		  logseq.order-list-type:: number
 	- 另外：
 		- `inline-level content` 通常仅包含网页的一小部分（即不包含整个段落或大量内容）。
-		-
+		- 文本, [[Replaced element]] , [[CSS Generated Content]] 通常属于 `inline-level content`
 - ## 参考
 	- [MDN - Block-level content](https://developer.mozilla.org/en-US/docs/Glossary/Block-level_content)
 	  logseq.order-list-type:: number
