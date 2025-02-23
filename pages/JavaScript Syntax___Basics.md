@@ -379,7 +379,7 @@
 			- ``` js
 			  const b = new Boolean(false);
 			  if (b) {
-			    // this condition evaluates to true
+			  // this condition evaluates to true
 			  }
 			  if (b == true) {
 			    // this condition evaluates to false

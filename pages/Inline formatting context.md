@@ -1,4 +1,5 @@
 tags:: [[CSS]]
+alias:: [[IFC]]
 ---
 
 - ## 什么是 Inline formatting context
