@@ -198,11 +198,9 @@
 			  const greeting = `Hello ${name}`;
 			  ```
 		- 支持多行
-			- ``` js
-			  `In JavaScript, template strings can run
+			- `In JavaScript, template strings can run
 			   over multiple lines, but double and single
 			   quoted strings cannot.`
-			  ```
 	- ### Special Characters In Strings
 		- | Character | Meaning |
 		  | ---- | ---- | ---- |

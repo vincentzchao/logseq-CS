@@ -50,6 +50,7 @@
 		  });
 		  ```
 - ## Live NodeList 和 Static NodeList
+  id:: 67b0644c-bcb8-46f8-a2dc-8d07a09cc611
 	- `Node.childNodes` 属性获取到的 NodeList 是 `Live NodeList` 。
 	  logseq.order-list-type:: number
 		- `Live NodeList` 意味着 NodeList 是实时变化的，也就是 DOM 发生变化，NodeList 也会跟着变。
