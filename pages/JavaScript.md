@@ -12,4 +12,10 @@ alias:: [[JS]]
 	  logseq.order-list-type:: number
 	- [[浏览器是如何渲染一个页面的]]
 	  logseq.order-list-type:: number
+	- Web APIs
+	  logseq.order-list-type:: number
+		- [[DOM]]
+		  logseq.order-list-type:: number
+		- logseq.order-list-type:: number
+	- logseq.order-list-type:: number
 	- logseq.order-list-type:: number

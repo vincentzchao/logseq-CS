@@ -249,21 +249,20 @@ tags:: [[DOM]]
 		  }
 		  
 		  ```
-	- ## NodeSelector
-		- 实现了 `Document`, `DocumentFragment`, or `Element` 接口的的对象，就有如下方法：
-		- `querySelector()`
-		  logseq.order-list-type:: number
-			- 返回节点的子树中 **第一个** 匹配的元素，如果没找到，就返回 null 。
-		- `querySelectorAll()`
-		  logseq.order-list-type:: number
-			- 返回节点的子树中 **所有** 匹配的元素，返回值类型为 `NodeList` ，没找到就返回一个 empty `NodeList` 。
-			- 注意：这里返回的 `NodeList` 并非 `live` (即 DOM 的修改并不会改动 `NodeList` 中的内容)。
-				- 具体参见: ((67b0644c-bcb8-46f8-a2dc-8d07a09cc611))
-		- 为了保护用户隐私, `pseudo-class` 选择器不被支持，或者表现不同。
-			- 比如: 使用 `:visited` 将匹配不到内容
-			- 再比如:  `:link` 被当做 `:any-link`
+- ## NodeSelector
+	- 实现了 `Document`, `DocumentFragment`, or `Element` 接口的的对象，就有如下方法：
+	- `querySelector()`
+	  logseq.order-list-type:: number
+		- 返回节点的子树中 **第一个** 匹配的元素，如果没找到，就返回 null 。
+	- `querySelectorAll()`
+	  logseq.order-list-type:: number
+		- 返回节点的子树中 **所有** 匹配的元素，返回值类型为 `NodeList` ，没找到就返回一个 empty `NodeList` 。
+		- 注意：这里返回的 `NodeList` 并非 `live` (即 DOM 的修改并不会改动 `NodeList` 中的内容)。
+			- 具体参见: ((67b0644c-bcb8-46f8-a2dc-8d07a09cc611))
+	- 为了保护用户隐私, `pseudo-class` 选择器不被支持，或者表现不同。
+		- 比如: 使用 `:visited` 将匹配不到内容
+		- 再比如:  `:link` 会被当做 `:any-link`
 -
-	-
 - ## 参考
 	- logseq.order-list-type:: number
 -

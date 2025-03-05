@@ -1,4 +1,5 @@
 alias:: [[Document Object Model]]
+tags:: [[Web API]]
 ---
 
 - ## 学习路线
@@ -7,6 +8,6 @@ alias:: [[Document Object Model]]
 	  logseq.order-list-type:: number
 	- [[DOM Basics]]
 	  logseq.order-list-type:: number
-	- [[HTML DOM]]
+	- [[Web Event]]
 	  logseq.order-list-type:: number
 	- logseq.order-list-type:: number
