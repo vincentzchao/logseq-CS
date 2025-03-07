@@ -67,7 +67,7 @@
 			  console.log(factorial(3)); // 6
 			  ```
 		- #### Function Parameter
-			- 将 function expression 作为一个参数，传个另一个函数。
+			- 将 function expression 作为一个参数，传给另一个函数。
 			- ``` js
 			  button.addEventListener("click", function (event) {
 			    console.log("button is clicked!");
@@ -100,34 +100,34 @@
 		  ```
 		- 与变量类似, 使用 var 声明的变量接收 Function expression 也会导致 Hoisting .
 		- 与变量类似, 只是 declaration 上升, 而 initialization 没有上升.
-- ### Arrow Function
-	- ``` js
-	  // 声明函数
-	  const hello = (name) => {
-	    return "Hello World! " + name);
-	  }
-	  
-	  // 当只有一个参数时的简略写法
-	  const hello = name => "Hello World! " + name;
-	  
-	  // 调用函数
-	  hello("Vincent");
-	  ```
-- ### Method in Object
-	- ``` js
-	  // 定义对象
-	  const people = {
-	    age: 20,
-	    name: "Vincent",
-	    // 声明对象的方法
-	    hello() {
-	      return "Hello, " + this.name;
-	    }
-	  };
-	  
-	  // 执行方法
-	  people.hello();
-	  ```
+	- ### Arrow Function
+		- ``` js
+		  // 声明函数
+		  const hello = (name) => {
+		    return "Hello World! " + name);
+		  }
+		  
+		  // 当只有一个参数时的简略写法
+		  const hello = name => "Hello World! " + name;
+		  
+		  // 调用函数
+		  hello("Vincent");
+		  ```
+	- ### Method in Object
+		- ``` js
+		  // 定义对象
+		  const people = {
+		    age: 20,
+		    name: "Vincent",
+		    // 声明对象的方法
+		    hello() {
+		      return "Hello, " + this.name;
+		    }
+		  };
+		  
+		  // 执行方法
+		  people.hello();
+		  ```
 -
 - ---
 - ## 参考

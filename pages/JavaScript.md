@@ -16,6 +16,7 @@ alias:: [[JS]]
 	  logseq.order-list-type:: number
 		- [[DOM]]
 		  logseq.order-list-type:: number
-		- logseq.order-list-type:: number
+		- [[Web Event]]
+		  logseq.order-list-type:: number
 	- logseq.order-list-type:: number
 	- logseq.order-list-type:: number
