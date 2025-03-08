@@ -97,7 +97,7 @@ tags:: [[DOM]]
 			- ![image.png](../assets/image_1739635965862_0.png)
 		- 当网页浏览器解析 HTML 文档时，它会构建一个 DOM 树，然后使用它来显示文档。
 	- ### 真实 DOM Tree
-		- 参见: [MDN -How whitespace is handled by HTML, CSS, and in the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Whitespace#dom_traversal_and_whitespace)
+		- 参见: [MDN - How whitespace is handled by HTML, CSS, and in the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Whitespace#dom_traversal_and_whitespace)
 		- 上图为了简化，去掉了 `text` 节点 (这里的 text 节点内容是元素之间的文本内容，这个例子中，只包含 whitespace 字符)，真实 DOM 树如下：
 			- ![image.png](../assets/image_1739814846759_0.png){:height 296, :width 562}
 	- ### JS 处理 DOM Tree 中 Whitespace 的工具类
@@ -250,6 +250,7 @@ tags:: [[DOM]]
 		  
 		  ```
 - ## NodeSelector
+	- 参见: [MDN - Locating DOM elements using selectors](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Locating_DOM_elements_using_selectors)
 	- 实现了 `Document`, `DocumentFragment`, or `Element` 接口的的对象，就有如下方法：
 	- `querySelector()`
 	  logseq.order-list-type:: number
@@ -264,5 +265,4 @@ tags:: [[DOM]]
 		- 再比如:  `:link` 会被当做 `:any-link`
 -
 - ## 参考
-	- logseq.order-list-type:: number
--
+	-

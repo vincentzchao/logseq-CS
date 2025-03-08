@@ -1,2 +1,2 @@
 -
-- {{renderer :tocgen2, [[web event basics]], calc(100vh - 135px)}}
+- {{renderer :tocgen2, [[event bubbling]], calc(100vh - 135px)}}

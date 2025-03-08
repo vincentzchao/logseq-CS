@@ -8,7 +8,8 @@ tags:: [[Web]], [[Web API]]
 	  logseq.order-list-type:: number
 	- [[Web Event Interface]]
 	  logseq.order-list-type:: number
-	- logseq.order-list-type:: number
+	- [[Event Bubbling]]
+	  logseq.order-list-type:: number
 	- logseq.order-list-type:: number
 -
 - 看到 **Listening for other events**

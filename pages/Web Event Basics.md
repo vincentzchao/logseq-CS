@@ -154,6 +154,7 @@ tags:: [[Web Event]]
 	- 在 `Event handler` 函数中，你可以使用任何名称接收 `Event Object` 。
 		- `e/evt/event` 这几个名称比较常用。
 		- 在代码中,  `Event Object` 的名称最好统一。
+-
 - ## 参考
 	- [MDN - Introduction to events](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Events#an_example_handling_a_click_event)
 	  logseq.order-list-type:: number

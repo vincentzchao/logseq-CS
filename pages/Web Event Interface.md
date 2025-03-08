@@ -38,13 +38,71 @@ tags:: [[Web Event]]
 		  logseq.order-list-type:: number
 			- 如上继承结构所示, UI Events 的顶层接口是 `UIEvent` 。
 			- UIEvent 接口汇总: [MDN - UI Events#Interfaces](https://developer.mozilla.org/en-US/docs/Web/API/UI_Events#interfaces)
+- ## Prevent Default Behavior
+	- 参见: [MDN - Introduction to events#Preventing default behavior](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Events#preventing_default_behavior)
+	- 有一些事件被触发后，有一些默认行为。
+		- 比如，表单提交时，有一个默认行为，就是会跳转到 `<form>` 标签 `action` 属性所指向的路径 (如果没有指定，则默认跳转到本页) 。
+	- 下例，调用 `Event Interface` 的 `preventDefault()` 方法，阻止表单提交时的默认行为。
+		- ``` html
+		  <!DOCTYPE html>
+		  <html lang="en">
+		  
+		  <head>
+		    <meta charset="UTF-8">
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		    <title>Document</title>
+		  </head>
+		  
+		  <body>
+		    <form action="https://www.baidu.com">
+		      <div>
+		        <label for="firstName">First Name：</label>
+		        <input type="text" id="firstName" />
+		      </div>
+		  
+		      <div>
+		        <label for="lastName">Last Name：</label>
+		        <input type="text" id="lastName" />
+		      </div>
+		  
+		      <div>
+		        <input type="submit" value="Submit" />
+		      </div>
+		    </form>
+		    <p></p>
+		    <script>
+		      const form = document.querySelector("form");
+		      const fname = document.getElementById("firstName");
+		      const lname = document.getElementById("lastName");
+		      const para = document.querySelector("p");
+		  
+		      form.addEventListener("submit", (e) => {
+		        if (fname.value === "" || lname.value === "") {
+		          e.preventDefault();
+		          para.textContent = "You need to fill in both names!";
+		        }
+		      });
+		    </script>
+		  </body>
+		  
+		  </html>
+		  ```
 - ## Reference
 	- `Event`
 	  logseq.order-list-type:: number
-		- 大多数事件在 `Element Interface` 上发生 (查看都有哪些 Event: [MDN - Element#Events](https://developer.mozilla.org/en-US/docs/Web/API/Element#events))。
-		  logseq.order-list-type:: number
-		- loading 和 unloading 资源相关的事件，在 `Window Interface` 上发生 (查看都有哪些 Event: [MDN - Window#Events](https://developer.mozilla.org/en-US/docs/Web/API/Window#events))。
-		  logseq.order-list-type:: number
+		- 事件索引：[MDN - Event Index](https://developer.mozilla.org/en-US/docs/Web/Events#event_index)
+		- `Event` 发生的地方有哪些？
+			- `Element Interface`
+			  logseq.order-list-type:: number
+				- 大多数事件在此发生。
+			- `Window Interface`
+			  logseq.order-list-type:: number
+				- loading 和 unloading 资源相关的事件，在此发生。
+			- `Document Interface`
+			  logseq.order-list-type:: number
+			- ......
+			  logseq.order-list-type:: number
+		- 可以在各接口文档的 `Events` 一栏，查看它都有哪些 `Event` .
 	- `Event Interface`
 	  logseq.order-list-type:: number
 		- 所有 `Event Interface` 汇总: [MDN - Interfaces based on Event](https://developer.mozilla.org/en-US/docs/Web/API/Event#interfaces_based_on_event)
