@@ -1,3 +1,6 @@
+alias:: [[World Wide Web]]
+---
+
 - ==子目录==
 	- [[Web History]]
 - ---

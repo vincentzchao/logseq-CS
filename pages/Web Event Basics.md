@@ -132,7 +132,58 @@ tags:: [[Web Event]]
 			- 出于安全考虑，很多 Web 服务器默认禁用  `Inline JavaScript` (通过加 `Content-Security-Policy` 响应头)。
 			  logseq.order-list-type:: number
 		- 可以说 `inline event handlers` 已经过时了 (outdated) 。
-	-
+- ## Event Interface
+	- ### Event Interface 的继承结构
+	  id:: 67cbaf56-4055-4399-bd6a-21a332d16383
+		- 参见: [MDN - Web API - Event](https://developer.mozilla.org/en-US/docs/Web/API/Event#interfaces_based_on_event)
+		- 以下，由 DeepSeek 总结
+		- ``` js
+		  
+		  Event（基类）
+		  ├─ UIEvent
+		  │  ├─ MouseEvent
+		  │  │  ├─ WheelEvent
+		  │  │  └─ DragEvent
+		  │  ├─ KeyboardEvent
+		  │  ├─ FocusEvent
+		  │  ├─ InputEvent
+		  │  ├─ TouchEvent
+		  │  └─ CompositionEvent
+		  ├─ CustomEvent
+		  ├─ AnimationEvent
+		  ├─ ClipboardEvent
+		  ├─ ErrorEvent
+		  ├─ HashChangeEvent
+		  ├─ MessageEvent
+		  ├─ PageTransitionEvent
+		  ├─ PopStateEvent
+		  ├─ ProgressEvent
+		  └─ StorageEvent
+		  ```
+	- ### 如何使用 Event Object
+		- 在 `Event handler` 函数中，可以接收一个 `Event Object` ，这是在 `Event` 触发时，会传给 `Event handler` 的。
+			- 不同 `Event` , 可能传的是不同的  `Event Object` , 拥有不同的属性和方法。
+		- ``` js
+		  const btn = document.querySelector("button");
+		  
+		  function random(number) {
+		    return Math.floor(Math.random() * (number + 1));
+		  }
+		  
+		  function bgChange(e) {
+		    const rndCol = `rgb(${random(255)} ${random(255)} ${random(255)})`;
+		    e.target.style.backgroundColor = rndCol;
+		    console.log(e);
+		  }
+		  
+		  btn.addEventListener("click", bgChange);
+		  ```
+		- `e.target` 表示发生 `event` 的元素。
+		- 在 `Event handler` 函数中，你可以使用任何名称接收 `Event Object` 。
+			- `e/evt/event` 这几个名称比较常用。
+			- 在代码中,  `Event Object` 的名称最好统一。
 - ## 参考
 	- [MDN - Introduction to events](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Events#an_example_handling_a_click_event)
+	  logseq.order-list-type:: number
+	- DeepSeek
 	  logseq.order-list-type:: number
