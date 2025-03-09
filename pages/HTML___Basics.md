@@ -30,7 +30,9 @@ tags:: [[HTML]]
 				  logseq.order-list-type:: number
 				- 属性名和等号都有，属性值等于属性名，大小写不敏感: `checked="checked"`
 				  logseq.order-list-type:: number
-				- ==注意：虽然现代浏览器把除了空字符串外的所有值，都认为是 true ，但我们不应该依赖这个行为。==
+				- 属性名和等号都有，属性值为除了上述情况之外的任意字符串: `checked="嘻嘻嘻"` ( ==此方式不推荐== )
+				  logseq.order-list-type:: number
+					- ==注意：虽然现代浏览器把除了空字符串外的所有值，都认为是 true ，但我们不应该依赖这个行为。==
 			- 表示  false 的情况：
 			  logseq.order-list-type:: number
 				- 不填这个属性。
@@ -40,6 +42,7 @@ tags:: [[HTML]]
 		  <input type="checkbox" checked="" />
 		  <input type="checkbox" checked="checked" />
 		  <input type="checkbox" checked="Checked" />
+		  <input type="checkbox" checked="嘻嘻嘻" />
 		  
 		  <!-- The following checkbox will not be checked on initial rendering -->
 		  <input type="checkbox" />
@@ -88,4 +91,7 @@ tags:: [[HTML]]
 	- [转义字符大全](https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references)
 - ## HTML Comments
 	- `<!-- 这是注释 -->`
+- ## 参考
+	- [MDN - Basic HTML syntax](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Basic_HTML_syntax)
+	  logseq.order-list-type:: number
 	-
