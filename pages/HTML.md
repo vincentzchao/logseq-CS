@@ -33,6 +33,14 @@ alias:: [[HyperText Markup Language]]
 				  logseq.order-list-type:: number
 				- [[HTML/Video and Audio]]
 				  logseq.order-list-type:: number
+- ## Reference
+	- ### HTML Elements
+		- HTML Elements 分类汇总: [MDN - HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#table_content)
+	- ### HTML Attributes
+		- Global Attributes : [MDN - Global Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes)
+		  logseq.order-list-type:: number
+		- Global Attributes 之外的 Attributes: [MDN - Attribute list](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#attribute_list)
+		  logseq.order-list-type:: number
 - ## Tools
 	- ### 语法检测
 		- W3C 维护的  [Markup Validation Service](https://validator.w3.org/) .

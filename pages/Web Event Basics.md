@@ -90,6 +90,7 @@ tags:: [[Web Event]]
 		  element.onclick = function2;
 		  ```
 - ## 方法 3：使用 `inline event handlers`
+  id:: 67cb35c5-7b06-41b0-9995-a2745d6cd6c1
 	- 即，给 HTML 的 `Event Handler Attribute` 赋值，如 `onclick` 。
 	- ### Event Handler Attribute
 		- 参考: [MDN - HTML attribute reference#Event handler attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes#event_handler_attributes)
