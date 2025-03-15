@@ -20,10 +20,12 @@ alias:: [[JS]]
 	  logseq.order-list-type:: number
 		- [[DOM]]
 		  logseq.order-list-type:: number
+		- [[CSSOM]]
+		  logseq.order-list-type:: number
 		- [[Web Event]]
 		  logseq.order-list-type:: number
 		- [[Server-sent events]]
 		  logseq.order-list-type:: number
-	- logseq.order-list-type:: number
+		-
 	- logseq.order-list-type:: number
 -

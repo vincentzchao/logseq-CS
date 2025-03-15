@@ -63,19 +63,6 @@ tags:: [[DOM]]
 	  // instanceof 关键字
 	  document instanceof Node
 	  ```
-- ## DOM 常用 API
-	- document.querySelector()
-	- document.querySelectorAll()
-	- document.createElement()
-	- Element.innerHTML
-	- Element.setAttribute()
-	- Element.getAttribute()
-	- EventTarget.addEventListener()
-	- HTMLElement.style
-	- Node.appendChild()
-	- window.onload
-	- window.scrollTo()
-	- `document` 和 `window` 为 global object 的 `property` ，可以直接使用。
 - ## DOM Tree
 	- 参考:  [MDN - Using the Document Object Model](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Using_the_Document_Object_Model)
 	- ### 简化 DOM Tree
@@ -100,6 +87,60 @@ tags:: [[DOM]]
 		- 参见: [MDN - How whitespace is handled by HTML, CSS, and in the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Whitespace#dom_traversal_and_whitespace)
 		- 上图为了简化，去掉了 `text` 节点 (这里的 text 节点内容是元素之间的文本内容，这个例子中，只包含 whitespace 字符)，真实 DOM 树如下：
 			- ![image.png](../assets/image_1739814846759_0.png){:height 296, :width 562}
+	- ### Node Type
+		- 参考: [MDN - Node - nodeType](https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType)
+		- Node.ELEMENT_NODE (1) 元素节点
+		  logseq.order-list-type:: number
+			- 如 `<p>` , `<div>`
+		- Node.ATTRIBUTE_NODE (2) 属性节点
+		  logseq.order-list-type:: number
+			- 元素的属性.
+		- Node.TEXT_NODE (3) 文本节点
+		  logseq.order-list-type:: number
+		- ......
+	- ### Node 相关术语
+		- 参考: [MDN - DOM Scripting#The document object model](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/DOM_scripting#the_document_object_model)
+		- ``` html
+		  <!doctype html>
+		  <html lang="en-US">
+		    <head>
+		      <meta charset="utf-8" />
+		      <title>Simple DOM example</title>
+		    </head>
+		    <body>
+		      <section>
+		        <img
+		          src="dinosaur.png"
+		          alt="A red Tyrannosaurus Rex: A two legged dinosaur standing upright like a human, with small arms, and a large head with lots of sharp teeth." />
+		        <p>
+		          Here we will add a link to the
+		          <a href="https://www.mozilla.org/">Mozilla homepage</a>
+		        </p>
+		      </section>
+		    </body>
+		  </html>
+		  ```
+		- **Root node** (根节点) : DOM Tree 中的顶级节点 .
+		  logseq.order-list-type:: number
+			- HTML Document 中, 根节点就是 `<HTML>` (SVG 和 XML 中不同) .
+		- **Child node** (子节点) : 直接位于另一个节点内的节点 .
+		  logseq.order-list-type:: number
+			- 比如, 上面 `<img>` 就是 `<section>` 的 **Child node** .
+		- **Descendant node** (后代节点) : 位于一个节点内部的任何节点 .
+		  logseq.order-list-type:: number
+			- 比如, `<img>` 是 `<section>`  的 **Child node** , 也是 `<section>`  的 **Descendant node** .
+			- 同时, `<img>` 是 `<body>` 的 **Descendant node**  , 但不是 `<body>` 的 **Child node** .
+		- **Parent node** (父节点) : 直接包含一个节点的节点 .
+		  logseq.order-list-type:: number
+		  id:: 67d52ba8-6d10-41d5-9e76-e5f86a267a5b
+			- 比如,  `<body>` 是 `<section>` 的 **Parent node** .
+		- **Ancestor node** (祖先节点) : 包含一个节点的节点 .
+		  logseq.order-list-type:: number
+			- 比如, `<section>` 是 `<img>`  的 **Parent node** , 也是 `<img>`  的 **Ancestor node** .
+			- 同时, `<body>` 是 `<img>` 的 **Ancestor node**  , 但不是 `<img>` 的 **Parent node** .
+		- **Sibling node** (兄弟节点)  : 位于同一 **Parent node** 下同一级的节点 .
+		  logseq.order-list-type:: number
+			- 比如, `<img>` 和 `<p>` 是 **Sibling node** .
 	- ### JS 处理 DOM Tree 中 Whitespace 的工具类
 		- 参见: [MDN -How whitespace is handled by HTML, CSS, and in the DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Whitespace#dom_traversal_and_whitespace)
 		- ==`Node.firstChild` 等属性和 `Node.hasChildNodes()` 等方法的返回值，是包含 text 节点 (即便只有 whitespace 字符) 的，使用时需要注意。==
@@ -249,20 +290,5 @@ tags:: [[DOM]]
 		  }
 		  
 		  ```
-- ## NodeSelector
-	- 参见: [MDN - Locating DOM elements using selectors](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Locating_DOM_elements_using_selectors)
-	- 实现了 `Document`, `DocumentFragment`, or `Element` 接口的的对象，就有如下方法：
-	- `querySelector()`
-	  logseq.order-list-type:: number
-		- 返回节点的子树中 **第一个** 匹配的元素，如果没找到，就返回 null 。
-	- `querySelectorAll()`
-	  logseq.order-list-type:: number
-		- 返回节点的子树中 **所有** 匹配的元素，返回值类型为 `NodeList` ，没找到就返回一个 empty `NodeList` 。
-		- 注意：这里返回的 `NodeList` 并非 `live` (即 DOM 的修改并不会改动 `NodeList` 中的内容)。
-			- 具体参见: ((67b0644c-bcb8-46f8-a2dc-8d07a09cc611))
-	- 为了保护用户隐私, `pseudo-class` 选择器不被支持，或者表现不同。
-		- 比如: 使用 `:visited` 将匹配不到内容
-		- 再比如:  `:link` 会被当做 `:any-link`
--
 - ## 参考
 	-
