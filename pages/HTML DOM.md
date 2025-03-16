@@ -1,7 +1,11 @@
 tags:: [[DOM]], [[HTML]]
 ---
 
-- [`Element`](https://developer.mozilla.org/zh-CN/docs/Web/API/Element) 接口被拓展为 [`HTMLElement`](https://developer.mozilla.org/zh-CN/docs/Web/API/HTMLElement) 以及很多不同的子类.
+- ## 学习路线
+	- [[HTML DOM Concept]]
+	  logseq.order-list-type:: number
+-
 - ## References
-	- [HTML DOM API](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API)
-	-
+	- 所有 HTML 元素接口: [MDN - HTML ELement Interface](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API#html_element_interfaces_2)
+	  logseq.order-list-type:: number
+	- logseq.order-list-type:: number
