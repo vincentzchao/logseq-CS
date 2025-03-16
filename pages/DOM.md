@@ -8,6 +8,8 @@ tags:: [[Web API]]
 	  logseq.order-list-type:: number
 	- [[DOM Basics]]
 	  logseq.order-list-type:: number
+	- [[HTML DOM]]
+	  logseq.order-list-type:: number
 	- [[DOM 常用 API]]
 	  logseq.order-list-type:: number
 	- [[Web Event]]

@@ -6,6 +6,6 @@ tags:: [[DOM]], [[HTML]]
 	  logseq.order-list-type:: number
 -
 - ## References
-	- 所有 HTML 元素接口: [MDN - HTML ELement Interface](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API#html_element_interfaces_2)
+	- HTML DOM API 接口汇总: [MDN - HTML DOM API interfaces](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API)
 	  logseq.order-list-type:: number
-	- logseq.order-list-type:: number
+	-
