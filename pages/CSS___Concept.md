@@ -49,11 +49,14 @@ tags:: [[CSS]]
 	- CSS 规范，由 W3C 的 CSS Working Group 维护，它由 **浏览器厂商** 、 **一些对CSS感兴趣的公司** 和 **特邀专家** 组成。
 	- 新的 CSS 特性被开发，通常有以下几种情况：
 		- 某个浏览器厂商，对一些新能力感兴趣。
-		- web设计者和开发者想要新功能。
+		  logseq.order-list-type:: number
+		- Web 设计者和开发者想要新功能。
+		  logseq.order-list-type:: number
 		- 工作组本身确定了一个新需求。
-	- 关于CSS规范一个关键的事情是：新版规范不应该打破原来的规则。
+		  logseq.order-list-type:: number
+	- 关于 CSS 规范一个关键的事情是：新版规范不应该打破原来的规则。
 	- CSS 规范主要是作为 user agent 实现功能的参考，不是为我们开发者准备的。
-	- 不同浏览器对CSS的支持情况不同，我们可以在  [CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) 查看各浏览器对属性的支持情况。
+	- 不同浏览器对 CSS 的支持情况不同，我们可以在  [CSS reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) 查看各浏览器对属性的支持情况。
 - ## Apply CSS
 	- ### external stylesheet
 		- ```html
@@ -182,7 +185,7 @@ tags:: [[CSS]]
 		  }
 		  ```
 - ## CSS 优先级
-	- CSS优先级有两条规则：**cascade** 和 **specificity**
+	- CSS 优先级有两条规则：**cascade** 和 **specificity**
 	- ### cascade rule
 		- 即靠后的样式，覆盖前面的样式。
 	- ### specificity rule
