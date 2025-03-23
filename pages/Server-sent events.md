@@ -7,5 +7,8 @@ alias:: [[SSE]]
 	  logseq.order-list-type:: number
 	- [[Server-sent events API]]
 	  logseq.order-list-type:: number
--
+	- [[Server-sent events Polyfill]]
+	  logseq.order-list-type:: number
+- ## Reference
+	-
 -
