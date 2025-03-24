@@ -37,7 +37,8 @@ tags:: [[Zsh]], [[环境变量]]
 		- 图片来自：[Shell 在 MacOS 及 Linux 中的文件读取顺序](https://hanleylee.com/articles/reading-order-of-script-in-mac-and-linux/)
 		- ![image.png](../assets/image_1734278098934_0.png){:height 593, :width 955}
 		- 表格
-		- | | Interactive login | Interactive non-login | Script |
+		- id:: 675efe38-634c-4664-83ca-16f29c36e344
+		  | | Interactive login | Interactive non-login | Script |
 		  | ---- | ---- | ---- |
 		  | `/etc/zshenv` | A | A | A |
 		  | `~/.zshenv` | B | B | B |

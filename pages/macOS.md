@@ -1,4 +1,4 @@
-tags:: [[部署运维]], [[Unix]], [[Apple Technology]]
+tags:: [[部署运维]], [[Unix]], [[Apple Technology]], [[OS]] 
 ---
 
 - ==子目录==
