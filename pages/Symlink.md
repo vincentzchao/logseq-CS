@@ -1,4 +1,4 @@
-alias:: [[Symbolic Link]], [[软链接]]
+alias:: [[Symbolic Link]], [[软链接]], [[符号链接]]
 tags:: [[Linux]]
 ---
 
