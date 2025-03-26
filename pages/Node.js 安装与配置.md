@@ -13,8 +13,6 @@ tags:: [[Node.js]]
 			- 无脑下一步（安装程序会自动添加环境变量，如 `D:\dev\tools\nodejs\` ）。
 	- 如何验证是否安装成功:
 		- 命令行执行 `node -v` , `npm -v` 和 `npx -v` 能输出版本即表示安装成功。
-- ## Node.js 版本说明
-	-
 - ## Windows 修改全局模块下载路径
 	- 参考: [Nodejs安装教程](https://blog.csdn.net/qq_48485223/article/details/122709354)
 	- ### 修改路径
