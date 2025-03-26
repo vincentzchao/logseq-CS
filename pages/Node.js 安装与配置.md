@@ -7,10 +7,11 @@ tags:: [[Node.js]]
 	- 官方提供了两种安装方式:
 		- 使用命令行安装.
 		  logseq.order-list-type:: number
-			- 建议使用 `nvm` 安装, 包管理工具选择 `npm` .
 		- 使用安装包安装
 		  logseq.order-list-type:: number
 			- 无脑下一步（安装程序会自动添加环境变量，如 `D:\dev\tools\nodejs\` ）。
+	- 安装 Node.js 的最佳实践:
+		- 使用 `nvm` 安装, 包管理工具选择 `npm` .
 	- 如何验证是否安装成功:
 		- 命令行执行 `node -v` , `npm -v` 和 `npx -v` 能输出版本即表示安装成功。
 - ## Windows 修改全局模块下载路径

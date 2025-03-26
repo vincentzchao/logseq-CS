@@ -13,16 +13,17 @@ tags:: [[Node.js]]
 			- 很稳定, 只在特殊情况下才有破坏性更改和特性添加 (breaking changes or feature additions) .
 			- 主版本号 为 **偶数** 的版本, 会成为 `LTS` 版本.
 			- 从 `v4 Argon` 开始, `LTS` 版本有了按字母顺序排列的代号 (codename) .
-		- `Nightly` 每 24 小时构建一次的版本.
+			- ==若无特别需要, 开发使用最新的 `LTS` 版本==
+		- `Nightly` 每 24 小时构建一次的版本 .
 		  logseq.order-list-type:: number
-			- 极不稳定, 不应用于开发
+			- 极不稳定, 不应用于开发 .
 - ## 发布周期
 	- Node.js 在每年的 4 月和 10 月, 分别会发布一个新的大版本 (即每 6 个月发布一个大版本), 允许进行破坏性更改.
 		- 每年 4 月发布 **偶数版本** , 此版本将在当年 10 月转为 `LTS` .
 		- 每年 10 月发布 **奇数版本** , 发布的版本支持期限为 8 个月.
 	- 成为 `LTS` 版本之后, 这个版本将进入 12 个月的  `Active LTS` 状态, 然后进入 18 个月的 `Maintenance` 状态.
 	- 所以, 一个 **偶数版本** 的生命周期是这样的:
-		- n 年 4 月初次发布偶数版本 ( `Initial Release` )
+		- n 年 4 月初次发布偶数版本 ( `Initial Release` , 进入 `Current` 阶段)
 		  logseq.order-list-type:: number
 		- n 年 10 月转为 `LTS` 版本 ( `Active LTS ` 阶段开始)
 		  logseq.order-list-type:: number
