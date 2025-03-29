@@ -1,4 +1,4 @@
-tags:: [[RDBMS]]
+tags:: [[RDBMS]], [[Database]] 
 ---
 
 - ==子目录==

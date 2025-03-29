@@ -180,7 +180,7 @@ tags:: [[Node.js]]
 			      /usr/local/share/doc/node
 			  
 			  # 移除 pkg 包的 bom 和 plist 文件
-			  sudo pkgutil --forget org.nodejs.node.pkg.bom
+			  sudo pkgutil --forget org.nodejs.node.pkg
 			  sudo pkgutil --forget org.nodejs.npm.pkg
 			  ```
 			- `pkgutil` 命令参见: [[pkgutil command]]

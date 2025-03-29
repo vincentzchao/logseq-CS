@@ -12,5 +12,8 @@ tags:: [[Web]], [[Web API]]
 	  logseq.order-list-type:: number
 	- [[Web Custom Event]]
 	  logseq.order-list-type:: number
-	- logseq.order-list-type:: number
+- ## Reference
+	- ### 规范
+		- [W3C - UI Events](https://w3c.github.io/uievents/)
+		  logseq.order-list-type:: number
 -

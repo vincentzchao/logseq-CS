@@ -39,7 +39,7 @@ tags:: [[JavaScript]]
 				- ==BOM 的规范比较分散==
 			- 其他 Web APIs。
 			  logseq.order-list-type:: number
-				- 有些有规范。
+				- 有些有规范。如 [[XMLHttpRequest]]
 				- 有些暂未形成规范。
 			- ==如需要使用和学习指定 Web APIs，可以查阅 [MDN - Web APIs](https://developer.mozilla.org/en-US/docs/Web/API)==
 		- #### 浏览器特定 API
