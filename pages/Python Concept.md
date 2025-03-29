@@ -5,7 +5,7 @@ tags:: [[Python]]
 	- logseq.order-list-type:: number
 	- [[PEP]]
 	  logseq.order-list-type:: number
-	- [[Python Implementation]]
+	- [[Python Interpreter]]
 	  logseq.order-list-type:: number
 -
 -
