@@ -2,8 +2,10 @@ tags:: [[Python]]
 ---
 
 - ## 学习路线
-	- [[Python 安装]]
+	- logseq.order-list-type:: number
+	- [[PEP]]
 	  logseq.order-list-type:: number
-	- [[Python 卸载与多版本管理 (macOS)]]
+	- [[Python Implementation]]
 	  logseq.order-list-type:: number
+-
 -

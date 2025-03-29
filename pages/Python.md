@@ -5,10 +5,17 @@ tags:: [[Program Language]]
 	- [[如何学习 Python]]
 	- [[Python 环境准备]]
 	  logseq.order-list-type:: number
+	- [[Python Concept]]
+	  logseq.order-list-type:: number
+	- [[Python Packaging]]
+	  logseq.order-list-type:: number
 - ## Reference
 	- [Python Glossary](https://docs.python.org/3/glossary.html)
 	  logseq.order-list-type:: number
+	- [PEPs](https://peps.python.org/)
+	  logseq.order-list-type:: number
+	- Python 的实现有哪些: [[Python Implementation]]
+	  logseq.order-list-type:: number
 - ## Download
-	- [Python 历史版本](https://www.python.org/ftp/python/)
--
--
+	- [Python 历史版本下载](https://www.python.org/ftp/python/)
+	-

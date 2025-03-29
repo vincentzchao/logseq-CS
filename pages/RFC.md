@@ -1,4 +1,4 @@
-tags:: [[Specification]]
+tags:: [[Specification]], [[Proposal]] 
 alias:: [[Request For Comments]]
 ---
 

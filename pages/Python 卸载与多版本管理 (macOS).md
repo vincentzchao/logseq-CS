@@ -1,7 +1,7 @@
 tags:: [[Python]]
 ---
 
-- ## 如何判断系统的 Python 是怎么安装的
+- ## 判断 Python 是怎么安装的
 	- 执行 `which python3` / `which python` 查看 `python` 命令位于哪里
 		- ``` zsh
 		  ➜  / which python3
@@ -88,4 +88,6 @@ tags:: [[Python]]
 			  sudo pkgutil --forget org.python.Python.PythonApplications-3.5
 			  sudo pkgutil --forget org.python.Python.PythonUnixTools-3.5
 			  ```
+- ##  卸载 macOS 自带的 Python
+	- 貌似 Xcode 是用到了 macOS 自带的 Python, 暂时不要动.
 -
