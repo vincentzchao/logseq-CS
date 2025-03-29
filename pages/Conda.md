@@ -1,6 +1,8 @@
-tags:: Python
+tags:: [[Python]]
+---
 
-- ---
+-
+-
 -
 - ## 命令
 	- 退出 conda 环境，回到系统自带的环境
@@ -12,5 +14,6 @@ tags:: Python
 	- ``` bash
 	  conda config --set auto_activate_base false
 	  ```
+-
 -
 -
