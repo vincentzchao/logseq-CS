@@ -27,6 +27,8 @@ tags:: [[Conda]], [[Anaconda]], [[Miniconda]]
 		  logseq.order-list-type:: number
 		- Anaconda 重新打包的 CPython .
 		  logseq.order-list-type:: number
+		- 依赖的包 + 其他有用的包.
+		  logseq.order-list-type:: number
 - ## Anaconda 是啥
 	- 参考: [Anaconda Blogs - What’s in a Name? Clarifying the Anaconda Metapackage](https://www.anaconda.com/blog/whats-in-a-name-clarifying-the-anaconda-metapackage)
 	- Anaconda 有如下含义:
@@ -70,9 +72,9 @@ tags:: [[Conda]], [[Anaconda]], [[Miniconda]]
 - ## 简单总结
 	- 参考: [Stack Overflow - What are the differences between Conda and Anaconda?](https://stackoverflow.com/a/58147674/11249244)
 	- ```crystal
-	  Miniconda installer = Python + Conda
+	  Miniconda installer = Python + Conda + 依赖包和其他有用的包
 	  Anaconda installer = Python + Conda + Metapackages + Navigator
-	  Metapackages = 数据科学常用包 + 其他有用的依赖包
+	  Metapackages = 数据科学常用包 + 其他有用的包
 	  
 	  Anaconda installer = Miniconda installer + `conda install anaconda`
 	  ```

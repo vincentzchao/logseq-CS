@@ -5,6 +5,8 @@ tags:: [[Conda]], [[Python]]
 	- [[如何学习 Anaconda]]
 	- [[Conda, Miniconda 与 Anaconda]]
 	  logseq.order-list-type:: number
+	- [[Conda, Miniconda 与 Anaconda 收费问题]]
+	  logseq.order-list-type:: number
 	- [[Anaconda Installation]]
 	  logseq.order-list-type:: number
 - ## Index

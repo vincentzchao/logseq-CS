@@ -17,7 +17,7 @@ tags:: [[Program Language]]
 	  logseq.order-list-type:: number
 	- [[Python Packaging]]
 	  logseq.order-list-type:: number
-- ## Reference
+- ## Index
 	- [Python Glossary](https://docs.python.org/3/glossary.html)
 	  logseq.order-list-type:: number
 	- [PEPs](https://peps.python.org/)

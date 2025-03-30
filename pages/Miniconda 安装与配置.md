@@ -1,6 +1,8 @@
 tags:: [[Miniconda]]
 ---
 
+- ## 卸载 Miniconda
+	- 参见: [Uninstalling Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/uninstall)
 - ## Windows 安装 Miniconda
 	- 到此地址下载 [Miniconda Installers](https://www.anaconda.com/download/success#miniconda)。
 	  logseq.order-list-type:: number
@@ -39,7 +41,7 @@ tags:: [[Miniconda]]
 		  %CONDA_HOME%\Scripts;%CONDA_HOME%\Library\bin;%CONDA_HOME%\Library\mingw-w64\bin;%CONDA_HOME%\Library\usr\bin
 		  ```
 - ## 安装问题
-	- [[Anaconda 与 Miniconda 安装疑难杂症]]
+	- 参见: [[Anaconda 与 Miniconda 安装疑难杂症]]
 - ## 配置 Conda Channel
 	- 参见: [[Conda Channel]]
 -
