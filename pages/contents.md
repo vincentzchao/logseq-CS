@@ -1,4 +1,4 @@
 -
 -
 -
-- {{renderer :tocgen2, [[conda, miniconda 与 anaconda]], calc(100vh - 135px)}}
+- {{renderer :tocgen2, [[miniconda 安装与配置]], calc(100vh - 135px)}}

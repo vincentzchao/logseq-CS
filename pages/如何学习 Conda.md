@@ -1,6 +1,9 @@
 tags:: [[Conda]]
 ---
 
+- ## 问题
+	- Conda Channel 怎么配置?
+	  logseq.order-list-type:: number
 - ## 官网资料
 	- [Conda 官网](https://conda.org/)
 	  logseq.order-list-type:: number

@@ -16,4 +16,6 @@ tags:: [[Python]]
 	  logseq.order-list-type:: number
 	- [python3-cookbook 中文译文](https://python3-cookbook.readthedocs.io/zh_CN/latest/index.html)
 	  logseq.order-list-type:: number
--
+- ## 三方资料
+	- [Real Python Tutorials](https://realpython.com/)
+	  logseq.order-list-type:: number

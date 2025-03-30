@@ -34,4 +34,8 @@ tags:: [[Conda]]
 		  # 取消 terminal 启动时，自动激活 base 环境。
 		  conda config --set auto_activate_base false
 		  ```
-	-
+	- ### create
+		- ``` zsh
+		  # 创建指定 python 版本的环境
+		  conda create -n py3.13.2 python=3.13.2
+		  ```

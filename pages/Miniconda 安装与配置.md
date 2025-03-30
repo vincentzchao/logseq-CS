@@ -1,8 +1,26 @@
 tags:: [[Miniconda]]
 ---
 
+- ## 安装方式
+	- 参见:
+		- [Installing Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/install)
+		- [Conda Install](https://docs.conda.io/projects/conda/en/stable/)
+		- [Installing conda](https://docs.conda.io/projects/conda/en/stable/user-guide/install/index.html)
+	- Miniconda 有如下几种安装方式:
+		- GUI 安装包
+		  logseq.order-list-type:: number
+		- 命令行脚本 ( ==倾向使用此方式== )
+		  logseq.order-list-type:: number
+		- 包管理工具 (如 Homebrew)
+		  logseq.order-list-type:: number
+	- 前两种方式的安装文件可以在这里下载: [Miniconda 历史版本下载](https://repo.anaconda.com/miniconda/)
 - ## 卸载 Miniconda
 	- 参见: [Uninstalling Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/uninstall)
+	- 使用 命令行脚本 安装的 Miniconda 默认在 `~/miniconda3` 目录下.
+	- ``` zsh
+	  ➜  / whereis conda
+	  conda: /Users/vincent/miniconda3/bin/conda
+	  ```
 - ## Windows 安装 Miniconda
 	- 到此地址下载 [Miniconda Installers](https://www.anaconda.com/download/success#miniconda)。
 	  logseq.order-list-type:: number
@@ -40,8 +58,37 @@ tags:: [[Miniconda]]
 		  # 在 Path 中新增如下几项：
 		  %CONDA_HOME%\Scripts;%CONDA_HOME%\Library\bin;%CONDA_HOME%\Library\mingw-w64\bin;%CONDA_HOME%\Library\usr\bin
 		  ```
-- ## 安装问题
-	- 参见: [[Anaconda 与 Miniconda 安装疑难杂症]]
+- ## 配置环境变量
+	- ### macOS
+		- 使用命令行脚本安装时, 默认会在 `~/.zshrc` 文件中加入如下内容:
+			- ``` zsh
+			  # >>> conda initialize >>>
+			  # !! Contents within this block are managed by 'conda init' !!
+			  __conda_setup="$('/Users/vincent/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+			  if [ $? -eq 0 ]; then
+			      eval "$__conda_setup"
+			  else
+			      if [ -f "/Users/vincent/miniconda3/etc/profile.d/conda.sh" ]; then
+			          . "/Users/vincent/miniconda3/etc/profile.d/conda.sh"
+			      else
+			          export PATH="/Users/vincent/miniconda3/bin:$PATH"
+			      fi
+			  fi
+			  unset __conda_setup
+			  # <<< conda initialize <<<
+			  ```
+		- 如果没有上述内容, 则执行如下脚本:
+			- ``` zsh
+			  source <PATH_TO_CONDA>/bin/activate
+			  conda init zsh
+			  ```
+			- 效果是会在 `~/.zshrc` 文件中加上如上内容.
+- ## 验证是否安装成功
+	- 执行 `conda list` 和 `conda --version` .
 - ## 配置 Conda Channel
 	- 参见: [[Conda Channel]]
+- ## Miniconda 升级
+	- 执行 `conda update conda`
+- ## 安装问题
+	- 参见: [[Anaconda 与 Miniconda 安装疑难杂症]]
 -

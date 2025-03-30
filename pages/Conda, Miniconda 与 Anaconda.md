@@ -78,9 +78,5 @@ tags:: [[Conda]], [[Anaconda]], [[Miniconda]]
 	  
 	  Anaconda installer = Miniconda installer + `conda install anaconda`
 	  ```
-- ## 问题
-	- `conda` 不是一个命令行工具，他是一个 `Python` 包，所以他不能下载直接使用，这里就需要用到 `Anaconda` 和 `Miniconda` 。
-	  logseq.order-list-type:: number
 	- `Miniconda` 执行 `conda install anaconda` 即可让 `Mniconda` 变成 `Anaconda` ，只是文件夹名称不同。
-	  logseq.order-list-type:: number
-	- logseq.order-list-type:: number
+-
