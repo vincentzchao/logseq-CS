@@ -7,6 +7,8 @@ tags:: [[Python]], [[Environment Manager]], [[Package Manager]]
 	  logseq.order-list-type:: number
 	- [[Conda Channel]]
 	  logseq.order-list-type:: number
+	- [[Conda Config]]
+	  logseq.order-list-type:: number
 	- [[Conda Command]]
 	  logseq.order-list-type:: number
 - ## Index
