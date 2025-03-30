@@ -90,4 +90,3 @@ tags:: [[Python]]
 			  ```
 - ##  卸载 macOS 自带的 Python
 	- 貌似 Xcode 是用到了 macOS 自带的 Python, 暂时不要动.
--

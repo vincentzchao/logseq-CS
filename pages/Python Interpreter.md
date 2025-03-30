@@ -25,7 +25,7 @@ tags:: [[Python]]
 		- 直接编写文本文件，执行 Python 程序时，只需执行 `python3 xxx.py` 命令即可。
 	- ### Python Shell (交互模式)
 		- 参见: [[Python Shell]]
-	- ### python3 命令行执行表达式
+	- ### python 命令行执行表达式
 		- 参见: [[Python Command]]
 	- ### IPython
 		- 参见: [[IPython]]

@@ -1,19 +1,15 @@
-tags:: [[Python]]
+tags:: [[Python]], [[Environment Manager]], [[Package Manager]] 
 ---
 
--
--
--
-- ## 命令
-	- 退出 conda 环境，回到系统自带的环境
-	- ``` bash
-	  conda deactivate
-	  ```
+- ## 学习路径
+	- [[如何学习 Conda]]
+	- [[Conda, Miniconda 与 Anaconda]]
+	  logseq.order-list-type:: number
+	- [[Conda Channel]]
+	  logseq.order-list-type:: number
+	- [[Conda Command]]
+	  logseq.order-list-type:: number
+- ## Index
+	- Conda 改进提案索引: [CEP Index](https://conda.org/learn/ceps)
+	  logseq.order-list-type:: number
 	-
-	- 取消 terminal 启动时，自动激活 base 环境。
-	- ``` bash
-	  conda config --set auto_activate_base false
-	  ```
--
--
--
