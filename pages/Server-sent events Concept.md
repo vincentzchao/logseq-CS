@@ -10,7 +10,7 @@ tags:: [[Server-sent events]]
 	- [[MIME Type]] 需要使用 `text/event-stream` (这在 [HTML Spec - 9.2 Server-sent events](https://html.spec.whatwg.org/multipage/server-sent-events.html) 有定义 )
 	- 但是这个 [IANA Media Types 汇总](https://www.iana.org/assignments/media-types/media-types.xhtml) 中并没有找到 `text/event-stream` .
 		- 在 [HTML Spec - 17 IANA considerations](https://html.spec.whatwg.org/multipage/iana.html#text/event-stream) 有提到要提交给  IANA 注册.
-		- 但是, 貌似, IANA 暂时没有接受这个 MIME Type 的注册;
+		- 但是, 貌似, [[IANA]] 暂时没有接受这个 MIME Type 的注册;
 		- 但各大浏览器基本已支持此类型, 所以它已成为事实标准.
 - ## 规范
 	- [RFC 6202 - Known Issues and Best Practices for the Use of Long Polling and Streaming in Bidirectional HTTP](https://www.rfc-editor.org/rfc/rfc6202.txt)

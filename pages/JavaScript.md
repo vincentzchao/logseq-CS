@@ -10,6 +10,8 @@ alias:: [[JS]]
 	  logseq.order-list-type:: number
 	- [[JavaScript Syntax]]
 	  logseq.order-list-type:: number
+	- [[Asynchronous JavaScript]]
+	  logseq.order-list-type:: number
 	- 底层原理
 	  logseq.order-list-type:: number
 		- [[浏览器是如何渲染一个页面的]]

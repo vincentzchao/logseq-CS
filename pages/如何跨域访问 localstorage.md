@@ -1,4 +1,4 @@
-tags:: [[JS]], [[Browser]]
+tags:: [[JavaScript]] , [[Browser]], [[Cross-Origin]] 
 ---
 
 - ## 参考
