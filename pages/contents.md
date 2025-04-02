@@ -1,4 +1,5 @@
 -
 -
 -
-- {{renderer :tocgen2, [[asynchronous javascript/concept]], calc(100vh - 135px)}}
+-
+- {{renderer :tocgen2, [[promise api]], calc(100vh - 135px)}}

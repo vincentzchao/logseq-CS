@@ -6,4 +6,6 @@ tags:: [[JavaScript]], [[Asynchronous]]
 	  logseq.order-list-type:: number
 	- [[Promise API]]
 	  logseq.order-list-type:: number
+	- [[Fetch API]]
+	  logseq.order-list-type:: number
 -

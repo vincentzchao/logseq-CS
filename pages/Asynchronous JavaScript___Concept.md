@@ -77,7 +77,11 @@
 			  
 			  doOperation();
 			  ```
-			-
+- ## Promise API
+	- 现代 JS 采用 Promise API 实现异步.
+		- Promise 也需要用到 Callback 函数, 所以, 其实也会出现 Callback Hell
+		- 但是, 好在 Promise 可以链式调用.
+	- 参见: [[Promise API]]
 - ## 参考
 	- [MDN - Introducing asynchronous JavaScript](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Async_JS/Introducing)
 	  logseq.order-list-type:: number
