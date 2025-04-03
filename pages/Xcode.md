@@ -2,7 +2,7 @@ tags:: [[Apple Technology]], [[Swift]]
 ---
 
 - ## 学习路径
-	- [[安装 Xcode]]
+	- [[Xcode 安装与配置]]
 	  logseq.order-list-type:: number
 	- logseq.order-list-type:: number
 - ## 官方资料

@@ -2,7 +2,7 @@ tags:: [[Swift]], [[Framework]]
 ---
 
 - ## 学习路线
-	- [[安装 Xcode]]
+	- [[Xcode 安装与配置]]
 	  logseq.order-list-type:: number
 	- 了解 SwiftUI Essentials
 	  logseq.order-list-type:: number

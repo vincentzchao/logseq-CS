@@ -30,26 +30,12 @@ tags:: [[Xcode]]
 		- ![image.png](../assets/image_1729236918571_0.png){:height 469, :width 669}
 		- 我们选择我们想要下载的版本即可 (正式版如下图所示) .
 			- ![image.png](../assets/image_1729236892518_0.png){:height 209, :width 632}
-- ## 使用 Xcodes 下载 (推荐)
-	- [Xcodes Github Repo](https://github.com/XcodesOrg/XcodesApp) > [Xcodes Releases](https://github.com/XcodesOrg/XcodesApp/releases) > 下载最新版本的 .zip 安装包
-	  logseq.order-list-type:: number
-		- ![image.png](../assets/image_1729237506668_0.png)
-	- 安装包解压后得到如下 APP , 将它拖到 Applications 目录中即可.
-	  logseq.order-list-type:: number
-		- ![image.png](../assets/image_1729237597709_0.png)
-	- 打开 Xcodes 后, 我们可以看到左侧有各种版本的 Xcode 供我们安装 (我在 App Store 安装的 Xcode 它也能识别).
-	  logseq.order-list-type:: number
-		- ![image.png](../assets/image_1729237857974_0.png)
-	- 进入 Settings 界面 > 点击 General > 登录开发者账号
-	  logseq.order-list-type:: number
-		- 安装时会要求登录开发者账号
-	- 进入 Settings 界面 > 点击 Advanced > 点击 Install helper
-	  logseq.order-list-type:: number
-		- 安装 helper 以保证 Xcodes 可以正常运行。
-		- ![image.png](../assets/image_1729279278795_0.png){:height 744, :width 593}
+- ## 使用 Xcodes 安装 (推荐)
+	- 参见: [[使用 Xcodes 安装 Xcode]]
+- ## 登录 Apple ID
+	- 在 Xcode > Settings > Accounts 中登录自己的 Apple ID , 后面开发调试过程中需要用到.
 - ---
 - ## 参考
 	- [ChaoCode - [準備好你的 Xcode：使用 Xcodes 安裝 ＆ 手機測試環境設定]](https://www.youtube.com/watch?v=e6wF5UTcxkU&t=836s)
 	  logseq.order-list-type:: number
-	- logseq.order-list-type:: number
--
+	-
