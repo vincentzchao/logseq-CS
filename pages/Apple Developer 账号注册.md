@@ -68,4 +68,3 @@ tags:: [[Apple Developer]]
 - ## 加入 Apple Developer Program
 	- 参见: [Enrolling, verifying, and renewing with the Apple Developer app](https://developer.apple.com/help/account/membership/enrolling-in-the-app)
 	-
--
