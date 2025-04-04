@@ -6,7 +6,7 @@ tags:: [[uni-app]], [[Simulator]]
 - ## 使用第三方软件安装模拟器 (不推荐)
 	- 如 [夜神模拟器](https://www.yeshen.com/) , [雷电模拟器](https://www.ldmnq.com/)
 - ## 在 Android 模拟器上运行
-	- 在 HBuilder 中, 先选中要运行的项目.
+	- 在 HBuilderX 中, 先选中要运行的项目.
 	  logseq.order-list-type:: number
 	- 然后点击 Run > Mobile App Playground > Android Run .
 	  logseq.order-list-type:: number

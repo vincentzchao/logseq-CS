@@ -20,8 +20,7 @@ tags:: [[Xcode]]
 	  logseq.order-list-type:: number
 		- ![image.png](../assets/image_1729235926104_0.png){:height 324, :width 642}
 		- 如已拥有开发者账号, 则直接登录即可;
-		- 如还未拥有开发者账号, 则先登录想赋予开发者权限的 Apple ID ; 登录之后, 会弹出如下协议, 我们点击同意并提交即可.
-			- ![image.png](../assets/image_1729236389354_0.png){:height 159, :width 744}
+		- 如还未拥有开发者账号, 参见 [[Apple Developer 账号注册]]
 	- 登录之后, 可能会跳转到如下页面, 我们暂且不管, 直接访问 [Xcode betas Download 页面](https://developer.apple.com/download/all/?q=Xcode)
 	  logseq.order-list-type:: number
 		- ![image.png](../assets/image_1729236624596_0.png)

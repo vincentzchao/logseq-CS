@@ -8,7 +8,7 @@ tags:: [[uni-app]], [[Simulator]]
 	- 参见 [[Xcode 安装模拟器]] 安装 iOS 模拟器.
 	  logseq.order-list-type:: number
 - ## 在 iOS 模拟器上运行
-	- 在 HBuilder 中, 先选中要运行的项目.
+	- 在 HBuilderX 中, 先选中要运行的项目.
 	  logseq.order-list-type:: number
 	- 然后点击 Run > Mobile App Playground > iOS-Simulator Run .
 	  logseq.order-list-type:: number
