@@ -54,7 +54,7 @@ tags:: [[Shell]]
 		- macOS：Terminal.app、iTerm2；
 		- Windows：Win32 控制台、ConEmu 等。
 	- 由于专门的 `Terminal` 设备已经快消失了，所以如今 `Terminal Emulator` 也被直接称为 `Terminal` 。
-- ### Terminal Window 与 Virtual Console
+- ## Terminal Window 与 Virtual Console
 	- 大部分 `Terminal Emulator` 运行在 `GUI 程序` 中，所以这种被称作 `Terminal Window` (终端窗口) 。
 	- 也有由操作系统内核直接提供的 `Terminal Emulator` ，这种由内核提供的 `Terminal Emulator` 被称作 `Virtual Console` (虚拟控制器)
 		- 比如 在 GNU/Linux 操作系统中，按下 Ctrl + Alt + F1,F2...F6 等组合键可以切换出好几个黑不溜秋的全屏终端界面，而按下 Ctrl + Alt + F7 才是切换回图形界面。
@@ -66,6 +66,7 @@ tags:: [[Shell]]
 	- Shell 本质上也是一个程序，Shell 可分为 `CLI Shell` 和 `GUI Shell` (只是人机交互方式不同)
 		- GUI Shell：Windows 的 Explorer，macOS 的 Finder，Linux 的 GNOME 桌面
 		- CLI Shell：Windows 的 cmd 与 PowerShell，类 Unix 的 sh、bash、zsh、fish 等。
+	- 我们在谈到 Shell 时 , 通常是指 `CLI Shell` .
 - ## Terminal Emulator, Shell 与 CLI 的区别
 	- 首先，Shell 本质上也是一个程序，Shell 可分为 `CLI Shell` 和 `GUI Shell` (只是人机交互方式不同) 。
 	  logseq.order-list-type:: number
