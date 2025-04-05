@@ -10,7 +10,6 @@ alias:: 苹果技术
 		  logseq.order-list-type:: number
 		- [[iOS]]
 		  logseq.order-list-type:: number
-		-
 	- 设计
 	  logseq.order-list-type:: number
 		- [[Apple Design]]

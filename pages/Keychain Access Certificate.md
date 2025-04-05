@@ -83,7 +83,7 @@ tags:: [[Keychain Access]]
 	- ### 删除了公私密钥对
 		- 如果我们删除了公私密钥对:
 			- ![image.png](../assets/image_1743830365810_0.png){:height 668, :width 734}
-		- 如果有 `.p12` 文件, 则可以双击 `.p12` 文件重新安装回来.
+		- 如果有 `.p12` 文件, 则可以双击 `.p12` 文件重新安装回来 ( ==但是貌似 公钥 安装不回来?== ).
 		- 如果没有, 则无力回天, 因为我们的私钥信息丢失了, 需要重新创建证书.
 - ## Create a Certificate (创建自己签名的证书)
 	- 点击 Certificate Assistant > Create a Certificate

@@ -1,11 +1,6 @@
 tags:: [[uni-app]]
 ---
 
-- ## 问题
-	- 如何自定义基座
-	  logseq.order-list-type:: number
-	- 如何使用自定义基座.
-	  logseq.order-list-type:: number
 - ## 运行基座
 	- 参考: `DeepSeek`
 	- ### 什么是运行基座
@@ -46,12 +41,11 @@ tags:: [[uni-app]]
 			- 其他 `manifest.json` 文件提到的需打包生效的配置
 			  logseq.order-list-type:: number
 	- ### 打包自定义基座
-		-
 		- 打包好的文件在项目根目录的 `unpackage/debug` 目录下:
 			- 文件名分别为 `android_debug.apk` 和 `iOS_debug.ipa`.
 		- 一个项目只能生成一个 **自定义基座** , 多次生成只保留最后一次结果.
 	- ### 使用自定义基座
-		- 生成自定义基座后，在设备选择窗口，可以选择自定义基座，如下图所示：
+		- 生成自定义基座后，在设备选择窗口，可以选择自定义基座.
 		- 注意: 自定义基座, 只能在 HBuilderX 中运行使用 (HBuilderX 3.7.13 起, 真机/模拟器都可); 不能直接用于安装, 正式发版时, 需要按正常打包方式重新打包.
 - ## Android 平台基座闪退日志
 	- 参考: [uni-app - App 运行: 真机运行#基座闪退获取日志](https://uniapp.dcloud.net.cn/tutorial/run/run-app.html#%E5%9F%BA%E5%BA%A7%E9%97%AA%E9%80%80%E8%8E%B7%E5%8F%96%E6%97%A5%E5%BF%97)
