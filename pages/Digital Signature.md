@@ -1,4 +1,5 @@
 tags:: [[Cryptography]], [[消息摘要]]
+alias:: [[数字签名]]
 ---
 
 - ## 作用

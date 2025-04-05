@@ -23,7 +23,7 @@ tags:: [[Apple Developer]]
 			- report bugs (提交 Bug)
 			  logseq.order-list-type:: number
 			- ......
-	- 加入 **Apple Developer Program (苹果开发者计划)** 的开发者账号.
+	- 加入 **Apple Developer Program (ADP, 苹果开发者计划)** 的开发者账号.
 	  logseq.order-list-type:: number
 		- 作为个人开发者, 可以通过 **个人注册** 或者 **加入组织** 的方式, 加入 Apple Developer Program .
 		- 除了拥有 普通开发者账号 的权限以外, 还拥有如下权限:
@@ -38,20 +38,6 @@ tags:: [[Apple Developer]]
 			- ......
 		- 如果是 **组织账号** , 还拥有 **团队成员管理** 的权限.
 	- ==查看两种账号比较: [Choosing a Membership](https://developer.apple.com/support/compare-memberships/)==
-- ## 有哪些计划 Program
-	- 参考: [Programs overview](https://developer.apple.com/help/account/membership/programs-overview)
-	- 加入 Apple Developer Program 的账号, 如果符合条件, 还可以加入如下计划:
-	  logseq.order-list-type:: number
-		- Fee waivers.
-		  logseq.order-list-type:: number
-		- App Store Small Business Program. 
-		  logseq.order-list-type:: number
-		- Apple Video Partner Program.
-		  logseq.order-list-type:: number
-		- News Partner Program. 
-		  logseq.order-list-type:: number
-	- Apple Developer Enterprise Program
-	  logseq.order-list-type:: number
 - ## 注册普通开发者账号
 	- ### 若已有 Apple ID
 		- 访问 [Apple Account](https://account.apple.com/sign-in) , 填写账号密码进行登录.
@@ -68,3 +54,17 @@ tags:: [[Apple Developer]]
 - ## 加入 Apple Developer Program
 	- 参见: [Enrolling, verifying, and renewing with the Apple Developer app](https://developer.apple.com/help/account/membership/enrolling-in-the-app)
 	-
+- ## 还有哪些计划 Program
+	- 参考: [Programs overview](https://developer.apple.com/help/account/membership/programs-overview)
+	- 加入 Apple Developer Program 的账号, 如果符合条件, 还可以加入如下计划:
+	  logseq.order-list-type:: number
+		- Fee waivers.
+		  logseq.order-list-type:: number
+		- App Store Small Business Program. 
+		  logseq.order-list-type:: number
+		- Apple Video Partner Program.
+		  logseq.order-list-type:: number
+		- News Partner Program. 
+		  logseq.order-list-type:: number
+	- Apple Developer Enterprise Program (ADEP)
+	  logseq.order-list-type:: number
