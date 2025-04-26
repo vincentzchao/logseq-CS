@@ -29,22 +29,22 @@ tags:: [[Java SE]]
 	- ==注意：不声明 package 的 type 都被放在一个默认的包中。==
 - ## 使用包成员 (package member)
 	- 包中 type ，就被称为 `package members` 。
-	- 如果使用一个 public 包成员：
+	- 如何使用一个 public 包成员：
 		- 如果在同一个包中，则直接用 type 文件名即可 (无需 `import` )。
 			- 在同一个包中是指，两个类在同一层级的包中。
-				- ``` java
-				  // 如下 MyDemo.java 和 Demo1.java 不属于同一个包
-				  // Demo1.java 和 Demo2.java 属于同一个包
-				  com
-				  |
-				  |-- example
-				     |
-				     |-- mypackage
-				     |   |-- MyDemo.java
-				     |
-				     |-- Demo1.java
-				     |-- Demo2.java
-				  ```
+			- ``` java
+			  // 如下 MyDemo.java 和 Demo1.java 不属于同一个包
+			  // Demo1.java 和 Demo2.java 属于同一个包
+			  com
+			  |
+			  |-- example
+			     |
+			     |-- mypackage
+			     |   |-- MyDemo.java
+			     |
+			     |-- Demo1.java
+			     |-- Demo2.java
+			  ```
 		- 如果不在一个包中：
 			- 使用这个成员的全限定名称 ( `fully qualified name` )
 			  logseq.order-list-type:: number
