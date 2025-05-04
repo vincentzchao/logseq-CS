@@ -8,4 +8,4 @@ tags:: [[JavaScript]], [[Asynchronous]]
 	  logseq.order-list-type:: number
 	- [[Fetch API]]
 	  logseq.order-list-type:: number
--
+	- logseq.order-list-type:: number

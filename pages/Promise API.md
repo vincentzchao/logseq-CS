@@ -51,7 +51,7 @@ tags:: [[JavaScript]]
 		  ```
 	- 当所有 Promise `fulfilled` , `then()` 会被执行 (接收所有 Promise 响应的数组, 顺序是 Promise 传入的顺序) .
 	- 当任一 Promise `rejected` , `catch()` 会被执行.
-- ##  Promise.any() 任一 Promise fulfilled
+- ## Promise.any() 任一 Promise fulfilled
 	- `Promise.any()` 等待任一 Promise `fulfilled` .
 	- 当任一 Promise  `fulfilled` , `then()` 会被执行 (接收 `fulfilled` Promise 响应) .
 	- 当所有 Promise `rejected` , `catch()` 会被执行.
