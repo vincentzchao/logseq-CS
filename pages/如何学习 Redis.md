@@ -5,6 +5,7 @@ tags:: [[Redis]]
 	- [Redis Docs](https://redis.io/docs/latest/)
 	  logseq.order-list-type:: number
 		- ![image.png](../assets/image_1746383926903_0.png){:height 430, :width 594}
-	- logseq.order-list-type:: number
--
+	- [Redis University](https://university.redis.io/academy)
+	  logseq.order-list-type:: number
+		- ![image.png](../assets/image_1746438389748_0.png){:height 581, :width 724}
 -

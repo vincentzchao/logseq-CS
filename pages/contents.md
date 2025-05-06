@@ -1,5 +1,2 @@
 -
--
--
--
 - {{renderer :tocgen2, [[redis concept]], calc(100vh - 135px)}}

@@ -11,7 +11,7 @@ tags:: [[Redis]]
 		- #### Redis Open Source 与 Redis Enterprise Software
 			- `Redis Open Source` (旧称: `Redis Community Edition` )
 				- 即 Redis 开源版本.
-			- `Redis Enterprise Software` / `Redis Software`
+			- `Redis Enterprise Software` / `Redis Software` / `Redis Enterprise`
 				- 即 Redis 企业版本.
 			- 二者区别 (DeepSeek 总结) :
 				- | **维度** | **Redis Open Source** | **Redis Enterprise Software** |
@@ -36,6 +36,7 @@ tags:: [[Redis]]
 			- Redis Open Source , Redis Enterprise Software 和 Redis Cloud 都具备的一个功能.
 			- 用于搜索和查询 Redis 数据.
 			- 需要安装 [[RediSearch]] 模块以使用此功能.
+		-
 	- ### Redis Stack
 		- 参考: [GitHub - Redis Stack](https://github.com/redis-stack)
 		- Redis Stack 是 Redis 开源版本的扩展.
@@ -66,7 +67,9 @@ tags:: [[Redis]]
 				- Redis GUI 客户端工具.
 		- ==貌似, 如今 (2025.05.05) Redis 官方不怎么提 Redis Stack 这个概念, 官网没看到这个介绍.==
 	- ### Redis Data Integration (RDI)
-		-
+		- 参考: [Redis Data Integration](https://redis.io/docs/latest/integrate/redis-data-integration/)
+		- 一款同步 **慢速磁盘数据库** (slow disk based databases, 即一些基于磁盘存储的数据库) 数据 到 Redis 企业版本 的工具.
+		- 可以通过 RDI CLI 或 Redis Insight 使用.
 	- ### Redis Cloud
 		- 参考: [Redis Cloud](https://redis.io/cloud/)
 		- Redis 官方提供的 Redis 云服务.
@@ -76,7 +79,7 @@ tags:: [[Redis]]
 			- 通过使用固态硬盘（SSD）扩展数据库, 达到使用相同价格缓存 5 倍多数据的效果.
 	- ### Redis Enterprise for Kubernetes
 		- 将 Redis Enterprise Software 集成到 Kubernetes 的产品.
-	- ### AI 相关产品
+	- ### Redis AI 产品
 		- [[Redis for AI]]
 			- 基于 Redis 向量数据库集成的功能和服务包, 用于开发 AI 应用.
 		- [[Redis LangCache]]
