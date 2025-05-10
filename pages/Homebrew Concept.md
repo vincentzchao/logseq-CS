@@ -16,7 +16,7 @@ tags:: [[Homebrew]]
 - ## 目录结构
 	- 参见: [Homebrew Manpage - Terminology](https://docs.brew.sh/Manpage#terminology)
 	- ### Prefix
-		- Homebrew 安装的目录。
+		- Homebrew 安装的目录 (执行 `brew --prefix` 可以查看)。
 			- Apple 芯片: `/opt/homebrew`
 			- Intel 芯片：`/usr/local`
 	- ### 目录结构示例

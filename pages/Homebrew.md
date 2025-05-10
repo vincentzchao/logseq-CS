@@ -7,6 +7,7 @@ tags:: [[macOS]], [[Package Manager]]
 	- [[Homebrew Concept]]
 	- [[Homebrew 常用命令]]
 	- [[Homebrew Tap]]
+	- [[Homebrew Services]]
 - ## 官方资料
 	- [Homebrew 官网](https://brew.sh/)
 -
