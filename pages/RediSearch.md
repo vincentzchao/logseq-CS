@@ -1,4 +1,4 @@
-tags:: [[Redis]]
+tags:: [[Redis]], [[Redis Module]] 
 alias:: [[Redis Query Engine]]
 ---
 

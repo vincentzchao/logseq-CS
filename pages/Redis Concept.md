@@ -19,7 +19,7 @@ tags:: [[Redis]]
 				  | 核心功能 | 基础缓存与数据结构 | 企业级扩展功能（集群、安全、模块等） |
 				  | 许可类型 | 源代码可用（SSPLv1 + RSALv2） | 商业闭源许可 |
 				  | 成本 | 免费（云托管可能需额外费用） | 订阅制付费 |
-		- #### Redis Open Source 协议变更
+		- #### Redis 协议变更 (2024-03-20)
 			- 参考: [Redis Adopts Dual Source-Available Licensing](https://redis.io/blog/redis-adopts-dual-source-available-licensing/)
 			- 从 Redis 7.4 版本开始, Redis 采用 [Redis Source Available License (RSALv2)](https://redis.io/legal/rsalv2-agreement/) 和 [Server Side Public License (SSPLv1)](https://redis.io/legal/server-side-public-license-sspl/) 双协议.
 			  logseq.order-list-type:: number
@@ -29,8 +29,50 @@ tags:: [[Redis]]
 					- “competitive offerings” 是指源自 Redis 代码库, 与 Redis 商业产品的功能有显著重叠, 并销售给第三方的产品.
 				- 因此, 托管 Redis 产品的云厂商, 将不再被允许免费使用 Redis 源代码.
 				- 但, 允许在组织内部托管 Redis , 供组织内部使用.
-			- Redis 7.2 及其之前的版本将被称为 `Redis OSS` , Redis 7.4 及其之后的版本将被称为 `Redis Community Edition` (后改称为 `Redis Open Source` ).
+			- Redis 7.2 及其之前的版本将被称为 `Redis OSS` , Redis 7.4 及其之后的版本将被称为 `Redis Community Edition` .
 			  logseq.order-list-type:: number
+		- #### Redis 协议变更 (2025-05-01)
+			- 参考:
+				- [Redis is now available under the AGPLv3 open source license](https://redis.io/blog/agplv3/)
+				  logseq.order-list-type:: number
+				- [Redis 8 is now GA, loaded with new features and more than 30 performance improvements](https://redis.io/blog/redis-8-ga/)
+				  logseq.order-list-type:: number
+			- 从 Redis 8 开始, 有如下变更:
+				- 添加 `AGPLv3` 协议作为一个许可证选项 (licensing option)
+				  logseq.order-list-type:: number
+					- 因为, `AGPLv3` 是 [[OSI]] 认可的一个协议, 可以挽回开源社区的好感.
+					- `AGPLv3` , 要求修改后必须开源.
+				- `Redis Community Edition` 改称为 `Redis Open Source` .
+				  logseq.order-list-type:: number
+				- 引入 8 种 数据结构.
+				  logseq.order-list-type:: number
+					- Vector set  [beta]
+					  logseq.order-list-type:: number
+					- JSON  (之前是单独的 Redis Module - [[RedisJSON]] )
+					  logseq.order-list-type:: number
+					- time series (之前是单独的 Redis Module - [[RedisTimeSeries]] )
+					  logseq.order-list-type:: number
+					- five probabilistic structures
+					  logseq.order-list-type:: number
+						- Bloom filter  (之前是单独的 Redis Module - [[RedisBloom]] )
+						  logseq.order-list-type:: number
+						- cuckoo filter
+						  logseq.order-list-type:: number
+						- count-min sketch
+						  logseq.order-list-type:: number
+						- top-k
+						  logseq.order-list-type:: number
+						- t-digest
+						  logseq.order-list-type:: number
+				- 集成其他功能.
+				  logseq.order-list-type:: number
+					- Redis Query Engine (之前是单独的 Redis Module - [[RediSearch]] )
+					  logseq.order-list-type:: number
+					- Access Control Lists (ACLs)
+					  logseq.order-list-type:: number
+				- Redis Stack Server 的功能, 都将可以在 Redis Open Source 上找到.
+				  logseq.order-list-type:: number
+					- Redis 官方将在 2025 年 9 月 15 日停止为 Redis Stack 6.2、7.2 和 7.4 发布补丁.
 	- ### Redis Modules
 		- #### Redis Query Engine
 			- Redis Open Source , Redis Enterprise Software 和 Redis Cloud 都具备的一个功能.
@@ -45,9 +87,9 @@ tags:: [[Redis]]
 			  logseq.order-list-type:: number
 				- 在 Redis 开源版本基础上, 集成了如下模块:
 					- [[RediSearch]]
-					- RedisJSON
-					- RedisTimeSeries
-					- RedisBloom
+					- [[RedisJSON]]
+					- [[RedisTimeSeries]]
+					- [[RedisBloom]]
 			- ==Redis Stack Clients==
 			  logseq.order-list-type:: number
 				- 有如下几个 Redis 客户端库, 支持 Redis Stack :

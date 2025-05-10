@@ -1,4 +1,5 @@
 tags:: [[Open Source]]
+alias:: [[OSI]]
 ---
 
 - ## 官方资料

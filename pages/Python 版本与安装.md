@@ -21,7 +21,7 @@ tags:: [[Python]]
 			- 仅接受 `security fixes` .
 		- `end-of-life` : 生命终止.
 			- 不再更改.
-- ## 使用 Miniconda 安转 Python (推荐)
+- ## 使用 Miniconda 安装 Python (推荐)
 	- 参见: [[Miniconda 安装与配置]]
 - ## Windows 使用安装包安装 Python (不推荐)
 	- 1. 安装 Python，自定义安装路径，一路 next（最后点击 `Disable Path length limit` ）。
