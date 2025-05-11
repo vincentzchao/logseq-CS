@@ -1,2 +1,3 @@
 -
-- {{renderer :tocgen2, [[redis concept]], calc(100vh - 135px)}}
+-
+- {{renderer :tocgen2, [[redis open source 安装与卸载]], calc(100vh - 135px)}}

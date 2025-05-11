@@ -52,8 +52,9 @@ tags:: [[Homebrew]]
 		- 地址为: `Homebrew 安装目录/Caskroom`
 			- 如: `/opt/homebrew/Caskroom`
 	- ### Tap (酒阀门/酒源)
-		- 指用于构建 Homebrew 包 (包括 Formula 、Cask 和 External Command) 的目录。
-		- 通常就是指第三方 Git 仓库，这些仓库无需加入到 Hombrew 官方的库中 (需要满足一定条件) ，即可被用户安装使用。
+		- 就是指第三方打好的 Homebrew 包 (包括 Formula 、Cask 和 External Command)，这些包无需加入到 Hombrew 官方的库中 (需要满足一定条件) ，即可被用户安装使用。
+		- 存放已安装的 Tap 的地址为: `Homebrew 安装目录/Library/Taps`
+			- 如: `/opt/homebrew/Library/Taps/user/repo`
 - ## 关于 symlink
 	- 参见: [Homebrew Manpage - Terminology](https://docs.brew.sh/Manpage#terminology)
 	- ### 默认创建 symlink

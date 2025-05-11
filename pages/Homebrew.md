@@ -10,4 +10,7 @@ tags:: [[macOS]], [[Package Manager]]
 	- [[Homebrew Services]]
 - ## 官方资料
 	- [Homebrew 官网](https://brew.sh/)
+- ## Index
+	- Homebrew 官方维护的所有 Formula: [Homebrew Formulae](https://formulae.brew.sh/)
+	  logseq.order-list-type:: number
 -

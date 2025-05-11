@@ -10,13 +10,14 @@ tags:: [[Homebrew]]
 	  # 列出当前所有服务的状态
 	  brew services list
 	  
-	  # 启动某个服务
+	  # 启动某个服务, 并设置开机自启
 	  brew services start <服务名>
-	  # 停止某个服务
+	  # 停止某个服务, 并取消开机自启
 	  brew services stop <服务名>
-	  # 重启某个服务
+	  # 重启某个服务, 并设置开机自启
 	  brew services restart <服务名>
-	  # 移除系统服务，但保留软件本身
-	  brew services remove <服务名>
+	  
+	  # 停止某个服务
+	  brew services kill <服务名>
 	  ```
 	-
