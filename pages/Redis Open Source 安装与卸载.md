@@ -30,7 +30,7 @@ tags:: [[Redis]]
 				  # 验证默认版本
 				  redis-server --version  # 显示 6.2.x
 				  ```
-			- 可以使用 `brew services` 管理不同版本的  Redis 服务 (不过启动时要注意使用不同的配置文件, 已避免多版本出现冲突)
+			- 可以使用 `brew services` 管理不同版本的  Redis 服务 (不过启动时要注意使用不同的配置文件, 以避免多版本出现冲突)
 			  logseq.order-list-type:: number
 				- ``` zsh
 				  ➜  redis git:(stable) brew services list
@@ -57,6 +57,8 @@ tags:: [[Redis]]
 		- #### 关于启动时的配置文件
 			- 使用 Homebrew 安装的 Redis , 启动时如果没有指定配置文件, 将会默认从 `$(brew --prefix)/etc/redis.conf` 读取配置文件.
 				- 这个路径是在 Homebrew 打包 Redis 时修改的.
+- ## Linux 安装 Redis Open Source
+	-
 - ## 查看 Redis 版本
 	- 执行 `redis-server --version`
 - ## 测试连接
