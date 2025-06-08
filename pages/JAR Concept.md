@@ -21,7 +21,7 @@ tags:: [[JAR]]
 	- 可移植性 (JAR 的处理机制是 Java 平台的规范)
 	  logseq.order-list-type:: number
 - ## META-INF 目录
-	- META-INF 目录可能包含一下文件或目录
+	- META-INF 目录可能包含以下文件或目录
 		- ``` sh
 		  MANIFEST.MF
 		  INDEX.LIST
@@ -44,7 +44,7 @@ tags:: [[JAR]]
 	- ### services/
 		- 存储所有 `service provider` 的配置文件.
 - ## Manifest File - MANIFEST.MF
-	- ## Manifest 默认内容
+	- ### Manifest 默认内容
 		- 打包不指定 Manifest 内容时, 默认生成的内容
 		- ``` yml
 		  Manifest-Version: 1.0

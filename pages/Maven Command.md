@@ -35,3 +35,19 @@ tags:: [[Maven]]
 		    -Dpackaging=jar \
 		    -Dclassifier=sources
 		  ```
+	- ### 将 Jar 上传到远程仓库
+		- ``` zsh
+		  # 上传依赖到远程仓库
+		  mvn deploy:deploy-file \
+		    -Dfile=demo.jar \
+		    -DgroupId=com.example \
+		    -DartifactId=demo \
+		    -Dversion=0.0.1 \
+		    -Dpackaging=jar \
+		    -Dsources=demo.jar \
+		    -DrepositoryId=repo-id \
+		    -Durl=https://example.com/repository/maven
+		  ```
+	-
+-
+-
