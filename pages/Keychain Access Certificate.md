@@ -65,7 +65,7 @@ tags:: [[Keychain Access]]
 	  logseq.order-list-type:: number
 	- 选择 `.p12` 文件格式.
 	  logseq.order-list-type:: number
-		- ![image.png](../assets/image_1743828164359_0.png){:height 453, :width 617}
+		- ![image.png](../assets/image_1743828164359_0.png){:height 354, :width 617}
 	- 输入 `.p12` 文件的密码.
 	  logseq.order-list-type:: number
 		- ![image.png](../assets/image_1743828424291_0.png){:height 381, :width 492}
