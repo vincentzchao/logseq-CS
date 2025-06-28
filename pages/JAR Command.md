@@ -43,7 +43,7 @@ tags:: [[JAR]]
 	- `f` 表示将打包结果输出到文件中 (而非控制台) .
 	- `v` 表示打印详细信息.
 	- ``` zsh
-	  # 将 /dir/path1/x进 xxx.jar 中，指定已存在的 manifest 文件
+	  # 将 /dir/path1/ 打进 xxx.jar 中，指定已存在的 manifest 文件
 	  jar cmvf xxx.jar / /dir/path1/
 	  ```
 	- `m` 用于指定现成的  `manifest` 文件 (不指定会生成默认的)
@@ -120,3 +120,4 @@ tags:: [[JAR]]
 	- `man jar` / [**JAR tool reference page for Solaris, Linux, or Mac OS X**](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jar.html)
 	  logseq.order-list-type:: number
 	-
+-

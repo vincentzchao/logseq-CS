@@ -2,13 +2,16 @@ tags:: [[Java]], [[Java SE]]
 ---
 
 - ==子目录==
-	- [[Java SE 8/IO]]
-	- [[Java SE 8/Generics]]
-	- [[Java SE 8/Security]]
 	- [[JDK Tools and Utilities]]
 - ---
 - ## 学习路线
 	- Java SE 8 基本概念: [[Java SE 8/Concept]]
+	  logseq.order-list-type:: number
+	- [[Java SE 8/IO]]
+	  logseq.order-list-type:: number
+	- [[Java SE 8/Generics]]
+	  logseq.order-list-type:: number
+	- [[Java SE 8/Security]]
 	  logseq.order-list-type:: number
 	- 打包相关:
 	  logseq.order-list-type:: number

@@ -6,4 +6,6 @@ tags:: [[Redisson]], [[Distributed Lock]]
 	  logseq.order-list-type:: number
 	- RLock 是可重入锁吗？
 	  logseq.order-list-type:: number
--
+- ## 注意事项
+	- idea 断点停在传入的业务逻辑上时, 会导致 看门狗 续期失效.
+		- 但如果 idea 断点使用的 是 thread 类型, 则不会.
