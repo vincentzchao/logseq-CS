@@ -31,6 +31,9 @@ tags:: [[javac]], [[Java]]
 			  logseq.order-list-type:: number
 	- ### 普通 Standard Options
 		- 参见: [普通 Standard Options](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javac.html#BHCDIFEE)
+		- #### -J
+			- `-J` 可以将 option 传给 JVM
+				- 如: `-J-Xms48m` 将启动内存设置为 48 MB
 	- ### Cross-Compilation Options
 		- 参见: [Cross-Compilation Options](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javac.html#BHCIJIEG)
 		- #### 什么是交叉编译
@@ -42,16 +45,8 @@ tags:: [[javac]], [[Java]]
 					- 如: 使用 JDK 11的 `javac` 编译出能在 JDK 8 上运行的代码.
 	- ### Compact Profile Options
 		- 参见: [Compact Profile Option](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javac.html#sthref59)
-		- #### 什么是紧凑配置
-			- JDK 8 将 标准库分为如下几层:
-				- `compact1`： 最小核心库（文件/网络等基础功能）
-				- `compact2`： 在 compact1 基础上增加 XML/JDBC 等
-				- `compact3`： 最完整子集（包含所有非EE模块）
-		- #### 紧凑配置的作用
-			- 有些设备为了缩小程序体积, 其安装的标准库可能并不完整, 可能只是 `compact1` 或 `compact2` 层级;
-			- 如果源代码中使用到了 `compact3` 层级中才有的类, 编译后将无法在这种设备上运行
-			- 编译时使用 `-profile` option 可以提前验证是否可以在指定层级运行.
-				- 如 `javac -profile compact1 Hello.java`
+		- #### 什么是 Compact Profile
+			- 参见: [[Java Compact Profile]]
 		- #### 交叉编译与紧凑配置
 			- 交叉编译也可以实现 `紧凑配置编译` :
 				- 如 `javac -bootclasspath jdk8-compact1/rt.jar MyApp.java`
@@ -59,7 +54,13 @@ tags:: [[javac]], [[Java]]
 			- 而使用 `-profile`  无需指定这样一个类库文件.
 	- ### Nonstandard Options
 		- 参见: [Nonstandard Options](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javac.html#BHCEECJF)
-		-
+		- #### -Xlint
+			- 参考: [Enable or Disable Warnings with the -Xlint Option](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javac.html#BHCJBHDF)
+			- 使用 `-Xlint:name` 选项启用指定警告 (编译时会打印警告信息)
+			- 使用 `-Xlint` 选项启用全部警告 (编译时会打印警告信息)
+				- 如 `javac -Xlint LintDemo.java`
+- ## javac 如何搜索类型
+	- 参见: [Searching for Types](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javac.html#BHCCHDGH)
 - ## 参考
 	- `man javac` / [javac Manual page：Solaris, Linux, or Mac OS X](https://docs.oracle.com/javase/8/docs/technotes/tools/unix/javac.html)
 	  logseq.order-list-type:: number

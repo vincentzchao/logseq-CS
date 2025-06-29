@@ -5,7 +5,7 @@ tags:: [[Java]], [[Java SE]]
 	- [[JDK Tools and Utilities]]
 - ---
 - ## 学习路线
-	- Java SE 8 基本概念: [[Java SE 8/Concept]]
+	- Java SE 8 基本概念: [[Java SE 8 Concept]]
 	  logseq.order-list-type:: number
 	- [[Java SE 8/IO]]
 	  logseq.order-list-type:: number
@@ -21,7 +21,11 @@ tags:: [[Java]], [[Java SE]]
 		  logseq.order-list-type:: number
 		- [[javac]]
 		  logseq.order-list-type:: number
-	- logseq.order-list-type:: number
+	- 新特性:
+	  logseq.order-list-type:: number
+		- [[Java Compact Profile]]
+		  logseq.order-list-type:: number
+		- logseq.order-list-type:: number
 	- logseq.order-list-type:: number
 	- logseq.order-list-type:: number
 	- logseq.order-list-type:: number
