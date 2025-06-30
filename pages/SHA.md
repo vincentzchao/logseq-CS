@@ -1,4 +1,4 @@
-tags:: [[消息摘要]]
+tags:: [[Message Digest]]
 ---
 
 - ## 命令
@@ -55,3 +55,5 @@ tags:: [[消息摘要]]
 	- 存有官方计算的hash值和文件名
 	- 文件名前的 `*` 表示 `binary` 。
 		- b24cdaa57234153df34a40bdc4501aa16f3286ca3e172eb889a5daa0ded86ab51388af1ea56e756df566a6f74f39f80eceb04e5d559668aeac9ec9759d6445ac *apache-jmeter-5.5.zip
+-
+-

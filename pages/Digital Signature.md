@@ -1,4 +1,4 @@
-tags:: [[Cryptography]], [[消息摘要]]
+tags:: [[Cryptography]], [[Message Digest]]
 alias:: [[数字签名]]
 ---
 
