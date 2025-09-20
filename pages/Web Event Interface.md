@@ -87,6 +87,7 @@ tags:: [[Web Event]]
 		  
 		  </html>
 		  ```
+		- https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Events#preventing_default_behavior
 - ## Reference
 	- `Event`
 	  logseq.order-list-type:: number
