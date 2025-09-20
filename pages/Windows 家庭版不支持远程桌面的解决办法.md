@@ -1,4 +1,4 @@
-tags:: [[Windows]]
+tags:: [[Windows]], [[Windows 远程桌面]] 
 ---
 
 - 参考: [家庭版Windows10/Windows11不支持远程桌面的解决办法](https://juejin.cn/post/7288261619397984317)
