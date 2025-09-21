@@ -14,8 +14,14 @@ tags:: [[JavaScript]], [[Web]]
 		  logseq.order-list-type:: number
 		- 流式请求: [[Server-sent events]]
 		  logseq.order-list-type:: number
-		- [[WebSocket]]
+		- [[WebSocket API]]
 		  logseq.order-list-type:: number
-		- logseq.order-list-type:: number
-		- logseq.order-list-type:: number
+		- [[Streams API]]
+		  logseq.order-list-type:: number
+	- ### 性能相关
+		- [[Performance API]]
+		  logseq.order-list-type:: number
+- ## Index
+	- [MDN - Web APIs](https://developer.mozilla.org/en-US/docs/Web/API)
+	  logseq.order-list-type:: number
 -

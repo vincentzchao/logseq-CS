@@ -5,10 +5,19 @@ tags:: [[Web]], [[Protocol]]
 	- [[如何学习 WebSocket]]
 	- [[WebSocket Concept]]
 	  logseq.order-list-type:: number
-	- [[JS WebSocket API]]
+	- [[WebSocket API]]
 	  logseq.order-list-type:: number
-- ## Reference
+- ## Index
 	- WebSocket 规范: [WebSockets Living Standard](https://websockets.spec.whatwg.org/)
 	  logseq.order-list-type:: number
-	- logseq.order-list-type:: number
+	- WebSocket 在线客户端
+	  logseq.order-list-type:: number
+		- [WebSocket King](https://websocketking.com/)
+		  logseq.order-list-type:: number
+		- [WebSocket 在线测试工具](https://wstool.js.org/)
+		  logseq.order-list-type:: number
+	- WebSocket 服务端
+	  logseq.order-list-type:: number
+		- [[WebSocket.org]]
+		  logseq.order-list-type:: number
 -

@@ -1,4 +1,4 @@
-tags:: [[JavaScript]] 
+tags:: [[JavaScript Runtime]] 
 alias:: [[nodejs]]
 ---
 
