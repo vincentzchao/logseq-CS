@@ -5,5 +5,5 @@ tags:: #[[Database]]
 - ==子目录==
 	- [[MySQL]]
 	- [[ClickHouse]]
+	- [[PostgreSQL]]
 	-
--

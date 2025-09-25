@@ -2,8 +2,6 @@ tags:: [[WebSocket]]
 ---
 
 - ## 问题点
-	- 会话恢复?
-	  logseq.order-list-type:: number
 	- Websockt starter
 	  logseq.order-list-type:: number
 		- JS 原生 Websocket 
@@ -16,6 +14,17 @@ tags:: [[WebSocket]]
 		  logseq.order-list-type:: number
 		- Websocket 协议
 		  logseq.order-list-type:: number
+	- WebSocket 连接管理
+	  logseq.order-list-type:: number
+		- SSE 支持断线重连, 但是 WebSocket 不支持?
+		  logseq.order-list-type:: number
+		- WebSocket 保持长连接的底层原理是啥?
+		  logseq.order-list-type:: number
+			- 心跳机制.
+			  logseq.order-list-type:: number
+		- 同一个连接并发发送多条信息会怎样?
+		  logseq.order-list-type:: number
+		- logseq.order-list-type:: number
 - ## 学习进度
 	- [MDN - The WebSocket API (WebSockets)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
 	  logseq.order-list-type:: number

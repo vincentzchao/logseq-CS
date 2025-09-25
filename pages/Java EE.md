@@ -14,5 +14,8 @@ tags:: [[Java]]
 		- Java EE 8
 			- [Java EE 8 Documentation](https://javaee.github.io/glassfish/documentation)
 			- [Java EE 8 Specification APIs](https://javaee.github.io/javaee-spec/javadocs/)
--
+- ## 学习路径
+	- [[Java API for WebSocket]]
+	  logseq.order-list-type:: number
+	- logseq.order-list-type:: number
 -

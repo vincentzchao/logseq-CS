@@ -1,4 +1,4 @@
-tags:: [[Relational Database Management System]]
+tags:: [[RDBMS]] 
 ---
 
 -

@@ -7,6 +7,8 @@ tags:: [[Web]], [[Protocol]]
 	  logseq.order-list-type:: number
 	- [[WebSocket API]]
 	  logseq.order-list-type:: number
+	- [[WebSocket 连接保持]]
+	  logseq.order-list-type:: number
 - ## Index
 	- WebSocket 规范: [WebSockets Living Standard](https://websockets.spec.whatwg.org/)
 	  logseq.order-list-type:: number
@@ -20,4 +22,4 @@ tags:: [[Web]], [[Protocol]]
 	  logseq.order-list-type:: number
 		- [[WebSocket.org]]
 		  logseq.order-list-type:: number
--
+		-
