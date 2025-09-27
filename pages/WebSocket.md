@@ -5,8 +5,14 @@ tags:: [[Web]], [[Protocol]]
 	- [[如何学习 WebSocket]]
 	- [[WebSocket Concept]]
 	  logseq.order-list-type:: number
-	- [[WebSocket API]]
+	- WebSocket 客户端: 
 	  logseq.order-list-type:: number
+		- [[WebSocket API]]
+		  logseq.order-list-type:: number
+	- WebSocket 服务端:
+	  logseq.order-list-type:: number
+		- [[Java WebSocket]]
+		  logseq.order-list-type:: number
 	- [[WebSocket 连接保持]]
 	  logseq.order-list-type:: number
 - ## Index

@@ -1,4 +1,4 @@
-tags:: [[History]], [[Character]] 
+tags:: [[History]], [[Character]], [[EOL]] 
 ---
 
 - ## 什么是 CRLF

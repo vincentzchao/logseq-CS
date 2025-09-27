@@ -1,29 +1,15 @@
 tags:: [[RDBMS]], [[Database]] 
 ---
 
-- ==子目录==
-	- [[ClickHouse/Concept]]
-	- [[ClickHouse/Engine]]
+- ## 学习路线
+	- [[ClickHouse 环境搭建]]
+	  logseq.order-list-type:: number
+	- [[ClickHouse Concept]]
+	  logseq.order-list-type:: number
+	- [[ClickHouse Command]]
+	  logseq.order-list-type:: number
+	- [[ClickHouse Engine]]
+	  logseq.order-list-type:: number
 	-
 -
-- ## 命令速查
-	- ### 数据库参数
-		- #### 查询SQL最大长度
-			- ``` sql
-			  -- 单位：byte
-			  SELECT name, value
-			  FROM system.settings
-			  WHERE name LIKE 'max_query_size%' OR name LIKE 'max_query_size%';
-			  ```
-	- ### 集群相关
-		- #### 查询集群信息
-			- ``` sql
-			  select * from system.clusters;
-			  ```
-	- ### TTL
-		- ```sql
-		  -- 移除 TTL
-		  ALTER TABLE table_name REMOVE TTL
-		  ALTER TABLE table_name on cluster 'cluster' REMOVE TTL
-		  ```
 -
