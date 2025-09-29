@@ -1,4 +1,4 @@
-tags:: [[WebSocket API]]
+tags:: [[Web API]]
 ---
 
 -

@@ -13,10 +13,29 @@ tags:: [[Web Event]]
 		- ...
 		  logseq.order-list-type:: number
 - ## Event Handler 与 Event Listener
-	- Event 触发时 (Fire) 执行的代码块，被称为 `Event Handler` 。
+	- 参考: AI
+	- Event 触发时 (Fire) 执行的代码块，被称为 `Event Handler` (是一个执行具体逻辑的函数)  。
 		- 定义一个 `Event Handler` 以响应 Event 的触发，这被称为 `Register an event handler` 。
-	- 还有一个东西叫 `Event Listener` ，事件监听器，用于监听 Event 的发生。
-		- ==严格来讲， `Event Handler` 与 `Event Listener` 不是一个东西，但是在交流中，这两个概念通常可以互换。==
+	- 还有一个东西叫 `Event Listener` ，事件监听器，用于监听 Event 的发生 (是一个监听事件的对象)。
+	- ==举例:==
+		- ``` js
+		  // addEventListener(type, listener)
+		  element.addEventListener('click', myFunction)
+		  ```
+		- 如上代码中, 当 `myFunction` 作为 `addEventListener(type, listener)` 方法的第二个参数传入时:
+			- `myFunction` 既是 `Event Handler` 又是 `Event Listener` .
+		- ``` js
+		  const myListener = {
+		    handleEvent: function(event) {
+		      // 处理事件的代码在这里
+		    }
+		  };
+		  element.addEventListener('click', myListener);
+		  ```
+		- 如上代码中, 当 `myListener` 作为 `addEventListener(type, listener)` 方法的第二个参数传入时:
+			- `myListener` 是 `Event Listener` .
+			- 而 `myListener.handleEvent`才是 `EventHandler`​ .
+	- ==严格来讲， `Event Handler` 与 `Event Listener` 不是一个东西，但是在交流中，这两个概念通常可以互换。==
 - ## Web Event 与 JavaScript
 	- 注意，Web Event 并不是 Core JavaScript 的一部分，它属于浏览器的内置 API 。
 - ## 参考

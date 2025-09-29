@@ -30,7 +30,7 @@ tags:: [[STOMP]]
 			  
 			  Body^@
 			  ```
-		- 一个帧以 `command` 开始, 以 `EOL` 结束.
+		- 一个帧必须以 `command` 开始, 以 `EOL` 结束 ( `^@` 表示末尾 [[EOL]] , 即便没有 `Body` 也是必须的).
 			- 一个命令: `command` + `EOL`
 			  logseq.order-list-type:: number
 			- 一组可选头部: 0-N 个 `header:value` + `EOL` 结构

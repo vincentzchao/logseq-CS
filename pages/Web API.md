@@ -9,6 +9,8 @@ tags:: [[JavaScript]], [[Web]]
 		  logseq.order-list-type:: number
 		- [[Web Event]]
 		  logseq.order-list-type:: number
+		- [[Window Interface]]
+		  logseq.order-list-type:: number
 	- ### 网络请求
 		- 网络请求: [[Fetch API]]
 		  logseq.order-list-type:: number
@@ -24,4 +26,8 @@ tags:: [[JavaScript]], [[Web]]
 - ## Index
 	- [MDN - Web APIs](https://developer.mozilla.org/en-US/docs/Web/API)
 	  logseq.order-list-type:: number
+	- Event Interface
+	  logseq.order-list-type:: number
+		- [[PageTransitionEvent Interface]]
+		  logseq.order-list-type:: number
 -
