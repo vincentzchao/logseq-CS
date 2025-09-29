@@ -9,8 +9,12 @@ tags:: [[JavaScript]], [[Web]]
 		  logseq.order-list-type:: number
 		- [[Web Event]]
 		  logseq.order-list-type:: number
-		- [[Window Interface]]
+		- 常用的几个接口
 		  logseq.order-list-type:: number
+			- [[Window Interface]]
+			  logseq.order-list-type:: number
+			- [[Document Interface]]
+			  logseq.order-list-type:: number
 	- ### 网络请求
 		- 网络请求: [[Fetch API]]
 		  logseq.order-list-type:: number

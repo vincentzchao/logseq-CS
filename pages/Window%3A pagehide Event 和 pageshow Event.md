@@ -56,6 +56,20 @@ tags:: [[Window Interface]], [[PageTransitionEvent Interface]]
 		  
 		  events.forEach((eventName) => window.addEventListener(eventName, eventLogger));
 		  ```
+- ## pagehide 使用说明
+	- 与 `unload` 和 `beforeunload` 类似, 浏览器 (尤其是移动端浏览器) 并不能可靠地触发 `pagehide` .
+	  logseq.order-list-type:: number
+		- 比如, 如下情况就不会触发:
+			- 移动用户使用浏览器访问页面 -> 用户切换到另一个应用 -> 用户在应用管理器中关闭了浏览器
+	- 与 `unload` 和 `beforeunload` 不同的是,  `pagehide` 与 [[bfcache]] 兼容.
+	  logseq.order-list-type:: number
+		- 因此, 给  `pagehide` 事件添加 event handler 并不会导致当前页面被禁止加入到 [[bfcache]] 中.
+	- 表示用户会话 ( user's session ) 结束的最佳事件是 [[Document: visibilitychange event]] , 其次是 `pagehide`
+	  logseq.order-list-type:: number
+		- 如果浏览器不支持 [[Document: visibilitychange event]] , 则可以使用 `pagehide` .
+	- 如果你想专门检测 page `unload` 事件,  `pagehide` 是最优选择.
+	  logseq.order-list-type:: number
+		- 因为某些浏览器可能不支持传统的  `unload` 和 `beforeunload` , 或者可能会影响性能.
 - ## 参考
 	- [Window: pagehide event](https://developer.mozilla.org/en-US/docs/Web/API/Window/pagehide_event)
 	  logseq.order-list-type:: number

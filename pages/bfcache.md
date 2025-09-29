@@ -17,6 +17,9 @@ tags:: [[Web]], [[Browser]]
 	  logseq.order-list-type:: number
 - ## 监测 bfcache 是否被禁用
 	- [[Monitoring bfcache blocking reasons]]
+- ## 深入理解 bfcache
+	- 参考: [Back/forward cache](https://web.dev/articles/bfcache)
 - ## 参考
 	- [MDN - bfcache](https://developer.mozilla.org/en-US/docs/Glossary/bfcache)
 	  logseq.order-list-type:: number
+	-

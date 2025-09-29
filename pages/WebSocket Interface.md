@@ -49,6 +49,42 @@ tags:: [[Web API]], [[WebSocket]]
 		- 数据全部发送完成, 这个值会被重置为 `0` .
 			- 但是, 连接关闭并不会把这个值置为 `0`
 			- 连接关闭时, 继续调用 `send()` 方法, 仍然会让这个值累加.
+- ## WebSocket 与 bfcache
+	- 在某些浏览器中, 一个页面如果有 WebSocket 连接, 可能会被阻止加入到 [[bfcache]] 中.
+	- 所以最佳实践是:
+		- 在用户结束使用页面时 (使用 `pagehide` 事件), 关闭连接.
+		- 页面从 [[bfcache]] 恢复时 (使用 `pageshow` 事件), 重新启动连接.
+		- ``` js
+		  let websocket = null;
+		  
+		  window.addEventListener("pagehide", () => {
+		    if (websocket) {
+		      log("CLOSING");
+		      websocket.close();
+		      websocket = null;
+		    }
+		  });
+		  
+		  window.addEventListener("pageshow", () => {
+		    log("OPENING");
+		  
+		    websocket = new WebSocket(wsUri);
+		  
+		    websocket.addEventListener("open", () => {
+		      log("CONNECTED");
+		    });
+		  
+		    websocket.addEventListener("close", () => {
+		      log("DISCONNECTED");
+		    });
+		  
+		    websocket.addEventListener("message", (e) => {
+		    });
+		  
+		    websocket.addEventListener("error", (e) => {
+		    });
+		  });
+		  ```
 - ## WebSocket 安全
 	- 现在大多数浏览器只允许 安全的 WebSocket 连接 (即 `wss` )
 	- 页面协议与 WebSocket 协议:
