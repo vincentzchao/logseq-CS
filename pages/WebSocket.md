@@ -16,8 +16,12 @@ tags:: [[Web]], [[Protocol]]
 	- [[WebSocket 连接保持]]
 	  logseq.order-list-type:: number
 - ## Index
-	- WebSocket 规范: [WebSockets Living Standard](https://websockets.spec.whatwg.org/)
+	- WebSocket 规范:
 	  logseq.order-list-type:: number
+		- [RFC 6455 - The WebSocket Protocol](https://www.rfc-editor.org/rfc/rfc6455.html)
+		  logseq.order-list-type:: number
+		- [WebSockets Living Standard](https://websockets.spec.whatwg.org/)
+		  logseq.order-list-type:: number
 	- WebSocket 在线客户端
 	  logseq.order-list-type:: number
 		- [WebSocket King](https://websocketking.com/)

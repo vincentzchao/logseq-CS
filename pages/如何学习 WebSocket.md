@@ -28,7 +28,7 @@ tags:: [[WebSocket]]
 - ## 学习进度
 	- [MDN - The WebSocket API (WebSockets)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
 	  logseq.order-list-type:: number
-		- 接下来学习 [Sending messages](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_client_applications#sending_messages)
+		- 接下来学习 [Writing WebSocket servers](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers)
 - ## 学习资料
 	- [MDN - The WebSocket API (WebSockets)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
 	  logseq.order-list-type:: number
