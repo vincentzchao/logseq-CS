@@ -18,7 +18,7 @@ tags:: [[Web]], [[Protocol]]
 - ## Index
 	- WebSocket 规范:
 	  logseq.order-list-type:: number
-		- [RFC 6455 - The WebSocket Protocol](https://www.rfc-editor.org/rfc/rfc6455.html)
+		- [RFC 6455 - The WebSocket Protocol](https://datatracker.ietf.org/doc/html/rfc6455)
 		  logseq.order-list-type:: number
 		- [WebSockets Living Standard](https://websockets.spec.whatwg.org/)
 		  logseq.order-list-type:: number
