@@ -22,6 +22,9 @@ tags:: [[Web]], [[Protocol]]
 		  logseq.order-list-type:: number
 		- [WebSockets Living Standard](https://websockets.spec.whatwg.org/)
 		  logseq.order-list-type:: number
+	- WebSocket Extension Name, Subprotocol Name, Version Number, Close Code Number 等 WebSocket 协议相关条目的注册:
+	  logseq.order-list-type:: number
+		- [IANA - WebSocket Protocol Registries](https://www.iana.org/assignments/websocket/websocket.xml)
 	- WebSocket 在线客户端
 	  logseq.order-list-type:: number
 		- [WebSocket King](https://websocketking.com/)
