@@ -32,4 +32,8 @@ tags:: [[Program Language]]
 		- #### [Java Platform, Standard Edition (Java SE)](https://docs.oracle.com/en/java/javase/index.html)
 		- #### [Java Platform, Enterprise Edition (Java EE)](https://www.oracle.com/java/technologies/java-ee-glance.html)
 - ---
+- ## Index
+	- ### Java API
+		- [Java SE 8 API Specification](https://docs.oracle.com/javase/8/docs/api/index.html)
+		  logseq.order-list-type:: number
 -
