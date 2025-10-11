@@ -1,4 +1,4 @@
-tags:: [[计算机网络]], [[Protocol]]
+tags:: [[Computer Network]], [[Protocol]]
 ---
 
 - ## 学习路径

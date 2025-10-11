@@ -1,4 +1,4 @@
-tags:: [[计算机网络]], [[Protocol]], [[Cryptography]]
+tags:: [[Computer Network]], [[Protocol]], [[Cryptography]]
 ---
 
 - ## HTTP 的隐患

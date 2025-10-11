@@ -90,7 +90,7 @@ tags:: [[Contents]], [[Roadmap]]
 		- [[Kubernetes]]
 - ## 计算机基础
 	- [[Algorithm]]
-	- [[计算机网络]]
+	- [[Computer Network]]
 	- [[计算机组成原理]]
 	- [[操作系统]]
 - ## 架构设计

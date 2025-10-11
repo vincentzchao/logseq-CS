@@ -3,7 +3,7 @@ tags:: [[Java SE]]
 
 - ## 学习路线
 	- Concept
-		- [[Java SE 8/如何查找 Class]]
+		- [[Java 如何查找 Class]]
 	- Basic Tool
 		- [[JAR]]
 		- [[javac]]
