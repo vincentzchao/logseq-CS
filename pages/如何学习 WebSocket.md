@@ -24,11 +24,20 @@ tags:: [[WebSocket]]
 			  logseq.order-list-type:: number
 		- 同一个连接并发发送多条信息会怎样?
 		  logseq.order-list-type:: number
-		- logseq.order-list-type:: number
+	- 消息代理
+	  logseq.order-list-type:: number
+		- [[STOMP]]
+		  logseq.order-list-type:: number
+		- [[MQTT]]
+		  logseq.order-list-type:: number
 - ## 学习进度
 	- [MDN - The WebSocket API (WebSockets)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
 	  logseq.order-list-type:: number
-		- 接下来学习 [Writing WebSocket servers](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Writing_WebSocket_servers)
+		- ![image.png](../assets/image_1760111048912_0.png){:height 216, :width 312}
+		- 除了 [Using WebSocketStream to write a client](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API/Using_WebSocketStream) , 其他都看过了 (2025-10-10).
+	- [WebSocket.org 官网](https://websocket.org/) (参见: [[WebSocket.org]] )
+	  logseq.order-list-type:: number
+		-
 - ## 学习资料
 	- [MDN - The WebSocket API (WebSockets)](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
 	  logseq.order-list-type:: number

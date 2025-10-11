@@ -6,9 +6,9 @@ tags:: [[WebSocket API]]
 	- [[WebSocket Interface]]
 		- 稳定且被广泛支持.
 		- 缺点:
-			- 无法处理背压问题 ( [[Backpressure]] ).
+			- 没有 [[Backpressure]] 机制.
 	- [[WebSocketStream Interface]]
-		- 基于 Promise 实现, 使用 [[Streams API]] 来处理消息的 接收和发送, 所以可以处理背压.
+		- 基于 Promise 实现, 使用 [[Streams API]] 来处理消息的 接收和发送, 所以有 [[Backpressure]] 机制.
 		- 缺点:
 			- `WebSocketStream` 并非标准 API , 支持的浏览器比较少.
 	- [[WebTransport API]]
