@@ -5,5 +5,8 @@ tags:: [[Java]], [[IO]]
 	- [[如何学习 Java IO]]
 	- [[Java IO 体系]]
 	  logseq.order-list-type:: number
+	- [[Java Byte Streams]]
+	  logseq.order-list-type:: number
+	- logseq.order-list-type:: number
 	- logseq.order-list-type:: number
 -
