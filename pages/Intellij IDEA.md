@@ -10,3 +10,7 @@ tags:: [[IDE]]
 	  logseq.order-list-type:: number
 		- [[IDEA 项目编译与运行]]
 		  logseq.order-list-type:: number
+- ## Index
+	- [[Intellij IDEA 快捷键]]
+	  logseq.order-list-type:: number
+-

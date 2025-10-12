@@ -9,6 +9,8 @@ tags:: [[Java]], [[IO]]
 	  logseq.order-list-type:: number
 	- [[Java Byte Streams]]
 	  logseq.order-list-type:: number
+	- [[Java Character Streams]]
+	  logseq.order-list-type:: number
 	- logseq.order-list-type:: number
 	- logseq.order-list-type:: number
 -

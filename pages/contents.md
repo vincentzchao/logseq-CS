@@ -1,2 +1,2 @@
 -
-- {{renderer :tocgen2, [[java closeable]], calc(100vh - 135px)}}
+- {{renderer :tocgen2, [[java byte streams]], calc(100vh - 135px)}}
