@@ -23,7 +23,9 @@ tags:: [[Java IO]]
 		- ![image.png](../assets/image_1688657210990_0.png){:height 263, :width 487}
 		- **程序写出数据** 。
 - ## I/O Streams 的分类
-	- 执行字节输入输出的 [[Java Byte Streams]]
+	- 处理 **字节** 输入输出的 [[Java Byte Streams]]
+	  logseq.order-list-type:: number
+	- 处理 **字符** 输入输出的 [[Java Character Streams]]
 	  logseq.order-list-type:: number
 	- logseq.order-list-type:: number
 - ## 参考

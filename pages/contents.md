@@ -1,2 +1,2 @@
 -
-- {{renderer :tocgen2, [[websocket interface]], calc(100vh - 135px)}}
+- {{renderer :tocgen2, [[java closeable]], calc(100vh - 135px)}}

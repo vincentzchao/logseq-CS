@@ -1,7 +1,7 @@
 tags:: [[Intellij IDEA]]
 ---
 
-- ## Empty Project
+- ## Empty Project + Sources Root
 	- 在 IDEA 中创建一个 `Empty Project` , 名为 `java-nomaven` .
 	  logseq.order-list-type:: number
 	- 添加如下 `CopyBytes.java` 和 `xanadu.txt` 文件, 将 `src` 目录标记为 `Sources Root` .
@@ -102,4 +102,27 @@ tags:: [[Intellij IDEA]]
 				  logseq.order-list-type:: number
 				- 而代码中读写相对路径的文件, 就是以 **工作目录** 为基准; 所以, 文件路径如果填相对路径的话, 必须以 **项目的根目录** 为基准.
 				  logseq.order-list-type:: number
+- ## Empty Project + Sources Root + Resources Root
+	- 如果将 `xanadu.txt` 放到 `resources` 目录下, 并将其设为 `Resources Root` .
+		- 编译后, `resources` 目录下的所有文件都会被放在 `out/production/java-nomaven` 目录下 .
+		- 由于工作目录是项目根目录, 所以无法直接用相对路径 `xanadu.txt` 访问 .
+		- ``` zsh
+		  java-nomaven
+		  .
+		  ├── out
+		  │   └── production
+		  │       └── java-nomaven
+		  │           ├── com
+		  │           │   └── binchaos
+		  │           │       └── io
+		  │           │           └── CopyBytes.class
+		  │           └── xanadu.txt
+		  ├── resources
+		  │   └── xanadu.txt
+		  └── src
+		      └── com
+		          └── binchaos
+		              └── io
+		                  └── CopyBytes.java
+		  ```
 -
