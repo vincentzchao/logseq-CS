@@ -1,4 +1,4 @@
-tags:: [[VSCode Extension]]
+tags:: [[VS Code Extension]]
 ---
 
 - ## open in browser

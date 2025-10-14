@@ -30,7 +30,8 @@ tags:: [[Java]]
 	  logseq.order-list-type:: number
 		- [[Java Compact Profile]]
 		  logseq.order-list-type:: number
-		- logseq.order-list-type:: number
+	- [[Java SE 8 之后的新特性]]
+	  logseq.order-list-type:: number
 - ## Index
 	- [Java SE 8 API Specification](https://docs.oracle.com/javase/8/docs/api/index.html)
 	  logseq.order-list-type:: number

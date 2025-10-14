@@ -6,4 +6,10 @@ tags:: [[Flutter]]
 	  logseq.order-list-type:: number
 	- [Flutter Docs 中文](https://docs.flutter.cn/)
 	  logseq.order-list-type:: number
+- ## 学习进度
+	- [Flutter Docs](https://docs.flutter.dev/)
+	  logseq.order-list-type:: number
+		- ![image.png](../assets/image_1760465543924_0.png){:height 358, :width 266}
+		- 看完 `Quick Start` , 接下来看 [Custom setup](https://docs.flutter.dev/get-started/custom)
 	-
+-

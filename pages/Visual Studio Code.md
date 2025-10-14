@@ -3,9 +3,11 @@ tags:: [[IDE]]
 ---
 
 - ==子目录==
+	- [[VS Code 安装与配置]]
+	  logseq.order-list-type:: number
 	- [[VSCode Formatting]]
 	- [[VSCode Settings]]
-	- [[VSCode Extension]]
+	- [[VS Code Extension]]
 	- [[VSCode 常见问题]]
 - ---
 - ## 官方资料

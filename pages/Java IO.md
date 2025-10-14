@@ -7,6 +7,8 @@ tags:: [[Java]], [[IO]]
 	  logseq.order-list-type:: number
 	- [[Java Closeable]]
 	  logseq.order-list-type:: number
+	- [[Java Flushable]]
+	  logseq.order-list-type:: number
 	- [[Java Byte Streams]]
 	  logseq.order-list-type:: number
 	- [[Java Character Streams]]

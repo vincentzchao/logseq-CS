@@ -1,6 +1,8 @@
 tags::  Version Control Tool
 
-- ==子目录==
+- ## 学习路线
+	- [[Git 安装与配置]]
+	  logseq.order-list-type:: number
 	- [[Git命令]]
 	- [[gitignore]]
 -
