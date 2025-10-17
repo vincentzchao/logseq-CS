@@ -1,11 +1,20 @@
 tags:: [[Android Studio]], [[Intellij IDEA]], [[Flutter]]
 ---
 
-- ## 安装
-	- [[Android Studio 环境搭建]] / [[Intellij IDEA 安装]]
-	  logseq.order-list-type:: number
-	- 搜索并安装 `flutter` 插件.
-	  logseq.order-list-type:: number
+- ## 搭建开发环境
+	- ### 安装 IDE 与插件
+		- [[Android Studio 安装]] / [[Intellij IDEA 安装]]
+		  logseq.order-list-type:: number
+		- 搜索并安装 `flutter` 插件.
+		  logseq.order-list-type:: number
+	- ### 搭建 Android 开发环境
+		- 参考: [Flutter Docs - Set up Android development](https://docs.flutter.dev/platform-integration/android/setup)
+		- [[Android Studio 搭建 Android 开发环境]]
+		  logseq.order-list-type:: number
+		- 执行 `flutter doctor --android-licenses`
+		  logseq.order-list-type:: number
+		- 同意所有协议, 直到出现 `All SDK package licenses accepted.` .
+		  logseq.order-list-type:: number
 - ## 创建项目
 	- New Project
 	  logseq.order-list-type:: number
@@ -25,4 +34,4 @@ tags:: [[Android Studio]], [[Intellij IDEA]], [[Flutter]]
 	- [Flutter Docs - Android Studio and IntelliJ](https://docs.flutter.dev/tools/android-studio#opening-a-project-from-existing-source-code)
 	  logseq.order-list-type:: number
 		- 接下来看: Editing code and viewing issues (2025-10-17)
--
+	- logseq.order-list-type:: number
