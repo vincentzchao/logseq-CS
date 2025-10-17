@@ -2,7 +2,7 @@ tags:: [[uni-app]], [[Simulator]]
 ---
 
 - ## 使用 Android Studio 安装模拟器 (推荐)
-	- 参见: [[Android Studio 安装模拟器]]
+	- 参见: [[Android Studio 安装 SDK 与模拟器]]
 - ## 使用第三方软件安装模拟器 (不推荐)
 	- 如 [夜神模拟器](https://www.yeshen.com/) , [雷电模拟器](https://www.ldmnq.com/)
 - ## 在 Android 模拟器上运行

@@ -2,6 +2,8 @@ tags:: [[IDE]]
 ---
 
 - ## 学习路径
+	- [[Intellij IDEA 安装]]
+	  logseq.order-list-type:: number
 	- [[Intellij IDEA Plugin]]
 	  logseq.order-list-type:: number
 	- [[Intellij IDEA 开发配置]]

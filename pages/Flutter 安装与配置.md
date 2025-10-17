@@ -1,14 +1,6 @@
 tags:: [[Flutter]]
 ---
 
-- ## 安装必备软件
-	- [[Git 安装与配置]]
-	  logseq.order-list-type:: number
-		- macOS 建议执行 `xcode-select --install` 安装 Git .
-	- [[VS Code 安装与配置]]
-	  logseq.order-list-type:: number
-	- 安装 [[VS Code Extension - Flutter]]
-	  logseq.order-list-type:: number
 - ## 安装并配置 Flutter
 	- ### 下载并解压
 		- 下载地址: [Flutter SDK archive](https://docs.flutter.dev/install/archive), 下载 `Stable Channel` 的版本.
@@ -32,6 +24,22 @@ tags:: [[Flutter]]
 			  export PUB_HOSTED_URL="https://mirrors.tuna.tsinghua.edu.cn/dart-pub"
 			  export FLUTTER_STORAGE_BASE_URL="https://mirrors.tuna.tsinghua.edu.cn/flutter"
 			  ```
+- ## 搭建 Flutter 开发环境
+	- ### 安装 Git
+		- [[Git 安装与配置]]
+			- macOS 建议执行 `xcode-select --install` 安装 Git .
+	- ### 使用 VS Code 开发
+		- [[VS Code 安装与配置]]
+		  logseq.order-list-type:: number
+		- 安装 [[VS Code Extension - Flutter]]
+		  logseq.order-list-type:: number
+			- 具体使用, 参见: [[VS Code Extension - Flutter]]
+	- ### 使用 Android Studio / Intellij IDEA 开发
+		- [[Android Studio 环境搭建]] / [[Intellij IDEA 安装]]
+		  logseq.order-list-type:: number
+		- 搜索并安装 `flutter` 插件.
+		  logseq.order-list-type:: number
+			- 具体使用, 参见: [[使用 Android Studio 或 Intellij IDEA 开发 Flutter]]
 - ## 配置 iOS 开发
 	- ### 安装 Xcode
 		- 参照 [[Xcode 安装与配置]]
@@ -45,6 +53,12 @@ tags:: [[Flutter]]
 	- ### 安装 CocoaPods
 		- 参见 [[CocoaPods 安装与配置]]
 - ## 验证安装
+	- 查看版本 .
+	  logseq.order-list-type:: number
+		- ``` zsh
+		  flutter --version
+		  dart --version
+		  ```
 	- 执行 `flutter doctor` .
 	  logseq.order-list-type:: number
 		- ``` zsh

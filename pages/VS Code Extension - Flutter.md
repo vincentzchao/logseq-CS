@@ -11,6 +11,6 @@ tags:: [[VS Code Extension]], [[Flutter]]
 		- `Command + Shift + P` -> 输入 `flutter:` > 选择 `Flutter: Select Device`
 		- 接下来界面点击运行, 会使用此处选择的设备.
 - ## 参考
-	- [Flutter Docs - Visual Studio Code](https://docs.flutter.dev/tools/vs-code)
+	- [Flutter Docs - Visual Studio Code](https://docs.flutter.dev/tools/vs-code) ==待学习==
 	  logseq.order-list-type:: number
 	-
