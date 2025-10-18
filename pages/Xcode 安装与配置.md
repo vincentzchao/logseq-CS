@@ -33,6 +33,14 @@ tags:: [[Xcode]]
 	- 参见: [[使用 Xcodes 安装 Xcode]]
 - ## 登录 Apple ID
 	- 在 Xcode > Settings > Accounts 中登录自己的 Apple ID , 后面开发调试过程中需要用到.
+- ## 安装后配置
+	- 参考: [Flutter Docs - Set up iOS development](https://docs.flutter.dev/platform-integration/ios/setup)
+	- 配置命令行工具指定已安装的 Xcode 版本
+	  logseq.order-list-type:: number
+		- `sudo sh -c 'xcode-select -s /Applications/Xcode-16.4.0.app/Contents/Developer && xcodebuild -runFirstLaunch'`
+	- 签署 Xcode 许可证协议
+	  logseq.order-list-type:: number
+		- 执行 `sudo xcodebuild -license` 输入 `agree`
 - ---
 - ## 参考
 	- [ChaoCode - [準備好你的 Xcode：使用 Xcodes 安裝 ＆ 手機測試環境設定]](https://www.youtube.com/watch?v=e6wF5UTcxkU&t=836s)
