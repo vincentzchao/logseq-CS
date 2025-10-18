@@ -10,6 +10,8 @@ tags:: [[Flutter]]
 	- [Flutter Docs](https://docs.flutter.dev/)
 	  logseq.order-list-type:: number
 		- ![image.png](../assets/image_1760465543924_0.png){:height 358, :width 266}
-		- 接下来看 `Learn Flutter` 2025-10-18
-	-
+		- `Learn Flutter` >
+			- 看完: `Introduction` , 接下来看 `Write youri first app`
+			-
+			-
 -
