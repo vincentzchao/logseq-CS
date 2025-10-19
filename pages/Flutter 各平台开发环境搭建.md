@@ -6,11 +6,7 @@ tags:: [[Flutter]]
 		- [[Git 安装与配置]]
 			- macOS 建议执行 `xcode-select --install` 安装 Git .
 	- ### 安装 VS Code (可选)
-		- [[VS Code 安装与配置]]
-		  logseq.order-list-type:: number
-		- 安装 [[VS Code Extension - Flutter]]
-		  logseq.order-list-type:: number
-			- 具体使用, 参见: [[VS Code Extension - Flutter]]
+		- 参见: [[使用 VS Code 开发 Flutter]]
 - ## 搭建各目标平台开发环境
 	- ### 搭建 Android 开发环境
 		- 参见: [[使用 Android Studio 或 Intellij IDEA 开发 Flutter]]
