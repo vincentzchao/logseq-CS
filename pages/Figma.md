@@ -1,4 +1,4 @@
-tags:: [[UI Design]]
+tags:: [[UI&UX Design]]
 ---
 
 - ## 学习路线

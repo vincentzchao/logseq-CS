@@ -5,9 +5,11 @@ tags:: [[Dart]], [[Web]], [[Mobile]]
 	- [[如何学习 Flutter]]
 	- [[Flutter 环境搭建]]
 	  logseq.order-list-type:: number
-	- [[Flutter Publish Packages]]
-	  logseq.order-list-type:: number
 	- [[Flutter Concept]]
+	  logseq.order-list-type:: number
+	- [[Flutter 项目目录结构]]
+	  logseq.order-list-type:: number
+	- [[Flutter Publish Packages]]
 	  logseq.order-list-type:: number
 	- 工具:
 	  logseq.order-list-type:: number
