@@ -25,10 +25,13 @@ tags:: [[Dart]], [[Web]], [[Mobile]]
 	- ### Flutter API
 		- [Flutter API reference](https://api.flutter.dev/)
 		  logseq.order-list-type:: number
+		- Flutter 组件介绍: [Widget of the Week](https://www.youtube.com/watch?v=b_sQ9bMltGU&list=PLjxrf2q8roU23XGwz3Km7sQZFTdB996iG)
+		  logseq.order-list-type:: number
 	- ### Flutter Packages
 		- 官方 Package 仓库: [pub.dev](https://pub.dev/)
 		  logseq.order-list-type:: number
 	- ### Playground
 		- [DartPad](https://dartpad.dev)
-		-
+	- ### Samples
+		- 一些 Flutter 项目示例: [Flutter Samples](https://docs.flutter.dev/reference/learning-resources)
 -
