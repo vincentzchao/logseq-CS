@@ -11,7 +11,7 @@ tags:: [[Flutter]]
 	  logseq.order-list-type:: number
 		- ![image.png](../assets/image_1760465543924_0.png){:height 358, :width 266}
 		- `Learn Flutter` >
-			- 看完: `Introduction` , 接下来看 `Write youri first app`
+			- 接下来看 `Learn the fundamentals > Widgets`
 			-
 			-
 -
