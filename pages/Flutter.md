@@ -15,7 +15,8 @@ tags:: [[Dart]], [[Web]], [[Mobile]]
 	  logseq.order-list-type:: number
 		- [[Flutter&Dart DevTools]]
 		  logseq.order-list-type:: number
-		- logseq.order-list-type:: number
+		- [[DartPad]]
+		  logseq.order-list-type:: number
 - ## Index
 	- ### 版本相关
 		- [Flutter SDK archive](https://docs.flutter.dev/install/archive)
@@ -30,8 +31,6 @@ tags:: [[Dart]], [[Web]], [[Mobile]]
 	- ### Flutter Packages
 		- 官方 Package 仓库: [pub.dev](https://pub.dev/)
 		  logseq.order-list-type:: number
-	- ### Playground
-		- [DartPad](https://dartpad.dev)
 	- ### Samples
 		- 一些 Flutter 项目示例: [Flutter Samples](https://docs.flutter.dev/reference/learning-resources)
 -

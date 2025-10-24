@@ -19,13 +19,14 @@ tags:: [[Program Language]]
 	  logseq.order-list-type:: number
 		- [[Flutter&Dart DevTools]]
 		  logseq.order-list-type:: number
--
+		- [[DartPad]]
+		  logseq.order-list-type:: number
+		-
+		- logseq.order-list-type:: number
 - ## Index
 	- ### Dart API
 		- [Dart API Reference](https://api.dart.dev/)
 		  logseq.order-list-type:: number
 	- ### Playground
-		- [DartPad](https://dartpad.dev)
-		- [DartPad.cn](https://dartpad.cn)
 	- ### SDK Archive
 		- [Dart SDK archive](https://dart.dev/get-dart/archive)
