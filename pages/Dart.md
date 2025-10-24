@@ -5,17 +5,13 @@ tags:: [[Program Language]]
 	- [[如何学习 Dart]]
 	- [[Dart 环境准备]]
 	  logseq.order-list-type:: number
-	- [[Dart SDK]]
+	- [[Dart Common-line Tools]]
 	  logseq.order-list-type:: number
-		- [[Dart Libraries]]
-		  logseq.order-list-type:: number
-		- [[Dart Common-line Tools]]
-		  logseq.order-list-type:: number
 	- [[Dart Concept]]
 	  logseq.order-list-type:: number
 	- [[Dart Syntax]]
 	  logseq.order-list-type:: number
-	- [[Dart Core Library]]
+	- [[Dart Core Libraries]]
 	  logseq.order-list-type:: number
 	- [[Dart 编码规范]]
 	  logseq.order-list-type:: number

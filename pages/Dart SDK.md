@@ -3,7 +3,7 @@ tags:: [[Dart]]
 
 - ## Dart SDK 目录
 	- Dart SDK 解压后, 主要包含如下两个目录:
-		- `lib` : [[Dart Libraries]]
+		- `lib` : [[Dart Core Libraries]]
 		- `bin` : [[Dart Common-line Tools]]
 - ## 参考
 	- [Dart Docs - Command-line tools](https://dart.dev/tools/sdk) 
