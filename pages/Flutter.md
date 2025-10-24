@@ -13,7 +13,7 @@ tags:: [[Dart]], [[Web]], [[Mobile]]
 	  logseq.order-list-type:: number
 	- 工具:
 	  logseq.order-list-type:: number
-		- [[Flutter DevTools]]
+		- [[Flutter&Dart DevTools]]
 		  logseq.order-list-type:: number
 		- logseq.order-list-type:: number
 - ## Index

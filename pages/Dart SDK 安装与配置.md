@@ -3,6 +3,7 @@ tags:: [[Dart]]
 
 - ## 使用 Flutter 内置的 Dart (推荐)
 	- 参见: [[Flutter 安装与配置]]
+	- 安装后, Dart SDK 的目录位于: `${Flutter 根目录}/bin/cache/dart-sdk`
 	- ==如果要开发 Flutter 就推荐使用此方式==
 - ## 下载压缩文件
 	- 到这里下载: [Dart SDK archive](https://dart.dev/get-dart/archive)
