@@ -40,10 +40,32 @@ tags:: [[Fiddler Everywhere]]
 			- 点击 `Save` , 重启 Fiddler Everywhere (不重启貌似不生效?)
 			  logseq.order-list-type:: number
 			- ![image.png](../assets/image_1761387225812_0.png){:height 556, :width 725}
-		-
-		-
-	- ### 3. 设备配置网络代理
-		-
+	- ### 3. 设备下载 Fiddler 证书
+		- 设备浏览器访问 Fiddler Everywhere 所在机器的 IP 及其监听的端口.
+		  logseq.order-list-type:: number
+			- 例如 : `http://192.168.5.20:8899` .
+			- ==注意: iOS 一定要用 Safari 访问, 才能安装证书, 其他浏览器只能下载证书文件而无法安装.==
+			- ![IMG_0934.png](../assets/IMG_0934_1761403120343_0.png){:height 445, :width 179}
+		- 点击 `DOWNLOAD CERTIFICATE (.CRT)` 下载 Fiddler 证书.
+		  logseq.order-list-type:: number
+	- ### 4. 设备安装 Fiddler 证书
+		- #### iOS 安装证书流程
+			- 进入 `Settings > Profile Downloaded` 无脑安装.
+			  logseq.order-list-type:: number
+				- ![IMG_0935.jpeg](../assets/IMG_0935_1761403426532_0.jpeg){:height 445, :width 179}
+			- 进入 `Settings > General > VPN & Device Management` 即可查看已安装的证书.
+			  logseq.order-list-type:: number
+				- ![IMG_0936.jpeg](../assets/IMG_0936_1761403612090_0.jpeg){:height 445, :width 179}
+	- ### 5. 设备配置网络代理
+		- ==以 wifi 网络为例:==
+		- 进入 `Settings` > `WLAN` , 点击已连接的 WLAN 的详情
+		  logseq.order-list-type:: number
+		- 进入 `Configure Proxy` .
+		  logseq.order-list-type:: number
+		- 勾选 `Manual`, 编辑 `Server` 与 `Port` .
+		  logseq.order-list-type:: number
+			- ![IMG_0933.png](../assets/IMG_0933_1761403818839_0.png){:height 445, :width 179}
+			-
 	- ### 注意事项
 		- 其实, Fiddler Everywhere 运行时, 相当于创建并启动一个系统代理, 会捕获本机的所有网络请求.
 		- 使用时注意, 不要与本地已有的代理发生冲突.
@@ -55,3 +77,4 @@ tags:: [[Fiddler Everywhere]]
 	  logseq.order-list-type:: number
 	- [深入浅出，新一代跨平台抓包&调式利器Fiddler Everywhere](https://www.cnblogs.com/taylorshi/p/14494906.html)
 	  logseq.order-list-type:: number
+-
