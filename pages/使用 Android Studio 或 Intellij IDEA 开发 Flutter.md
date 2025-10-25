@@ -7,6 +7,9 @@ tags:: [[Android Studio]], [[Intellij IDEA]], [[Flutter]]
 		  logseq.order-list-type:: number
 		- 搜索并安装 `flutter` 插件.
 		  logseq.order-list-type:: number
+		- 配置 `Flutter SDK Path` , 选择指定版本.
+		  logseq.order-list-type:: number
+			- ![image.png](../assets/image_1761379103053_0.png){:height 529, :width 507}
 	- ### 搭建 Android 开发环境
 		- 参考: [Flutter Docs - Set up Android development](https://docs.flutter.dev/platform-integration/android/setup)
 		- [[Android Studio 搭建 Android 开发环境]]
