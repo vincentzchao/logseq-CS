@@ -1,12 +1,15 @@
 tags:: [[Dart]]
 ---
 
-- 主要包含如下两个工具
-	- `dart` : [[Dart CLI : dart]]
+- ## 学习路径
+	- 主要工具:
 	  logseq.order-list-type:: number
-	- `dartaotruntime` : [[Dart CLI : dartaotruntime]]
+		- [[Dart CLI: dart]]
+		  logseq.order-list-type:: number
+		- [[Dart CLI: dartaotruntime]]
+		  logseq.order-list-type:: number
+	- Web 应用 (非 Flutter) 开发工具:
 	  logseq.order-list-type:: number
-- Web 应用 (非 Flutter) 开发:
-	- `webdev` : [[Dart CLI : webdev]]
-	  logseq.order-list-type:: number
--
+		- [[Dart CLI: webdev]]
+		  logseq.order-list-type:: number
+	-

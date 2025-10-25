@@ -22,5 +22,5 @@ tags:: [[Dart]]
 		  logseq.order-list-type:: number
 		- ![image.png](../assets/image_1761327947240_0.png){:height 520, :width 541}
 - ## 使用 dart 命令行工具开发 Dart
-	- 参见:  [[Dart CLI : dart]]
+	- 参见:  [[Dart CLI: dart]]
 	-
