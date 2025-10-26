@@ -12,6 +12,8 @@ tags:: [[Dart]]
 		  logseq.order-list-type:: number
 		- [[Dart Syntax/Variables]]
 		  logseq.order-list-type:: number
+		- [[Dart Syntax/Wildcard Variables]]
+		  logseq.order-list-type:: number
 		-
 		- logseq.order-list-type:: number
 	- logseq.order-list-type:: number
