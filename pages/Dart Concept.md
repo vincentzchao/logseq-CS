@@ -13,7 +13,7 @@ tags:: [[Dart]]
 		  logseq.order-list-type:: number
 		- [[Dart Type System]] : 编译时, 进行 **静态类型检查 (Static Check)** ; 运行时,  进行 **动态类型检查** (有绕过 静态类型系统 的语法) .
 		  logseq.order-list-type:: number
-		- [[Dart Syntax/Null Safety]] : Dart 可以定义一个变量是否允许为 null .
+		- [[Null Safety]] : Dart 可以定义一个变量是否允许为 null .
 		  logseq.order-list-type:: number
 		- [[Dart Isolate]] : 类似于线程但不共享内存的 独立工作单元 , 仅通过消息进行通信.
 		  logseq.order-list-type:: number
