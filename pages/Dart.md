@@ -31,6 +31,8 @@ tags:: [[Program Language]]
 	- ### Dart API
 		- [Dart API Reference](https://api.dart.dev/)
 		  logseq.order-list-type:: number
-	- ### Playground
 	- ### SDK Archive
 		- [Dart SDK archive](https://dart.dev/get-dart/archive)
+	- ### Dart Spec
+		- [Dart language specification](https://dart.dev/resources/language/spec)
+-

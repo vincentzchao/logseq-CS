@@ -1,4 +1,4 @@
-tags:: [[Program Language]]
+tags:: [[Program Language Syntax]] 
 ---
 
 - ## Null dereference error

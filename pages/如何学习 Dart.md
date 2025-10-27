@@ -12,7 +12,9 @@ tags:: [[Dart]]
 		- #### Get Dart ==已阅==
 		- #### Overview ==已阅==
 		- #### Docs
-			- 看完 `Language > Introduction`
+			- Language
+				- 看完 Introduction, Variables, Comments
+				- 接下来看 Operators .
 			- Tools & techniques
 				- Overview  ==已阅==
 				- Editors & debuggers  ==已阅==

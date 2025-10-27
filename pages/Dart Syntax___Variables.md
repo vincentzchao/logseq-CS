@@ -14,18 +14,18 @@ tags:: [[Dart]]
 	- `Local variables` : 定义在方法中的变量.
 	  logseq.order-list-type:: number
 - ## Declare a variable
-	- ``` dart
-	  // var
-	  var name = 'Bob';
-	  
-	  // type
-	  String name = 'Bob';
-	  ```
+	- 在 Dart 中, 万物皆对象. 声明一个变量, 其实就是声明一个对对象的引用.
 	- 声明一个变量有如下方式:
 		- 不声明类型 , 使用 `var` ,  dart 会进行类型推断.
 		  logseq.order-list-type:: number
 		- 声明具体类型.
 		  logseq.order-list-type:: number
+		- ``` dart
+		  // var
+		  var name = 'Bob';
+		  - // type
+		  String name = 'Bob';
+		  ```
 - ## Declare a nullable variable
 	- 声明一个 Nullable 变量, 它可以被赋值为 `null` .
 		- ``` dart
