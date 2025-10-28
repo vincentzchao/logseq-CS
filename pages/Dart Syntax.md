@@ -14,24 +14,22 @@ tags:: [[Dart]]
 		  logseq.order-list-type:: number
 	- 操作符: [[Dart Syntax/Operators]]
 	  logseq.order-list-type:: number
-	- 控制流:
+	- 控制流: [[Dart Syntax/Control Flow]]
 	  logseq.order-list-type:: number
-		- [[Dart Syntax/Control Flow]]
-		  logseq.order-list-type:: number
-		- logseq.order-list-type:: number
+	- 类与对象: [[Dart Syntax/Classes & Objects]]
+	  logseq.order-list-type:: number
 	- 类型:
 	  logseq.order-list-type:: number
 		- 字符串
 		- 集合
 		- 枚举
+	- logseq.order-list-type:: number
 	- 函数:
-	  logseq.order-list-type:: number
-	- 类与对象:
 	  logseq.order-list-type:: number
 	- 并发编程:
 	  logseq.order-list-type:: number
 	- logseq.order-list-type:: number
-	- logseq.order-list-type:: number
+		- logseq.order-list-type:: number
 - 标识符以 `_` 开头的成员, 是 `private` 的.
   logseq.order-list-type:: number
 - logseq.order-list-type:: number
