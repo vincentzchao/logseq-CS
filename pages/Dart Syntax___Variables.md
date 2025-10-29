@@ -23,7 +23,7 @@ tags:: [[Dart]]
 		- ``` dart
 		  // var
 		  var name = 'Bob';
-		  - // type
+		  // type
 		  String name = 'Bob';
 		  ```
 - ## Declare a nullable variable
@@ -36,7 +36,7 @@ tags:: [[Dart]]
 - ## Initialize a variable
 	- ### Default Value
 		- `Nullable` 变量若在声明时, 未进行初始化, 则会被给默认值 `null` .
-			- 不管是什么类型的变量都为 `null` , 因为 Dart 中万物皆对象
+			- 不管是什么类型的变量都为 `null` , 因为 Dart 中万物皆对象.
 			- ``` dart
 			  String? name;   // Nullable type. Can be `null` or string.
 			  print(name); // 打印 null , 因为 Nullable variable 有 默认值 null
@@ -244,7 +244,7 @@ tags:: [[Dart]]
 					  ```
 			- 如果这个 `const variable` 属于 `class-level` , 需要使用 `static const` 修饰.
 			  logseq.order-list-type:: number
-- ## Object 和 dynamic 变量
+- ## Declare a Object or dynamic variable
 	- 声明动态类型 (即 变量的类型可以变化) , 使用 `Object` 类型 / `dynamic` 关键字.
 		- ``` dart
 		  Object obj = "This is an object";

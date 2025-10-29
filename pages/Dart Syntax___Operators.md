@@ -44,50 +44,6 @@ tags:: [[Dart]]
 	- `<` : Less than
 	- `>=` : Greater than or equal to
 	- `<=` : Less than or equal to
-- ## Type test operators
-	- ### Type Check
-		- `is` :
-			- 若对象为 `null` , 则返回 `false` .
-			  logseq.order-list-type:: number
-			- 若对象不为 `null` :
-			  logseq.order-list-type:: number
-				- 属于指定 `type` , 则返回 `true` , 
-				  logseq.order-list-type:: number
-				- 不属于指定 `type` , 则返回 `false` ,
-				  logseq.order-list-type:: number
-		- `is!` :
-			- 若对象为 `null` , 则返回 `true` .
-			  logseq.order-list-type:: number
-			- 若对象不为 `null` :
-			  logseq.order-list-type:: number
-				- 属于指定 `type` , 则返回 `false` ,
-				  logseq.order-list-type:: number
-				- 不属于指定 `type` , 则返回 `true` ,
-				  logseq.order-list-type:: number
-			- ``` dart
-			  Object a = 1;
-			  print(a is int); // true
-			  print(a is Object); // true
-			  
-			  print(a is! int); // false
-			  print(a is! String); // true
-			  
-			  int? b = null;
-			  print(b is int); // false
-			  print(b is! int); // true
-			  ```
-	- ### Typecast
-		- `as` : 将对象强转为指定类型 (如果值为 `null` , 或者不是指定类型, 则会抛出异常).
-			- ``` dart
-			  (employee as Person).firstName = 'Bob';
-			  ```
-		- 或者, 也可以使用 `is` 来处理:
-			- ``` dart
-			  if (employee is Person) {
-			    // 类型检查通过之后, 可以直接访问 Person 类型的属性
-			    employee.firstName = 'Bob';
-			  }
-			  ```
 - ## Logical operators
 	- `!` : 逻辑取反
 	- `||` : 逻辑或
@@ -103,7 +59,7 @@ tags:: [[Dart]]
 	- `>>` : 右移 (Shift left)
 	- `>>>` : 无符号右移 (Unsigned shift right)
 - ## Assignment operators
-	- ### Simole assignment operators
+	- ### Simple assignment operators
 		- `=` : 赋值
 		- `??=` : 左边的变量为 `null` 时, 才被赋值, 否则不做任何处理.
 	- ### Compound assignment operators
@@ -122,32 +78,21 @@ tags:: [[Dart]]
 		- `expr1 ?? expr2`
 			- `expr1` 不为 null , 则返回 `expr1` 的值.
 			- `expr1` 为 null , 则计算并返回 `expr2` 的值.
-- ## Cascade notation
-	- 可以在对象后面接 **级联符号** `..` , 用来连续多次访问这个对象的属性和方法.
-		- 在这过程中的返回值会被忽略, 最终返回这个对象本身.
-		- ``` dart
-		  StringBuffer sb = StringBuffer();
-		  print(
-		    sb
-		    ..write('foo')
-		    ..write('bar'),
-		  ); // foobar
-		  ```
-	- 如果对象可能为 `null` , 可以将第一个使用 `..` 改为 `?..` .
-		- 使用 `?..` 的效果是: 如果对象是 `null` , 则后续所有的级联操作都不会执行, 并最终返回 `null` (也即这个对象本身).
-		- ``` dart
-		  StringBuffer? sb = StringBuffer();
-		  sb = null;
-		  print(
-		    sb
-		    ?..write('foo')
-		    ..write('bar'),
-		  ); // null
-		  ```
-- ## Spread operators
-	-
+- ## Not-null assertion operator
+	- `!` : 断言某个变量不是 `null` , 如果是 `null` 则抛出异常.
+	- ``` dart
+	  foo!.bar;
+	  
+	  int? a = null;
+	  int b = a!; // 这里不用 非 null 断言, 编译无法通过
+	  ```
+- ## 其他运算符
+	- 还有一些不算运算符的运算符 (应该属于语法的一部分)
+		- **Type test operators** , **Cascade notation** , **Member access operators**
+			- 参见: [[Dart Syntax/Classes & Objects]] 相关小节
+		- **Spread operators** , **Subscript access operators** ,
+			- 参见: [[Dart Syntax/Collections]] 相关小节
 - ## 参考
 	- [Dart Docs - Operators](https://dart.dev/language/operators)
 	  logseq.order-list-type:: number
 	-
--

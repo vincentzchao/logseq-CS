@@ -13,9 +13,11 @@ tags:: [[Dart]]
 		- #### Overview ==已阅==
 		- #### Docs
 			- Language
-				- 看完 Introduction, Variables, Comments
-				- 接下来看 Operators .
+				- 看完 Introduction, Variables, Operators, Comments
+				- 接下来看 Built-in types 的 Strings
 			- Tools & techniques
 				- Overview  ==已阅==
 				- Editors & debuggers  ==已阅==
-		-
+			- Development
+				- 看完: Number Representation,
+-

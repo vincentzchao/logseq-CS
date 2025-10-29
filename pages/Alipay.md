@@ -1,5 +1,5 @@
 alias:: [[支付宝]]
-tags:: [[Payment]] 
+tags:: [[Payment Product]] 
 ---
 
 - ## 关于超时
