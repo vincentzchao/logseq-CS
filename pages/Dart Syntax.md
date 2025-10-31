@@ -20,6 +20,8 @@ tags:: [[Dart]]
 	  logseq.order-list-type:: number
 		- [[Dart Syntax/Numbers]]
 		  logseq.order-list-type:: number
+		- [[Dart Syntax/Strings]]
+		  logseq.order-list-type:: number
 		- [[Dart Syntax/Collections]]
 		  logseq.order-list-type:: number
 		- 枚举

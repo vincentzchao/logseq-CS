@@ -6,10 +6,8 @@ tags:: [[Java]]
 	- [[如何学习 Java SE]]
 	- [[Java SE Concept]]
 	  logseq.order-list-type:: number
-	- Java 语法相关:
+	- [[Java Syntax]]
 	  logseq.order-list-type:: number
-		- [[Java Generics]]
-		  logseq.order-list-type:: number
 	- 打包相关:
 	  logseq.order-list-type:: number
 		- [[Java Package And Import]]
