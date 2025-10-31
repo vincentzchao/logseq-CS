@@ -1,4 +1,7 @@
-## Reference
+alias:: [[微信开发]]
+---
+
+- ## Reference
 	- ### 论坛
 		- [微信开发社区 - 交流专区](https://developers.weixin.qq.com/community/develop/mixflow) ==有问题在这儿问==
 		  logseq.order-list-type:: number

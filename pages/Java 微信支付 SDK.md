@@ -1,4 +1,4 @@
-tags:: [[Java]], [[微信支付]]
+tags:: [[Java]], [[WeChat Pay]]
 ---
 
 -

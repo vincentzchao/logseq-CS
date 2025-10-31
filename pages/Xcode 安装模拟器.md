@@ -9,4 +9,5 @@ tags:: [[Xcode]], [[Simulator]]
 	- ![image.png](../assets/image_1760721186597_0.png){:height 697, :width 925}
 - ## 使用命令行安装
 	- 执行 `xcodebuild -downloadPlatform <iOS|watchOS|tvOS|visionOS>` 安装指定平台模拟器
--
+- ## 启动模拟器
+	- 执行 `open -a Simulator` .
