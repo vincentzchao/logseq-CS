@@ -91,7 +91,7 @@ tags:: [[Dart]]
 		- **Type test operators** , **Cascade notation** , **Member access operators**
 			- 参见: [[Dart Syntax/Classes & Objects]] 相关小节
 		- **Spread operators** , **Subscript access operators** ,
-			- 参见: [[Dart Syntax/Collections]] 相关小节
+			- 参见: [[Dart Collection]] 相关小节
 - ## 参考
 	- [Dart Docs - Operators](https://dart.dev/language/operators)
 	  logseq.order-list-type:: number

@@ -1,3 +1,2 @@
 -
-- {{renderer :tocgen2, [[flutter widget concept]], calc(100vh - 135px)}}
-- {{renderer :tocgen2, [[dart syntax/strings]], calc(100vh - 135px)}}
+- {{renderer :tocgen2, [[dart type/string&rune]], calc(100vh - 135px)}}

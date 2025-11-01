@@ -16,13 +16,15 @@ tags:: [[Dart]]
 	  logseq.order-list-type:: number
 	- [[Dart Syntax/Control Flow]]
 	  logseq.order-list-type:: number
-	- [[Dart Syntax/Types]]
+	- [[Dart Type]]
 	  logseq.order-list-type:: number
-		- [[Dart Syntax/Numbers]]
+		- [[Dart Type/Number]]
 		  logseq.order-list-type:: number
-		- [[Dart Syntax/Strings]]
+		- [[Dart Type/Boolean]]
 		  logseq.order-list-type:: number
-		- [[Dart Syntax/Collections]]
+		- [[Dart Type/String&Rune]]
+		  logseq.order-list-type:: number
+		- [[Dart Collection]]
 		  logseq.order-list-type:: number
 		- 枚举
 		  logseq.order-list-type:: number
@@ -30,7 +32,9 @@ tags:: [[Dart]]
 	  logseq.order-list-type:: number
 	- [[Dart Syntax/Functions]]
 	  logseq.order-list-type:: number
-	- [[Dart Syntax/Async]]
+	- [[Dart Async]]
+	  logseq.order-list-type:: number
+	- [[Dart Reflect]]
 	  logseq.order-list-type:: number
 		-
 - 标识符以 `_` 开头的成员, 是 `private` 的.
