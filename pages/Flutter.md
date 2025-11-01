@@ -13,7 +13,7 @@ tags:: [[Dart]], [[Web]], [[Mobile]]
 	  logseq.order-list-type:: number
 	- [[Flutter 项目目录结构]]
 	  logseq.order-list-type:: number
-	- [[Flutter Publish Packages]]
+	- [[Flutter Package]]
 	  logseq.order-list-type:: number
 	- 工具:
 	  logseq.order-list-type:: number
