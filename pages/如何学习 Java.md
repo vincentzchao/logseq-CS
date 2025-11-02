@@ -22,3 +22,6 @@ tags:: [[Java]]
 	- ### Technologies
 		- #### [Java Platform, Standard Edition (Java SE)](https://docs.oracle.com/en/java/javase/index.html)
 		- #### [Java Platform, Enterprise Edition (Java EE)](https://www.oracle.com/java/technologies/java-ee-glance.html)
+	- ### dev.java
+		- [dev.java](https://dev.java/)
+-

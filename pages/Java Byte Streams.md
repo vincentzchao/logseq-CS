@@ -71,8 +71,20 @@ tags:: [[Java IO]]
 						- 如果未选择抛出 `IOException` , 则流被重置到上次调用 `mark` 方法的地方.
 				- 如果  `markSupported()` 方法 返回 false:
 					- 可以选择抛出 `IOException` .
-						- 如果未选择抛出 `IOException` , 流将被重置到某个固定状态 (这个状态时什么, 取决于具体的流的实现) .
+						- 如果未选择抛出 `IOException` , 流将被重置到某个固定状态 (这个状态是什么, 取决于具体的流的实现) .
 - ## OutputStream
 	- 参考: [Java 8 API - OutputStream](https://docs.oracle.com/javase/8/docs/api/java/io/OutputStream.html)
+	- ### write(int b) 方法
+		- 将 `int` 参数的 **低 8 位** 作为一个 字节 (高 24 忽略), 写入输出流.
+		- ==需要子类实现==
+	- ### write(byte[] b) 和 write(byte[] b, int off, int len) 方法
+		- `write(byte[] b)` 实际上调用的是 `write(byte[] b, int off, int len)` .
+		- `write(byte[] b, int off, int len)` 方法会将 `b[off]` 到 `b[off+len-1]` 的元素写入输出流.
+		- `write(byte[] b, int off, int len)` 方法会循环调用 `write(int b)` 进行单字节写入.
+			- ==单字节写入性能不高, 建议子类重写此方法.==
+	- ### flush() 方法
+		- 参见: [[Java Flushable]]
+	- ### close() 方法
+		- 参见: [[Java Closeable]]
 - ## 参考
 	- logseq.order-list-type:: number

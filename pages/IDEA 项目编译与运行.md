@@ -43,7 +43,7 @@ tags:: [[Intellij IDEA]]
 	  logseq.order-list-type:: number
 		- 对代码进行了编译.
 		  logseq.order-list-type:: number
-			- `src` 下的代码被编译到了同级的 `out/production/java-nomaven` 目录下
+			- `src` 下的代码被编译到了 `out/production/java-nomaven` 目录下
 			- ``` zsh
 			  java-nomaven 
 			  .

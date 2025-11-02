@@ -50,7 +50,7 @@ tags:: [[Java IO]]
 				  ```
 			- 如果某个异常被抑制可能会带来问题, 就不要在 close() 中抛出它.
 			  logseq.order-list-type:: number
-				- 因为 `try-with-resources` 的 [[Java Suppressed Exception]] 机制会导致调用方无法直接补货 try 块内部的异常.
+				- 因为 `try-with-resources` 的 [[Java Suppressed Exception]] 机制会导致调用方无法直接捕获 try 块内部的异常.
 				- 如果这个异常是 `InterruptedException` ( [[Java InterruptedException]] ) 等不处理就会有问题的异常, 就可能会导致程序出错.
 		- #### 关于幂等性
 			- `Closeable` 的 `close()` 方法要求 [[幂等性]] , 即多次调用不会产生副作用.
@@ -73,7 +73,7 @@ tags:: [[Java IO]]
 		- 何况, 很多服务器程序都是处于长期运行状态, 并不会被关闭.
 	- ==所以存在这样的问题:==
 		- 如果一个流对象没有执行 `close()` 方法就被垃圾回收了, 而程序还在执行中, 此时 :
-			- 如果没有  `finalize()` 和 `Cleaner` 等机制, 这个资源将永远无法被释放.
+			- 如果没有  `finalize()` 和 `Cleaner` 等机制, 这个资源将永远无法被释放 (除非程序退出).
 - ## 最佳实践
 	- 一定要在资源使用完成后调用 `close()` 方法.
 - ## 参考

@@ -23,6 +23,7 @@ tags:: [[Java SE]]
 			- [Java SE 8](https://docs.oracle.com/javase/8/)
 				- [Java SE 8 Documentation](https://docs.oracle.com/javase/8/docs/)
 					- [Java SE 8 Security](https://docs.oracle.com/javase/8/docs/technotes/guides/security/index.html)
+		- [dev.java](https://dev.java/)
 	- ### 第三方资料
 		- [JAVA8 官网笔记教程](https://zq99299.github.io/java-tutorial/)
 		  logseq.order-list-type:: number
