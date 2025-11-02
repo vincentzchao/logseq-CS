@@ -31,7 +31,7 @@ tags:: [[Ruby]], [[Version Manager]]
 		  ==> Downloading ruby-3.4.4.tar.gz...
 		  -> curl -q -fL -o ruby-3.4.4.tar.gz https://cache.ruby-lang.org/pub/ruby/3.4/ruby-3.4.4.tar.gz
 		    % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-		                                   Dload  Upload   Total   Spent    Left  Speed
+		                                 Dload  Upload   Total   Spent    Left  Speed
 		  100 22.1M  100 22.1M    0     0  2962k      0  0:00:07  0:00:07 --:--:-- 6244k
 		  ==> Installing ruby-3.4.4...
 		  ruby-build: using libyaml from homebrew

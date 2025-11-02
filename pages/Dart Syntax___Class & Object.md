@@ -2,7 +2,7 @@ tags:: [[Dart]]
 ---
 
 - 类中可以定义对象的加减乘除等操作符的运算.
--
+- 标识符以 `_` 开头的成员, 是 `private` 的.
 - ## Type test operators
   id:: 68ff7a45-d7e4-4ba1-9e8b-d109ae29b84c
 	- 参考: [Type test operators](https://dart.dev/language/operators#type-test-operators)

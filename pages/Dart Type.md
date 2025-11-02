@@ -7,19 +7,19 @@ tags:: [[Dart]]
 		  logseq.order-list-type:: number
 		- [[Dart Type/Boolean]]
 		  logseq.order-list-type:: number
-		- `String` (参见: [[Dart Type/String&Rune&Character]] )
+		- `String` (参见: [[Dart Type/String & Rune & Character]] )
 		  logseq.order-list-type:: number
-		- `Rune` (参见: [[Dart Type/String&Rune&Character]] )
+		- `Rune` (参见: [[Dart Type/String & Rune & Character]] )
 		  logseq.order-list-type:: number
-		- [[Dart Syntax/Records]]
+		- [[Dart Type/List]]
+		  logseq.order-list-type:: number
+		- [[Dart Type/Set]]
+		  logseq.order-list-type:: number
+		- [[Dart Type/Map]]
+		  logseq.order-list-type:: number
+		- [[Dart Type/Record]]
 		  logseq.order-list-type:: number
 		- [[Dart Syntax/Functions]]
-		  logseq.order-list-type:: number
-		- [[Dart Syntax/Lists]]
-		  logseq.order-list-type:: number
-		- [[Dart Syntax/Sets]]
-		  logseq.order-list-type:: number
-		- [[Dart Syntax/Maps]]
 		  logseq.order-list-type:: number
 		- `Symbol` (参见: [[Dart Reflect]] )
 		  logseq.order-list-type:: number
