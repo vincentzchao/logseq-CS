@@ -90,7 +90,19 @@ tags:: [[Dart]]
 		    // dc68
 		  }
 		  ```
-		-
+- ## Character
+	- 为了操作  **User-perceived character (用户感知字符)** (参见 [[Unicode Concept]] ) , 可以使用 [characters package](https://pub.dev/packages/characters)
+	- ``` dart
+	  import 'package:characters/characters.dart';
+	  
+	  void main() {
+	    var hi = 'Hi 🇩🇰';
+	    print(hi); // Hi 🇩🇰
+	    print('The end of the string: ${hi.substring(hi.length - 1)}'); // The end of the string: ???
+	    print('The last character: ${hi.characters.last}'); // The last character: 🇩🇰
+	  }
+	  ```
+	- 访问字符串的 `characters` 属性, 可以获取字符串的 `grapheme cluster` 序列 (也即 用户感知字符 序列) .
 - ## 参考
 	- [Built-int types#strings](https://dart.dev/language/built-in-types#strings)
 	  logseq.order-list-type:: number

@@ -9,4 +9,6 @@ tags:: [[Character Set]]
 	  logseq.order-list-type:: number
 	- 根据十六进制码查找字符规范: [Unicode 17.0 Character Code Charts](https://www.unicode.org/charts/index.html)
 	  logseq.order-list-type:: number
-	- logseq.order-list-type:: number
+	- [Unicode Glossary](https://unicode.org/glossary)
+	  logseq.order-list-type:: number
+	-

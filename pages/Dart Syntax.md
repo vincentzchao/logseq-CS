@@ -22,7 +22,7 @@ tags:: [[Dart]]
 		  logseq.order-list-type:: number
 		- [[Dart Type/Boolean]]
 		  logseq.order-list-type:: number
-		- [[Dart Type/String&Rune]]
+		- [[Dart Type/String&Rune&Character]]
 		  logseq.order-list-type:: number
 		- [[Dart Collection]]
 		  logseq.order-list-type:: number

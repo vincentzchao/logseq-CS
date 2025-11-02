@@ -7,9 +7,9 @@ tags:: [[Dart]]
 		  logseq.order-list-type:: number
 		- [[Dart Type/Boolean]]
 		  logseq.order-list-type:: number
-		- `String` (参见: [[Dart Type/String&Rune]] )
+		- `String` (参见: [[Dart Type/String&Rune&Character]] )
 		  logseq.order-list-type:: number
-		- `Rune` (参见: [[Dart Type/String&Rune]] )
+		- `Rune` (参见: [[Dart Type/String&Rune&Character]] )
 		  logseq.order-list-type:: number
 		- [[Dart Syntax/Records]]
 		  logseq.order-list-type:: number
