@@ -1,4 +1,4 @@
-tags:: [[Front End]], [[Graphics Technology]]
+tags:: [[Front End]], [[Computer Graphics]]
 ---
 
 - ## 一句话解释

@@ -1,4 +1,4 @@
-tags:: [[HTML]], [[JS]], [[Graphics Technology]] 
+tags:: [[HTML]], [[JS]], [[Computer Graphics]] 
 ---
 
 - ## 一句话解释

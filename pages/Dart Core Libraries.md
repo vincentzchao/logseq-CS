@@ -43,5 +43,5 @@ tags:: [[Dart]]
 	- Dart 核心库中, 除了 `dart:core` 之外, 所有的包都需要导入才能使用
 		- 比如 `import 'dart:math';`
 - ## 参考
-	- [Dart SDK - Welcome!](https://api.dart.dev/index.html)
+	- [Dart API - Welcome!](https://api.dart.dev/index.html)
 	  logseq.order-list-type:: number

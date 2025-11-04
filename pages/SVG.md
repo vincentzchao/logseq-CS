@@ -1,4 +1,4 @@
-tags:: [[Graphics Technology]], [[Front End]] 
+tags:: [[Computer Graphics]], [[Front End]] 
 alias:: [[Scalable Vector Graphics]]
 ---
 

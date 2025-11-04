@@ -1,4 +1,7 @@
-## 工具
+tags:: [[UI]], [[UX]]
+---
+
+- ## 工具
 	- [[Figma]]
 	  logseq.order-list-type:: number
 	- [即时设计](https://js.design/workspace)

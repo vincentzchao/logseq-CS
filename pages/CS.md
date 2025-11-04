@@ -1,7 +1,7 @@
 tags:: [[Contents]]
 ---
 
-- ## [[编程语言]]
+- ## [[Program Language]]
 	- [[Java]]
 	- [[Python]]
 	- [[Go]]
@@ -21,6 +21,7 @@ tags:: [[Contents]]
 	- [[Message Queue]]
 	- [[Redis]]
 	- [[HBase]]
+- ## [[Computer Graphics]]
 - ## [[CS史]]
 - ## [[开发工具]]
 	- [[Version Control Tool]]
