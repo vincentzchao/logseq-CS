@@ -15,24 +15,22 @@ alias:: [[HyperText Markup Language]]
 		  logseq.order-list-type:: number
 	- [[Block-level content and Inline-level content]]
 	  logseq.order-list-type:: number
-	- HTML 元素
+	- [[HTML/head element]]
 	  logseq.order-list-type:: number
-		- [[HTML/head element]]
+	- HTML body element :
+	  logseq.order-list-type:: number
+		- [[HTML/Text]]
 		  logseq.order-list-type:: number
-		- HTML body element :
+		- [[HTML/Hyperlink]]
 		  logseq.order-list-type:: number
-			- [[HTML/Text]]
+		- [[HTML/Web Page Structure]]
+		  logseq.order-list-type:: number
+		- HTML multimedia and embedding
+		  logseq.order-list-type:: number
+			- [[HTML/img]]
 			  logseq.order-list-type:: number
-			- [[HTML/Hyperlink]]
+			- [[HTML/Video and Audio]]
 			  logseq.order-list-type:: number
-			- [[HTML/Web Page Structure]]
-			  logseq.order-list-type:: number
-			- HTML multimedia and embedding
-			  logseq.order-list-type:: number
-				- [[HTML/img]]
-				  logseq.order-list-type:: number
-				- [[HTML/Video and Audio]]
-				  logseq.order-list-type:: number
 - ## Reference
 	- ### HTML Elements
 		- HTML Elements 分类汇总: [MDN - HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#table_content)

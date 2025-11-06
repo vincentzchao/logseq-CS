@@ -65,7 +65,30 @@ tags:: [[Flutter]]
 				- `Reactive programming model` (即 状态变化时, UI 自动更新) 正是在这一层被引入.
 			- `风格层` :  **material 库, cupertino 库** .
 			  logseq.order-list-type:: number
-	-
+- ## App Structure
+	- 以下是使用 Flutter 开发的 APP 的结构:
+		- ![image.png](../assets/image_1762352901700_0.png){:height 584, :width 363}
+	- 这是在 Layer Model 的基础上, 添加了由开发者控制的两个部分:
+		- `Dart App` : Dart 代码, 开发 UI 和 业务逻辑.
+		  logseq.order-list-type:: number
+		- `Runner` : 由 `flutter create` 生成, 将 Embedder 提供的 `Platform-specifi API` 整合成可在目标平台运行的 App 包.
+		  logseq.order-list-type:: number
+	- 其中:
+		- `Dart App` , `Framework` , `Engine` 是与平台无关的 (Platform-agnostic).
+		- `Embedder` , `Runner` 是特定于平台的 (Platform-specific).
+- ## Reactive UI
+	- 说 Flutter 属于 [[Reactive Programming]] 的原因:
+		- 当状态变化时, UI 会自动 **响应** 变化.
+	- 但, Flutter 并不像 [[Vue]] 那样属于 **完全响应式** , 因为它仍然需要开发者调用 `setState` 方法, 通知 Flutter 进行响应.
+		- | 模型 | 状态变化检测 | UI 更新 | 谁负责“响应” |
+		  | ---- | ---- | ---- |
+		  | 命令式（Android View） | 手动检测 | 手动更新 | 开发者 |
+		  | 部分响应式（Flutter） | 显式通知（setState） | 自动更新 | 框架 |
+		  | 完全响应式（MobX、Vue、Svelte） | 自动检测依赖 | 自动更新 | 框架 + 响应系统 |
+		- ==参考: AI==
+	- 与 [[Imperative Programming]] 范式 (比如 [[MVC]] ) 不同的是:
+		- 虽然 Flutter 需要开发者 `setState` 方法, 但其刷新 UI 的后续操作都被 Flutter 封装了.
+		- 但 Imprerative UI 需要开发者手动处理 UI 的刷新 (由于开发者的疏忽, 可能会出现一些问题) .
 - ## 参考
 	- [Flutter Docs - Flutter architectural overview](https://docs.flutter.dev/resources/architectural-overview)
 	  logseq.order-list-type:: number
