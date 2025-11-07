@@ -1,10 +1,65 @@
-tags:: [[Flutter Widget]]
+tags:: [[Flutter]]
 ---
 
-- ## Everything Is A Widget
-	- Flutter 中 , **万物皆组件** .
-	- 组件之间基于 **组合 (composition)** 形成 **层次结构 (hierarchy)** .
+- ## Flutter's own UI Implementation
+	- Flutter 有其自己用 Dart 实现的各类 UI 控件, 不必调用 **系统原生控件** .
+	- 这有如下好处:
+		- 开发者可以在 Flutter 控件的基础上扩展, 而不受 OS 扩展点的限制.
+		  logseq.order-list-type:: number
+		- 避免了 Flutter 代码 和 平台代码 之间来回切换带来的 **性能问题** .
+		  logseq.order-list-type:: number
+		- 不依赖具体的 OS , 保证 Flutter 应用在各个 OS 上外观和体验一致.
+		  logseq.order-list-type:: number
+- ## Everything is a Widget
+	- 在 Flutter 中 , **万物皆组件** .
+	- ==如下代码中, 所有实例化的类, 都是组件.==
+		- ``` dart
+		  import 'package:flutter/material.dart';
+		  import 'package:flutter/services.dart';
+		  
+		  void main() => runApp(const MyApp());
+		  
+		  class MyApp extends StatelessWidget {
+		    const MyApp({super.key});
+		  
+		    @override
+		    Widget build(BuildContext context) {
+		      return MaterialApp(
+		        home: Scaffold(
+		          appBar: AppBar(title: const Text('My Home Page')),
+		          body: Center(
+		            child: Builder(
+		              builder: (context) {
+		                return Column(
+		                  children: [
+		                    const Text('Hello World'),
+		                    const SizedBox(height: 20),
+		                    ElevatedButton(
+		                      onPressed: () {
+		                        print('Click!');
+		                      },
+		                      child: const Text('A button'),
+		                    ),
+		                  ],
+		                );
+		              },
+		            ),
+		          ),
+		        ),
+		      );
+		    }
+		  }
+		  ```
+- ## Composition
+	- Flutter 中, Widget 通常由许多 **小型的, 单一用途** 其他 Widget 组合而成.
+		- 组件之间基于 **组合 (composition)** 形成 **层次结构 (hierarchy)** .
 		- 每个组件都嵌套在其父组件内, 并可以从父组件接收 **上下文 (context)** .
+	- 即便是像 *内边距*  和 *对齐* 这样的基本功能, Flutter 也是通过包装相应的组件实现, 而不是配置组件的属性.
+		- 比如, 要让一个组件居中, 是在其外部包一个 `Center` 组件, 而不是配置这个组件的某个属性值.
+	- Flutter 使用这种组合的方法, 实现了一些 **实用组件** .
+		- 比如 `Container` 就是由 `LimitedBox` 、 `ConstrainedBox` 等多个组件组合而成的.
+		- 我们可以对这些实用组件再进行组合, 以 **二次封装** 自己的组件;
+		- 或者, 阅读其源码, 了解其组合方式, 以其为灵感创建 **新组件** .
 - ## Build a widget
 	- ### Widget State
 		- Flutter 中有两种组件:
@@ -69,4 +124,5 @@ tags:: [[Flutter Widget]]
 - ## 参考
 	- [Flutter Docs - Widgets](https://docs.flutter.dev/get-started/fundamentals/widgets)
 	  logseq.order-list-type:: number
-	- logseq.order-list-type:: number
+	- [Flutter Docs - Flutter architectural overview](https://docs.flutter.dev/resources/architectural-overview)
+	  logseq.order-list-type:: number

@@ -1,4 +1,4 @@
-tags:: [[Program Language]], [[Markup Language]]
+tags:: [[Program Language]], [[Markup Language]], [[Web]] 
 alias:: [[HyperText Markup Language]]
 ---
 

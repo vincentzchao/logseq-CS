@@ -53,7 +53,7 @@ tags:: [[Flutter]]
 			- `dart:ui` 将底层 C++ 代码封装为 Dart 类, 已提供底层功能.
 	- ### Framework Layer
 		- **Framework Layer** 的每个部分都被设计为 **可选 (optional)** 且 **可替换 (replaceable)** .
-		- Framework 分层由下往上 (以下分层, 在 flutter 框架中都有与之对应的库):
+		- Framework 分层由下往上是 (以下分层, 在 flutter 框架中都有与之对应的库):
 			- `基础层`  : **基础类库 (foundation)** 和 **基础功能库 (animation, painting, gestures 等)**  .
 			  logseq.order-list-type:: number
 			- `渲染层`  : **渲染库 (rendering)** .
@@ -62,7 +62,7 @@ tags:: [[Flutter]]
 			  logseq.order-list-type:: number
 				- `渲染层` 中的每个 **渲染对象** , 都在 `组件层` 有对象的 类.
 				- `组件层` 允许开发者自定义组件.
-				- `Reactive programming model` (即 状态变化时, UI 自动更新) 正是在这一层被引入.
+				- [[Reactive Programming]] 范式, 正是在这一层被引入.
 			- `风格层` :  **material 库, cupertino 库** .
 			  logseq.order-list-type:: number
 - ## App Structure
@@ -89,7 +89,9 @@ tags:: [[Flutter]]
 	- 与 [[Imperative Programming]] 范式 (比如 [[MVC]] ) 不同的是:
 		- 虽然 Flutter 需要开发者 `setState` 方法, 但其刷新 UI 的后续操作都被 Flutter 封装了.
 		- 但 Imprerative UI 需要开发者手动处理 UI 的刷新 (由于开发者的疏忽, 可能会出现一些问题) .
+	- 在开发者调用 `setState` 方法之后, Flutter 会调用组件的 `build()` 方法重新绘制 UI .
+		- 组件通过 `build()` 方法来声明 UI, 这个方法就是一个将 `state` 转换为 UI 的函数.
+		- `build()` 方法, 在设计上, 应该执行速度很快, 并且避免产生一些副作用, 因为框架可能会很频繁调用.
 - ## 参考
 	- [Flutter Docs - Flutter architectural overview](https://docs.flutter.dev/resources/architectural-overview)
 	  logseq.order-list-type:: number
--

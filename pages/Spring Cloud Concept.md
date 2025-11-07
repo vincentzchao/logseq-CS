@@ -22,7 +22,7 @@ tags:: [[Spring Cloud]]
 		- 这里的每个 `Release Train` 只是名称，不是具体的版本号，每个 `Release Train` 都有多个小版本。
 			- 每个小版本会修复 Bug 或增加兼容旧版本的功能。
 			- 每个小版本被称为 `service release (SR)` (旧版本号中有体现，如 `Hoxton.SR9` )
-		- `Release Train` 的名称是伦敦地铁站名称 (London Tube Station names) ，一开始会作为版本号的一部分，后面只作为项目代号，版本号改用年份格式 (Calendar Versioning)。
+		- `Release Train` 的名称是伦敦地铁站名称 (London Tube Station names) ，一开始会作为版本号的一部分，后面只作为项目代号，版本号改用年份格式 ( [[Calendar Versioning]] )。
 			- 参考  [Release Train Naming Convention](https://github.com/spring-cloud/spring-cloud-release/wiki/Release-Train-Naming-Convention)
 	- ### Spring Cloud 包含哪些依赖
 		- `spring-cloud-dependencies` 和 `spring-cloud-starter-parent` (两者版本号一致，一一对应)
