@@ -20,7 +20,7 @@ tags:: [[Dart]]
 		  bool isNoble(int atomicNumber) => _nobleGases[atomicNumber] != null;
 		  ```
 - ## Function Parameters
-	- ### Parameter types
+	- ### Parameter 分类
 		- 函数的参数类型分为如下几类:
 			- `Required positional parameters` (调用时, 必须按顺序传递的参数, 不能传参数名)
 			  logseq.order-list-type:: number
@@ -141,13 +141,125 @@ tags:: [[Dart]]
 		  foo(1, 2, 3,);
 		  ```
 - ## The main() function
-	-
-- ## Functions are objects
-	- Dart 是一种真正的面向对象语言: 函数也是对象, 函数对象有其类型 (type) .
+	- 每个 Dart 应用, 都必须要有一个 `Top-level` 的  `main()` 方法, 它是 Dart 应用的入口.
+		- ``` dart
+		  void main() {
+		    print('Hello, World!');
+		  }
+		  ```
+	- `main()` 方法的返回值类型为 `void` .
+	- `main()` 方法可以使用 `List<String>` 参数, 接受来自命令行的参数.
+		- ``` dart
+		  void main(List<String> arguments) {
+		    print(arguments);
+		  
+		    assert(arguments.length == 2);
+		    assert(int.parse(arguments[0]) == 1);
+		    assert(arguments[1] == 'test');
+		  }
+		  ```
+	- ==可以使用 [args](https://pub.dev/packages/args) 库来处理命令行参数. ==
+- ## Anonymous functions
+	- ### Anonymous function syntax
+		- 声明时, 没有名称的函数, 被称为 `anonymous functions` , 或 `lambdas` / `closures` .
+		- ``` dart
+		  ([[Type] param1[, ...]]) {
+		    codeBlock;
+		  }
+		  ```
+		- 参数列表可以带类型, 也可以不带类型.
+	- ### Anonymous function as a parameter
+		- ``` dart
+		  const list = ['apples', 'bananas', 'oranges'];
+		  
+		  var uppercaseList = list.map((item) {
+		    return item.toUpperCase();
+		  }).toList();
+		  // Convert to list after mapping
+		  
+		  for (var item in uppercaseList) {
+		    print('$item: ${item.length}');
+		  }
+		  ```
+		- 其中的如下代码就属于匿名函数:
+			- ``` dart
+			  (item) {
+			    return item.toUpperCase();
+			  }
+			  ```
+	- ### Anonymous function as a variable
+		- 也可以将 **匿名函数** 赋值给一个变量.
+		- ``` dart
+		  var upper = (item) {
+		    return item.toUpperCase();
+		  };
+		  print(upper("abc"));
+		  ```
+- ## Lexical scope
+	- Lexical scope 即 词法作用域, Dart 根据变量的位置, 确定其作用域 (scope) .
+	- `{}` 内的变量, 只在 `{}` 内有效 (也在 `{}` 内的 `{}` 内有效):
+		- ``` dart
+		  bool topLevel = true;
+		  
+		  void main() {
+		    var insideMain = true;
+		  
+		    void myFunction() {
+		      var insideFunction = true;
+		  
+		      void nestedFunction() {
+		        var insideNestedFunction = true;
+		  
+		        assert(topLevel);
+		        assert(insideMain);
+		        assert(insideFunction);
+		        assert(insideNestedFunction);
+		      }
+		    }
+		  }
+		  ```
 - ## Function Type
-	- `Function` 类型, 是 **函数类型** 的 超类.
-	- 所有实现了 `Function` 的对象, 都有超类为 `Function` 的函数类型.
-	- `Function` 类型, 其本身不包含任何值.
+	- ### Functions as first-class objects
+		- Dart 是一种真正的面向对象语言: 函数也是对象, 函数对象有其类型 (type) .
+		- 函数是 **一等对象 ( [[First-class]] object)** (即 和其它对象一样, 享有相同的权利)
+			- 可以作为参数传递:
+			  logseq.order-list-type:: number
+				- ``` dart
+				  void printElement(int element) {
+				    print(element);
+				  }
+				  
+				  var list = [1, 2, 3];
+				  
+				  // Pass printElement as a parameter.
+				  list.forEach(printElement);
+				  ```
+			- 可以被赋值给变量:
+			  logseq.order-list-type:: number
+				- ``` dart
+				    void foo() {
+				      print('hello');
+				    }
+				  
+				    var bar = foo;
+				    bar();
+				  ```
+			- 可以作为返回值被其他函数返回
+			  logseq.order-list-type:: number
+	- ### Specify Function Type
+		- ``` dart
+		  void greet(String name, {String greeting = 'Hello'}) => print('$greeting $name!');
+		  
+		  // Store `greet` in a variable and call it.
+		  void Function(String, {String greeting}) g = greet;
+		  g('Dash', greeting: 'Howdy');
+		  ```
+		- 将 **函数声明头 (function declaration header)** 的 **函数名** , 换成 `Function` 关键字, 并将 **默认值** 去掉, 就是 **Function Type** .
+		- **Positional parameters** ( **Required positional parameters** 和 **Optional positional parameters** ) 的 参数名称可以省略, **Names parameters** 不可省略参数名.
+	- ### Function class
+		- 所有的 **函数对象** , 都有其所属的 **函数类型**  .
+		- `Function` 类型, 是所有 **函数类型** 的超类.
+			- `Function` 类型, 其本身不包含任何值.
 - ## 参考
 	- [Dart API - Function](https://api.dart.dev/dart-core/Function-class.html)
 	  logseq.order-list-type:: number

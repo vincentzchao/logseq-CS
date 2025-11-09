@@ -13,7 +13,9 @@ tags:: [[Dart]]
 		- #### Overview ==已阅==
 		- #### Docs
 			- Language
-				- 看完 Introduction, Variables, Operators, Comments, Built-in types
+				- 看完 Introduction, Variables, Operators, Comments,
+				- Types
+					- 看完 Built-in types, Typedefs
 				- Classes & Objects
 					- 看完 Callable objects,
 			- Tools & techniques

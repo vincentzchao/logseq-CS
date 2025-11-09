@@ -50,7 +50,6 @@ tags:: [[Dart CLI: dart]]
 	- `dart run --enable-asserts tool/debug.dart`
 - ## dart run 开启调试和性能分析
 	- `dart run --observe tool/debug.dart`
-	-
 - ## 参考
 	- [Dart Docs - dart run](https://dart.dev/tools/dart-run)
 	  logseq.order-list-type:: number
