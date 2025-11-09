@@ -1,4 +1,4 @@
-tags:: [[Dart]]
+tags:: [[Dart Type]] 
 ---
 
 - ## Number 类型的层次结构

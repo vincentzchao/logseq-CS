@@ -89,7 +89,7 @@ tags:: [[Dart]]
 - ## 其他运算符
 	- 还有一些不算运算符的运算符 (应该属于语法的一部分)
 		- **Type test operators** , **Cascade notation** , **Member access operators**
-			- 参见: [[Dart Syntax/Class & Object]] 相关小节
+			- 参见: [[Dart Syntax/Class]] 相关小节
 		- **Spread operators** , **Subscript access operators** ,
 			- 参见: [[Dart Collection]] 相关小节
 - ## 参考

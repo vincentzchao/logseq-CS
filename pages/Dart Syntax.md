@@ -16,12 +16,16 @@ tags:: [[Dart]]
 	  logseq.order-list-type:: number
 	- Basic Types:
 	  logseq.order-list-type:: number
-		- [[Dart Type/Number]]
+		- [[Dart Type - Number]]
 		  logseq.order-list-type:: number
-		- [[Dart Type/Boolean]]
+		- [[Dart Type - Boolean]]
 		  logseq.order-list-type:: number
-		- [[Dart Type/String & Rune & Character]]
+		- [[Dart Type - String & Rune & Character]]
 		  logseq.order-list-type:: number
+	- [[Dart Syntax/Function]]
+	  logseq.order-list-type:: number
+	- [[Dart Type - Function]]
+	  logseq.order-list-type:: number
 	- [[Dart Syntax/Class & Object]]
 	  logseq.order-list-type:: number
 	- [[Dart Collection]]
@@ -35,8 +39,6 @@ tags:: [[Dart]]
 		- [[Dart Type/Record]]
 		  logseq.order-list-type:: number
 	- [[Dart Syntax/Control Flow]]
-	  logseq.order-list-type:: number
-	- [[Dart Syntax/Functions]]
 	  logseq.order-list-type:: number
 	- [[Dart Async]]
 	  logseq.order-list-type:: number
