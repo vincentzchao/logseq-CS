@@ -22,11 +22,11 @@ tags:: [[Dart]]
 		  logseq.order-list-type:: number
 		- [[Dart Type - String & Rune & Character]]
 		  logseq.order-list-type:: number
-	- [[Dart Syntax/Function]]
+	- [[Dart Function]]
 	  logseq.order-list-type:: number
 	- [[Dart Type - Function]]
 	  logseq.order-list-type:: number
-	- [[Dart Syntax/Class & Object]]
+	- [[Dart Class]]
 	  logseq.order-list-type:: number
 	- [[Dart Collection]]
 	  logseq.order-list-type:: number
@@ -36,7 +36,7 @@ tags:: [[Dart]]
 		  logseq.order-list-type:: number
 		- [[Dart Type/Map]]
 		  logseq.order-list-type:: number
-		- [[Dart Type/Record]]
+		- [[Dart Type - Record]]
 		  logseq.order-list-type:: number
 	- [[Dart Syntax/Control Flow]]
 	  logseq.order-list-type:: number

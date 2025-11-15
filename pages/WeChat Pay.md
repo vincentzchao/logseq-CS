@@ -4,6 +4,9 @@ tags:: [[Payment Product]], [[WeChat Dev]]
 - ## 子目录
 	- [[微信支付 - APP 支付业务流程 (V3)]]
 	  logseq.order-list-type:: number
+	- [[微信支付 - 委托代扣]]
+	  logseq.order-list-type:: number
+	- logseq.order-list-type:: number
 	- logseq.order-list-type:: number
 	- 各 语言/框架 集成:
 		- [[Flutter 微信支付 SDK]]

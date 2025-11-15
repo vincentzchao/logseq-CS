@@ -2,11 +2,9 @@ tags:: [[IDE]]
 ---
 
 - ## 学习路径
-	- [[Intellij IDEA 安装]]
+	- [[Intellij IDEA 环境搭建]]
 	  logseq.order-list-type:: number
 	- [[Intellij IDEA Plugin]]
-	  logseq.order-list-type:: number
-	- [[Intellij IDEA 开发配置]]
 	  logseq.order-list-type:: number
 	- 常见问题:
 	  logseq.order-list-type:: number

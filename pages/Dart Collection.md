@@ -2,7 +2,7 @@ tags:: [[Dart]]
 ---
 
 - ## 学习路线
-	- [[Dart Type/Record]]
+	- [[Dart Type - Record]]
 	  logseq.order-list-type:: number
 	- logseq.order-list-type:: number
 - ## Subscript access operators (下标访问)

@@ -1,4 +1,4 @@
-tags:: [[Dart]]
+tags:: [[Dart Type]] 
 ---
 
 - ## What is Record

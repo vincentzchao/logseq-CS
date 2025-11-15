@@ -56,6 +56,9 @@ tags:: [[Fiddler Everywhere]]
 			- 进入 `Settings > General > VPN & Device Management` 即可查看已安装的证书.
 			  logseq.order-list-type:: number
 				- ![IMG_0936.jpeg](../assets/IMG_0936_1761403612090_0.jpeg){:height 445, :width 179}
+			- 进入 `Settings > General > About > Certificate Trust Settings` 开启对根证书的完全信任.
+			  logseq.order-list-type:: number
+				- ![IMG_0984.jpeg](../assets/IMG_0984_1762853206242_0.jpeg){:height 445, :width 179}
 	- ### 5. 设备配置网络代理
 		- ==以 wifi 网络为例:==
 		- 进入 `Settings` > `WLAN` , 点击已连接的 WLAN 的详情

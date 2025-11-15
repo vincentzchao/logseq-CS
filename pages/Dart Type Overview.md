@@ -24,9 +24,9 @@ tags:: [[Dart Type]]
 		  logseq.order-list-type:: number
 		- [[Dart Type/Map]]
 		  logseq.order-list-type:: number
-		- [[Dart Type/Record]]
+		- [[Dart Type - Record]]
 		  logseq.order-list-type:: number
-		- [[Dart Syntax/Function]]
+		- [[Dart Function]]
 		  logseq.order-list-type:: number
 		- `Symbol` (参见: [[Dart Reflect]] )
 		  logseq.order-list-type:: number

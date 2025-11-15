@@ -19,7 +19,7 @@ tags:: [[Dart]]
 		- ``` dart
 		  bool isNoble(int atomicNumber) => _nobleGases[atomicNumber] != null;
 		  ```
-- ## Function Parameters
+- ## Function Parameter
 	- ### Parameter 分类
 		- 函数的参数类型分为如下几类:
 			- `Required positional parameters` (调用时, 必须按顺序传递的参数, 不能传参数名)
@@ -140,6 +140,44 @@ tags:: [[Dart]]
 		  
 		  foo(1, 2, 3,);
 		  ```
+- ## Function Return Value
+	- ### Return Type
+		- 函数定义时, 可以指定如下几种返回值类型:
+			- `void`
+			  logseq.order-list-type:: number
+			- 不指定返回值类型 (即 函数体内可以返回任何类型的值).
+			  logseq.order-list-type:: number
+			- 指定非 `void` 返回值类型.
+			  logseq.order-list-type:: number
+		- 除了返回值类型为 `void` 的函数以外, 所有函数调用时都有返回值.
+	- ### No Return Type
+		- 不指定返回值类型的函数, 其函数体内可以返回任何类型的值;
+			- ``` dart
+			  void main(List<String> args) {
+			    print(foo(true)); // 123
+			    print(foo(false)); // abc
+			  }
+			  
+			  foo(bool flag) {
+			    if (flag) {
+			      return 123;
+			    }
+			    return "abc";
+			  }
+			  ```
+		- 如果其函数体内没有 `return` 语句, 则会被隐式添加一个 `return null;` , 即 返回 `null` 值.
+			- ``` dart
+			  foo() {}
+			  
+			  assert(foo() == null);
+			  ```
+	- ### Return Multi-Value
+		- 可以使用 [[Dart Type - Record]] 返回多个值.
+			- ``` dart
+			  (String, int) foo() {
+			    return ('something', 42);
+			  }
+			  ```
 - ## The main() function
 	- 每个 Dart 应用, 都必须要有一个 `Top-level` 的  `main()` 方法, 它是 Dart 应用的入口.
 		- ``` dart
@@ -161,7 +199,7 @@ tags:: [[Dart]]
 	- ==可以使用 [args](https://pub.dev/packages/args) 库来处理命令行参数. ==
 - ## Anonymous functions
 	- ### Anonymous function syntax
-		- 声明时, 没有名称的函数, 被称为 `anonymous functions` , 或 `lambdas` / `closures` .
+		- 声明时, 没有名称的函数, 被称为 `anonymous functions` , 或 `lambdas`  .
 		- ``` dart
 		  ([[Type] param1[, ...]]) {
 		    codeBlock;
@@ -195,7 +233,31 @@ tags:: [[Dart]]
 		  };
 		  print(upper("abc"));
 		  ```
-- ## Lexical scope
+- ## Tear-offs
+	- 当我们引用 `function` , `method`, 或 `named constructor` 而不使用 `()` 时, dart 则会创建一个 `Tear-off` .
+	- `Tear-off` 就是一个函数对象.
+	- 在一个函数需要另一个函数作为入参, 则我们可以直接使用与这个入参 **类型相同** 的 `Tear-off` 作为入参.
+		- ``` dart
+		  var charCodes = [68, 97, 114, 116];
+		  var buffer = StringBuffer();
+		  
+		  // Function tear-off
+		  charCodes.forEach(print);
+		  // Method tear-off
+		  charCodes.forEach(buffer.write);
+		  ```
+		- 其等价于如下代码 ( ==但如下代码不建议使用== )
+		- ``` dart
+		  // Function lambda
+		  charCodes.forEach((code) {
+		    print(code);
+		  });
+		  // Method lambda
+		  charCodes.forEach((code) {
+		    buffer.write(code);
+		  });
+		  ```
+- ## Lexical Scope
 	- Lexical scope 即 词法作用域, Dart 根据变量的位置, 确定其作用域 (scope) .
 	- `{}` 内的变量, 只在 `{}` 内有效 (也在 `{}` 内的 `{}` 内有效):
 		- ``` dart
@@ -218,6 +280,90 @@ tags:: [[Dart]]
 		    }
 		  }
 		  ```
+- ## Lexical Closure
+	- ### Lexical Closure & Closure
+		- ==参考 : chatGPT==
+		- Closure 比 Lexical Closure 含义更广泛.
+		- Dart 文档中的 Closure , 很多时候, 并非特指 Lexical Closure , 而是泛指 **函数对象** .
+		- 并非所有 **函数对象** 都满足 **Lexical Closure** 的定义.
+			- 所有 Anonymous function / Tear-off 都可被称为 Closure .
+			- 但只有满足 Lexical Closure 定义的 Anonymous function / Tear-off , 可被称为 Lexical Closure .
+	- ### What is Lexical Closure
+		- 如果一个 **函数对象** , 在它定义时, **访问了 (或称 捕获了)** 其 **定义语法块** 所在 **作用域** 的变量, 则这个函数对象, 被称为 **Lexical Closure (语法闭包)** .
+			- 注意, 这里说的变量并非是指 **函数定义语法块内部** 的变量, 而是指 **函数定义语法块外部** 的可访问变量 (同一级别 或 更高级) .
+			- ==注意, 必须 **访问了** 上述变量才算, 没访问不算.==
+		- Lexical Closure 调用时, 能够访问到 **函数定义时** 所能访问到 的 **外部变量** .
+			- 示例一: 函数入参.
+			  logseq.order-list-type:: number
+				- 创建 Lexical closure 时, 这个 Lexical closure 会记住 `addby` 这个参数.
+				- ``` dart
+				  Function makeAdder(int addBy) {
+				    return (int i) => addBy + i;
+				  }
+				  
+				  void main() {
+				    var add2 = makeAdder(2);
+				    var add4 = makeAdder(4);
+				  
+				    assert(add2(3) == 5);
+				    assert(add4(3) == 7);
+				  }
+				  ```
+			- 示例二: 局部变量
+			  logseq.order-list-type:: number
+				- 创建 Lexical closure 时, 这个 Lexical closure 会记住 `count` 这个参数.
+				- ``` dart
+				  Function makeCounter() {
+				    int count = 0; // 这个变量会被闭包"记住"
+				    
+				    return () {
+				      count++; // 内部函数可以访问外部函数的变量
+				      return count;
+				    };
+				  }
+				  
+				  void main() {
+				    var counter = makeCounter();
+				    
+				    print(counter()); // 输出: 1
+				    print(counter()); // 输出: 2
+				    print(counter()); // 输出: 3
+				    
+				    var counter2 = makeCounter();
+				    print(counter2()); // 输出: 1 (新的独立实例)
+				  }
+				  ```
+		- ==但是, 如果调用这个函数对象 (即 Lexical closure) 的地方, 仍然属于这个变量的作用域.==
+			- 则 Lexical closure 访问并非是创建 Lexical closure 时这个变量的旧值, 而是调用 Lexical closure 时这个变量的最新值.
+			- ``` dart
+			  void main() {
+			    List<Function> counters = [];
+			  
+			    // i 的作用域只在循环内
+			    for (var i = 0; i < 3; i++) {
+			      counters.add(() => print(i));
+			    }
+			  
+			    counters[0]();  // 0
+			    counters[1]();  // 1
+			    counters[2]();  // 2
+			  }
+			  
+			  
+			  void main() {
+			    List<Function> counters = [];
+			  
+			    // i 的作用域在整个 main 函数
+			    var i = 0;
+			    for (; i < 3; i++) {
+			      counters.add(() => print(i));
+			    }
+			  
+			    counters[0]();  // 3
+			    counters[1]();  // 3
+			    counters[2]();  // 3
+			  }
+			  ```
 - ## Function Type
 	- ### Functions as first-class objects
 		- Dart 是一种真正的面向对象语言: 函数也是对象, 函数对象有其类型 (type) .
